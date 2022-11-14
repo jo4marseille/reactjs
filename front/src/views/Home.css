@@ -1,13 +1,11 @@
 #ctn_open {
     height: 100vh;
     width: 100vw;
-    background-color: blue;
 }
 
 #ctn_direct {
     height: 100vh;
     width: 100vw;
-    background-color: red;
 }
 
 #ctn_infos {

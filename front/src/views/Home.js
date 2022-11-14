@@ -3,6 +3,9 @@ import Footer from "../components/layouts/Footer";
 
 import "./Home.css"
 import Header from "../components/layouts/Header";
+import ContainerOpen from "../components/home/ContainerOpen";
+import ContainerDirect from "../components/home/ContainerDirect";
+
 
 function Home() {
     return (
@@ -12,7 +15,7 @@ function Home() {
                 id="ctn_open"
             >
 
-                Coucou
+                <ContainerOpen/>
 
             </div>
 
@@ -20,6 +23,7 @@ function Home() {
                 id="ctn_direct"
             >
 
+                <ContainerDirect/>
             </div>
 
 
@@ -28,7 +32,6 @@ function Home() {
             >
 
             </div>
-
 
 
             <Footer/>

@@ -1,12 +1,12 @@
 import React from 'react';
-import './Footer.css';
+import '../assets/footer.css';
 
 function Footer() {
   return (
     <footer class="footer">
       <div class="row">
         <a href="https://www.departement13.fr/" target="_blank" class="column">
-          <img src="/img/1280px-Bouches-du-Rhône_13_logo.png" alt="d13" />
+          <img src="front/src/assets/images/Bouches-du-Rhône_13_logo.png" alt="d13" />
         </a>
         <a href="https://membres.voyage-prive.com/voyageprive/fr/?cid=31746&affid=Marque-exact-42638028443[…]NdCvePsNXX2k_o5m2k7P8h7CDTUxLBP9q1SEIj_No1QaAiqSEALw_wcB" target="_blank" class="column">
         <img src="/img/1280px-Voyage_Privé.svg.png" alt="voyage privé" />
@@ -30,4 +30,4 @@ function Footer() {
   )
 }
 
-export default Footer;
+export default Footer

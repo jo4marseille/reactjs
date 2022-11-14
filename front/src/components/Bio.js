@@ -9,7 +9,7 @@ function Bio() {
         const requestOptions = {
             method: 'GET',
         };
-        fetch('https://discord.com/api/oauth2/token', requestOptions)
+        fetch('https://opendata.agencebio.org/api/gouv/operateurs/?activite=Restauration&lat=43.296482&lng=5.36978', requestOptions)
             .then(response => response.json())
             .then((response) => {
                 console.log(response);

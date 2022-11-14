@@ -1,0 +1,12 @@
+{
+  "Athlete": {
+    "id": 0,
+    "firstName": "",
+    "lastName": "",
+    "age": "",
+    "country": "",
+    "position": "",
+    "rank": "",
+    "photo": ""
+  }
+}

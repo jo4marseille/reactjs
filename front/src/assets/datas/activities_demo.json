@@ -1,0 +1,74 @@
+{
+  "selectedSports": [
+    {
+      "categoryId": 3,
+      "name": "Saut en longueur",
+      "location": "Stade olympique, Paris",
+      "athletes": [
+        1,2,3,4,5,6,7,8
+      ],
+      "localTime": "09:00 - 09:30",
+      "round": "Qualification - Group A",
+      "streaming": 1,
+      "sex": "Hommes"
+    },
+    {
+      "categoryId": 3,
+      "name": "Saut en longueur",
+      "location": "Stade olympique, Paris",
+      "athletes": [
+      ],
+      "localTime": "09:30 - 10:00",
+      "round": "Qualification - Group B",
+      "streaming": 1,
+      "sex": "Hommes"
+    },
+    {
+      "categoryId": 3,
+      "name": "Sprint 100 mètres",
+      "location": "Stade olympique, Paris",
+      "athletes": [
+        9,10,11,12,13,14,15,16
+      ],
+      "localTime": "10:00 - 10:30",
+      "round": "Qualifications",
+      "streaming": 2,
+      "sex": "Femmes"
+    },
+    {
+      "categoryId": 3,
+      "name": "Saut en longueur",
+      "location": "Stade olympique, Paris",
+      "athletes": [
+      ],
+      "localTime": "10:00 - 10:30",
+      "round": "Qualification - Group C",
+      "streaming": 3,
+      "sex": "Femmes"
+
+    },
+    {
+      "categoryId": 6,
+      "name": "Boxe",
+      "location": "Stade Roland-Garros, Paris",
+      "athletes": [
+        17,18,19,20,21,22,23,24
+      ],
+      "localTime": "09:00 - 11:00",
+      "round": "Qualification",
+      "streaming": 5,
+      "sex": "Hommes"
+    },
+    {
+      "categoryId": 6,
+      "name": "Boxe",
+      "location": "Stade Roland-Garros, Paris",
+      "athletes": [
+      ],
+      "localTime": "11:00 - 13:00",
+      "round": "Qualification",
+      "streaming": 4,
+      "sex": "Femmes"
+    }
+  ]
+}

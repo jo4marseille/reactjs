@@ -31,20 +31,17 @@ export default function Home() {
     } ,[])
 
     return (
-        <main>
+        <main className='homeSection'>
             <article>
                 <h3>Tous nos sports</h3>
-                <ul>
+                <ul className='homeSportsContainer'>
                     {
                         sports.map((item, index) => {
                             
                             return (
                                 <li key={item.attributes.nom}>
                                     <p>{item.attributes.nom}</p>
-                                    <div>
-                                      <img src={`http://localhost:1337${item.attributes.SportIcon.data.attributes.url}`} />   
-                                    </div>
-                                    
+                                    <img src={`http://localhost:1337${item.attributes.SportIcon.data.attributes.url}`} />       
                                 </li>
                             )
                         })

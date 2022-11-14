@@ -1,10 +1,35 @@
 import React from 'react';
 import Footer from "../components/layouts/Footer";
 
+import "./Home.css"
+import Header from "../components/layouts/Header";
+
 function Home() {
     return (
         <div>
-            HOME view
+            <Header/>
+            <div
+                id="ctn_open"
+            >
+
+                Coucou
+
+            </div>
+
+            <div
+                id="ctn_direct"
+            >
+
+            </div>
+
+
+            <div
+                id="ctn_infos"
+            >
+
+            </div>
+
+
 
             <Footer/>
         </div>

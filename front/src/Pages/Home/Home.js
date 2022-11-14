@@ -1,16 +1,29 @@
+/* Import ReactJs */
 import React, { useEffect, useState } from 'react'
+
+/* Import Fonctions API  */
 import SportsAPI from '../../Services/SportsAPI.js'
+
+/* Import style */
 import './Home.css'
 
 export default function Home() {
 
+    /*HOOKS : Liste des différents sport */
     const [sports, setSports] = useState([])
 
+    /**
+     * Function RefreshData : GET tous les sports en BDD 
+     * return array : sports
+     */
     const refreshData = async () => {
-        const data = SportsAPI.findSports().then(response => {
-            setSports(response.data.data)
-        })
-        console.log(data)
+        try {
+            const data = SportsAPI.findSports().then(response => {
+                setSports(response.data.data)
+            })
+        } catch (error) {
+            console.log(error)
+        }    
     }
 
     useEffect(() => {
@@ -24,10 +37,14 @@ export default function Home() {
                 <ul>
                     {
                         sports.map((item, index) => {
+                            
                             return (
-                                <li>
+                                <li key={item.attributes.nom}>
                                     <p>{item.attributes.nom}</p>
-                                    <p>{item.attributes.description}</p>
+                                    <div>
+                                      <img src={`http://localhost:1337${item.attributes.SportIcon.data.attributes.url}`} />   
+                                    </div>
+                                    
                                 </li>
                             )
                         })

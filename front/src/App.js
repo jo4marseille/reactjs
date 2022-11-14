@@ -1,20 +1,18 @@
 
+import * as React from "react";
 import './App.css';
 import NavBar  from "./components/Navbar";
-
-function App() {
-  return (
-    <div className="App">
-<NavBar/>
 import Card from './components/Card';
-
 function App() {
   return (
-   <div>
-   
-      <Card/>
-    </div>
-  );
+    <>
+        <div className="App"></div>
+      <NavBar/>
+    </>
+  )
 }
 
+
+
 export default App;
+

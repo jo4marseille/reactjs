@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sport",
     "pluralName": "sports",
-    "displayName": "Sports"
+    "displayName": "Sports",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +15,7 @@
     "nom": {
       "type": "string"
     },
-    "description": {
+    "icon": {
       "type": "string"
     }
   }

@@ -27,7 +27,7 @@ export default function Home() {
                             return (
                                 <li>
                                     <p>{item.attributes.nom}</p>
-                                    <p>{item.attributes.description}</p>
+                                    <img src={item.attributes.icon} />
                                 </li>
                             )
                         })

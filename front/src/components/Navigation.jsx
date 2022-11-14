@@ -5,7 +5,7 @@ const Navigation = () =>{
     const navigate = useNavigate();
 
     return(<div>
-        <button onClick={() => navigate("/")}>Home</button>
+        <button onClick={() => navigate("/")} class="btn btn-primary">Home</button>
         <button onClick={() => navigate("/athlete")}>Athlete</button>
         <button onClick={() => navigate("/sponsor")}>Sponsor</button>
     </div>)

@@ -33,7 +33,7 @@
     justify-content: center;
     align-items: center;
     flex-basis: 33%;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .column img {

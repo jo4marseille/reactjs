@@ -18,10 +18,10 @@ function NavBar() {
             />{' '}
           </Navbar.Brand>
           <Nav>
-            <Nav.Link href="transport">Transport</Nav.Link>
-            <Nav.Link href="hebergements">Où Dormir</Nav.Link>
-            <Nav.Link href="restauration">Où Manger</Nav.Link>
-            <Nav.Link href="sport">Centre Sportifs</Nav.Link>
+            <Nav.Link href="transport">Transports</Nav.Link>
+            <Nav.Link href="hebergements">Où dormir ?</Nav.Link>
+            <Nav.Link href="restauration">Où manger ?</Nav.Link>
+            <Nav.Link href="sport">Centres sportifs</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

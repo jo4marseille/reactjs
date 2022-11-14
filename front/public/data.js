@@ -2,9 +2,9 @@
     "transports"; [
       {
             "name": "Train",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "image": "../front/public/gare aixr.jpg",
+            "description": "Exemple: Prendre le train",
+            "lien": "https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/gares/marseille-st-charles-87751008"
       },
       {
             "name": "Bus",
@@ -46,7 +46,7 @@
             "lien": "123"
         }
       ]
-      
+
       "hotels"; [
         {
             "name": "Student 1",

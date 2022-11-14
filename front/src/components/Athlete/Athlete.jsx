@@ -1,6 +1,7 @@
 import React, { useState} from "react";
 import Navigation from "../Navigation";
 import AthleteList from "./AthleteList";
+import About from "./About";
 
 const dataSponsor =[
     {

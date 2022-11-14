@@ -15,7 +15,7 @@ function AllCard() {
                         <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
                         
 						<div class="title">
-							<h4>Pinterest</h4>
+							<h4>Restauration</h4>
 						</div>
                         
 						<div class="text">
@@ -34,7 +34,7 @@ function AllCard() {
 					    <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
                     
 						<div class="title">
-							<h4>Google</h4>
+							<h4>Restauration2</h4>
 						</div>
                         
 						<div class="text">
@@ -53,7 +53,7 @@ function AllCard() {
                         <i class="fa fa-github fa-3x" aria-hidden="true"></i>
                         
 						<div class="title">
-							<h4>Github</h4>
+							<h4>Restauration3</h4>
 						</div>
                         
 						<div class="text">

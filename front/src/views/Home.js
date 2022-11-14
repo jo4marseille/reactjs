@@ -5,6 +5,7 @@ import "./Home.css"
 import Header from "../components/layouts/Header";
 import ContainerOpen from "../components/home/ContainerOpen";
 import ContainerDirect from "../components/home/ContainerDirect";
+import ContainerInfos from "../components/home/ContainerInfos";
 
 
 function Home() {
@@ -30,7 +31,7 @@ function Home() {
             <div
                 id="ctn_infos"
             >
-
+                <ContainerInfos />
             </div>
 
 

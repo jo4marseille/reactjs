@@ -4,12 +4,15 @@
 }
 
 #ctn_direct {
-    height: 100vh;
+    /*height: 100vh;*/
     width: 100vw;
 }
 
 #ctn_infos {
-    height: 100vh;
+    /*height: 100vh;*/
     width: 100vw;
-    background-color: green;
+    /*width: 90vw;*/
+    /*margin-left: 5vw;*/
+    /*height: 100vh;*/
+    /*background-color: #00004D;*/
 }

@@ -25,7 +25,7 @@ const ContainerOpen = () => {
             <Parallax bgImage={BackgroundHome} strength={-100}>
                 {/*<Parallax bgImage={image3} blur={{min: -1, max: 3}}>*/}
                 <div style={{height: "100vh"}}>
-                    <div style={insideStyles}>JO4Live<br/> Regroupe tous vos evenements </div>
+                    <div style={insideStyles}>JO4Live<br/> Regroupe tous vos evenements</div>
                 </div>
             </Parallax>
         </div>

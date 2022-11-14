@@ -1,8 +1,10 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-
 import Footer from './components/footer.js'
 import Header from './components/nav.js'
+// import styles from '../styles/globals.css'
+import styles from '../styles/Home.module.css'
+
 
 
 function MyApp({ Component, pageProps }) {
@@ -15,10 +17,16 @@ function MyApp({ Component, pageProps }) {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
         </Head>
+
+
         
-        <Header/>
+        <Header />
+
+        <div className={styles.container}>
 
           <Component {...pageProps} />
+        </div>
+
           
           
         <Footer/>

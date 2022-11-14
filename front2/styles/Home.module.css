@@ -1,7 +1,10 @@
-.container {
-  padding: 0 2rem;
-}
 
+.container {
+  padding: 21px 2rem;
+  margin-top: 10%;
+  min-height: 55vh;
+}
+/* 
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -121,9 +124,9 @@
     border-color: #222;
   }
   .code {
-    /* background: #111; */
+    /* background: #111; 
   }
   .logo img {
     filter: invert(1);
   }
-}
+} */

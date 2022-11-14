@@ -1,12 +1,18 @@
+
 import * as React from "react";
-import Footer from "./components/Footer"
-import {createBrowserRouter } from "react-router-dom";
-import Home from "./components/Home";
+import './App.css';
+import NavBar  from "./components/Navbar";
+import Card from './components/Card';
 function App() {
   return (
-  <></>
-  );
+    <>
+        <div className="App"></div>
+      <NavBar/>
+    </>
+  )
 }
+
+
 
 export default App;
 

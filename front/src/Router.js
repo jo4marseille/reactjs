@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./components/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sponsor from "./components/Sponsor";
-import Athlete from "./components/Athlete";
+import Athlete from "./components/Athlete/Athlete";
 const Router = () => {
   return (
     <div>

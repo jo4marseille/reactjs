@@ -1,0 +1,1 @@
+export const URL_SPORTS = "http://localhost:1337/api/sports"

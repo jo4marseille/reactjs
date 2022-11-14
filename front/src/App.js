@@ -1,12 +1,11 @@
+
 import './App.css';
-import AllCard from './components/AllCard';
-import { Component } from 'react';
+import NavBar  from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      < AllCard />
-     
+    <div className="App">
+<NavBar/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
-function Transport() {
+ 
+function AllCardRestaurations() {
     return(<div>
 
 
@@ -72,4 +73,5 @@ function Transport() {
             </div>);
     
 }
-export default Transport
+
+export default AllCardRestaurations;

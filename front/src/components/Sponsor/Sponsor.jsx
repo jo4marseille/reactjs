@@ -57,13 +57,21 @@ const Sponsor = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, [page]);
-
+    const handleMatching = () => {
+      //matching element athlete
+      const sport = "football"
+      const adress = "marseille"
+      GetSponsors().then(res => {
+        res.data
+      })
+    }
 
     return (
 
     <div >
         <div className="page_title">Sponsor</div>
         <Navigation />
+        <button onClick={() => handleMatching()} type="button" class="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
 
         <div className="d-flex mt-5">
 

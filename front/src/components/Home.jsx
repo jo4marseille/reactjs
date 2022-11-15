@@ -12,10 +12,7 @@ const Home = () => {
     <Navigation />
 
       <div className="m-5 text-end">
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="" />
-          <input type="submit" className="btn btn-primary"/>
-        </form>
+        <button onClick={() => handleSubmit()}>Match</button>
       </div>
 
   </div>;

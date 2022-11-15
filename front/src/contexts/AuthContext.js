@@ -1,35 +1,56 @@
 import React, { useContext, useState, useEffect } from "react";
-import firebaseApp from '../FirebaseService';
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
 
-const AuthContext = React.createContext()
+import { fire } from "../utils/Firebase";
+
+const AuthContext = React.createContext();
 
 export function useAuth() {
-    return useContext(AuthContext)
+  return useContext(AuthContext);
 }
 
 export function AuthProvider({ children }) {
-    const [currentUser, setCurrentUser] = useState()
+  const [currentUser, setCurrentUser] = useState();
 
-    function signup(email, password) {
-        return firebaseApp.createUserWithEmailAndPassword(email, password)
-    }
+  function signup(email, password) {
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+  }
 
-    useEffect(() => {
-        const unsubscribe = firebaseApp.onAuthStateChanged(user => {
-            setCurrentUser(user)
-        })
+  useEffect(() => {
+    const auth = getAuth();
+    signOut(auth)
+      .then(() => {
+        // Sign-out successful.
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+    // const unsubscribe = fire.auth().onAuthStateChanged((user) => {
+    //   setCurrentUser(user);
+    // });
 
-        return unsubscribe
-    }, [])
-   
-    const value = {
-        currentUser, 
-        signup
-    }
+    // return unsubscribe;
+  }, []);
 
-    return (
-        <AuthContext.Provider value={value}>
-            {children}
-        </AuthContext.Provider>
-    )
+  const value = {
+    currentUser,
+    signup,
+  };
+
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

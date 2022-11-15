@@ -21,6 +21,7 @@
 .list {
     height: calc(100vh - 80px);
     width: 30%;
-    background-color: green;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 

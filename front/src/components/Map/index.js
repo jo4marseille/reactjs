@@ -16,7 +16,6 @@ import {
     DirectionsRenderer
 } from "@react-google-maps/api";
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
 
 /************
 * Fake Data *
@@ -32,6 +31,7 @@ import {
     hydrateDestinationTo,
     hydrateDirectionResponse,
     clearResponse,
+    searchPlaces,
 } from '../../actions/map';
 
 const containerStyle = {
@@ -53,13 +53,6 @@ const Map = () => {
         directionResponse,
     } = useSelector((state) => state.map);
 
-    useEffect(
-        () => {
-            console.log(directionResponse);
-        },
-        [directionResponse],
-    )
-
     async function calculateRoute() {
         if (destinationFrom === null || destinationTo === null) {
             return;
@@ -75,6 +68,7 @@ const Map = () => {
             travelMode: google.maps.TravelMode.WALKING
         });
         dispatch(hydrateDirectionResponse(results));
+        dispatch(searchPlaces());
     };
 
     // const clearRoute

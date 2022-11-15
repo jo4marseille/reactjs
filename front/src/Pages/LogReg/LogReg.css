@@ -63,7 +63,7 @@ body{
 
 /* Animation */
 
-.active{
+.onglets.active{
     background: midnightblue;
     color: #f1f1f1;
     transition: all 0.2s ease;

@@ -5,16 +5,12 @@ import SearchInput from "../input/InputMinus";
 import Nageur from "../../img/assets/photo-header.gif";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
-<<<<<<< HEAD
 import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
 import coeur from "../../img/Logo/flamme-en-contour.png";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-=======
-import { GetAthletes } from "../../request/athletes.request";
-import coeur from "../../img/Logo/flamme-en-contour.png"
-import {  PostAthletes, PuitAthletes } from "../../request/athletes.request";
->>>>>>> 512ed93a255e201a649f3e318cb4b7aaf35622d1
+
+
 
 const Sponsor = () => {
 
@@ -66,8 +62,8 @@ const Sponsor = () => {
 
     useEffect(() => {
       const handleScroll = () => {
-
-        if (window.scrollY === 969 && page < 100 && data.length === 10 ) {
+        console.log(window.scrollY)
+        if (window.scrollY === 548 && page < 100 && data.length === 10 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
@@ -112,28 +108,14 @@ const Sponsor = () => {
     }
 
     return (
-<<<<<<< HEAD
 
-    <div>
-
-
-        <div className="page_title">Sponsor</div>
-        <Navigation />
-
-        <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
-
-        <ToastContainer />
-
-        <div className="d-flex mt-5">
-
-=======
       <div>
         <img className="nageurScoped" src={Nageur} alt="Nageur Olympique" />
-      
+        <ToastContainer />
         <SearchInput />
         <div className="d-flex mt-5 positionOffers">
         <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
->>>>>>> 512ed93a255e201a649f3e318cb4b7aaf35622d1
+
         {
           load
           ? <Spinner />
@@ -166,19 +148,16 @@ const Sponsor = () => {
         }
           <div className="column-sponsor border border-primary rounded">
             <SponsorItem sponsor={selected} />
-<<<<<<< HEAD
 
-        </div>
-
-=======
           </div>
         <div className="column-sponsor border border-primary rounded">
           <SponsorItem sponsor={selected} />
->>>>>>> 512ed93a255e201a649f3e318cb4b7aaf35622d1
+
         </div>
         <Navigation />
       </div>
-    </div>)
+    </div>
+    )
 }
 
 export default Sponsor;

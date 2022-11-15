@@ -8,8 +8,6 @@ const SponsorModal = ({company}) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    console.log(show)
-
     return (
       <>
 

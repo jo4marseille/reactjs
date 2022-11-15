@@ -20,18 +20,10 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path="/transport">
-            <AllCardTransports />
-          </Route>
-          <Route path="/hebergements">
-            <AllCardLodgings />
-          </Route>
-          <Route path="/restauration">
-            <AllCardRestaurations />
-          </Route>
-          <Route path="/sport">
-            <AllCardSports />
-          </Route>
+          <Route exact path="/transport"  element={<AllCardTransports />}/>      
+          <Route path="/hebergements" element={<AllCardLodgings />} />   
+          <Route path="/restauration"element={<AllCardRestaurations />} />
+          <Route path="/sport" element={<AllCardSports />} />
         </Routes>
       </Router>
 

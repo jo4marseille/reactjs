@@ -12,23 +12,25 @@ import {useState} from "react";
 import VerticalContainer from "../components/agenda/VerticalContainer";
 
 import "./Agenda.css"
+import Header from "../components/layouts/Header";
+
 function Agenda() {
 
     let [filterList, setFilterList] = useState([])
 
 
     return (
+        <div>
 
-        <div className="div_ctn_agenda">
-            <FilterBar filterList={filterList} setFilterList={setFilterList}/>
+            <Header/>
 
-
-
-
-
-            <VerticalContainer/>
+            <div className="div_ctn_agenda">
+                <FilterBar filterList={filterList} setFilterList={setFilterList}/>
 
 
+                <VerticalContainer/>
+
+            </div>
         </div>
     )
 }

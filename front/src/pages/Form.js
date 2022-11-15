@@ -8,7 +8,7 @@ export default function Form()
     const [tel, setTel] = useState("");
     const [siret, setSiret] = useState("");
     const [school, setSchool] = useState("");
-    const [language, setLanguage] = useState("");
+    const [language, setLanguage] = useState("Catalan");
     const [category, setCategory] = useState("vol");
     const [step, setStep] = useState("form");
 
@@ -48,27 +48,23 @@ export default function Form()
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="form-label mt-4">Your name</label>
+                            <label for="exampleInputEmail1" class="form-label mt-4">Your email</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name" onChange={(e) => setEmail(e.target.value)} />
                         </div>
 
                         <div class="form-group">
                             <label for="exampleSelect1" class="form-label mt-4">Your category</label>
                             
-                            <select class="form-select" id="exampleSelect1" onChange={(e) => setCategory(e.target.value)}>
+                            <select class="form-select" id="exampleSelect1" required="true" onChange={(e) => setCategory(e.target.value)}>
                                 <option value="vol">Volunteer</option>
                                 <option value="pro">Professional</option>
                                 <option value="stu">Student</option>
                             </select>
 
-                            {
-                                category == "vol" &&
-                                
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" class="form-label mt-4">Phone number</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your phone number" onChange={(e) => setTel(e.target.value)} />
-                                </div>
-                            }
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="form-label mt-4">Phone number</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={tel} placeholder="Enter your phone number" onChange={(e) => setTel(e.target.value)} />
+                            </div>
 
                             {
                                 category == "pro" &&

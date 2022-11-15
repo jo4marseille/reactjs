@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-
+import { PostSponsors } from '../request/sponsors.request';
 const SposorOffer = () => {
     const [dataForm, setDataForm] = useState({
         image: '',
@@ -9,14 +9,23 @@ const SposorOffer = () => {
         phone: '',
         address: '',
         about: '',
+        sports: '',
     });
     
     function handleSubmit() {
         console.log(dataForm);
+        PostSponsors({data:{
+            name: dataForm.companyName,
+            isActive: true,
+            about: dataForm.about,
+            phone: dataForm.phone,
+            sports: dataForm.sports,
+            picture: dataForm.image,
+            adress: dataForm.address,
+        }})
     }
     
     
-    // console.log(dataForm);
     return (
         <div>
             <div className="card">

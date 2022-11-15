@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import Navigation from "../Navigation";
 import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";
+import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
 
 const Sponsor = () => {
-
+    console.log(GetSponsors());
     const initialState =  {
       about: "",
       company: "",

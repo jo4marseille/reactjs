@@ -1,10 +1,14 @@
+import React from 'react';
+import Drapeau from '../components/Drapeau';
+
+export default function Home() {
 
 
-export default function Home()
-{
     return (
         <>
-            Home
+            <div>
+                <Drapeau />
+            </div>
         </>
     )
 }

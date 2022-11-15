@@ -51,8 +51,8 @@ $fontBold: 700;
   margin-top: 15%;
   margin-left: 8%;
   margin-bottom: 15%;
-  width: 350px;
-  height: 300px;
+  width: 455px;
+  height: 340px;
   border: 1px solid var(--unnamed-color-707070);
   background: #ffffff10 0% 0% no-repeat padding-box;
   border: 1px solid #70707010;
@@ -62,7 +62,21 @@ $fontBold: 700;
 .pres-title,
 .pres-description {
   color: white;
-  text-align: center;
+  text-align: left;
+  margin: 25px;
+}
+
+.pres-title {
+  font-weight: $fontBold;
+  letter-spacing: 2px;
+}
+
+.pres-description {
+  font-weight: $fontLight;
+}
+
+span {
+  font-weight: $fontBold;
 }
 
 .choose-title {

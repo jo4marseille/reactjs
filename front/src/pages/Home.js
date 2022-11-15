@@ -8,13 +8,16 @@ function Home() {
         <div className="square">
           <img src={fond} alt="" className="fond" />
           <div className="presentation">
-            <h1 className="pres-title">Marseille,</h1>
-            <h1 className="pres-title">terroir des JO</h1>
+            <h1 className="pres-title">
+              Marseille, <br /> les JO et vous
+            </h1>
 
             <p className="pres-description">
-              Découvrez l'authentique ville de Marseille derrière les Jeux
-              Olympiques ! Quel monument visiter à côté de La Marina ? Où manger
-              une bouillabaisse près du Vélodrome ?
+              Découvrez l'authentique ville de Marseille derrière <br />
+              les Jeux Olympiques ! <br />
+              Quel monument visiter à côté de La Marina ? <br />
+              Où manger une bouillabaisse près du Vélodrome ?<br />
+              <br />
               <span>
                 Retrouvez toutes les informations indispensables à votre visite
                 !

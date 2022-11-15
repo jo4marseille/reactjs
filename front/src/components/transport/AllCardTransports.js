@@ -16,7 +16,8 @@ function AllCardTransports() {
         }
         )}
             
-</div>)
+        </div>
     
-}
+)}
+
 export default AllCardTransports

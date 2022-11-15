@@ -3,14 +3,13 @@ name: Push Frontend
 on:   
   push:
     branches:
-    - main
-    - master
+    - clean-and-collect
 
     # Publish `v1.2.3` tags as releases.
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: ${{ github.event.repository.name }}
+  IMAGE_NAME: clean-and-collect
   # IMAGE_NAME: testworkflow-front
 
 jobs:
@@ -26,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build image
-        run: docker build front/ --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
+        run: docker build front2/ --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
 
       - name: Log in to registry
         # This is where you will update the PAT to PAT_TOKEN
@@ -90,10 +89,12 @@ jobs:
                       - name: dockerconfigjson-github-com
                     containers:
                       - args:
+                          - npm
+                          - start
                         image: ghcr.io/jo4marseille/$IMAGE_NAME:latest
                         name: $IMAGE_NAME
                         ports:
-                          - containerPort: 80
+                          - containerPort: 3000
                         resources: {}
                     restartPolicy: Always
               status: {}
@@ -110,9 +111,9 @@ jobs:
                 name: $IMAGE_NAME
               spec:
                 ports:
-                  - name: "80"
+                  - name: "3000"
                     port: 80
-                    targetPort: 80
+                    targetPort: 3000
                 selector:
                   io.kompose.service: $IMAGE_NAME
               status:

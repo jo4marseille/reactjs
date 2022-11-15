@@ -1,7 +1,7 @@
 import React from "react";
  
 function AllCardRestaurations() {
-    return(<div>
+    return(<div className="componentBg">
 
 
         <div class="box">

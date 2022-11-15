@@ -1,7 +1,7 @@
 function Footer() {
 
     return (
-        <footer class="footer">
+        <footer className="footer">
             <a href="https://www.departement13.fr/" target="_blank">
                 <img src="img/footer/d13.png" alt="d13" />
             </a>
@@ -9,7 +9,7 @@ function Footer() {
                 <img src="img/footer/voyageprive.png" alt="voyage privé" />
             </a>
             <a href="https://inco-group.co/" target="_blank">
-                <img class="smaller" src="img/footer/inco.png" alt="inco" />
+                <img className="smaller" src="img/footer/inco.png" alt="inco" />
             </a>
             <a href="https://www.myprovence.fr/" target="_blank">
                 <img src="img/footer/provencetourisme.png" alt="my provence" />

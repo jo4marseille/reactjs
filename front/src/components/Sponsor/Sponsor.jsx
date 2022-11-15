@@ -23,7 +23,7 @@ const Sponsor = () => {
 
     return (
     <div >
-        Sponsor
+        <div className="page_title">Sponsor</div>
         <Navigation />
 
         <div className="d-flex mt-5">

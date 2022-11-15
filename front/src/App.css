@@ -1,3 +1,5 @@
+@import url(./stylesheets/sponsor.css);
+
 .App {
   text-align: center;
 }
@@ -48,6 +50,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
+  }
   &:last-child {
     background: black;
     border-top: 1px solid rgba(255,255,255,0.5);
@@ -56,4 +59,3 @@
     max-width: 100%;
     width: 100%;
   }
-}

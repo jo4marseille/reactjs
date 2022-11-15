@@ -1,18 +1,15 @@
-import React from "react";
-import Card from "../Card";
-// import Card from 'react-bootstrap/Card';
+gimport React from "react";
 import data from "../../data.json";
-import Button from 'react-bootstrap/Button';
-import Cards from "../Card";
+import Card from "../Card";
 
 function AllCardTransports() {
 
     return(<div className="componentBg">
-        {data.tra.map((e) => {
+        {data.transports.map((e) => {
 
             return(
                 
-                <Cards name={e.name} description={e.description}/>
+                <Card name={e.name} description={e.description}/>
             )
         }
         )}

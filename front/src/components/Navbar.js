@@ -11,7 +11,7 @@ function NavBar() {
   return (
     <>
       {[false].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="light" expand={expand} >
           <Container fluid>
           <Navbar.Brand href="/">
             <img

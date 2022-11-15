@@ -18,9 +18,6 @@ const Header = () => {
                             <li className='nav-item active'>
                                 <a className="nav-link px-4" href='/clubs'>CLUBS</a>
                             </li>
-                            <li className='nav-item active'>
-                                <a className="nav-link px-4 pe-2" href='/'>HÔTELS</a>
-                            </li>
                         </ul>
                     </div>
                 </div>

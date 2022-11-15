@@ -30,6 +30,7 @@
       "relation": "oneToMany",
       "target": "api::evenement.evenement",
       "mappedBy": "sport"
+    },
     "description": {
       "type": "string"
     },

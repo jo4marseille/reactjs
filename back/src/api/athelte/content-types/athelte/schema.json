@@ -4,7 +4,8 @@
   "info": {
     "singularName": "athelte",
     "pluralName": "atheltes",
-    "displayName": "athelte"
+    "displayName": "athlete",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,24 @@
       "relation": "manyToOne",
       "target": "api::sport.sport",
       "inversedBy": "atheltes"
+    },
+    "pay": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pay.pay",
+      "inversedBy": "atheltes"
+    },
+    "evenement": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::evenement.evenement",
+      "inversedBy": "atheltes"
+    },
+    "votes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vote.vote",
+      "mappedBy": "athlete"
     }
   }
 }

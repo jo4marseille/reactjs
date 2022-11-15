@@ -1,2 +1,5 @@
 export const URL_SPORTS = "http://localhost:1337/api/sports"
 export const URL_USER = "http://localhost:1337/api/users/:id"
+export const URL_VOTE = "http://localhost:1337/api/votes?populate=athlete&populate=sport&populate=event"
+export const URL_UPDATE = "http://localhost:1337/api/users/"
+export const URL_DELETE = "http://localhost:1337/api/votes/"

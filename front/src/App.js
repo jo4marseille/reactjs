@@ -11,6 +11,7 @@ import Signup from "./Signup/Signup";
 import Signin from "./Signin/Signin";
 import { Route, Routes } from "react-router";
 import Homepage from "./Homepage/Homepage";
+import Footer from "./Footer/footer";
 
 function App() {
   const [notification, setNotification] = useState({ title: "", body: "" });
@@ -42,6 +43,7 @@ function App() {
           <Route path="/homepage" element={<Homepage />} />
           {/* <Route path="/notification" element={<Homepage />} /> */}
         </Routes>
+        <Footer/>
       </AuthProvider>
     </>
   );

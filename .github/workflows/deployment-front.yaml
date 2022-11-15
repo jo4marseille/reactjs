@@ -90,10 +90,12 @@ jobs:
                       - name: dockerconfigjson-github-com
                     containers:
                       - args:
+                          - npm
+                          - start
                         image: ghcr.io/jo4marseille/$IMAGE_NAME:latest
                         name: $IMAGE_NAME
                         ports:
-                          - containerPort: 80
+                          - containerPort: 3000
                         resources: {}
                     restartPolicy: Always
               status: {}
@@ -110,9 +112,9 @@ jobs:
                 name: $IMAGE_NAME
               spec:
                 ports:
-                  - name: "80"
+                  - name: "3000"
                     port: 80
-                    targetPort: 80
+                    targetPort: 3000
                 selector:
                   io.kompose.service: $IMAGE_NAME
               status:

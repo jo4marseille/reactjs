@@ -38,7 +38,7 @@ width: 100%;
   flex-grow: 1;
 }
 
-.row {
+.rowFooter {
   display: flex;
   flex: 1;
   flex-wrap: wrap;

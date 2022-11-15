@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef } from "react";
 import Navigation from "../Navigation";
 import athlete from "../../database/athlete.json"
 import AthleteItem from "./AthleteItem";
@@ -14,6 +14,8 @@ const Athlete = () => {
     const [page, setPage] = useState(0)
 
     const [load, setLoad] = useState(true)
+
+    const dataContainer2 = useRef()
 
     useEffect(() => {
 
@@ -37,7 +39,9 @@ const Athlete = () => {
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 570 && page < 100 ) {
+        console.log(window.scrollY)
+
+        if (window.scrollY === 570  && page < 100 && data.length === 10  ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
@@ -45,10 +49,11 @@ const Athlete = () => {
 
       window.addEventListener('scroll', handleScroll);
 
+
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
-    }, [page]);
+    }, [page, data.length]);
 
 
     return (
@@ -64,7 +69,7 @@ const Athlete = () => {
           ? <Spinner />
 
 
-          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor">
+          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" >
               {
                 data.map((v) => {
                   return (

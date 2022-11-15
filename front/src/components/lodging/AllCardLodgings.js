@@ -4,6 +4,7 @@ function AllCardLodgings() {
 
 
         <div class="box">
+        <img src="\img\logos\logoHotel.png" alt='' id="logo"/>
             <div class="container">
                  <div class="row">
                          

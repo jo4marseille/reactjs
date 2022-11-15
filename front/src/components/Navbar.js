@@ -1,4 +1,3 @@
-
 // import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 // import Form from 'react-bootstrap/Form';
@@ -11,8 +10,9 @@ function NavBar() {
   return (
     <>
       {[false].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="light" expand={expand}>
           <Container fluid>
+        
           <Navbar.Brand href="/">
             <img
               alt=""
@@ -20,8 +20,8 @@ function NavBar() {
               width="300"
               height="70"
               className="d-inline-block align-top logo"
-            />{' '}
-          </Navbar.Brand>
+            />
+          </Navbar.Brand> 
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -32,11 +32,18 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
               <Nav>
-            <Nav.Link href="transport" >Transport </Nav.Link>
-            <Nav.Link href="hebergements">Où Dormir</Nav.Link>
-            <Nav.Link href="restauration">Où Manger</Nav.Link>
-            <Nav.Link href="sport">Centre Sportifs</Nav.Link>
+            <Nav.Link className='transport' href="transport" ><img src="\img\logos\logoTransport.png" alt='' />Transport  </Nav.Link>
+            <Nav.Link className='hebergement' href="hebergements"><img src="\img\logos\logoHotel.png" alt=''  />Où Dormir </Nav.Link>
+            <Nav.Link className='resto' href="restauration"> <img src="\img\logos\logoResto.png" alt='' />Où Manger</Nav.Link>
+            <Nav.Link className='sport' href="sport"><img  src="\img\logos\logoSalle.png" alt='' />Centre Sportifs </Nav.Link>
           </Nav>
+          <img
+              alt=""
+              src="\img\logos\MarseilleTerreAccueil.png"
+              width="250"
+              height="300"
+              className="d-inline-block align-top logo logoMarseille"
+            />{' '}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

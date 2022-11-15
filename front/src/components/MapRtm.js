@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Map, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import TransportBackup from '../data/transport.json'
+// import MyMarker from './Mymarker.js';
 
 function MyMap() {
   const [viewport, setViewport] = useState({});
@@ -75,11 +76,12 @@ function MyMap() {
             {stationsmetro.map(transpmetro => {
                 return (
                     
-                <Marker
+                    <Marker
                     longitude={transpmetro.longitude}
                     latitude={transpmetro.latitude}
                     color='#00004D'
-                />
+                    />
+                
                 )
             }) }
               
@@ -99,7 +101,7 @@ function MyMap() {
 
             {/* Coordonnées du stade nautique*/}
             <Marker
-             
+              onClick={(e) => console.log("coucou")}
               longitude={5.37162}
               latitude={43.26687}
               color='#0282C8'

@@ -53,7 +53,7 @@ function DrawerAppBar(props) {
     <ThemeProvider theme={lightTheme}>
       
       <Typography variant="h6" sx={{ my: 2 }}>
-        <img src='/img/logonoir.png' alt='' className={styles.logoCodeDrawer} />
+        <img src='/img/logo.svg' alt='' className={styles.logoCodeDrawer} />
       </Typography>
       <Divider />
       <List>
@@ -198,7 +198,7 @@ function DrawerAppBar(props) {
           component="div"
           sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
         > */}
-                <img src='/img/logonoir.png' alt='' className={styles.logoCodeDrawer} />
+                <img src='/img/logo.svg' alt='' className={styles.logoCodeDrawer} />
 
         {/* </Typography> */}
 
@@ -220,7 +220,7 @@ function DrawerAppBar(props) {
                 component="div"
                 sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
               > */}
-                      <img src='/img/logoblanc.png' alt='' className={styles.logoCodeDrawer} />
+                      <img src='/img/logo.svg' alt='' className={styles.logoCodeDrawer} />
 
               {/* </Typography> */}
 
@@ -233,7 +233,7 @@ function DrawerAppBar(props) {
                 component="div"
                 sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
               >
-                      <img src='/img/logoblanc.png' alt='' className={styles.logoCode} />
+                      <img src='/img/logo.svg' alt='' className={styles.logoCode} />
 
               </Typography>
 

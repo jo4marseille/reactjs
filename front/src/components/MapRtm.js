@@ -2,11 +2,30 @@ import { useState, useEffect } from "react";
 import Map, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import TransportBackup from '../data/transport.json'
+// import MyMarker from './Mymarker.js';
 
 function MyMap() {
   const [viewport, setViewport] = useState({});
   const [stationsmetro, setStationsMetro] = useState([]);
   const [stationstramway, setStationsTramway] = useState([]);
+  
+  function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
+    var R = 6371; // Radius of the earth in km
+    var dLat = deg2rad(lat2-lat1);  // deg2rad below
+    var dLon = deg2rad(lon2-lon1); 
+    var a = 
+      Math.sin(dLat/2) * Math.sin(dLat/2) +
+      Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * 
+      Math.sin(dLon/2) * Math.sin(dLon/2)
+      ; 
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+    var d = R * c + 10; // Distance in km
+    return d.toFixed(2);
+  }
+  
+  function deg2rad(deg) {
+    return deg * (Math.PI/180)
+  }
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((pos) => {
@@ -55,6 +74,7 @@ function MyMap() {
       {viewport.latitude && viewport.longitude && (
         <div>
           <h1>Your Location:</h1>
+          <p>{getDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, 43.2700457363978, 5.396101876703966)} Km du Velodrome </p>
           <Map
             mapboxAccessToken="pk.eyJ1IjoidGhvbWFzMzMiLCJhIjoiY2pzYWFpcXNwMDAxbzN5cGZneGxia3U3ZCJ9.sigYT2nlLnC1siycJ3im-Q"
             initialViewState={viewport}
@@ -65,6 +85,8 @@ function MyMap() {
             {stationstramway.map(transptramway => {
                 return (
                 <Marker
+                onClick={(e) => {let lati=transptramway.latitude; let longi=transptramway.longitude; }
+            }
                     longitude={transptramway.longitude}
                     latitude={transptramway.latitude}
                     color='#FF5757'
@@ -75,23 +97,30 @@ function MyMap() {
             {stationsmetro.map(transpmetro => {
                 return (
                     
-                <Marker
+                    <Marker
+                    onClick={(e) => {let lati=transpmetro.latitude; let longi=transpmetro.longitude; console.log(lati, longi) }
+                }
                     longitude={transpmetro.longitude}
                     latitude={transpmetro.latitude}
                     color='#00004D'
-                />
+                    />
+                
                 )
             }) }
               
               {/* Coordonnées de Géoloc */}
             <Marker
+             onClick={(e) => {let lati=viewport.latitude; let longi=viewport.longitude; console.log(lati, longi) }
+            }
               longitude={viewport.longitude}
               latitude={viewport.latitude}
-              color='#00A651'
+              color='#FDB408'
             />
 
             {/* Coordonnées du stade vélodrome */}
             <Marker
+             onClick={(e) => {let lati=43.27004; let longi=5.39610; console.log(lati, longi) }
+            }
               longitude={5.39610}
               latitude={43.27004}
               color='#00A651'
@@ -99,7 +128,8 @@ function MyMap() {
 
             {/* Coordonnées du stade nautique*/}
             <Marker
-             
+              onClick={(e) => {let lati=43.26687; let longi=5.37162; console.log(lati, longi) }
+            }
               longitude={5.37162}
               latitude={43.26687}
               color='#0282C8'

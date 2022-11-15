@@ -54,6 +54,12 @@ body {
   width: 312px;
 }
 
+/* Presentation */
+.pres {
+   background-color: #00004d;
+   width: 100%;
+   color: #FFFFFF;
+}
 /* Footer */
 .footer {
   display: flex;

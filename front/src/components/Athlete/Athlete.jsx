@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import Navigation from "../Navigation";
-import athlete from "../../database/athlete.json"
 import AthleteItem from "./AthleteItem";
 import Spinner from "../Spinner";
 import { GetAthletes } from "../../request/athletes.request";

@@ -35,7 +35,7 @@ const Sponsor = () => {
       if(load) {
         const timer = setTimeout(() => {
           GetSponsors().then(res => {
-            setData(res.data.data.slice(page, page + 10))
+            setData(res.data.data.reverse().slice(page, page + 10))
           })
 
           setLoad(false)
@@ -54,7 +54,7 @@ const Sponsor = () => {
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 921 && page < 100 ) {
+        if (window.scrollY === 921 && page < 100 && data.length === 10 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }

@@ -16,7 +16,6 @@ const Athlete = () => {
     const [load, setLoad] = useState(true)
 
 
-
     useEffect(() => {
 
       if(load) {
@@ -39,7 +38,7 @@ const Athlete = () => {
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 570  && page < 100 && data.length === 10  ) {
+        if (window.scrollY === 570  && page < 100 && data.length === 10) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }

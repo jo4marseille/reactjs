@@ -24,9 +24,12 @@ const data = [
 const AthleteList =(props)=> {
     return(<div>
         {data.map(v => (
-        <h1 onClick={() => props.setDataSponsor(v)}>
-            {v.name}
-        </h1>))}
+            <div className="card">
+            <h1 onClick={() => props.setDataSponsor(v)}>
+                {v.name}
+            </h1>
+            </div>
+        ))}
     </div>)
 }
 

@@ -26,7 +26,11 @@ const dataSponsor =[
 ]
 const Athlete = () => {
 
-    const [dataSponsor, setDataSponsor] = useState("");
+    const [dataSponsor, setDataSponsor] = useState({
+        image: "",
+        data: "f",
+    });
+
     return (
         <div>Athlete
             <Navigation />

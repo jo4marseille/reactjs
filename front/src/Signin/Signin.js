@@ -37,13 +37,10 @@ export default function Signin() {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        // setCurrentUser(user);
         console.log("utilisateur connecté");
         navigate("/home");
-        // ...
       })
       .catch((error) => {
-        "ici";
         const errorCode = error.code;
         const errorMessage = error.message;
       });

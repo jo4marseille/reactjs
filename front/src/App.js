@@ -10,6 +10,7 @@ import { Notification } from "./utils/Notification";
 import Signup from "./Signup/Signup";
 import Signin from "./Signin/Signin";
 import { Route, Routes } from "react-router";
+import Homepage from "./Homepage/Homepage";
 import Footer from "./Footer/footer";
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/homepage" element={<Homepage />} />
+          {/* <Route path="/notification" element={<Homepage />} /> */}
         </Routes>
         <Footer/>
       </AuthProvider>

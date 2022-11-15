@@ -3,23 +3,16 @@ import Navigation from "../Navigation";
 import athlete from "../../database/athlete.json"
 import AthleteItem from "./AthleteItem";
 
+
+
 const Athlete = () => {
 
-    const initialState =  {
-      about: "",
-      company: "",
-      sports: [],
-      phone: "",
-      isActive: ""
-    }
-
-
-
-    const [selected, setSelected] = useState([initialState])
+    const [selected, setSelected] = useState("")
 
     const handleClick = (id) => {
-        console.log(id);
+
       setSelected(athlete.filter(element => element.recordid === id))
+      console.log(selected);
     }
 
     return (
@@ -54,7 +47,7 @@ const Athlete = () => {
 
         <div className="column-sponsor border border-primary rounded">
 
-            <AthleteItem sponsor={selected} />
+            <AthleteItem athlete={selected} />
 
         </div>
 

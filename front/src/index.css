@@ -28,6 +28,27 @@ body {
   width: 100%;
 }
 
+
+
+/* Navbar */
+
+
+.logoMarseille{
+  margin-top: 20%;
+}
+
+.transport:hover, .hebergement:hover, .restaurant:hover, .sport:hover {
+  letter-spacing: 6px; 
+  transition: all 1s ease; 
+}
+
+#logo{
+  position: absolute;
+  left:0;
+}
+
+
+
 .imgError {
   height: 425px;
   width: 312px;

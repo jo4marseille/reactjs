@@ -7,16 +7,17 @@ import Button from 'react-bootstrap/Button';
 function AllCardTransports() {
 
     return(<div className="componentBg">
-        {data.tra.map((e) => {
+        <img src="\img\logos\logoTransport.png" alt='logo Transport' id="logo"/>
+        {data.transports.map((e) => {
 
+       
             return(
                 <Card name={e.name} description={e.description}/>
             )
         }
         )}
             
-        
-            </div>);
+</div>)
     
 }
 export default AllCardTransports

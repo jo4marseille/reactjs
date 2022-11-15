@@ -17,7 +17,7 @@ function AllCardTransports() {
         }
         )}
             
-
+</div>)
     
 }
 export default AllCardTransports

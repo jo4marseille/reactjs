@@ -1,16 +1,13 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import Navbar from "../Navbar/Navbar";
+import "./Header.css";
 
-function Navbar() {
+function Header() {
   const buttonRef = useRef();
   const navRef = useRef();
   const [active, setActive] = useState("header__menu");
   const [navState, SetNavState] = useState(true);
-
-  function logoutHandler() {
-    localStorage.removeItem("userToken", "userId");
-  }
 
   const navToggle = (event) => {
     if (navState == true) {
@@ -25,20 +22,26 @@ function Navbar() {
   };
 
   return (
-      <nav className="navbar" ref={navRef}>
-        <ul>
-          <Link to={`/main`}>
-            <li>Acceuil</li>
-          </Link>
-          <Link to={"/sports"}>
-            <li>Evenements</li>
-          </Link>
-          <Link to={"/"} onClick={logoutHandler}>
-            <li>Logout</li>
+    <>
+      <div className="header">
+        <button onClick={navToggle} className="header__brand" ref={buttonRef}>
+          <img src="./JO.png" alt="Menu Burger" />
+        </button>
+        <ul className={active}>
+          <button className="header__item">
+            <img src="./calendrier.png" alt="Calendrier" />
+          </button>
+          <Link to={"/account"} className="header__item">
+            <img src="./profil.png" alt="Profil" />
           </Link>
         </ul>
-      </nav>
+      </div>
+
+      <div className="nav" ref={navRef}>
+        <Navbar />
+      </div>
+    </>
   );
 }
 
-export default Navbar;
+export default Header;

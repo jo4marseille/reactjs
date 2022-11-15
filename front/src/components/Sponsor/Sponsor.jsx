@@ -3,6 +3,8 @@ import Navigation from "../Navigation";
 import SponsorItem from "./SponsorItem";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
+import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
+import coeur from "../../img/Logo/flamme-en-contour.png"
 import {  PostAthletes, PuitAthletes } from "../../request/athletes.request";
 
 const Sponsor = () => {
@@ -21,7 +23,9 @@ const Sponsor = () => {
       }
 
     const [selected, setSelected] = useState([initialState])
-
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     const [data, setData] = useState([])
 
     const [page, setPage] = useState(0)
@@ -87,9 +91,9 @@ const Sponsor = () => {
           }}, 1)
         }else{
           alert("Sponsor liké")
-          PostAthletes({data :{
+          PuitAthletes({data :{
             likes: [{"id": 1}]
-          }})
+          }}, 1)
         }
       })
     }
@@ -120,10 +124,10 @@ const Sponsor = () => {
                       onClick={() => handleClick(id)}
                       >
                         <img src={attributes.picture} alt={attributes.name} className="card-img-top" />
-                          <div className="card-body">
+                          <div className="card-body" style={{backgroundColor: "red"}}>
                             <h3 className="card-title">{attributes.name}</h3>
                             <p className="card-text">{attributes.email}</p>
-                            <button onClick={() => handleLike(id)}>Like sponsor</button>
+                            <img src={coeur} alt="err" onClick={() => handleLike(id)} />
                           </div>
                       </div>
 
@@ -138,11 +142,8 @@ const Sponsor = () => {
             <SponsorItem sponsor={selected} />
 
         </div>
-
+        
         </div>
-
-
-
     </div>)
 }
 

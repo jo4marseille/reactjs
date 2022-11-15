@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navigation from "../Navigation";
 import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";
@@ -12,7 +12,6 @@ const Sponsor = () => {
       phone: "",
       isActive: ""
     }
-
 
     const [selected, setSelected] = useState([initialState])
 

@@ -1,0 +1,8 @@
+.listbox {
+    overflow-x: hidden;  
+
+    border: solid 5px #00A651;
+    border-radius: 5px;
+    height: 400px;
+    width: 100%;
+}

@@ -1,11 +1,16 @@
 import './cards.css';
 
+import card1 from '../../assets/OIP (2).jpg';
+import card2 from '../../assets/card2.jpg';
+import card3 from '../../assets/OIP.jpg';
+import card4 from '../../assets/OIP (1).jpg';
+
 const Cards = () => (
     <div class="cards">
 
         <div class="card card-1">
             <div class="carte">
-                <img src="img/OIP (2).jpg" class="card-img-top" alt="..." />
+                <img src={card1} class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h2 class="card-title">restaurant Français</h2>
                     <p class="card-text">
@@ -21,7 +26,7 @@ const Cards = () => (
 
         <div class="card card-2">
             <div class="carte">
-                <img src="img/télécharger.jpg" class="card-img-top" alt="..." />
+                <img src={card2} class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h2 class="card-title">restaurant Libanais</h2>
                     <p class="card-text">
@@ -37,7 +42,7 @@ const Cards = () => (
 
         <div class="card card-3">
             <div class="carte">
-                <img src="img/OIP.jpg" class="card-img-top" alt="..." />
+                <img src={card3} class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h2 class="card-title">restaurant Italien</h2>
                     <p class="card-text">
@@ -53,7 +58,7 @@ const Cards = () => (
 
         <div class="card card-4">
             <div class="carte">
-                <img src="img/OIP (1).jpg" class="card-img-top" alt="..." />
+                <img src={card4} class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h2 class="card-title">restaurant Gousto</h2>
                     <p class="card-text">

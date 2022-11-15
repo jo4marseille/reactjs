@@ -43,6 +43,10 @@
     transition: all 0.2s;
 }
 
+.card-img-top {
+    max-width: 100%;
+}
+
 .card-title {
     grid-row: 3/4;
     font-weight: 400;

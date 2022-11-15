@@ -11,16 +11,27 @@ const Navbar = () => {
       >
         <NavLink to="/">
           <img
+            src={require("../../img/logo2.png")}
+            alt="logo"
+            style={{
+              height: "100px",
+              
+              
+            }}
+          />
+          <img
             src={require("../../img/logo.png")}
             alt="logo"
             style={{
               height: "80px",
+              
             }}
           />
+
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to="/about" activeStyle>
+          <NavLink to="/newlist" activeStyle>
             About
           </NavLink>
           <NavLink to="/services" activeStyle>

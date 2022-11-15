@@ -36,7 +36,7 @@ const AthleteItem = ({athlete}) => {
         <h2>{athlete[0]?.fields.nom}</h2>
 
         <div className='mx-3' >
-            <h4>{athlete[0].fields.sport}</h4>
+            <h4>{athlete[0]?.fields.sport}</h4>
             <div className="mt-3">
               {
                 true &&  <AthleteModal company={"variable"} />

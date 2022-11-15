@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navigation from "../Navigation";
 // import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";
@@ -18,9 +18,9 @@ const Sponsor = () => {
         isActive: "",
         createdAt: "",
       }
-
       }
 
+    const dataContainer = useRef()
 
     const [selected, setSelected] = useState([initialState])
 
@@ -54,16 +54,18 @@ const Sponsor = () => {
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 921 && page < 100 && data.length === 10 ) {
+        if (dataContainer.current.scrollTop === 2128 && page < 100 && data.length === 10 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
       };
 
-      window.addEventListener('scroll', handleScroll);
+      const current = dataContainer?.current
 
+      dataContainer?.current?.addEventListener('scroll',handleScroll)
       return () => {
-        window.removeEventListener('scroll', handleScroll);
+
+        current?.removeEventListener('scroll',handleScroll)
       };
     }, [page]);
     const handleMatching = () => {
@@ -93,7 +95,7 @@ const Sponsor = () => {
           ? <Spinner />
 
 
-          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor">
+          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" ref={dataContainer}>
               {
                 data.map(({id, attributes}) => {
                   return (

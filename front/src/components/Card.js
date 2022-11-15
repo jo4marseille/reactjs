@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Card from 'react-bootstrap/Card';
+import Map from './MapRtm';
+import "mapbox-gl/dist/mapbox-gl.css";
 
 function FinalCard() {
   return (
@@ -17,19 +19,19 @@ function FinalCard() {
                                 alignItems: 'center',
                                 justifyContent: 'center'}}>
                                 
-                                <h2 style={{color: '#fff', fontSize: '60px'}}>Consommation Responsable</h2>
+                                <h2 style={{color: '#fff', fontSize: '60px', textShadow: "2px 2px 7px rgba(0,0,0,0.6)"}}>Consommation Responsable</h2>
             </Card.Header>
 
             <Card.Body style={{backgroundColor:  '#f3f3f3d8', borderRadius: "0px 0px 20px 0px"}}>
 
-              <Card.Title> Réduire votre émission de co2 </Card.Title>
+              <Card.Title style={{fontFamily: "'Poppins', sans-serif", fontSize: '24px'}}> Réduire votre émission de co2 </Card.Title>
 
-              <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+              <Card.Text></Card.Text>
 
             </Card.Body>
           </Card>
           
-          <Card style={{backgroundColor:  '#fff', marginBottom: '70px', height: '600px', border: "solid #00A651 12px" , borderRadius: "100px 0px", boxShadow: "0 3px 10px #000000a6", overflow: 'hidden'}}
+          <Card style={{backgroundColor:  '#fff', marginBottom: '70px', height: '700px', border: "solid #00A651 12px" , borderRadius: "100px 0px", boxShadow: "0 3px 10px #000000a6", overflow: 'hidden'}}
             className="text-center">
            
             <Card.Header style={{backgroundImage: 'url("https://i.postimg.cc/nL96n3zm/transport.png")',
@@ -41,14 +43,14 @@ function FinalCard() {
                                 alignItems: 'center',
                                 justifyContent: 'center'}}>
                                 
-                                <h2 style={{color: '#fff', fontSize: '60px'}}>Mobilité Durable</h2>
+                                <h2 style={{color: '#fff', fontSize: '60px', textShadow: "2px 2px 7px rgba(0,0,0,0.6)"}}>Mobilité Durable</h2>
             </Card.Header>
 
-            <Card.Body style={{backgroundColor:  '#f3f3f3d8', borderRadius: "0px 0px 20px 0px"}}>
+            <Card.Body style={{backgroundColor:  '#f3f3f3d8', borderRadius: "0px 0px 20px 0px", display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-              <Card.Title> Réduire votre émission de co2 </Card.Title>
+              <Card.Title style={{fontFamily: "'Poppins', sans-serif", fontSize: '24px'}}> Réduire votre émission de co2 </Card.Title>
 
-              <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+              <Map/>
 
             </Card.Body>
           </Card>

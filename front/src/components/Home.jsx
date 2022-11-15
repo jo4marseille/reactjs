@@ -1,6 +1,8 @@
 import React from "react";
 import Navigation from "./Navigation";
 import { useNavigate } from "react-router-dom";
+import SearchInput from "./input/Input"
+import Nageur from "../img/assets/photo-header.gif"
 const Home = () => {
 
   const navigate = useNavigate();
@@ -8,14 +10,12 @@ const Home = () => {
   const handleSubmit = () => navigate('/sponsor');
 
   return <div>
-    Home
+    <img className="nageur" src={Nageur} alt="Nageur Olympique" />
     <Navigation />
 
       <div className="m-5 text-end">
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="" />
-          <input type="submit" className="btn btn-primary"/>
-        </form>
+        
+        <SearchInput />
       </div>
 
   </div>;

@@ -65,14 +65,25 @@ const Sponsor = () => {
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
-    }, [page, data.length]);
-
+    }, [page]);
+    const handleMatching = () => {
+      //matching element athlete
+      // matching les sponsor qui corresponde aux donées en dure.
+      const sport = "football"
+      const adress = "marseille"
+      GetSponsors().then(res => {
+        //console.log(res.data.data);
+        console.log(res.data.data.filter(v => v.attributes?.sports == sport));
+        setData(res.data.data.filter(v => v.attributes?.sports == sport))
+      })
+    }
 
     return (
 
     <div >
         <div className="page_title">Sponsor</div>
         <Navigation />
+        <button onClick={() => handleMatching()} type="button" class="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
 
         <div className="d-flex mt-5">
 

@@ -1,0 +1,70 @@
+{
+    "transports": [
+      {
+            "name": "Trains",
+            "image": "../front/public/gare aixr.jpg",
+            "description": "Exemple: Prendre le train",
+            "lien": "https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/gares/marseille-st-charles-87751008"
+      },
+      {
+            "name": "Transports en communs",
+            "image": "../front/public/rtm.jpg",
+            "description": "La Métropole Aix-Marseille Provence regroupant 92 communes est la plus vaste de France : elle représente 4 fois la superficie du Grand Paris, 6 fois celle du Grand Lyon.",
+            "lien": "https://www.rtm.fr/"
+      },
+      {
+            "name": "Avions",
+            "image": "22",
+            "description": "Information Technology",
+            "lien": "123"
+      },
+      {
+            "name": "Compagnie de transport de car privé",
+            "image": "22",
+            "description": "Information Technology",
+            "lien": "123"
+      }
+    ],
+
+    "restaurants": [
+        {
+            "name": "Restaurant: Le petit port ",
+            "image": "",
+            "description": "Restaurant pour vos repas en bord de mer pouvant également recevoir des groupes de plus de 100 personnes à Marseille",
+            "lien": "https://www.restaurantlepetitport.fr/"
+        },
+        {
+            "name": "Restaurant: V&V Marseille ",
+            "image": "",
+            "description": "Restaurant vegan pour vous restaurer seul ou en groupe ",
+            "lien": "https://www.v-et-v-restaurant-marseille.com/"
+        },
+        {
+            "name": "Restaurant: Steak Lounge ",
+            "image": "",
+            "description": "Restaurant halal pour vos repas et dîners seul ou à plusieurs. Un bar proposant du cocktail sans alcool, soft… est disponible à l’entrée du restaurant. Une terrasse est mise à votre disposition afin que vous puissiez manger tranquillement, tout en profitant du beau temps.",
+            "lien": "https://www.steak-lounge.fr/"
+        }
+      ],
+
+      "hotels": [
+        {
+            "name": "Pullman",
+            "image": "22",
+            "description": "Information Technology",
+            "lien": "123"
+        },
+        {
+            "name": "Ibis",
+            "image": "22",
+            "description": "Information Technology",
+            "lien": "123"
+        },
+        {
+            "name": "Mercure",
+            "image": "22",
+            "description": "Information Technology",
+            "lien": "123"
+        }
+      ]
+  }

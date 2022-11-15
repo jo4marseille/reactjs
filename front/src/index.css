@@ -2,20 +2,20 @@
 :root{
     --bleu-nuit: #00004D;
     --or: #D7C378;
-    --corail: #FF5757;
+    --corail: #EB585B;
     --bleu-olympique: #0282C8;
     --jaune-olympique: #FABE34;
     --vert-olympique: #00A651;
     --rouge-olympique: #ED354F;
     --noir: #000000;
-    --blanc: #FFFFFF;
+    --blanc: #F3F3F3;
 }
 *{
-  background-color: #F3F3F3;
+  background-color: var(--blanc);
   font-family: 'Poppins', sans-serif;
 }
 .home{
-    height: calc(100vh - 96px);
+    height: calc(100vh - 143px);
     width: 100%;
     display: grid;
     grid-template-areas: "home-sub-1 home-sub-2 home-sub-3 home-sub-4"
@@ -27,10 +27,33 @@
 }
 .home-sub-1{
     grid-area: home-sub-1;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    font-weight: bold;
+    font-size: 8em;
+}
+.home-sub-1 > span{
+    color: var(--bleu-nuit);
+    display: flex;
+    height: 80%;
+    width: 95%;
 }
 .home-sub-2{
     grid-area: home-sub-2;
-    background-color: var(--bleu-nuit)
+    background-color: var(--bleu-nuit);
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    font-weight: bold;
+    font-size: 8em;
+}
+.home-sub-2 > span{
+    background-color: var(--bleu-nuit);
+    color: var(--blanc);
+    display: flex;
+    height: 80%;
+    width: 95%;
 }
 .home-sub-3{
     grid-area: home-sub-3;
@@ -38,6 +61,10 @@
 }
 .home-sub-4{
     grid-area: home-sub-4;
+    background-image: url("../public/img/Logo_JO_d'été_-_Paris_2024.svg.png");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
 .home-sub-5{
     grid-area: home-sub-5;
@@ -60,8 +87,13 @@
 .home-sub-10{
     grid-area: home-sub-10;
     background-image: url("../public/img/Flèche OLYMTRIP.png");
-    background-position: center;
+    background-position: right;
+    background-size: 120%;
 }
+/*.home-sub-10-img{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
 .home-sub-11{
     grid-area: home-sub-11;
     background-color: var(--bleu-nuit)
@@ -70,7 +102,11 @@
     grid-area: home-sub-12;
     background-color: var(--bleu-nuit)
 }
-.home
+/*.fleche{*/
+/*    object-fit: cover;*/
+/*    width: 100%;*/
+/*    transform: translateX(-10%);*/
+/*}*/
 .border{
     border: 1px black solid;
 }

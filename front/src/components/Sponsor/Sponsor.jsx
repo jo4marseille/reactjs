@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navigation from "../Navigation";
 import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";
-import Spinner from "./Spinner";
+import Spinner from "../Spinner";
 
 const Sponsor = () => {
 

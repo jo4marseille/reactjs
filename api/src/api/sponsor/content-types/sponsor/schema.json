@@ -40,6 +40,9 @@
         "surf",
         "football"
       ]
+    },
+    "likes": {
+      "type": "json"
     }
   }
 }

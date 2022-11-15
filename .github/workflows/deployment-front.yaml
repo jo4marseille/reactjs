@@ -3,14 +3,13 @@ name: Push Frontend
 on:   
   push:
     branches:
-    - main
-    - master
+    - c-14
 
     # Publish `v1.2.3` tags as releases.
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: ${{ github.event.repository.name }}
+  IMAGE_NAME: c-14
   # IMAGE_NAME: testworkflow-front
 
 jobs:

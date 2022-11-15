@@ -1,0 +1,39 @@
+/*  position */
+.d-flex {
+    display: flex;
+}
+.g-1 {
+    gap: 50px;
+}
+
+.flx-w {
+    flex-wrap: wrap;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+/* Haut du site  */
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    height: 100%;
+    align-items: center;
+    background-color: #00004D;
+    color:rgb(255, 255, 255);
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navi {
+    padding-bottom: 10px;
+} 
+.navi, .logo {
+    margin-top: 10px;
+}

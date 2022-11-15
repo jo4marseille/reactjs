@@ -1,16 +1,17 @@
 import communes from "./../src/datas/communes"
+import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Accueil from "./pages/Accueil";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          {communes.forEach(element => {
-              console.log(element);
-          })}
-        </p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Accueil/>}></Route>
+        <Route path="/*" element={<Accueil/>}></Route>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 

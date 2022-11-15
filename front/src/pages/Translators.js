@@ -14,13 +14,13 @@ export default function Translators()
     useEffect(() => {
         //console.log(JSON.parse(localStorage.getItem("translators")));
 
-        //setListTranslators( JSON.parse(localStorage.getItem("translators")) );
+        setListTranslators( JSON.parse(localStorage.getItem("translators")) );
 
-        axios.get("http://127.0.0.1:8000/api/translator/getalls").then((res) => {
-            console.log(res.data);
+        /*axios.get("http://127.0.0.1:8000/api/translator/getalls").then((res) => {
+            //console.log(res.data);
 
             setListTranslators(res.data);
-        });
+        });*/
     }, []);
 
     //getTranslators();

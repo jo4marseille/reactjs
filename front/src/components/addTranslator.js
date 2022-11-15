@@ -10,7 +10,7 @@ export default function AddTranslator(props)
         //localStorage.setItem("translators", JSON.stringify(props));
         //console.log("In register");
 
-        /*function mail_in_array(email)
+        function mail_in_array(email)
         {
             if(localStorage.getItem("translators") == undefined)
             {
@@ -55,9 +55,9 @@ export default function AddTranslator(props)
             }
 
             //console.log(translators);
-        }*/
+        }
 
-        axios.post("http://127.0.0.1:8000/api/translator/save", {
+        /*axios.post("http://127.0.0.1:8000/api/translator/save", {
             name: props.Name,
             category: props.Category,
             email: props.Email,
@@ -71,7 +71,7 @@ export default function AddTranslator(props)
             {
                 setError("already_exists");
             }
-        });
+        });*/
     }
 
     register();

@@ -14,3 +14,61 @@
   background-color: #F3F3F3;
   font-family: 'Poppins', sans-serif;
 }
+.home{
+    height: calc(100vh - 96px);
+    width: 100%;
+    display: grid;
+    grid-template-areas: "home-sub-1 home-sub-2 home-sub-3 home-sub-4"
+                         "home-sub-5 home-sub-6 home-sub-3 home-sub-4"
+                         "home-sub-7 home-sub-8 home-sub-11 home-sub-11"
+                         "home-sub-9 home-sub-10 home-sub-12 home-sub-12";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.home-sub-1{
+    grid-area: home-sub-1;
+}
+.home-sub-2{
+    grid-area: home-sub-2;
+    background-color: var(--bleu-nuit)
+}
+.home-sub-3{
+    grid-area: home-sub-3;
+    background-color: var(--corail)
+}
+.home-sub-4{
+    grid-area: home-sub-4;
+}
+.home-sub-5{
+    grid-area: home-sub-5;
+    background-color: var(--bleu-nuit)
+}
+.home-sub-6{
+    grid-area: home-sub-6;
+}
+.home-sub-7{
+    grid-area: home-sub-7;
+    background-color: var(--corail)
+}
+.home-sub-8{
+    grid-area: home-sub-8;
+}
+.home-sub-9{
+    grid-area: home-sub-9;
+    background-color: var(--corail)
+}
+.home-sub-10{
+    grid-area: home-sub-10;
+}
+.home-sub-11{
+    grid-area: home-sub-11;
+    background-color: var(--bleu-nuit)
+}
+.home-sub-12{
+    grid-area: home-sub-12;
+    background-color: var(--bleu-nuit)
+}
+.home
+.border{
+    border: 1px black solid;
+}

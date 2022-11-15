@@ -5,7 +5,8 @@ import TransportBackup from '../data/transport.json'
 
 function MyMap() {
   const [viewport, setViewport] = useState({});
-  const [stations, setStations] = useState([]);
+  const [stationsmetro, setStationsMetro] = useState([]);
+  const [stationstramway, setStationsTramway] = useState([]);
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((pos) => {
@@ -39,7 +40,12 @@ function MyMap() {
             "longitude": item.fields.point_geo[1]                
             });
       });
-      setStations(transports)
+      const transptramway = transports.filter(item => item.type=="Tramway")
+      const transpmetro = transports.filter(item => item.type=="Métro")
+      
+      setStationsTramway(transptramway)
+      setStationsMetro(transpmetro)
+      
     })
   }, []);
   
@@ -54,19 +60,49 @@ function MyMap() {
             initialViewState={viewport}
             mapStyle="mapbox://styles/mapbox/streets-v11"
             style={{width: 600, height: 400}}
-          >
-            {stations.map(transport => {
+
+          >{/* Coordonnées des stations de tramway */}
+            {stationstramway.map(transptramway => {
                 return (
                 <Marker
-                longitude={transport.longitude}
-                latitude={transport.latitude}
-              />
+                    longitude={transptramway.longitude}
+                    latitude={transptramway.latitude}
+                    color='#FF5757'
+                />
+                )
+            }) }
+            {/* Coordonnées des stations de métro */}
+            {stationsmetro.map(transpmetro => {
+                return (
+                    
+                <Marker
+                    longitude={transpmetro.longitude}
+                    latitude={transpmetro.latitude}
+                    color='#00004D'
+                />
                 )
             }) }
               
+              {/* Coordonnées de Géoloc */}
             <Marker
               longitude={viewport.longitude}
               latitude={viewport.latitude}
+              color='#00A651'
+            />
+
+            {/* Coordonnées du stade vélodrome */}
+            <Marker
+              longitude={5.39610}
+              latitude={43.27004}
+              color='#00A651'
+            />
+
+            {/* Coordonnées du stade nautique*/}
+            <Marker
+             
+              longitude={5.37162}
+              latitude={43.26687}
+              color='#0282C8'
             />
           </Map>
         </div>

@@ -1,0 +1,11 @@
+/* Mobile */
+@media (max-width: 767px) {
+    .Box__header {
+        background-color: #00004d;
+        color: wheat;
+    }
+
+    .Title__header {
+        display: none;
+    }
+}

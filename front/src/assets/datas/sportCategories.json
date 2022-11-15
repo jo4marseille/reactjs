@@ -1,0 +1,155 @@
+{
+  "SportCategories": [
+    {
+      "id": 1,
+      "name": "sports aquatiques",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "tir à l’arc",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "athlétisme",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "badminton",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "basketball",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "boxe",
+      "image": ""
+    },
+    {
+      "id": 7,
+      "name": "breaking",
+      "image": ""
+    },
+    {
+      "id": 8,
+      "name": "canoë",
+      "image": ""
+    },
+    {
+      "id": 9,
+      "name": "cyclisme",
+      "image": ""
+    },
+    {
+      "id": 10,
+      "name": "escrime",
+      "image": ""
+    },
+    {
+      "id": 11,
+      "name": "football",
+      "image": ""
+    },
+    {
+      "id": 12,
+      "name": "golf",
+      "image": ""
+    },
+    {
+      "id": 13,
+      "name": "gymnastique",
+      "image": ""
+    },
+    {
+      "id": 14,
+      "name": "handball",
+      "image": ""
+    },
+    {
+      "id": 15,
+      "name": "hockey sur gazon",
+      "image": ""
+    },
+    {
+      "id": 16,
+      "name": "judo",
+      "image": ""
+    },
+    {
+      "id": 17,
+      "name": "pentathlon",
+      "image": ""
+    },
+    {
+      "id": 18,
+      "name": "aviron",
+      "image": ""
+    },
+    {
+      "id": 19,
+      "name": "rugby",
+      "image": ""
+    },
+    {
+      "id": 20,
+      "name": "voile",
+      "image": ""
+    },
+    {
+      "id": 21,
+      "name": "tir",
+      "image": ""
+    },
+    {
+      "id": 22,
+      "name": "skateboard",
+      "image": ""
+    },
+    {
+      "id": 23,
+      "name": "escalade",
+      "image": ""
+    },
+    {
+      "id": 24,
+      "name": "surf",
+      "image": ""
+    },
+    {
+      "id": 25,
+      "name": "tennis de table",
+      "image": ""
+    },
+    {
+      "id": 26,
+      "name": "taekwondo",
+      "image": ""
+    },
+    {
+      "id": 27,
+      "name": "tennis",
+      "image": ""
+    },
+    {
+      "id": 28,
+      "name": "volleyball",
+      "image": ""
+    },
+    {
+      "id": 29,
+      "name": "haltérophilie",
+      "image": ""
+    },
+    {
+      "id": 30,
+      "name": "lutte",
+      "image": ""
+    }
+  ]
+}
+

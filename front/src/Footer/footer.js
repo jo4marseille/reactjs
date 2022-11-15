@@ -2,7 +2,7 @@ import "./footer.css"
 
 function Footer() {
 	return (
-		<footer className={"footer"}>
+		<footer className={"footer footer-full"}>
 			<a href={"https://www.departement13.fr/"} target={"_blank"}>
 				<img src={"../img/d13.png"} alt="d13"/>
 			</a>

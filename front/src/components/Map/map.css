@@ -13,6 +13,22 @@
     z-index: 2;
     width: 100%;
     top: 0;
-    left: 50%;
-    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    font-family: 'Poppins', sans-serif;
+    padding: .8rem;
+    border: solid 2px #0282C8;
+}
+
+.search__submit {
+    padding: .8rem .5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .search {
+        flex-direction: column;
+    }
 }

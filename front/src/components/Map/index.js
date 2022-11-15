@@ -13,7 +13,9 @@ import './map.css';
 import {
     useJsApiLoader,
     GoogleMap,
-    DirectionsRenderer
+    DirectionsRenderer,
+    Marker,
+    InfoWindow
 } from "@react-google-maps/api";
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -22,6 +24,7 @@ import { useDispatch, useSelector } from 'react-redux';
 ************/
 import eventsLocation from '../../data/events';
 import hotels from '../../data/hotels';
+import restaurants from '../../data/restaurants'
 
 /**********
 * Actions *
@@ -33,6 +36,8 @@ import {
     clearResponse,
     searchPlaces,
 } from '../../actions/map';
+
+import { hydrateRestaurants, hydrateSelectedRestaurant, clearSelectedRestaurant } from '../../actions/restaurants';
 
 const containerStyle = {
     width: '100%',
@@ -52,6 +57,9 @@ const Map = () => {
         destinationTo,
         directionResponse,
     } = useSelector((state) => state.map);
+
+    const restaurantsList = useSelector((state) => state.restaurants.restaurants);
+    const selectedRestaurant = useSelector((state) => state.restaurants.selectedRestaurant);
 
     async function calculateRoute() {
         if (destinationFrom === null || destinationTo === null) {
@@ -105,6 +113,7 @@ const Map = () => {
                     <option value="">Choisissez l'event</option>
                     {eventsLocation.map((item) => (
                         <option
+                            key={item.id}
                             value={item.id}
                         >
                             {item.name}
@@ -126,7 +135,7 @@ const Map = () => {
                 >
                     <option value="">Choisissez vôtre hôtel</option>
                     {hotels.map((item) => (
-                        <option value={item.id}>{item.name}</option>
+                        <option value={item.id} key={item.id}>{item.name}</option>
                     ))}
                 </select>
 
@@ -134,6 +143,7 @@ const Map = () => {
                     className="search__submit"
                     onClick={() => {
                         calculateRoute();
+                        dispatch(hydrateRestaurants(restaurants));
                     }}
                 >
                     Rechercher
@@ -144,8 +154,34 @@ const Map = () => {
                 center={mapCenter}
                 mapContainerStyle={containerStyle}
                 zoom={13}
+                options={{
+                    mapTypeControl: false,
+                    fullscreenControl: false,
+                }}
             >
                 {directionResponse && <DirectionsRenderer directions={directionResponse} />}
+                {restaurantsList && restaurantsList.map((item) => (
+                    <Marker
+                        key={item.id}
+                        position={item.coordinates}
+                        onClick={() => {
+                            dispatch(hydrateSelectedRestaurant(item));
+                        }}
+                    />
+                ))}
+                {/* {selectedRestaurant && (
+                    <InfoWindow
+                        position={{
+                        lat: selectedRestaurant.coordinates.lat,
+                        lng: selectedRestaurant.coordinates.lng,
+                    }}
+                    onCloseClick={() => {
+                        dispatch(clearSelectedRestaurant());
+                    }}
+                    >
+                        Hello !
+                    </InfoWindow>
+                )} */}
             </GoogleMap>
         </div>
     );

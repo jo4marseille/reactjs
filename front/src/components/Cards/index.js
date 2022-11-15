@@ -1,78 +1,43 @@
 import './cards.css';
 
-import card1 from '../../assets/OIP (2).jpg';
-import card2 from '../../assets/card2.jpg';
-import card3 from '../../assets/OIP.jpg';
-import card4 from '../../assets/OIP (1).jpg';
+import { useSelector } from 'react-redux';
 
-const Cards = () => (
-    <div class="cards">
+const Cards = () => {
+    const restaurantsList = useSelector((state) => state.restaurants.restaurants);
 
-        <div class="card card-1">
-            <div class="carte">
-                <img src={card1} class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h2 class="card-title">restaurant Français</h2>
-                    <p class="card-text">
-                        <address>6 rue de la busserine 13014 marseille</address>
-                        <p>tel: 04 91 05 10 45</p>
-                        <p>ouvert</p>
-                        <p>Avis 3/5</p>
-                    </p>
-                    <a href="https://arkose.com/prado/cantine" target="_blank"  class="primary">site officiel</a>
-                </div>
+    if (restaurantsList === null) {
+        return (
+            <div className="empty-list">
+                <p>
+                    Veuillez renseigner votre point de départ et d'arrivée pour obtenir les meilleures
+                    suggestions de restaurants locaux !
+                </p>
             </div>
-        </div>
+        )
+    }
+    return (
+        <div className="cards">
 
-        <div class="card card-2">
-            <div class="carte">
-                <img src={card2} class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h2 class="card-title">restaurant Libanais</h2>
-                    <p class="card-text">
-                        <address>6 rue de la busserine 13014 marseille</address>
-                        <p>tel: 04 91 05 10 45</p>
-                        <p>ouvert</p>
-                        <p>Avis 4/5</p>
-                    </p>
-                    <a href="https://arkose.com/prado/cantine" target="_blank"  class="primary">site officiel</a>
+            {restaurantsList.map((item) => (
+                <div className="card" key={item.id}>
+                    <div className="carte">
+                        <img src={item.img} className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h2 className="card-title">{item.name}</h2>
+                            <div className="card-text">
+                                <p>{item.address}</p>
+                                <a href={`tel:${item.phone}`}>tel: {item.phone}</a>
+                                <p>ouvert</p>
+                                <p>Avis {item.stars}/5</p>
+                            </div>
+                            <a href={item.website} target="_blank" rel="noreferrer"  className="primary">site officiel</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            ))}
 
-        <div class="card card-3">
-            <div class="carte">
-                <img src={card3} class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h2 class="card-title">restaurant Italien</h2>
-                    <p class="card-text">
-                        <address>6 rue de la busserine 13014 marseille</address>
-                        <p>tel: 04 91 05 10 45</p>
-                        <p>ouvert</p>
-                        <p>Avis 5/5</p>
-                    </p>
-                    <a href="https://arkose.com/prado/cantine" target="_blank"  class="primary">site officiel</a>
-                </div>
-            </div>
         </div>
-
-        <div class="card card-4">
-            <div class="carte">
-                <img src={card4} class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h2 class="card-title">restaurant Gousto</h2>
-                    <p class="card-text">
-                    <address>6 rue de la busserine 13014 marseille</address>
-                    <p>tel: 04 91 05 10 45</p>
-                    <p>ouvert</p>
-                    <p>Avis 4/5</p>
-                    </p>
-                    <a href="https://arkose.com/prado/cantine" target="_blank" class="primary">site officiel</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-);
+    );
+};
 
 export default Cards;

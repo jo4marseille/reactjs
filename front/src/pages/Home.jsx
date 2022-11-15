@@ -6,6 +6,7 @@ import { useState } from 'react';
 const Home = () => {
     const [date, setDate] = useState('');
     const [category, setCategory] = useState('');
+    const [sport, setSport] = useState('');
     const [components, setComponents] = useState([]);
 
     const objetByDate = getModifies().filter((modifieHash) => {

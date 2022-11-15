@@ -52,4 +52,22 @@ body{
     height: 70%;
     width: 100%;
     position: absolute;
+    display:none;
+}
+
+.contenu input{
+    margin: 20px;
+    display:block;
+}
+
+/* Animation */
+
+.active{
+    background: midnightblue;
+    color: #f1f1f1;
+    transition: all 0.2s ease;
+}
+
+.activeContenu{
+    display:contents;
 }

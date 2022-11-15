@@ -97,7 +97,7 @@ jobs:
                           - containerPort: 1337
                         volumeMounts:
                           - name: $IMAGE_NAME-claim0
-                            mountPath: /
+                            mountPath: /src
                         resources: {}
                     restartPolicy: Always
                     volumes:

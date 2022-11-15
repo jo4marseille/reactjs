@@ -15,7 +15,7 @@ function AllCardRestaurations() {
             )
         }
         )}
-
+        </div>
+)}
     
-}
-export default AllCardRestaurations
+export default AllCardRestaurations;

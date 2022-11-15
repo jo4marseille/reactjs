@@ -8,6 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import MyHeader from './components/Header';
 import MyFooter from './components/Footer';
 import MyCard from './components/Card';
+import CarteMath from './components/MapRtm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,5 +16,6 @@ root.render(
     <MyHeader/>
     <MyCard/>
     <MyFooter/>
+    <CarteMath/>
   </React.StrictMode>
 );

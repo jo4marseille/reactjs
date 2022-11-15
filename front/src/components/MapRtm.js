@@ -85,6 +85,8 @@ function MyMap() {
             {stationstramway.map(transptramway => {
                 return (
                 <Marker
+                onClick={(e) => {let lati=transptramway.latitude; let longi=transptramway.longitude; }
+            }
                     longitude={transptramway.longitude}
                     latitude={transptramway.latitude}
                     color='#FF5757'
@@ -96,6 +98,8 @@ function MyMap() {
                 return (
                     
                     <Marker
+                    onClick={(e) => {let lati=transpmetro.latitude; let longi=transpmetro.longitude; console.log(lati, longi) }
+                }
                     longitude={transpmetro.longitude}
                     latitude={transpmetro.latitude}
                     color='#00004D'
@@ -106,13 +110,17 @@ function MyMap() {
               
               {/* Coordonnées de Géoloc */}
             <Marker
+             onClick={(e) => {let lati=viewport.latitude; let longi=viewport.longitude; console.log(lati, longi) }
+            }
               longitude={viewport.longitude}
               latitude={viewport.latitude}
-              color='#00A651'
+              color='#FDB408'
             />
 
             {/* Coordonnées du stade vélodrome */}
             <Marker
+             onClick={(e) => {let lati=43.27004; let longi=5.39610; console.log(lati, longi) }
+            }
               longitude={5.39610}
               latitude={43.27004}
               color='#00A651'
@@ -120,7 +128,8 @@ function MyMap() {
 
             {/* Coordonnées du stade nautique*/}
             <Marker
-              onClick={(e) => console.log("coucou")}
+              onClick={(e) => {let lati=43.26687; let longi=5.37162; console.log(lati, longi) }
+            }
               longitude={5.37162}
               latitude={43.26687}
               color='#0282C8'

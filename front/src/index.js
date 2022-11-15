@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Testcomponent from './components/Testcomponent';
+import Markerstransport from './components/Markerstransports';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Markerstransport />
   
-    <Testcomponent />
+    
   </React.StrictMode>
 );
 

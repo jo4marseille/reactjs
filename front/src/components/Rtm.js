@@ -26,7 +26,8 @@ function Rtm() {
                 'type': item.fields.mode_de_transport,
                 "nom"  : item.fields.arret,
                 "latitude" : item.fields.point_geo[0],
-                "longitude": item.fields.point_geo[1]                
+                "longitude": item.fields.point_geo[1],
+                "coordinates": [item.fields.point_geo[1],item.fields.point_geo[0]]               
                 });
           });
           setData(transports)
@@ -37,6 +38,7 @@ function Rtm() {
 
 
   return (
+    
     <div>RTM</div>
 
   )

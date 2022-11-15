@@ -3,6 +3,8 @@ import React, {useState} from 'react';
 import './ActivityCard.css'
 import IconArrow from "../../assets/images/icon_arrow.png"
 import IconArrowTop from "../../assets/images/icon_arrow_top.png"
+import AthletesTable from "./AthletesTable";
+import ModalTable from "./ModalTable";
 
 const ActivityCard = () => {
 
@@ -51,7 +53,7 @@ const ActivityCard = () => {
                     {
                         item1 ?
                             <div>
-                                coucou
+                                <ModalTable/>
                             </div>
                             :
                             <>

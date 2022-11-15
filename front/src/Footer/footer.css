@@ -9,11 +9,10 @@
     align-items: center;
     position: fixed;
     bottom: 0;
-    /*top: 100vh;*/
+}
 
-
-
-
+.footer-full{
+    width: 100%;
 }
 
 .footer a {

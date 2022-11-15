@@ -9,7 +9,7 @@ const AthleteItem = ({athlete}) => {
 
     <Fragment>
 
-        <div className='d-flex justify-content-between'>
+        <div className='d-flex justify-content-between' style={{zIndex: "1"}}>
 
             <div className='text-success mx-3'>Athlete en recherche de sponsor</div>
         </div>

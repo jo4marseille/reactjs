@@ -15,10 +15,11 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import AdbIcon from '@mui/icons-material/Adb';
 import {useNavigate, useNavigation} from "react-router-dom";
+import './Header.css'
 
 
-const drawerWidth = 240;
-const navItems = ['Accueil', 'Agenda', 'Contact'];
+const drawerWidth = 260;
+const navItems = ['Accueil', 'Agenda', 'Contact', 'Statistique', 'Lieu / Map', 'Infos pratiques'];
 
 function Header(props) {
     const {window} = props;
@@ -30,12 +31,12 @@ function Header(props) {
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{textAlign: 'center'}}>
-            <Typography variant="h6" sx={{my: 2}}>
+        <Box onClick={handleDrawerToggle} sx={{textAlign: 'center'}} className={"Box__header"}>
+            <Typography variant="h6" sx={{my: 2}} className={"Title__header"}>
                 JO4Live
             </Typography>
             <Divider/>
-            <List>
+            <List className={"List__block"}>
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{textAlign: 'center'}}>
@@ -110,7 +111,7 @@ function Header(props) {
                     }}
                     sx={{
                         display: {xs: 'block', sm: 'none'},
-                        '& .MuiDrawer-paper': {boxSizing: 'border-box', width: drawerWidth},
+                        '& .MuiDrawer-paper': {boxSizing: 'border-box', width: drawerWidth, height: 'auto'},
                     }}
                 >
                     {drawer}

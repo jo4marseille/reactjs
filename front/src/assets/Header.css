@@ -17,6 +17,10 @@
   padding: 30px;
 }
 
+a > img {
+  max-width: 280px;
+}
+
 ul {
   list-style: none;
   display: flex;

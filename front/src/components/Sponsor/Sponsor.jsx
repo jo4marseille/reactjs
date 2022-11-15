@@ -150,10 +150,7 @@ const Sponsor = () => {
             <SponsorItem sponsor={selected} />
 
           </div>
-        <div className="column-sponsor border border-primary rounded">
-          <SponsorItem sponsor={selected} />
 
-        </div>
         <Navigation />
       </div>
     </div>

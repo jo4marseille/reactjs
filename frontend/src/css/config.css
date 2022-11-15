@@ -90,6 +90,9 @@
 
 .card {
     color: white;
+    background-color: white;
+    width: 80%;
+    margin: 20px;
 }
 
 .imgpays {

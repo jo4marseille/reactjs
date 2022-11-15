@@ -6,9 +6,6 @@ import Button from 'react-bootstrap/Button';
 
 function AllCardTransports() {
 
-    
-    
-
     return(<div className="componentBg">
         {data.transports.map((e) => {
 

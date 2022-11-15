@@ -31,7 +31,7 @@ const Athlete = () => {
 
     const handleClick = (id) => {
 
-      setSelected(data.filter(element => element._id === id))
+      setSelected(data.filter(element => element.recordid === id))
     }
 
     useEffect(() => {

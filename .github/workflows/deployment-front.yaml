@@ -5,12 +5,13 @@ on:
     branches:
     - main
     - master
+    - marseille-terre-daccueil
 
     # Publish `v1.2.3` tags as releases.
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: ${{ github.event.repository.name }}
+  IMAGE_NAME: marseille-terre-daccueil
   # IMAGE_NAME: testworkflow-front
 
 jobs:

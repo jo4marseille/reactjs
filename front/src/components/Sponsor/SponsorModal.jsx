@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const SponsorModal = ({company}) => {
+const SponsorModal = ({name}) => {
 
     const [show, setShow] = useState(false);
 
@@ -36,7 +36,7 @@ const SponsorModal = ({company}) => {
                 ></button>
               </div>
               <div className="modal-body">
-                Votre demande a bien etait envoyée à {company}
+                Votre demande a bien etait envoyée à {name}
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>

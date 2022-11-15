@@ -4,8 +4,9 @@ import SponsorItem from "./SponsorItem";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
 import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
-import coeur from "../../img/Logo/flamme-en-contour.png"
-import {  PostAthletes, PuitAthletes } from "../../request/athletes.request";
+import coeur from "../../img/Logo/flamme-en-contour.png";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Sponsor = () => {
 
@@ -23,9 +24,7 @@ const Sponsor = () => {
       }
 
     const [selected, setSelected] = useState([initialState])
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+
     const [data, setData] = useState([])
 
     const [page, setPage] = useState(0)
@@ -52,6 +51,10 @@ const Sponsor = () => {
 
       setSelected(data.filter(element => element.id === id))
     }
+
+    const notify = (msg) => toast(`Waouh vous avez ${msg} !`, {
+      icon: "😍"
+    });
 
     useEffect(() => {
       const handleScroll = () => {
@@ -83,14 +86,16 @@ const Sponsor = () => {
     }
 
     const handleLike = (id) => {
+
       GetSponsors().then(res => {
+
         if(res.data.data[id-1].attributes?.likes?.find(v => v.id === 1)){
-          alert("Vous matchez !!!!")
+          notify('un Match')
           PuitAthletes({data :{
             likes: [{"id": 1}]
           }}, 1)
         }else{
-          alert("Sponsor liké")
+          notify('liké')
           PuitAthletes({data :{
             likes: [{"id": 1}]
           }}, 1)
@@ -100,10 +105,15 @@ const Sponsor = () => {
 
     return (
 
-    <div >
+    <div>
+
+
         <div className="page_title">Sponsor</div>
         <Navigation />
+
         <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
+
+        <ToastContainer />
 
         <div className="d-flex mt-5">
 
@@ -142,7 +152,7 @@ const Sponsor = () => {
             <SponsorItem sponsor={selected} />
 
         </div>
-        
+
         </div>
     </div>)
 }

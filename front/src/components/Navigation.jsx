@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import logoStyle from "../../src/img/Logo/logo by c4m noir.png";
+import { ToastContainer } from 'react-toastify';
 
 const Navigation = () =>{
     const navigate = useNavigate();

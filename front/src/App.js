@@ -5,6 +5,7 @@ import './assets/App.css';
 import Bio from './components/Bio';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Tri from './components/Tri';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <Route exact path="/bio" component={Bio}></Route>
     <Route exact path="/footer" component={Footer}></Route>
     <Route exact path="/header" component={Header}></Route>
+    <Route exact path="/tri" component={Tri}></Route>
 
 
 

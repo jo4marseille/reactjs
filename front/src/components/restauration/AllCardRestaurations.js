@@ -9,7 +9,7 @@ function AllCardRestaurations() {
 
         {data.restaurants.map((e) => {
             return(
-                <Card name={e.name} description={e.description}/>
+                <Card name={e.name} description={e.description} lien= {e.lien} image={e.image}/>
             )
         }
         )}

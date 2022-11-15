@@ -8,7 +8,7 @@ function AllCardLodgings() {
 
         return(
             
-             <Cards name={e.name} description={e.description}/>
+            <Cards name={e.name} description={e.description} lien= {e.lien} image={e.image}/>
         )
     }
     )}

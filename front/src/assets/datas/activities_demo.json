@@ -13,7 +13,8 @@
           "country": "France",
           "position": "1",
           "photo": "../images/athletes/1.png",
-          "flag": "../images/flags/france.svg"
+          "flag": "../images/flags/france.svg",
+          "description": "Né le 14 novembre 2000 à Saint-Jean, est un athlète français, spécialiste du saut à longueur. Il est licencié au Stade bordelais athlétisme."
         },
         {
           "id": 2,
@@ -23,8 +24,8 @@
           "country": "Jamaïque",
           "position": "2",
           "photo": "../images/athletes/2.png",
-          "flag": "../images/flags/jamaique.svg"
-
+          "flag": "../images/flags/jamaique.svg",
+          "description": "Quatrième des Jeux du Commonwealth de 2018, il remporte la médaille d'argent lors des championnats d'Amérique du Nord, d'Amérique centrale et des Caraïbes 2018."
         },
         {
           "id": 3,
@@ -34,7 +35,8 @@
           "country": "Chine",
           "position": "3",
           "photo": "../images/athletes/3.png",
-          "flag": "../images/flags/chine.svg"
+          "flag": "../images/flags/chine.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
 
         },
         {
@@ -45,7 +47,9 @@
           "country": "USA",
           "position": "4",
           "photo": "../images/athletes/4.png",
-          "flag": "../images/flags/usa.svg"
+          "flag": "../images/flags/usa.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
 
         },
         {
@@ -56,7 +60,9 @@
           "country": "Grèce",
           "position": "5",
           "photo": "../images/athletes/5.png",
-          "flag": "../images/flags/grece.svg"
+          "flag": "../images/flags/grece.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
 
         },
         {
@@ -67,7 +73,9 @@
           "country": "Cubain",
           "position": "6",
           "photo": "../images/athletes/6.png",
-          "flag": "../images/flags/cuba.svg"
+          "flag": "../images/flags/cuba.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 7,
@@ -77,7 +85,9 @@
           "country": "Suisse",
           "position": "7",
           "photo": "../images/athletes/7.png",
-          "flag": "../images/flags/suisse.svg"
+          "flag": "../images/flags/suisse.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 8,
@@ -87,7 +97,9 @@
           "country": "Russie",
           "position": "8",
           "photo": "../images/athletes/8.png",
-          "flag": "../images/flags/russie.svg"
+          "flag": "../images/flags/russie.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         }
       ],
       "localTime": "09:00",
@@ -120,7 +132,9 @@
           "country": "Jamaïque",
           "position": "1",
           "photo": "../images/athletes/9.png",
-          "flag": "../images/flags/jamaique.svg"
+          "flag": "../images/flags/jamaique.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 10,
@@ -130,7 +144,9 @@
           "country": "Britanique",
           "position": "2",
           "photo": "../images/athletes/10.png",
-          "flag": "../images/flags/r-uni.svg"
+          "flag": "../images/flags/r-uni.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 11,
@@ -140,7 +156,9 @@
           "country": "Suisse",
           "position": "3",
           "photo": "../images/athletes/11.png",
-          "flag": "../images/flags/suisse.svg"
+          "flag": "../images/flags/suisse.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
 
         },
         {
@@ -151,7 +169,9 @@
           "country": "Chine",
           "position": "4",
           "photo": "../images/athletes/12.png",
-          "flag": "../images/flags/chine.svg"
+          "flag": "../images/flags/chine.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 13,
@@ -161,7 +181,9 @@
           "country": "Allemagne",
           "position": "5",
           "photo": "../images/athletes/13.png",
-          "flag": "../images/flags/allemagne.svg"
+          "flag": "../images/flags/allemagne.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 14,
@@ -171,7 +193,9 @@
           "country": "USA",
           "position": "6",
           "photo": "../images/athletes/14.png",
-          "flag": "../images/flags/usa.svg"
+          "flag": "../images/flags/usa.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 15,
@@ -181,7 +205,9 @@
           "country": "USA",
           "position": "7",
           "photo": "../images/athletes/15.png",
-          "flag": "../images/flags/usa.svg"
+          "flag": "../images/flags/usa.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 16,
@@ -191,7 +217,9 @@
           "country": "Russie",
           "position": "8",
           "photo": "../images/athletes/16.png",
-          "flag": "../images/flags/russie.svg"
+          "flag": "../images/flags/russie.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         }
       ],
       "localTime": "10:00",
@@ -224,7 +252,9 @@
           "country": "Irlande",
           "position": "1",
           "photo": "../images/athletes/17.png",
-          "flag": "../images/flags/irlande.svg"
+          "flag": "../images/flags/irlande.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 18,
@@ -234,7 +264,9 @@
           "country": "Royaume-Uni",
           "position": "2",
           "photo": "../images/athletes/18.png",
-          "flag": "../images/flags/r-uni.svg"
+          "flag": "../images/flags/r-uni.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 19,
@@ -244,7 +276,9 @@
           "country": "Ukraine",
           "position": "3",
           "photo": "../images/athletes/19.png",
-          "flag": "../images/flags/ukraine.svg"
+          "flag": "../images/flags/ukraine.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 20,
@@ -254,7 +288,9 @@
           "country": "Russie",
           "position": "4",
           "photo": "../images/athletes/20.png",
-          "flag": "../images/flags/russie.svg"
+          "flag": "../images/flags/russie.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 21,
@@ -264,7 +300,9 @@
           "country": "Brésil",
           "position": "5",
           "photo": "../images/athletes/21.png",
-          "flag": "../images/flags/bresil.svg"
+          "flag": "../images/flags/bresil.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 22,
@@ -274,7 +312,9 @@
           "country": "Russie",
           "position": "6",
           "photo": "../images/athletes/22.png",
-          "flag": "../images/flags/russie.svg"
+          "flag": "../images/flags/russie.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 23,
@@ -284,7 +324,9 @@
           "country": "USA",
           "position": "7",
           "photo": "../images/athletes/23.png",
-          "flag": "../images/flags/usa.svg"
+          "flag": "../images/flags/usa.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 24,
@@ -294,7 +336,9 @@
           "country": "Khazakstan",
           "position": "8",
           "photo": "../images/athletes/24.png",
-          "flag": "../images/flags/khazakstan.svg"
+          "flag": "../images/flags/khazakstan.svg",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         }
       ],
       "localTime": "10:30",

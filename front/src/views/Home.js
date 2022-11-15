@@ -6,6 +6,7 @@ import Header from "../components/layouts/Header";
 import ContainerOpen from "../components/home/ContainerOpen";
 import ContainerDirect from "../components/home/ContainerDirect";
 import ContainerInfos from "../components/home/ContainerInfos";
+import ContainerDiag from "../components/home/ContainerDiag";
 
 
 function Home() {
@@ -23,15 +24,13 @@ function Home() {
             <div
                 id="ctn_direct"
             >
-
                 <ContainerDirect/>
             </div>
-
 
             <div
                 id="ctn_infos"
             >
-                <ContainerInfos />
+                <ContainerInfos/>
             </div>
 
 

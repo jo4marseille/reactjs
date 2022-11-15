@@ -6,6 +6,8 @@
 #ctn_direct {
     /*height: 100vh;*/
     width: 100vw;
+    padding-bottom: 20px;
+    /*background-color: white;*/
 }
 
 #ctn_infos {

@@ -3,6 +3,7 @@ import {Parallax} from "react-parallax";
 
 
 import "./ContainerDirect.css"
+import ContainerDiag from "./ContainerDiag";
 
 const insideStyles = {
     background: "rgba(255, 255, 255, 0.2)",
@@ -22,7 +23,10 @@ const insideStyles = {
 const ContainerDirect = () => {
 
     return (
-        <div>
+        <div style={{
+            zIndex: 1000,
+            // backgroundColor: "white"
+        }}>
 
 
             <h2 id={"title_direct"}>
@@ -38,6 +42,11 @@ const ContainerDirect = () => {
                 title="YouTube video player" frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen/>
+
+
+            {/*<div>*/}
+                <ContainerDiag/>
+            {/*</div>*/}
 
             <h3 class={"title_match"}>
                 RUGBY: Aix VS Madrid

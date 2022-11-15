@@ -35,17 +35,18 @@ body{
 }
 
 .onglets{
-    width: 220px;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 22px;
     font-weight: 700;
     cursor: pointer;
+    border: 0px;
 }
 
-.onglets:not(:nth-child(2)){
-    border-right: 1px solid #333;
+.onglets button{
+    border: 0px;
 }
 
 .contenu {
@@ -70,4 +71,8 @@ body{
 
 .activeContenu{
     display:contents;
+}
+
+p {
+    display: contents;
 }

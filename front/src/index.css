@@ -24,8 +24,13 @@ body {
 } 
 
 .pageError {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
+}
+
+.imgError {
+  height: 425px;
+  width: 312px;
 }
 
 /* Footer */

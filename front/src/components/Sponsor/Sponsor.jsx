@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Navigation from "../Navigation";
 // import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";
@@ -19,9 +19,7 @@ const Sponsor = () => {
         isActive: "",
         createdAt: "",
       }
-
       }
-
 
     const [selected, setSelected] = useState([initialState])
 
@@ -55,18 +53,20 @@ const Sponsor = () => {
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 921 && page < 100 && data.length === 10 ) {
+        if (window.scrollY === 969 && page < 100 && data.length === 10 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
       };
 
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener('scroll',handleScroll)
 
       return () => {
-        window.removeEventListener('scroll', handleScroll);
+
+        window.removeEventListener('scroll',handleScroll)
       };
-    }, [page]);
+    }, [page, data.length]);
+
     const handleMatching = () => {
       //matching element athlete
       // matching les sponsor qui corresponde aux donées en dure.
@@ -110,7 +110,7 @@ const Sponsor = () => {
           ? <Spinner />
 
 
-          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor">
+          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" >
               {
                 data.map(({id, attributes}) => {
                   return (

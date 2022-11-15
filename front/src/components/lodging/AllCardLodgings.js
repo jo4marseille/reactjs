@@ -1,6 +1,6 @@
 import React from "react";
 function AllCardLodgings() {
-    return(<div>
+    return(<div className="componentBg">
 
 
         <div class="box">

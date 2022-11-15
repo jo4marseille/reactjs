@@ -1,9 +1,9 @@
 import React from "react";
 function AllCardTransports() {
-    return(<div>
+    return(<div className="componentBg">
 
 
-        <div class="box">
+        <div class="box ">
             <div class="container">
                  <div class="row">
                          

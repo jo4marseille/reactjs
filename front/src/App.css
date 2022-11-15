@@ -1,3 +1,7 @@
+@import url(./stylesheets/sponsor.css);
+@import url(./stylesheets/header.css);
+@import url(./stylesheets/inputs.css);
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,24 @@
     transform: rotate(360deg);
   }
 }
+
+.column-sponsor {
+  background: #fff;
+  max-width: 50%;
+  width: 50%;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  }
+  &:last-child {
+    background: black;
+    border-top: 1px solid rgba(255,255,255,0.5);
+  }
+  @media (max-width: 600px) {
+    max-width: 100%;
+    width: 100%;
+  }

@@ -68,10 +68,49 @@
 }
 .home-sub-5{
     grid-area: home-sub-5;
-    background-color: var(--bleu-nuit)
+    background-color: var(--bleu-nuit);
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    font-weight: bold;
+    font-size: 4em;
+}
+.home-sub-5 > span{
+    background-color: var(--bleu-nuit);
+    color: var(--blanc);
+    display: flex;
+    height: 50%;
+    width: 50%;
+    text-align: end;
 }
 .home-sub-6{
     grid-area: home-sub-6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.home-sub-6 > div{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+}
+.home-sub-5-first-input{
+    justify-content: flex-start;
+}
+.home-sub-5-first-input > input{
+    transform: translateX(10px);
+}
+.home-sub-5-second-input > input{
+    transform: translateX(-10px);
+}
+.home-sub-5-second-input {
+    justify-content: flex-end;
+}
+input[type=date]{
+    border: none;
+    color: var(--bleu-nuit);
+    font-weight: bold;
+    font-size: 2em;
 }
 .home-sub-7{
     grid-area: home-sub-7;
@@ -82,7 +121,19 @@
 }
 .home-sub-9{
     grid-area: home-sub-9;
-    background-color: var(--corail)
+    background-color: var(--corail);
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    font-weight: bold;
+    font-size: 7em;
+}
+.home-sub-9 > span{
+    display: flex;
+    background-color: var(--corail);
+    color: var(--blanc);
+    height: 80%;
+    width: 95%;
 }
 .home-sub-10{
     grid-area: home-sub-10;
@@ -90,23 +141,33 @@
     background-position: right;
     background-size: 120%;
 }
-/*.home-sub-10-img{*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
 .home-sub-11{
     grid-area: home-sub-11;
     background-color: var(--bleu-nuit)
 }
 .home-sub-12{
     grid-area: home-sub-12;
-    background-color: var(--bleu-nuit)
+    background-color: var(--bleu-nuit);
+    display: flex;
+    align-items: center;
 }
-/*.fleche{*/
-/*    object-fit: cover;*/
-/*    width: 100%;*/
-/*    transform: translateX(-10%);*/
-/*}*/
+.home-sub-12 > div{
+    width: 55%;
+    height: 50%;
+    background-color: var(--bleu-nuit);
+}
+select{
+    border: none;
+    width: 80%;
+    background-color: transparent;
+    color: var(--blanc);
+    font-weight: bold;
+    font-size: 3em;
+}
+select > option{
+    background-color: var(--blanc);
+    color: var(--bleu-nuit);
+}
 .border{
     border: 1px black solid;
 }

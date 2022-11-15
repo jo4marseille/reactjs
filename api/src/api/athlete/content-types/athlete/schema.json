@@ -30,6 +30,9 @@
     },
     "email": {
       "type": "email"
+    },
+    "likes": {
+      "type": "json"
     }
   }
 }

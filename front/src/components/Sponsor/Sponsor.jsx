@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Navigation from "../Navigation";
 import SponsorItem from "./SponsorItem";
-import { GetSponsors } from "../../request/sponsors.request";
+import { GetSponsors, GetAt } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
+import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
 
 const Sponsor = () => {
 
@@ -77,6 +78,22 @@ const Sponsor = () => {
       })
     }
 
+    const handleLike = (id) => {
+      GetSponsors().then(res => {
+        if(res.data.data[id-1].attributes?.likes?.find(v => v.id === 1)){
+          alert("Vous matchez !!!!")
+          PuitAthletes({data :{
+            likes: [{"id": 1}]
+          }}, 1)
+        }else{
+          alert("Sponsor liké")
+          PostAthletes({data :{
+            likes: [{"id": 1}]
+          }})
+        }
+      })
+    }
+
     return (
 
     <div >
@@ -106,6 +123,7 @@ const Sponsor = () => {
                           <div className="card-body">
                             <h3 className="card-title">{attributes.name}</h3>
                             <p className="card-text">{attributes.email}</p>
+                            <button onClick={() => handleLike(id)}>Like sponsor</button>
                           </div>
                       </div>
 

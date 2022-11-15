@@ -1,4 +1,5 @@
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Notification = (payload) => {
   toast(payload.title + " : " + payload.body, {

@@ -1,10 +1,15 @@
 //import Signin from './Signin/Signin';
-import Signup from "./Signup/Signup";
-import Signin from "./Signin/Signin";
+import Main from "./Route";
 import "./App.css";
 import { AuthProvider } from "./contexts/AuthContext";
 import { useEffect, useState } from "react";
 import { onMessageListener, RequestForToken } from "./utils/Firebase";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Notification } from "./utils/Notification";
+import Signup from "./Signup/Signup";
+import Signin from "./Signin/Signin";
+import { Route, Routes } from "react-router";
 
 function App() {
   const [notification, setNotification] = useState({ title: "", body: "" });
@@ -12,6 +17,7 @@ function App() {
   useEffect(() => {
     if (notification?.title) {
       Notification(notification);
+      console.log("Je lance la notification");
     }
   }, [notification]);
 
@@ -26,12 +32,15 @@ function App() {
     })
     .catch((err) => console.log("failed: ", err));
   return (
-    <AuthProvider>
-      <div className="App">
-        {/* <Signin /> */}
-        <Signup />
-      </div>
-    </AuthProvider>
+    <>
+      <AuthProvider>
+        <ToastContainer />
+        <Routes>
+          <Route path="/" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </AuthProvider>
+    </>
   );
 }
 

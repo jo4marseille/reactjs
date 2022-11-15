@@ -4,7 +4,7 @@ import {
   createUserWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
-
+import { useNavigate } from "react-router-dom";
 import { fire } from "../utils/Firebase";
 
 const AuthContext = React.createContext();
@@ -15,13 +15,16 @@ export function useAuth() {
 
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState();
+  const navigate = useNavigate();
 
   function signup(email, password) {
-    const auth = getAuth();
+    const auth = getAuth(fire);
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed in
         const user = userCredential.user;
+        setCurrentUser(user);
+        console.log("utilisateur connecté");
+        navigate("/");
         // ...
       })
       .catch((error) => {
@@ -32,19 +35,17 @@ export function AuthProvider({ children }) {
   }
 
   useEffect(() => {
-    const auth = getAuth();
-    signOut(auth)
-      .then(() => {
-        // Sign-out successful.
-      })
-      .catch((error) => {
-        // An error happened.
-      });
-    // const unsubscribe = fire.auth().onAuthStateChanged((user) => {
-    //   setCurrentUser(user);
+    const auth = getAuth(fire);
+    signOut(auth);
+    // const auth = getAuth(fire).onAuthStateChanged((user) => {
+    //   if (user) {
+    //     setCurrentUser(user);
+    //     navigate("/Home");
+    //   } else {
+    //     console.log("pas de user");
+    //   }
     // });
-
-    // return unsubscribe;
+    // return auth;
   }, []);
 
   const value = {

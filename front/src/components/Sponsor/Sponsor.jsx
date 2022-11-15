@@ -58,7 +58,6 @@ const Sponsor = () => {
     }, [page]);
 
 
-    console.log(page)
 
     return (
 

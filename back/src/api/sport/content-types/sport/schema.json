@@ -16,6 +16,12 @@
     },
     "description": {
       "type": "string"
+    },
+    "atheltes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athelte.athelte",
+      "mappedBy": "sport"
     }
   }
 }

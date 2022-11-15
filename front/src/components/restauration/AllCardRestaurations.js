@@ -1,77 +1,22 @@
 import React from "react";
- 
+import Card from "../Card";
+// import Card from 'react-bootstrap/Card';
+import data from "../../data.json";
+import Button from 'react-bootstrap/Button';
+
 function AllCardRestaurations() {
+
     return(<div className="componentBg">
+        {data.restaurants.map((e) => {
 
-
-        <div class="box">
-            <div class="container">
-                 <div class="row">
-                         
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div class="box-part text-center">
-                                
-                                <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
-                                
-                                <div class="title">
-                                    <h4>Restauration</h4>
-                                </div>
-                                
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>	 
-                        
-                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div class="box-part text-center">
-                                
-                                <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
-                            
-                                <div class="title">
-                                    <h4>Restauration2</h4>
-                                </div>
-                                
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>	 
-                        
-                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div class="box-part text-center">
-                                
-                                <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-                                
-                                <div class="title">
-                                    <h4>Restauration3</h4>
-                                </div>
-                                
-                                <div class="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>
-                
-                </div>		
-            </div>
-        </div>
-        
+            return(
+                <Card name={e.name} description={e.description}/>
+            )
+        }
+        )}
+            
         
             </div>);
     
 }
-
-export default AllCardRestaurations;
+export default AllCardRestaurations

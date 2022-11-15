@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 function AllCardTransports() {
 
     return(<div className="componentBg">
-        {data.transports.map((e) => {
+        {data.tra.map((e) => {
 
             return(
                 <Card name={e.name} description={e.description}/>

@@ -3,6 +3,7 @@ import Card from "../Card";
 // import Card from 'react-bootstrap/Card';
 import data from "../../data.json";
 import Button from 'react-bootstrap/Button';
+import Cards from "../Card";
 
 function AllCardTransports() {
 
@@ -10,7 +11,8 @@ function AllCardTransports() {
         {data.tra.map((e) => {
 
             return(
-                <Card name={e.name} description={e.description}/>
+                
+                <Cards name={e.name} description={e.description}/>
             )
         }
         )}

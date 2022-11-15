@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sport",
     "pluralName": "sports",
-    "displayName": "Sports"
+    "displayName": "Sports",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,8 +15,21 @@
     "nom": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
+    "SportIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "evenements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::evenement.evenement",
+      "mappedBy": "sport"
     }
   }
 }

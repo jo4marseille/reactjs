@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Navigation from "../Navigation";
 // import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";

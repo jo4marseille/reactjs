@@ -40,23 +40,25 @@ const Home = () => {
       });
 
       function loadWidgets(){
-        var i = 0
-        setComponents([])
-        const objetsByManifestationType = getModifies().filter((modifieHash) => {
-            return modifieHash.informationsFeteEtManifestation !== undefined &&
-                modifieHash.informationsFeteEtManifestation.typesManifestation !== undefined &&
-                modifieHash.informationsFeteEtManifestation.typesManifestation[0].id == 1966 && 
-                modifieHash.datesOuverture.flat().includes('2022-12-20');
-          });
-
-          objetsByManifestationType.map(element => {
-            if(i%2 == 0) {
-                setComponents(oldArray => [...oldArray, <WidgetBlue element={element}/>])
-            } else {
-                setComponents(oldArray => [...oldArray, <WidgetRed date={date} element={element}/>])
-            }
-            ++i
-          });
+        if(date != null && category != null){
+            var i = 0
+            setComponents([])
+            const objetsByManifestationType = getModifies().filter((modifieHash) => {
+                return modifieHash.informationsFeteEtManifestation !== undefined &&
+                    modifieHash.informationsFeteEtManifestation.typesManifestation !== undefined &&
+                    modifieHash.informationsFeteEtManifestation.typesManifestation[0].id == category && 
+                    modifieHash.datesOuverture.flat().includes(date);
+              });
+    
+              objetsByManifestationType.map(element => {
+                if(i%2 == 0) {
+                    setComponents(oldArray => [...oldArray, <WidgetBlue element={element}/>])
+                } else {
+                    setComponents(oldArray => [...oldArray, <WidgetRed date={date} element={element}/>])
+                }
+                ++i
+              });
+        }
       }
 
     return (

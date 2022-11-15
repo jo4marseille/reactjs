@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import Navigation from './Navigation';
+import Header from './Header';
 import Nageur from "../img/assets/photo-header.gif"
 import { PostSponsors } from '../request/sponsors.request';
 import { useNavigate } from 'react-router-dom'
@@ -37,7 +37,7 @@ const SposorOffer = () => {
     return (
         <div>
             <img className="nageur" src={Nageur} alt="" />
-            <Navigation />
+            <Header />
             <div className="card">
                 <div>
                     <label htmlFor="Picture">Logo</label>

@@ -16,7 +16,9 @@ function Input() {
           src={loupe}
           className="loupeMinus"
           onClick={() => navigate("/sponsor")}
+          alt=""
         />
+
       </form>
     </div>
   );

@@ -62,9 +62,3 @@
     max-width: 100%;
     width: 100%;
   }
-
-  .arrow {
-    width: 48px;
-    filter: saturate(0);
-
-  }

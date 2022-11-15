@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import Navigation from "../Navigation";
+import Header from "../Header";
 import Banner from './../Banner'
 import AthleteItem from "./AthleteItem";
 import Spinner from "../Spinner";
@@ -42,7 +42,7 @@ const Athlete = () => {
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 570  && page < 100 && data.length === 10) {
+        if (window.scrollY === 640  && page < 100 && data.length === 10) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
@@ -57,13 +57,14 @@ const Athlete = () => {
     }, [page, data.length]);
 
 
+
     return (
     <div>
 
-        <Navigation />
-        <Banner />
+        <Header />
+        <Banner isNotAthlete={true} />
 
-        <div className="d-flex" id="athlete">
+        <div className="d-flex">
 
         {
           load
@@ -95,7 +96,7 @@ const Athlete = () => {
           </div>
         }
 
-        <div className="column-sponsor border border-primary rounded">
+        <div className="column-sponsor rounded" style={{backgroundColor: '#ff5757'}}>
 
             <AthleteItem athlete={selected} />
 

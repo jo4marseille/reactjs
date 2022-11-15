@@ -4,10 +4,11 @@ import SponsorItem from "./SponsorItem";
 import SearchInput from "../input/InputMinus";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
-import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
+import { PuitAthletes } from "../../request/athletes.request";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Banner from "../Banner";
+import Header from "../Header";
 
 
 
@@ -61,8 +62,8 @@ const Sponsor = () => {
 
     useEffect(() => {
       const handleScroll = () => {
-        console.log(window.scrollY)
-        if (window.scrollY === 548 && page < 100 && data.length === 10 ) {
+
+        if (window.scrollY === 640 && page < 100 && data.length === 10 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
@@ -77,14 +78,13 @@ const Sponsor = () => {
     }, [page, data.length]);
 
     const handleMatching = () => {
-      //matching element athlete
+      // matching element athlete
       // matching les sponsor qui corresponde aux donées en dure.
       const sport = "football"
-      const adress = "marseille"
+
       GetSponsors().then(res => {
-        //console.log(res.data.data);
-        console.log(res.data.data.filter(v => v.attributes?.sports == sport));
-        setData(res.data.data.filter(v => v.attributes?.sports == sport))
+
+        setData(res.data.data.filter(v => v.attributes?.sports === sport))
       })
     }
 
@@ -109,11 +109,11 @@ const Sponsor = () => {
     return (
 
       <div>
-        <Navigation />
-        <Banner />
+        <Header />
+        <Banner isAthlete={false} />
         <ToastContainer />
-        {/* <SearchInput /> */}
-        <div className="d-flex mt-5">
+
+        <div className="d-flex">
         <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
 
         {
@@ -147,7 +147,7 @@ const Sponsor = () => {
             }
           </div>
         }
-          <div className="column-sponsor border border-primary rounded">
+          <div className="column-sponsor rounded" style={{backgroundColor: '#ff5757'}}>
             <SponsorItem sponsor={selected} />
           </div>
       </div>

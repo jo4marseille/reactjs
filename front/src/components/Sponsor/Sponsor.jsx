@@ -5,6 +5,8 @@ import SearchInput from "../input/InputMinus";
 import Nageur from "../../img/assets/photo-header.gif";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
+import { GetAthletes } from "../../request/athletes.request";
+import coeur from "../../img/Logo/flamme-en-contour.png"
 import {  PostAthletes, PuitAthletes } from "../../request/athletes.request";
 
 const Sponsor = () => {
@@ -23,7 +25,9 @@ const Sponsor = () => {
       }
 
     const [selected, setSelected] = useState([initialState])
-
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     const [data, setData] = useState([])
 
     const [page, setPage] = useState(0)
@@ -89,9 +93,9 @@ const Sponsor = () => {
           }}, 1)
         }else{
           alert("Sponsor liké")
-          PostAthletes({data :{
+          PuitAthletes({data :{
             likes: [{"id": 1}]
-          }})
+          }}, 1)
         }
       })
     }

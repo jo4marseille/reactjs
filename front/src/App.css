@@ -1,4 +1,6 @@
 @import url(./stylesheets/sponsor.css);
+@import url(./stylesheets/header.css);
+@import url(./stylesheets/inputs.css);
 
 .App {
   text-align: center;

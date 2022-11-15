@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Navigation from "../Navigation";
 import SponsorItem from "./SponsorItem";
+import SearchInput from "../input/InputMinus";
+import Nageur from "../../img/assets/photo-header.gif";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
-import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
+import { GetAthletes } from "../../request/athletes.request";
 import coeur from "../../img/Logo/flamme-en-contour.png"
 import {  PostAthletes, PuitAthletes } from "../../request/athletes.request";
 
@@ -99,51 +101,50 @@ const Sponsor = () => {
     }
 
     return (
-
-    <div >
-        <div className="page_title">Sponsor</div>
-        <Navigation />
+      <div>
+        <img className="nageurScoped" src={Nageur} alt="Nageur Olympique" />
+      
+        <SearchInput />
+        <div className="d-flex mt-5 positionOffers">
         <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
-
-        <div className="d-flex mt-5">
-
         {
           load
-
           ? <Spinner />
-
-
           : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" >
               {
                 data.map(({id, attributes}) => {
                   return (
-
                       <div key={id}
-                      className="card rounded"
-                      style={{width: '18rem'}}
-                      onClick={() => handleClick(id)}
+                        className="card rounded"
+                        style={{width: '18rem'}}
+                        onClick={() => handleClick(id)}
                       >
-                        <img src={attributes.picture} alt={attributes.name} className="card-img-top" />
-                          <div className="card-body" style={{backgroundColor: "red"}}>
-                            <h3 className="card-title">{attributes.name}</h3>
-                            <p className="card-text">{attributes.email}</p>
-                            <img src={coeur} alt="err" onClick={() => handleLike(id)} />
-                          </div>
+                      <img src={attributes.picture} alt={attributes.name} className="card-img-top" />
+                      <div className="card-body">
+                        <h3 className="card-title">
+                          {attributes.name}
+                        </h3>
+                        <p className="card-text">
+                          {attributes.email}
+                        </p>
+                        <button onClick={() => handleLike(id)}>
+                          Like sponsor
+                        </button>
                       </div>
-
-                  )
-                })
-
-              }
+                  </div>
+                )
+              })
+            }
           </div>
         }
-        <div className="column-sponsor border border-primary rounded">
-
+          <div className="column-sponsor border border-primary rounded">
             <SponsorItem sponsor={selected} />
-
+          </div>
+        <div className="column-sponsor border border-primary rounded">
+          <SponsorItem sponsor={selected} />
         </div>
-        
-        </div>
+        <Navigation />
+      </div>
     </div>)
 }
 

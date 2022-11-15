@@ -8,8 +8,8 @@ function Cards(props) {
   return (
 
     <>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card style={{ width: '18rem' ,margin:'4px'}} className='d-inline-flex'>
+      <Card.Img className="card-image-top" src={props.image}/>
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <Card.Text>

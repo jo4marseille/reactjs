@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Card";
 // import Card from 'react-bootstrap/Card';
 import data from "../../data.json";
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 
 function AllCardTransports() {
 
@@ -12,12 +12,13 @@ function AllCardTransports() {
 
        
             return(
-                <Card name={e.name} description={e.description}/>
+                <Card name={e.name} description={e.description} image={e.image}/>
             )
         }
         )}
             
-
+        </div>
     
-}
+)}
+
 export default AllCardTransports

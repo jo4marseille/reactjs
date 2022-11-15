@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-
+import axios from "axios";
 
 export default function Translators()
 {
@@ -14,7 +14,13 @@ export default function Translators()
     useEffect(() => {
         //console.log(JSON.parse(localStorage.getItem("translators")));
 
-        setListTranslators( JSON.parse(localStorage.getItem("translators")) );
+        //setListTranslators( JSON.parse(localStorage.getItem("translators")) );
+
+        axios.get("http://127.0.0.1:8000/api/translator/getalls").then((res) => {
+            console.log(res.data);
+
+            setListTranslators(res.data);
+        });
     }, []);
 
     //getTranslators();
@@ -39,13 +45,13 @@ export default function Translators()
                             return (
                                 <>
                                     <tr>
-                                        <td>{t.Name}</td>
-                                        <td>{categories[t.Category]}</td>
-                                        <td>{t.Email}</td>
-                                        <td>{t.Tel}</td>
-                                        <td>{t.Siret}</td>
-                                        <td>{t.School}</td>
-                                        <td>{t.Language}</td>
+                                        <td>{t.name}</td>
+                                        <td>{categories[t.category]}</td>
+                                        <td>{t.email}</td>
+                                        <td>{t.tel}</td>
+                                        <td>{t.siret}</td>
+                                        <td>{t.school}</td>
+                                        <td>{t.language}</td>
                                     </tr>
                                 </>
                             )

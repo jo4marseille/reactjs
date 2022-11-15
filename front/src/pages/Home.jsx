@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
+import WidgetBlue from '../components/widgetEvents/WidgetBlue';
+import WidgetRed from '../components/widgetEvents/WidgetRed';
 
 const Home = () => {
     return (
@@ -19,16 +21,8 @@ const Home = () => {
                 <div className={"home-sub-11"}></div>
                 <div className={"home-sub-12"}></div>
             </div>
-            <h2 className={"h1 eventtitle"}>Test</h2>
-            <div className={"mt-3 eventwidget1"}>
-                <div className={"widget-part1"}></div>
-                <div className={"widget-part2"}></div>
-            </div>
-
-            <div className={"mt-3 eventwidget2"}>
-                <div className={"widget-part1"}></div>
-                <div className={"widget-part3"}></div>
-            </div>
+            <WidgetRed/>
+            <WidgetBlue/>
         </>
     );
 };

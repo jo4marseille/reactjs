@@ -97,7 +97,7 @@ jobs:
                           - containerPort: 1337
                         volumeMounts:
                           - name: $IMAGE_NAME-claim0
-                            mountPath: /usr/src/app/
+                            mountPath: /
                         resources: {}
                     restartPolicy: Always
                     volumes:

@@ -3,13 +3,13 @@ name: Push Backend
 on:   
   push:
     branches:
-    - splinder
+    - spinder
 
     # Publish `v1.2.3` tags as releases.
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: splinder-api
+  IMAGE_NAME: spinder-api
   # IMAGE_NAME: testworkflow-front
 
 jobs:

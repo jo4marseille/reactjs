@@ -1,19 +1,26 @@
 import React, { useState, useEffect } from "react";
 import Navigation from "../Navigation";
-import sponsors from '../../database/sponsors.json'
+// import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
 
 const Sponsor = () => {
-    console.log(GetSponsors());
+
     const initialState =  {
-      about: "",
-      company: "",
-      sports: [],
-      phone: "",
-      isActive: ""
-    }
+      id:"",
+      attributes: {
+        name: "",
+        sports: "",
+        picture: "",
+        email: "",
+        phone: "",
+        isActive: "",
+        createdAt: "",
+      }
+
+      }
+
 
     const [selected, setSelected] = useState([initialState])
 
@@ -27,8 +34,10 @@ const Sponsor = () => {
 
       if(load) {
         const timer = setTimeout(() => {
+          GetSponsors().then(res => {
+            setData(res.data.data.slice(page, page + 10))
+          })
 
-          setData(sponsors.slice(page, page + 10))
           setLoad(false)
 
         }, 1000);
@@ -39,7 +48,7 @@ const Sponsor = () => {
 
     const handleClick = (id) => {
 
-      setSelected(data.filter(element => element._id === id))
+      setSelected(data.filter(element => element.id === id))
     }
 
     useEffect(() => {
@@ -59,10 +68,13 @@ const Sponsor = () => {
     }, [page]);
     const handleMatching = () => {
       //matching element athlete
+      // matching les sponsor qui corresponde aux donées en dure.
       const sport = "football"
       const adress = "marseille"
       GetSponsors().then(res => {
-        res.data
+        //console.log(res.data.data);
+        console.log(res.data.data.filter(v => v.attributes?.sports == sport));
+        setData(res.data.data.filter(v => v.attributes?.sports == sport))
       })
     }
 
@@ -83,18 +95,18 @@ const Sponsor = () => {
 
           : <div className="d-flex flex-column align-items-center gap-3 column-sponsor">
               {
-                data.map(({_id, company, email, picture}) => {
+                data.map(({id, attributes}) => {
                   return (
 
-                      <div key={_id}
+                      <div key={id}
                       className="card rounded"
                       style={{width: '18rem'}}
-                      onClick={() => handleClick(_id)}
+                      onClick={() => handleClick(id)}
                       >
-                        <img src={picture} alt={company} className="card-img-top" />
+                        <img src={attributes.picture} alt={attributes.name} className="card-img-top" />
                           <div className="card-body">
-                            <h3 className="card-title">{company}</h3>
-                            <p className="card-text">{email}</p>
+                            <h3 className="card-title">{attributes.name}</h3>
+                            <p className="card-text">{attributes.email}</p>
                           </div>
                       </div>
 

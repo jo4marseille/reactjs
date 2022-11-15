@@ -5,7 +5,7 @@ function AllCardSports() {
 
 
         <div class="box">
-        <img src="\img\logos\logoSalle.png" alt='' id="logo"/>
+        <img src="\img\logos\logoSalle.png" alt='logo sport' id="logo"/>
             <div class="container">
                  <div class="row">
                          

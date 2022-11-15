@@ -5,7 +5,7 @@ function AllCardRestaurations() {
 
 
         <div class="box">
-        <img src="\img\logos\logoResto.png" alt='' id="logo"/>
+        <img src="\img\logos\logoResto.png" alt='logo logo Restauration' id="logo"/>
             <div class="container">
                  <div class="row">
                          

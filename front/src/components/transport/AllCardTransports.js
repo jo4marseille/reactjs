@@ -4,7 +4,7 @@ function AllCardTransports() {
 
 
         <div class="box ">
-        <img src="\img\logos\logoTransport.png" alt='' id="logo"/>
+        <img src="\img\logos\logoTransport.png" alt='logo Transport' id="logo"/>
             <div class="container">
                  <div class="row">
                          

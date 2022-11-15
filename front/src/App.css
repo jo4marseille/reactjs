@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 .body {
   font-family: "Poppins", "sans-serif";
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/background-jo.png");
+  background-image: url("../src/pages/background-jo.png");
   background-color: #f3f3f3;
 }
 
 .logo {
-  background-image: url(../src/img/fond2.png);
+  background-image: url("../src/pages/fond.jpg");
 }
 
 .fond,
@@ -76,7 +76,7 @@ span {
 
 .choose-title {
   color: #00004d;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 
 .cards {
@@ -97,11 +97,11 @@ span {
 }
 
 .card-foot {
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/foot.png");
+  background-image: url("../src/pages/foot.png");
 }
 
 .card-voile {
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/voilecrop.png");
+  background-image: url("../src/pages/voilecrop.png");
 }
 
 .card-foot > p,
@@ -219,7 +219,8 @@ body {
   background-color: white;
   border-radius: 37px;
   padding: 20px;
-  margin: 30px;
+  margin-right: 45px;
+  margin-left: 45px;
 }
 
 .news-description,
@@ -268,7 +269,27 @@ a:-webkit-any-link:hover {
 }
 
 .url1 {
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/background-jo.png");
+  background-image: url("../src/pages/background-jo.png");
+}
+
+.title-voile,
+.description-voile {
+  text-align: left;
+}
+
+.agenda-container {
+  color: #00004d;
+  padding: 25px;
+}
+
+.nb-athletes {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.items,
+.itemst {
+  width: 50%;
 }
 
 /*# sourceMappingURL=App.css.map */

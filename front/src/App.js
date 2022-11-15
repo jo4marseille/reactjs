@@ -8,25 +8,17 @@ import "./App.css";
 import Navbar from "./components/Navbar/index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Service from "./pages/services";
+import Agenda from "./components/Agenda";
 
 const App = () => {
   return (
     <>
-      {/* <BrowserRouter>
-      <Routes>
-        <Route path="/test" element={<Home />} />
-      </Routes>
-    </BrowserRouter> */}
-      {/* <Navbar />
-      <Home /> */}
-      {/* <Map /> */}
-      {/* <NewsList />
-      <Footer /> */}
       <Router>
         <Navbar />
         <Home />
-        {/* <Map></Map> */}
+        <Map />
         <NewsList />
+        <Agenda />
         <Routes>
           <Route path="/" exact component={Home} />
           <Route path="/map" component={Map} />

@@ -177,6 +177,7 @@ select > option{
 }
 
 .eventwidget1 {
+
   height: calc((100vh - 96px)/4);
   width: 100%;
   display: grid;
@@ -208,7 +209,7 @@ select > option{
 
 .widget-part3 {
   grid-area: 1 / 1 / 1 / 4;
-  background-color: var(--rouge-olympique);
+  background-color: var(--corail);
   border: 1px #000000;
 }
 
@@ -221,4 +222,23 @@ select > option{
 .eventtitle {
   margin-top: 80px;
   margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.eventwidget1 p {
+    font-weight: 1000;
+    margin-top: 20px;
+    background: transparent;
+    color:var(--blanc);
+}
+.eventwidget2 p {
+    font-weight: 1000;
+    margin-top: 20px;
+    background: transparent;
+    color:var(--blanc);
+
+}
+
+a {
+    text-decoration: none;
 }

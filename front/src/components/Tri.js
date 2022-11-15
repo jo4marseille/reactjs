@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Triselectif from '../data/triselectif.json'
 
 function Tri() {
 
@@ -11,27 +12,31 @@ function Tri() {
         };
         fetch('https://data.ampmetropole.fr/api/records/1.0/search/?dataset=point-dapport-volontaire-mamp&q=&facet=flux_lib&facet=commune&facet=type_lib&facet=ct&facet=MARSEILLE&refine.commune=MARSEILLE', requestOptions)
             .then((response) => {
-                let result 
+                let result = response.json;
+                if(response.status!==200){
+                    result = Triselectif;
+                }
                 console.log(response);
                 
-                
-                let final = []
-                response ((data) => {
-                    final.push({
-                      "type" : data.facet_group[0].facets[0].name,
-                      "nom"  : data.facet_group[2].facets[0].name,
-                      "latitude" : data.records[0].geometry.coordinates[0],
-                      "longitude":data.records[0].geometry.coordinates[1]
-                    }
-                    )
+                let tris = []
+                result.records.map((item) => {
+                    tris.push({
+                      "type" : item.fields.type_lib,
+                      "nom"  : item.fields.flux_lib,
+                      "latitude" : item.fields.geo_point_2d[0],
+                      "longitude":item.fields.geo_point_2d[1]
+                    })
+                    
                 })
-                // setData(final)
-                console.log(final)
-
+                
+                // setData(tris)
+                console.log(tris);
+                
             })
             
+            
 
-    }, [data])
+    }, [])
 
 
   return (

@@ -5,7 +5,11 @@ import data from "../../data.json";
 function AllCardSports() {
     
     return(<div className="componentBg">
-                <img src="\img\logos\logoSalle.png" alt='logo Salle' id="logo"/>
+        <div className="d-flex mt-2">
+
+        <img src="\img\logos\logoSalle.png" alt='logo Salle'/>
+
+        </div>
 
     {data.centres.map((e) => {
 

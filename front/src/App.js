@@ -3,7 +3,7 @@ import Map from "./components/Map";
 import NewsList from "./components/NewsList";
 import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
     <>
       {/* <BrowserRouter>
@@ -17,6 +17,6 @@ function App() {
       <p>Test</p>
     </>
   );
-}
+};
 
 export default App;

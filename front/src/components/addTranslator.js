@@ -1,15 +1,17 @@
 
 
-export default function AddTranslator()
+export default function AddTranslator(props)
 {
     function register()
     {
         //
     }
+
+    console.log(props);
     
     return (
         <>
-            
+            Inscription validée !
         </>
     )
 }

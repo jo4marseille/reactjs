@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom';
+
 
 function Cards(props) {
 
@@ -10,7 +10,7 @@ function Cards(props) {
 
     <> 
    
-      <Card style={{ width: '18rem',margin:'4px' }} className="d-inline-flex">
+      <Card style={{ width: '18rem',margin:'4px', height:'350px' }} className="d-inline-flex">
         <Card.Img className="card-img-top" src={props.image} />
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>

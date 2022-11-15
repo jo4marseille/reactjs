@@ -3,9 +3,12 @@ function AllCardLodgings() {
     return(<div className="componentBg">
 
 
-        <div className="box">
-            <div className="container">
-                 <div className="row">
+
+        <div class="box">
+        <img src="\img\logos\logoHotel.png" alt='logo hotel' id="logo"/>
+            <div class="container">
+                 <div class="row">
+
                          
                         <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                        

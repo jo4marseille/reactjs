@@ -11,7 +11,7 @@ on:
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: ${{ github.event.repository.name }}
+  IMAGE_NAME: test-fatima-front
   # IMAGE_NAME: testworkflow-front
 
 jobs:

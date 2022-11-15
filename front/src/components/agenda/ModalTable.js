@@ -19,7 +19,7 @@ const style = {
     p: 4,
 };
 
-export default function ModalTable() {
+export default function ModalTable(props) {
     const [open, setOpen] = React.useState(true);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -44,7 +44,7 @@ export default function ModalTable() {
                             Liste des athlètes participants
                         </Typography>
                         <Typography id="transition-modal-description" sx={{mt: 2}}>
-                            <AthletesTable/>
+                            <AthletesTable data={props.data}/>
                         </Typography>
                     </Box>
                 </Fade>

@@ -36,8 +36,7 @@ const ContainerDirect = () => {
 
             <iframe
                 //width="80vw" height="315"
-                class="frame"
-
+                className="frame"
                 src="https://www.youtube.com/embed/bf4Jkbpl9mU"
                 title="YouTube video player" frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -48,10 +47,10 @@ const ContainerDirect = () => {
                 <ContainerDiag/>
             {/*</div>*/}
 
-            <h3 class={"title_match"}>
+            <h3 className={"title_match"}>
                 RUGBY: Aix VS Madrid
             </h3>
-            <h4 class={"title_score"}> 1 - 0</h4>
+            <h4 className={"title_score"}> 1 - 0</h4>
             <p className="p_match">Petit texte resumant la situation Petit texte resumant la situation Petit texte
                 resumant la situation
                 Petit texte resumant la situation Petit texte resumant la situation Petit texte resumant la

@@ -11,8 +11,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import MapIcon from '@mui/icons-material/Map';
 import ZoomOutMapIcon from '@mui/icons-material/ZoomOutMap';
-
-const ActivityCard = () => {
+const ActivityCard = (props) => {
 
     let [item1, setItem1] = useState(false)
     let [item2, setItem2] = useState(false)
@@ -33,10 +32,10 @@ const ActivityCard = () => {
 
                 <div className="div_ctn_header">
                     <h4 className="title_activity">
-                        Activity name
+                        {props.data.name}
                     </h4>
 
-                    <p className="hour_activity">10:30</p>
+                    <p className="hour_activity">{props.data.localTime}</p>
                 </div>
 
                 <div className="div_item_incard_ctn" onClick={((e) => {
@@ -64,7 +63,7 @@ const ActivityCard = () => {
                     {
                         item1 ?
                             <div>
-                                <ModalTable/>
+                                <ModalTable data={props.data}/>
                             </div>
                             :
                             <>
@@ -104,6 +103,16 @@ const ActivityCard = () => {
 
                         </div>
                     </div>
+                    {
+                        item3 ?
+                            <div className="ctn_link">
+                                <a href={""} className="link">
+                                    {props.data.location}
+                                </a>
+                            </div>
+                            :
+                            <></>
+                    }
                 </div>
 
                 <div className="div_item_incard_ctn"
@@ -137,14 +146,10 @@ const ActivityCard = () => {
                     {
                         item2 ?
                             <div className="ctn_link">
-                                <a href={""} className="link">
-                                    Lien1
-                                </a>
-                                <a href={""} className="link">
-                                    Lien2
-                                </a>
-                                <a href={""} className="link">
-                                    Lien2
+                                <a href={props.data.channel.link} className="link">
+                                    <div style={{width:50,display:"flex",justifyContent:"space-between"}}>
+                                    <img style={{width:"100%"}} src={require(`../../assets/images/chaines-tele/${props.data.channel.logo}`)} alt=""/>
+                                    </div>
                                 </a>
                             </div>
                             :

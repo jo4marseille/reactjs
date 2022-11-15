@@ -51,7 +51,7 @@
         {
             "name": "Pullman Marseille 4*",
             "image": "img/images/pullman286x180.png",
-            "description": "Au cœur d'un grand parc calme avec piscine, l'hôtel Pullman est situé à 1 min des terminaux principaux de l'aéroport Marseille Provence et à 10 min de la gare TGV Aix-en-Provence. Les chambres spacieuses avec air-conditionné invitent à la détente. Les salles de réunion équipées, modulables accueillent jusqu'à 250 hôtes. Le wifi est disponible et offert dans tous les espaces. Notre hôtel 4* dispose d'un restaurant-bar lounge lumineux avec terrasses. Vous pourrez y venir aisément avec le service navette aéroport 24h/24 ou vous garer dans le parking clos et gratuit.",
+            "description": "Au cœur d'un grand parc calme avec piscine, l'hôtel Pullman est situé à 1 min des terminaux principaux de l'aéroport Marseille Provence et à 10 min de la gare TGV Aix-en-Provence. Les chambres spacieuses avec air-conditionné invitent à la détente. Les salles de réunion équipées, modulables accueillent jusqu'à 250 hôtes.",
             "lien": "http://www.mia-marseille.com/"
         },
         {
@@ -89,7 +89,7 @@
         },
         {
             "name": "Stade de Marseille",
-            "image": "img/images/stadeve286x180.png",
+            "image": "img/images/stadeve286x180l.png",
             "description": "Foot - 3 Bd Michelet, 13008 Marseille - 04.13.64.64.64",
             "lien": "https://www.orangevelodrome.com/"
         }

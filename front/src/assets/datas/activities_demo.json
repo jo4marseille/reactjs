@@ -1,8 +1,8 @@
 {
   "selectedSports": [
     {
-      "categoryId": 3,
       "name": "Saut en longueur",
+      "image": "../images/sports/longJump.jpg",
       "location": "Stade olympique, Paris",
       "athletes": [
         {
@@ -96,8 +96,8 @@
       "sex": "Hommes"
     },
     {
-      "categoryId": 3,
       "name": "Saut en longueur",
+      "image": "../images/sports/longJump.jpg",
       "location": "Stade olympique, Paris",
       "athletes": [
       ],
@@ -107,8 +107,9 @@
       "sex": "Hommes"
     },
     {
-      "categoryId": 3,
+
       "name": "Sprint 100 mètres",
+      "image": "../images/sports/sprintWomen.webp",
       "location": "Stade olympique, Paris",
       "athletes": [
         {
@@ -199,8 +200,8 @@
       "sex": "Femmes"
     },
     {
-      "categoryId": 3,
       "name": "Saut en longueur",
+      "image": "../images/sports/longJump.jpg",
       "location": "Stade olympique, Paris",
       "athletes": [
       ],
@@ -211,8 +212,8 @@
 
     },
     {
-      "categoryId": 6,
       "name": "Boxe",
+      "image": "../images/sports/boxe.webp",
       "location": "Stade Roland-Garros, Paris",
       "athletes": [
         {
@@ -302,8 +303,8 @@
       "sex": "Hommes"
     },
     {
-      "categoryId": 6,
       "name": "Boxe",
+      "image": "../images/sports/boxe.webp",
       "location": "Stade Roland-Garros, Paris",
       "athletes": [
       ],

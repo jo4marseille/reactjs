@@ -1,67 +1,62 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 /* Home */
 
-.home {
+.homeBg {
   background-image: url("../public/img/home/home4.png");
-   background-size:cover;
-   background-repeat: no-repeat;
+  background-size:cover;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 
 } 
 
-.test {
-  height: 100vh;
-width: 100%;
+.componentBg {
+  background-image: url("../public/img/component/fondComponent.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+ /* height: 100vh;  Si besoin (taille de card) */
+  /* width: 100%; */
+
+} 
+
+.pageError {
+  /* height: 100vh; */
+  width: 100%;
+}
+
+.imgError {
+  height: 425px;
+  width: 312px;
 }
 
 /* Footer */
-.container {
-  padding: 0 2rem;
-}
 .footer {
   display: flex;
   flex: 1;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   border: 1px solid #707070;
   padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.rowFooter {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-basis: 30%;
+  text-align: center;
   padding: 10px;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 33%;
-  padding: 10px;
-}
-
-.column img {
+.footer img {
   height: 70px;
   object-fit: contain;
 }
 
-.smaller{
+.smaller {
   height: 40px !important;
 }
 
@@ -93,5 +88,9 @@ width: 100%;
     width: 100%;
   
   } 
+
+  .logo {
+    width:13rem;
+  }
   
 }

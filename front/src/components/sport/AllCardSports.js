@@ -1,7 +1,7 @@
 import React from "react";
  
 function AllCardSports() {
-    return(<div>
+    return(<div className="componentBg">
 
 
         <div class="box">

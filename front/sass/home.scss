@@ -48,7 +48,7 @@ $fontBold: 700;
 
 .presentation {
   position: absolute;
-  margin-top: 15%;
+  margin-top: 13%;
   margin-left: 8%;
   margin-bottom: 15%;
   width: 455px;
@@ -69,6 +69,7 @@ $fontBold: 700;
 .pres-title {
   font-weight: $fontBold;
   letter-spacing: 2px;
+  text-shadow: 2px 2px 3px #00004d;
 }
 
 .pres-description {
@@ -87,18 +88,19 @@ span {
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .card-foot,
 .card-voile {
   background-color: #ed354f;
-  height: 200px;
-  width: 200px;
+  height: 270px;
+  width: 270px;
   color: white;
   text-align: center;
   border-radius: 54px;
   background-size: contain;
+  margin-bottom: 60px;
 }
 
 .card-foot {
@@ -113,5 +115,12 @@ span {
 .card-voile > p {
   // position: absolute;
   z-index: 1000;
-  margin-top: 60px;
+  margin-top: 90px;
+  font-size: 20px;
+}
+
+.card-foot:hover,
+.card-voile:hover {
+  cursor: pointer;
+  color: #00004d;
 }

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pays",
+  "info": {
+    "singularName": "pay",
+    "pluralName": "pays",
+    "displayName": "Pays",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "drapeau": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

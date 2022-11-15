@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+/* Import CSS principal */
 import './App.css';
+
+/* Import Components */
+import Header from './Components/Header/Header';
+import Home from './Pages/Home/Home';
+import LogReg from './Pages/LogReg/LogReg';
+import Sports from './Pages/Sports/Sports';
+import SportEvents from './Pages/Sports/SportEvents';
+import Events from './Pages/Events/Events';
+
+/* Import React Router */
+import { Routes, Route} from "react-router-dom";
+
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} title="Home" />
+        <Route path='/login' element={<LogReg />} title="Home" />
+        <Route path='/sports' element={<Sports />} title="Home" />
+        <Route path='/sport/:id' element={<SportEvents />} title="Home" />
+        <Route path='/event/:id' element={<Events />} title="Home" />
+      </Routes>
     </div>
   );
 }

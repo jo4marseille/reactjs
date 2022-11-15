@@ -5,12 +5,13 @@ on:
     branches:
     - main
     - master
+    - team-c-m
 
     # Publish `v1.2.3` tags as releases.
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: ${{ github.event.repository.name }}
+  IMAGE_NAME: team-c-m
   # IMAGE_NAME: testworkflow-front
 
 jobs:

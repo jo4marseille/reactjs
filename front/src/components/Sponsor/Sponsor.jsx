@@ -6,7 +6,10 @@ import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
 
 const Sponsor = () => {
-    console.log(GetSponsors());
+
+
+
+
     const initialState =  {
       about: "",
       company: "",
@@ -24,6 +27,8 @@ const Sponsor = () => {
     const [load, setLoad] = useState(true)
 
     useEffect(() => {
+
+      GetSponsors().then(res => console.log(res))
 
       if(load) {
         const timer = setTimeout(() => {

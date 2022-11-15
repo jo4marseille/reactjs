@@ -13,7 +13,7 @@
           "country": "France",
           "position": "1",
           "photo": "../images/athletes/1.png",
-          "flag":
+          "flag": "../images/flags/france.svg"
         },
         {
           "id": 2,
@@ -22,7 +22,9 @@
           "age": "26",
           "country": "Jamaïque",
           "position": "2",
-          "photo": "../images/athletes/2.png"
+          "photo": "../images/athletes/2.png",
+          "flag": "../images/flags/jamaique.svg"
+
         },
         {
           "id": 3,
@@ -31,7 +33,9 @@
           "age": "26",
           "country": "Chine",
           "position": "3",
-          "photo": "../images/athletes/3.png"
+          "photo": "../images/athletes/3.png",
+          "flag": "../images/flags/chine.svg"
+
         },
         {
           "id": 4,
@@ -40,7 +44,9 @@
           "age": "33",
           "country": "USA",
           "position": "4",
-          "photo": "../images/athletes/4.png"
+          "photo": "../images/athletes/4.png",
+          "flag": "../images/flags/usa.svg"
+
         },
         {
           "id": 5,
@@ -49,7 +55,9 @@
           "age": "24",
           "country": "Grèce",
           "position": "5",
-          "photo": "../images/athletes/5.png"
+          "photo": "../images/athletes/5.png",
+          "flag": "../images/flags/grece.svg"
+
         },
         {
           "id": 6,
@@ -58,7 +66,8 @@
           "age": "24",
           "country": "Cubain",
           "position": "6",
-          "photo": "../images/athletes/6.png"
+          "photo": "../images/athletes/6.png",
+          "flag": "../images/flags/cuba.svg"
         },
         {
           "id": 7,
@@ -67,16 +76,18 @@
           "age": "31",
           "country": "Suisse",
           "position": "7",
-          "photo": "../images/athletes/7.png"
+          "photo": "../images/athletes/7.png",
+          "flag": "../images/flags/suisse.svg"
         },
         {
           "id": 8,
           "firstName": "Aleksandr",
           "lastName": "Menkov",
           "age": "22",
-          "country": "Russe",
+          "country": "Russie",
           "position": "8",
-          "photo": "../images/athletes/8.png"
+          "photo": "../images/athletes/8.png",
+          "flag": "../images/flags/russie.svg"
         }
       ],
       "localTime": "09:00",
@@ -107,7 +118,8 @@
           "age": "22",
           "country": "Jamaïque",
           "position": "1",
-          "photo": "../images/athletes/9.png"
+          "photo": "../images/athletes/9.png",
+          "flag": "../images/flags/jamaique.svg"
         },
         {
           "id": 10,
@@ -116,7 +128,8 @@
           "age": "26",
           "country": "Britanique",
           "position": "2",
-          "photo": "../images/athletes/10.png"
+          "photo": "../images/athletes/10.png",
+          "flag": "../images/flags/r-uni.svg"
         },
         {
           "id": 11,
@@ -125,16 +138,19 @@
           "age": "30",
           "country": "Suisse",
           "position": "3",
-          "photo": "../images/athletes/11.png"
+          "photo": "../images/athletes/11.png",
+          "flag": "../images/flags/suisse.svg"
+
         },
         {
           "id": 12,
           "firstName": "Liang",
           "lastName": "Xiaojing",
           "age": "30",
-          "country": "Chinoise",
+          "country": "Chine",
           "position": "4",
-          "photo": "../images/athletes/12.png"
+          "photo": "../images/athletes/12.png",
+          "flag": "../images/flags/chine.svg"
         },
         {
           "id": 13,
@@ -143,7 +159,8 @@
           "age": "30",
           "country": "Allemagne",
           "position": "5",
-          "photo": "../images/athletes/13.png"
+          "photo": "../images/athletes/13.png",
+          "flag": "../images/flags/allemagne.svg"
         },
         {
           "id": 14,
@@ -152,7 +169,8 @@
           "age": "25",
           "country": "USA",
           "position": "6",
-          "photo": "../images/athletes/14.png"
+          "photo": "../images/athletes/14.png",
+          "flag": "../images/flags/usa.svg"
         },
         {
           "id": 15,
@@ -161,16 +179,18 @@
           "age": "25",
           "country": "USA",
           "position": "7",
-          "photo": "../images/athletes/15.png"
+          "photo": "../images/athletes/15.png",
+          "flag": "../images/flags/usa.svg"
         },
         {
           "id": 16,
           "firstName": "Marie-Josée",
           "lastName": "Ta Lou",
           "age": "25",
-          "country": "Russe",
+          "country": "Russie",
           "position": "8",
-          "photo": "../images/athletes/16.png"
+          "photo": "../images/athletes/16.png",
+          "flag": "../images/flags/russie.svg"
         }
       ],
       "localTime": "10:00",
@@ -202,7 +222,8 @@
           "age": "25",
           "country": "Irlande",
           "position": "1",
-          "photo": "../images/athletes/17.png"
+          "photo": "../images/athletes/17.png",
+          "flag": "../images/flags/irlande.svg"
         },
         {
           "id": 18,
@@ -211,7 +232,8 @@
           "age": "29",
           "country": "Royaume-Uni",
           "position": "2",
-          "photo": "../images/athletes/18.png"
+          "photo": "../images/athletes/18.png",
+          "flag": "../images/flags/r-uni.svg"
         },
         {
           "id": 19,
@@ -220,7 +242,8 @@
           "age": "24",
           "country": "Ukraine",
           "position": "3",
-          "photo": "../images/athletes/19.png"
+          "photo": "../images/athletes/19.png",
+          "flag": "../images/flags/ukraine.svg"
         },
         {
           "id": 20,
@@ -229,7 +252,8 @@
           "age": "29",
           "country": "Russie",
           "position": "4",
-          "photo": "../images/athletes/20.png"
+          "photo": "../images/athletes/20.png",
+          "flag": "../images/flags/russie.svg"
         },
         {
           "id": 21,
@@ -238,7 +262,8 @@
           "age": "24",
           "country": "Brésil",
           "position": "5",
-          "photo": "../images/athletes/21.png"
+          "photo": "../images/athletes/21.png",
+          "flag": "../images/flags/bresil.svg"
         },
         {
           "id": 22,
@@ -247,7 +272,8 @@
           "age": "24",
           "country": "Russie",
           "position": "6",
-          "photo": "../images/athletes/22.png"
+          "photo": "../images/athletes/22.png",
+          "flag": "../images/flags/russie.svg"
         },
         {
           "id": 23,
@@ -256,7 +282,8 @@
           "age": "25",
           "country": "USA",
           "position": "7",
-          "photo": "../images/athletes/23.png"
+          "photo": "../images/athletes/23.png",
+          "flag": "../images/flags/usa.svg"
         },
         {
           "id": 24,
@@ -265,7 +292,8 @@
           "age": "25",
           "country": "Khazakstan",
           "position": "8",
-          "photo": "../images/athletes/24.png"
+          "photo": "../images/athletes/24.png",
+          "flag": "../images/flags/khazakstan.svg"
         }
       ],
       "localTime": "10:30",

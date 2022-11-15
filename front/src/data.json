@@ -2,13 +2,13 @@
     "transports": [
       {
             "name": "Trains",
-            "image": "../front/public/gare aixr.jpg",
+            "image": "img/cards/gare-aix286x180.png",
             "description": "Exemple: Prendre le train",
             "lien": "https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/gares/marseille-st-charles-87751008"
       },
       {
             "name": "Transports en communs",
-            "image": "../front/public/rtm.jpg",
+            "image": "../front/public/img/rtm286x180.png",
             "description": "La Métropole Aix-Marseille Provence regroupant 92 communes est la plus vaste de France : elle représente 4 fois la superficie du Grand Paris, 6 fois celle du Grand Lyon.",
             "lien": "https://www.rtm.fr/"
       },

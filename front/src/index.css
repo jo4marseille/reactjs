@@ -51,5 +51,11 @@ code {
 .my-containt{
   margin: 0 auto;
   width: 60%;
+  margin-top: 64px;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
 }
 

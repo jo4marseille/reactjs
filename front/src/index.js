@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import Testcomponent from './components/Testcomponent';
+import './assets/Header.css';
+import './assets/footer.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import MyHeader from './components/Header';
+import MyFooter from './components/Footer';
+import MyCard from './components/Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  
-    <Testcomponent />
+    <MyHeader/>
+    <MyCard/>
+    <MyFooter/>
   </React.StrictMode>
 );
 

@@ -10,8 +10,9 @@ function Input() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input className="homeInput font" type="text" placeholder="" />
+        <input className="homeInput font " type="text" placeholder="" />
         <img
+          alt=""
           type="submit"
           src={loupe}
           className="loupe"

@@ -1,23 +1,13 @@
 import React from "react";
 import Navigation from "./Navigation";
-import { useNavigate } from "react-router-dom";
-import SearchInput from "./input/Input"
-import Nageur from "../img/assets/photo-header.gif"
+import Banner from "./Banner";
+
 const Home = () => {
 
-  const navigate = useNavigate();
-
-  const handleSubmit = () => navigate('/sponsor');
-
   return <div>
-          <Navigation />
-          <img className="nageur" src={Nageur} alt="Nageur Olympique" />
 
-
-          <div className="m-5 text-end">
-            <SearchInput />
-            <button onClick={() => handleSubmit()}>Match</button>
-          </div>
+            <Navigation />
+            <Banner />
 
         </div>
 };

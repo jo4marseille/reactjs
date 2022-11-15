@@ -1,6 +1,7 @@
 @import url(./stylesheets/sponsor.css);
 @import url(./stylesheets/header.css);
 @import url(./stylesheets/inputs.css);
+@import url(./stylesheets/banner.css);
 
 .App {
   text-align: center;
@@ -60,4 +61,10 @@
   @media (max-width: 600px) {
     max-width: 100%;
     width: 100%;
+  }
+
+  .arrow {
+    width: 48px;
+    filter: saturate(0);
+
   }

@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import Navigation from "../Navigation";
 import SponsorItem from "./SponsorItem";
 import SearchInput from "../input/InputMinus";
-import Nageur from "../../img/assets/photo-header.gif";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
 import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
-import coeur from "../../img/Logo/flamme-en-contour.png";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Banner from "../Banner";
 
 
 
@@ -110,10 +109,11 @@ const Sponsor = () => {
     return (
 
       <div>
-        <img className="nageurScoped" src={Nageur} alt="Nageur Olympique" />
+        <Navigation />
+        <Banner />
         <ToastContainer />
-        <SearchInput />
-        <div className="d-flex mt-5 positionOffers">
+        {/* <SearchInput /> */}
+        <div className="d-flex mt-5">
         <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
 
         {
@@ -125,7 +125,7 @@ const Sponsor = () => {
                   return (
                       <div key={id}
                         className="card rounded"
-                        style={{width: '18rem', zIndex: "1"}}
+                        style={{width: '18rem'}}
                         onClick={() => handleClick(id)}
 
                       >
@@ -149,10 +149,7 @@ const Sponsor = () => {
         }
           <div className="column-sponsor border border-primary rounded">
             <SponsorItem sponsor={selected} />
-
           </div>
-
-        <Navigation />
       </div>
     </div>
     )

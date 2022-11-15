@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Navigation from "../Navigation";
+import Banner from './../Banner'
 import AthleteItem from "./AthleteItem";
 import Spinner from "../Spinner";
 import { GetAthletes } from "../../request/athletes.request";
@@ -60,8 +61,9 @@ const Athlete = () => {
     <div>
 
         <Navigation />
+        <Banner />
 
-        <div className="d-flex mt-5">
+        <div className="d-flex" id="athlete">
 
         {
           load

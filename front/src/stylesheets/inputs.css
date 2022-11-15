@@ -8,7 +8,7 @@
     border-style: solid;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    top: 500px;
+    top: 540px;
     width: 1160px;
     height: 63px;
     background-color: #ff5757;
@@ -25,7 +25,7 @@
     border-style: solid;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    top: 460px;
+    top: 540px;
     width: 940px;
     height: 63px;
     background-color: #ff5757;
@@ -38,7 +38,7 @@
 
 .loupe {
     position: absolute;
-    top: 508px;
+    top: 548px;
     left: 1080px;
     width: 40px;
     height: 40px;

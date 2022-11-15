@@ -2,9 +2,9 @@ import React, {useState} from "react";
 import Navigation from "../Navigation";
 import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";
-
+import { GetSponsors } from "../../request/sponsors.request";
 const Sponsor = () => {
-
+    console.log(GetSponsors());
     const initialState =  {
       about: "",
       company: "",

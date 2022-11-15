@@ -19,7 +19,7 @@ import './Header.css'
 
 
 const drawerWidth = 260;
-const navItems = ['Accueil', 'Agenda', 'Contact', 'Statistique', 'Lieu / Map', 'Infos pratiques'];
+const navItems = ['Accueil', 'Agenda', 'Contact', 'Infos pratiques'];
 
 function Header(props) {
     const {window} = props;

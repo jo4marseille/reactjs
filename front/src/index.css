@@ -59,6 +59,8 @@
 }
 .home-sub-10{
     grid-area: home-sub-10;
+    background-image: url("../public/img/Flèche OLYMTRIP.png");
+    background-position: center;
 }
 .home-sub-11{
     grid-area: home-sub-11;

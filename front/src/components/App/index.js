@@ -7,9 +7,18 @@
 *************/
 import './app.css';
 
+/*************
+* Components *
+*************/
+import Map from '../Map';
+
 const App = () => (
   <div className="app">
-    Hello World !
+    <div className="nav"></div>
+    <div className="main">
+      <Map />
+      <div className="list"></div>
+    </div>
   </div>
 );
 

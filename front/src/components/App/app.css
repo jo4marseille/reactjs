@@ -3,5 +3,24 @@
 *****************/
 
 .app {
-  text-align: center;
+    position: relative;
 }
+
+.nav {
+    width: 100vw;
+    height: 80px;
+    background-color: red;
+}
+
+.main {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+.list {
+    height: calc(100vh - 80px);
+    width: 30%;
+    background-color: green;
+}
+

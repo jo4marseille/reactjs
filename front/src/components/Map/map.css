@@ -1,0 +1,9 @@
+/*****************
+* Map Stylesheet *
+*****************/
+
+.map-container {
+    height: calc(100vh - 80px);
+    width: 70%;
+    background-color: #F0F;
+}

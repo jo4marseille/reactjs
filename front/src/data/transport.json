@@ -1,0 +1,1569 @@
+{
+    "nhits": 62,
+    "parameters": {
+      "dataset": [
+        "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole"
+      ],
+      "rows": 62,
+      "start": 0,
+      "facet": [
+        "arret",
+        "commune",
+        "mode_de_transport"
+      ],
+      "format": "json",
+      "timezone": "UTC"
+    },
+    "records": [
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "c31dc0a932c957644464b74b70261e3404bd196c",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Canebière Capucins",
+          "identifiant_interne": "25899Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2967425328,
+            5.3789781241
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3789781241,
+            43.2967425328
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "e127729bb48d8dcc51f5b1fb50b05c9ab2b6ffde",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Belsunce Alcazar",
+          "identifiant_interne": "36777Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2984914461,
+            5.3765961696
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3765961696,
+            43.2984914461
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "ce322431157db94580e440693913a9a82bf5ddbe",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Canebière Garibaldi",
+          "identifiant_interne": "11730Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2979307168,
+            5.3814788242
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3814788242,
+            43.2979307168
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "c1ccbb98b2473d7ff43470506c6df55c1816bb0c",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Castellane",
+          "identifiant_interne": "18207Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2861907112,
+            5.3845119024
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3845119024,
+            43.2861907112
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "a21b1961627afa0429d0520a0a4ec1bbf312ea61",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Chartreux",
+          "identifiant_interne": "11686Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3091633444,
+            5.4013958031
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4013958031,
+            43.3091633444
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "bb5d0d5ebc3993908177d3b1cb971b9083f48265",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Castellane",
+          "identifiant_interne": "18207Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2865518309,
+            5.3835094086
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3835094086,
+            43.2865518309
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "e97fbe8546674c75f1b676d4d17734492247ed4a",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Estrangin",
+          "identifiant_interne": "36879Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2903310203,
+            5.37802278
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.37802278,
+            43.2903310203
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "924069b6e2cbbbc50906d105f3fc6a26e31388aa",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Eugène Pierre",
+          "identifiant_interne": "17004Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2951165032,
+            5.3897133856
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3897133856,
+            43.2951165032
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "1997f388dbd66acf723ce0c2f9ca944ff50e7425",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Cours Saint-Louis",
+          "identifiant_interne": "36850Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2959383716,
+            5.3781598873
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3781598873,
+            43.2959383716
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "9dc448477eaeaf89e7a83c2346eaa0d649280e0d",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Frais Vallon",
+          "identifiant_interne": "11683Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3254627799,
+            5.4232561474
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4232561474,
+            43.3254627799
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "48f45b1f2914dff6da411e5d509b78d60365aa1e",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "La Blancarde",
+          "identifiant_interne": "27539Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2955128555,
+            5.406120767
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.406120767,
+            43.2955128555
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "1c548ac6f65796ba66941674d5b327f58b241cc2",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "La Rose",
+          "identifiant_interne": "30733Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3331394946,
+            5.4296319227
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4296319227,
+            43.3331394946
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "8c16728ebf8512814701017dabb49b9263043c65",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Longchamp",
+          "identifiant_interne": "21764Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3032306498,
+            5.3924599122
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3924599122,
+            43.3032306498
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "7b573262b68a3ac09fc6b61847af72683f55adc0",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Noailles",
+          "identifiant_interne": "37103Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2967762637,
+            5.3812821496
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3812821496,
+            43.2967762637
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "b0af30ac2d239ce62b7e4c1a132053cf09ae8183",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Notre-Dame du Mont",
+          "identifiant_interne": "37106Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2928160073,
+            5.3836326717
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3836326717,
+            43.2928160073
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "7d7348d2f3eda4592d3c04db47cf5c74ad8cd77a",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Malpassé",
+          "identifiant_interne": "11684Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3209822291,
+            5.4164255499
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4164255499,
+            43.3209822291
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "40bd35d56ac432459310557799dbb8fcd45838bb",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Les Caillols",
+          "identifiant_interne": "11722Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2947182405,
+            5.4441323846
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4441323846,
+            43.2947182405
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "150cbc9efa87bc1acc38afd98d13668de7144fec",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "République Dames",
+          "identifiant_interne": "11727Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3022007412,
+            5.3694297609
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3694297609,
+            43.3022007412
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "0cfa3b83de97b9c577aff0e887e650e141c18f6e",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Rond-Point du Prado",
+          "identifiant_interne": "37188Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2713878649,
+            5.3924879957
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3924879957,
+            43.2713878649
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "e212673275bdeb78922c0c449f63cfc7ff268cef",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Rome Dragon",
+          "identifiant_interne": "37187Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2890966796,
+            5.3819211253
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3819211253,
+            43.2890966796
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "c9efc528d8fedbfae42a4d6bf4bad5cf59ad52b4",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Noailles",
+          "identifiant_interne": "37103Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2971561615,
+            5.3812038115
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3812038115,
+            43.2971561615
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "3b376822fb965a7dc0b7f29904f62f06c8f5f61f",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Saint-Just",
+          "identifiant_interne": "37199Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3154134685,
+            5.4064342246
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4064342246,
+            43.3154134685
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "3d441fe1cafcc1b013252af070df4fbb37b4982d",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Saint-Charles",
+          "identifiant_interne": "21727Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3023310739,
+            5.3800993506
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3800993506,
+            43.3023310739
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "0a3128f771376352dd4a12ee73fb193c5ef45e43",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Sainte-Thérèse",
+          "identifiant_interne": "11736Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.294137846,
+            5.4095558731
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4095558731,
+            43.294137846
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "f7b3d34055c78f4dd05b3b6323a508de4a3163af",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Sainte-Marguerite Dromel",
+          "identifiant_interne": "11706Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2706187888,
+            5.4021318275
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4021318275,
+            43.2706187888
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "407a43532d555e39fae6cb3b1ada1d038324e27d",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "La Fourragère",
+          "identifiant_interne": "17202Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3037674398,
+            5.4243671181
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4243671181,
+            43.3037674398
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "4bd0742d9c7cc59ecd69e172c6c7acbf16d03bdf",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Arenc Le Silo",
+          "identifiant_interne": "36747Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3133138698,
+            5.3682068976
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3682068976,
+            43.3133138698
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "7c15b715a5b9d05334a8a9c9055d32ed553bda8a",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Cinq Avenues",
+          "identifiant_interne": "11740Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3023335968,
+            5.3971279115
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3971279115,
+            43.3023335968
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "9386a762852fbfbfdf5db468f43cdf8e2bb24618",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Cinq Avenues Longchamp",
+          "identifiant_interne": "17468Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3040620788,
+            5.3961119199
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3961119199,
+            43.3040620788
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "0ecdd4388c404e32b47dcda2b6e251b9ed355823",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Camas",
+          "identifiant_interne": "16775Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2954604699,
+            5.3931172681
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3931172681,
+            43.2954604699
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "43f19ed1d6066b10e07608f15f27fde325e88a56",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "George",
+          "identifiant_interne": "36909Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2955802162,
+            5.3974448995
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3974448995,
+            43.2955802162
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "e01e64cf45c2395594a13b3b98072c7eda9f98a9",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Désirée Clary",
+          "identifiant_interne": "36862Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3094030198,
+            5.3723225136
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3723225136,
+            43.3094030198
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "e606ee8fe5ea4ecc740d5cb3da131f3fcde4ae42",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Gèze",
+          "identifiant_interne": "36911Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3279507206,
+            5.3673544809
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3673544809,
+            43.3279507206
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "970fafc84e02842168ab014f0df4726c6a906ed1",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Foch Boisson",
+          "identifiant_interne": "36895Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2981649391,
+            5.4033077646
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4033077646,
+            43.2981649391
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "298e810ff66c438d9f775b1ad2f83faf66bcc67d",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Jean Martin",
+          "identifiant_interne": "17146Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2958437998,
+            5.4017679289
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4017679289,
+            43.2958437998
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "79ba1c9358f834b6158fcf26e33c21d71feb4280",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Foch Sakakini",
+          "identifiant_interne": "36896Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.300280798,
+            5.4000595713
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4000595713,
+            43.300280798
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "d2da78f86d4d39ff511be7c263306a8641b88327",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "La Boiseraie",
+          "identifiant_interne": "36951Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2949072473,
+            5.4225731248
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4225731248,
+            43.2949072473
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "63923fd2890955d4dfb6fa82e1f5206ecb2e0db2",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Joliette",
+          "identifiant_interne": "31860Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.303881351,
+            5.3678686554
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3678686554,
+            43.303881351
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "0310a292b3af1347586fcf3bd7e4004b0a55eb92",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Euroméditerranée Gantès",
+          "identifiant_interne": "11725Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3086830613,
+            5.3681962014
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3681962014,
+            43.3086830613
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "69520eea7ef9de83391aca2558ad047841c99b24",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "La Timone",
+          "identifiant_interne": "33796Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2911234307,
+            5.4004817768
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4004817768,
+            43.2911234307
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "5be5f477969be7a5cf01130da2d3370fa8e7f860",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Joliette",
+          "identifiant_interne": "31860Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3039144959,
+            5.3679689093
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3679689093,
+            43.3039144959
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "cfc739c561dcb1bbd771ac62a891ab95c039c4d3",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Place de Rome",
+          "identifiant_interne": "17747Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2914356273,
+            5.3806172302
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3806172302,
+            43.2914356273
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "957adba88d6b2b97a16a8f5fa3b34e63ce52bc50",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "National",
+          "identifiant_interne": "37101Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3151278083,
+            5.3730810843
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3730810843,
+            43.3151278083
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "39fe5d7d640a5fb268e1aabb58e0c76baf958e02",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Rome Davso",
+          "identifiant_interne": "17744Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2936170548,
+            5.3794772292
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3794772292,
+            43.2936170548
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "e4d6a3a07e820b80022d54cd7436f4b4f1b95079",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Louis Armand",
+          "identifiant_interne": "12167Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.299947338,
+            5.4136345198
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4136345198,
+            43.299947338
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "8a0fc045a068f4edd22b6ac57565bef9d31a83b1",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "La Parette",
+          "identifiant_interne": "36966Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2949668463,
+            5.4192399696
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4192399696,
+            43.2949668463
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "ebc30a3119eb6b9ab6c53b2a5e034107cbff2cd5",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Réformés Canebière",
+          "identifiant_interne": "11743Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3004047188,
+            5.3862025511
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3862025511,
+            43.3004047188
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "72e3b132558625f136fd270d2cbc949897544c6b",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Périer",
+          "identifiant_interne": "31753Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2794015064,
+            5.3876837719
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3876837719,
+            43.2794015064
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "1f40e20ad822f78ec5e83feaf0da448ee58c77a9",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Saint-Pierre",
+          "identifiant_interne": "11737Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2918914899,
+            5.4142121069
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4142121069,
+            43.2918914899
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "373c5749a5db7c77e733bb5531e3a8ad0ac3334f",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Vieux-Port",
+          "identifiant_interne": "34314Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2956371842,
+            5.3741797317
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3741797317,
+            43.2956371842
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "662b4cf85f0360e2fc5ecfb5564196a3b695a410",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Air Bel",
+          "identifiant_interne": "36743Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2942625915,
+            5.4290510711
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4290510711,
+            43.2942625915
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "b2960595dba89e9fcbb4641d728b389e6216d77a",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Baille",
+          "identifiant_interne": "36753Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2881640293,
+            5.3919778457
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3919778457,
+            43.2881640293
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "1068ced64cdd6eed865d48f5ccbcbfed167b2dc1",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Colbert",
+          "identifiant_interne": "31748Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3002979551,
+            5.3744018034
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3744018034,
+            43.3002979551
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "4b0b220a910a8129379b4692733cbd8a17385c74",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "La Blancarde",
+          "identifiant_interne": "27539Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2966551966,
+            5.4054801053
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4054801053,
+            43.2966551966
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "ab4ac2d2154f4586db6a5546b4744f6c213f2581",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "La Grognarde",
+          "identifiant_interne": "36956Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2946641382,
+            5.4322859532
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4322859532,
+            43.2946641382
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "00456851d81eae9f33ad482f3c2438c2ee95092e",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Jules Guesde",
+          "identifiant_interne": "36944Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3020002347,
+            5.3739871015
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3739871015,
+            43.3020002347
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "bdb8ee058088c320277b52892e68e59307f14e12",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Métro Bougainville",
+          "identifiant_interne": "11696Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3214283074,
+            5.3712837837
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3712837837,
+            43.3214283074
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "4e624c4fc7b5d3abb39694d42d071ef1ffc0fbf9",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "National",
+          "identifiant_interne": "37101Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3015886424,
+            5.3885309673
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3885309673,
+            43.3015886424
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "5c7701d34ccd1e5c46cc76e6a7c1332b2e2940dc",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Réformés Canebière",
+          "identifiant_interne": "11743Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3001106664,
+            5.3854728188
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3854728188,
+            43.3001106664
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "638a2ae913b680c80f1ccfd3594c9c3ca54a4532",
+        "fields": {
+          "mode_de_transport": "Métro",
+          "date_de_maj": "2021-11-03",
+          "arret": "Saint-Barnabé",
+          "identifiant_interne": "12168Métro",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.3032399946,
+            5.4186131602
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4186131602,
+            43.3032399946
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "36c12b4f3efc63232a78a3be45cc291980efbe69",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "Sadi Carnot",
+          "identifiant_interne": "11728Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2998663424,
+            5.3712147602
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.3712147602,
+            43.2998663424
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      },
+      {
+        "datasetid": "ls-stations-de-metro-et-de-tramway-marseille@ampmetropole",
+        "recordid": "04f448d44a4bb1fd648788e4929c1cb53292275c",
+        "fields": {
+          "mode_de_transport": "Tramway",
+          "date_de_maj": "2021-11-03",
+          "arret": "William Booth",
+          "identifiant_interne": "18004Tramway",
+          "nom_du_reseau": "RTM",
+          "commune": "MARSEILLE",
+          "point_geo": [
+            43.2926254318,
+            5.4368787448
+          ],
+          "source": "Métropole Aix-Marseille Provence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            5.4368787448,
+            43.2926254318
+          ]
+        },
+        "record_timestamp": "2022-01-11T15:24:24.723Z"
+      }
+    ]
+  }

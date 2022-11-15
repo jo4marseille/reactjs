@@ -4,6 +4,8 @@ import data from "../../data.json";
 
 function AllCardLodgings() {
     return(<div className="componentBg">
+                <img src="\img\logos\logoResto.png" alt='logo Restaurant' id="logo"/>
+
     {data.hotels.map((e) => {
 
         return(

@@ -28,7 +28,15 @@ body {
   width: 100%;
 }
 
+.linkGo{
+  position: absolute;
+  left: 85px;
+  bottom: 45px;
+}
 
+.description{
+  width: 263px;
+}
 
 /* Navbar */
 

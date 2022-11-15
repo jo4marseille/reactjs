@@ -14,15 +14,15 @@
       },
       {
             "name": "Avions",
-            "image": "22",
+            "image": "",
             "description": "Information Technology",
             "lien": "123"
       },
       {
-            "name": "Compagnie de transport de car privé",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "name": "Cars de France",
+            "image": "",
+            "description": "Louez un bus en 30 secondes chrono ! Cars de France est une compagnie de location d'autocar avec chauffeur, pour tous types de déplacement en autocar, avec des véhicules adaptés à chaque situation",
+            "lien": "https://www.cars-de-france.com/"
       }
     ],
 
@@ -40,31 +40,59 @@
             "lien": "https://www.v-et-v-restaurant-marseille.com/"
         },
         {
-            "name": "Restaurant: Steak Lounge ",
+            "name": "Restaurant: Steak Lounge",
             "image": "",
             "description": "Restaurant halal pour vos repas et dîners seul ou à plusieurs. Un bar proposant du cocktail sans alcool, soft… est disponible à l’entrée du restaurant. Une terrasse est mise à votre disposition afin que vous puissiez manger tranquillement, tout en profitant du beau temps.",
-            "lien": "https://www.steak-lounge.fr/"
+            "lien": "https://www.thefork.fr/restaurant/steak-lounge-r520895"
         }
       ],
 
       "hotels": [
         {
-            "name": "Pullman",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "name": "Pullman Marseille 4*",
+            "image": "",
+            "description": "Au cœur d'un grand parc calme avec piscine, l'hôtel Pullman est situé à 1 min des terminaux principaux de l'aéroport Marseille Provence et à 10 min de la gare TGV Aix-en-Provence. Les chambres spacieuses avec air-conditionné invitent à la détente. Les salles de réunion équipées, modulables accueillent jusqu'à 250 hôtes. Le wifi est disponible et offert dans tous les espaces. Notre hôtel 4* dispose d'un restaurant-bar lounge lumineux avec terrasses. Vous pourrez y venir aisément avec le service navette aéroport 24h/24 ou vous garer dans le parking clos et gratuit.",
+            "lien": "http://www.mia-marseille.com/"
         },
         {
-            "name": "Ibis",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "name": "Groupe Accor (Mercure - Ibis)",
+            "image": "",
+            "description": "Réservez dès à présent une chambre à prix bas dans un des hôtels ibis Marseille ! Les hôtels ibis, ibis budget et ibis Styles vous proposent des chambres confortables et économiques.",
+            "lien": "https://ibis.accor.com/fr/city/hotels-marseille-v2493.shtml"
         },
         {
-            "name": "Mercure",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "name": "New hotel of Marseille 4*",
+            "image": "",
+            "description": "Le New Hotel Of Marseille et son restaurant le Qasti Bistrot sont idéalement situés, dans le prolongement du Vieux Port, face au Palais des Congrès du Pharo, à l’entrée de la somptueuse baie phocéenne.",
+            "lien": "http://www.new-hotel.com/fr/decouvrir-newhotel"
+        }
+      ],
+
+      "centres": [
+        {
+            "name": "ASPTT Marseille",
+            "image": "",
+            "description": "Voile - Port de la Pointe Rouge – 13008 Marseille - 06.71.27.30.02",
+            "lien": "https://marseille.asptt.com/"
+        },
+        {
+            "name": "Yachting Club de la Pointe Rouge (YCPR)",
+            "image": "",
+            "description": "Voile - Port de la Pointe Rouge – 13008 Marseille - 06 34 15 78 72",
+            "lien": "http://www.ycpr.net/"
+        },
+        {
+            "name": "Union Nautique Marseillaise",
+            "image": "",
+            "description": "Voile - 34 Boulevard Charles Livon – 13007 Marseille - 06 68 72 35 96",
+            "lien": "https://www.unm1882.fr/"
+        },
+        {
+            "name": "Stade de Marseille",
+            "image": "",
+            "description": "Foot - 3 Bd Michelet, 13008 Marseille - 04.13.64.64.64",
+            "lien": "https://www.orangevelodrome.com/"
         }
       ]
+      
   }

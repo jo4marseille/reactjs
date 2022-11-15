@@ -4,17 +4,16 @@ import data from "../../data.json";
 
 function AllCardRestaurations() {
 
-    return(<div className="componentBg">
-        {data.restaurants.map((e) => {
+    return(<div className="componentBg">   
+           <img src="\img\logos\logoResto.png" alt='logo logo Restauration' id="logo"/>
 
+        {data.restaurants.map((e) => {
             return(
                 <Card name={e.name} description={e.description}/>
             )
         }
         )}
-            
-        
-            </div>);
+        </div>
+)}
     
-}
-export default AllCardRestaurations
+export default AllCardRestaurations;

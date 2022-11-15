@@ -8,8 +8,10 @@ import Cards from "../Card";
 function AllCardTransports() {
 
     return(<div className="componentBg">
-        {data.tra.map((e) => {
+        <img src="\img\logos\logoTransport.png" alt='logo Transport' id="logo"/>
+        {data.transports.map((e) => {
 
+       
             return(
                 
                 <Cards name={e.name} description={e.description}/>
@@ -17,8 +19,7 @@ function AllCardTransports() {
         }
         )}
             
-        
-            </div>);
+</div>)
     
 }
 export default AllCardTransports

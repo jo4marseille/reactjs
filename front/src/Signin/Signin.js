@@ -19,6 +19,7 @@ import { fire } from "../utils/Firebase";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../utils/Firebase";
+//import { setStorage } from "../setStorage";
 
 const theme = createTheme();
 
@@ -30,6 +31,12 @@ export default function Signin() {
 
   const navigate = useNavigate();
 
+  // const setStorage = (name, data) => {
+  //   if (typeof window !== 'undefined') {
+  //     localStorage.setItem(name, JSON.stringify(data));
+  //   }
+  // };
+
   const signin = (e) => {
     e.preventDefault();
     const auth = getAuth(fire);
@@ -37,8 +44,11 @@ export default function Signin() {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log("utilisateur connecté");
-        navigate("/home");
+        console.log('user', user);
+        // this.setStorage({
+        //   user: user
+        // })
+        navigate("/homepage");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -79,8 +89,8 @@ export default function Signin() {
             <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
               <LockOutlinedIcon />
             </Avatar>
-            <Typography component="h1" variant="h5">
-              Sign in
+            <Typography component="h1" variant="h5" style={{fontWeight: 'bold'}}>
+              Connexion
             </Typography>
             <Box component="form" noValidate sx={{ mt: 1 }}>
               <TextField
@@ -88,7 +98,7 @@ export default function Signin() {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+                label="Addresse Email"
                 name="email"
                 autoComplete="email"
                 onChange={(e) => setEmail(e.target.value)}
@@ -99,7 +109,7 @@ export default function Signin() {
                 required
                 fullWidth
                 name="password"
-                label="Password"
+                label="Mot de passe"
                 type="password"
                 id="password"
                 onChange={(e) => setPassword(e.target.value)}
@@ -107,7 +117,7 @@ export default function Signin() {
               />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
+                label="Se souvenir de"
               />
               <Button
                 type="submit"
@@ -116,17 +126,17 @@ export default function Signin() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                Sign In
+                Connexion
               </Button>
               <Grid container>
                 <Grid item xs>
                   <Link href="#" variant="body2">
-                    Forgot password?
+                    Vous avez oubliez votre mot de passe
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
+                  <Link href="/signup" variant="body2">
+                    {"Vous n'avez pas de compte? Inscrivez Vous"}
                   </Link>
                 </Grid>
               </Grid>

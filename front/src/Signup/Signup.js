@@ -23,6 +23,10 @@ export default function Signup() {
   const [password, setPassword] = useState("");
   const emailRef = useRef();
   const passwordRef = useRef();
+  // const [lastName, setFirstName] = useState("");
+  // const [firstName, setLastName] = useState("");
+  // const lastNameRef = useRef();
+  // const firstNameRef = useRef();
   const { signup } = useAuth();
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
@@ -33,7 +37,7 @@ export default function Signup() {
     try {
       setError("");
       setLoading(true);
-      await signup(email, password);
+      await signup(email, password);        //, lastName, firstName 
     } catch {
       setError("Erreur de connection");
     }
@@ -67,6 +71,8 @@ export default function Signup() {
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
+                  // onChange={(e) => setFirstName(e.target.value)}
+                  // ref={firstNameRef}
                   autoComplete="given-name"
                   name="firstName"
                   required
@@ -78,6 +84,8 @@ export default function Signup() {
               </Grid>
               <Grid item xs={12} sm={6}>
                 <TextField
+                  // onChange={(e) => setLastName(e.target.value)}
+                  // ref={lastNameRef}
                   required
                   fullWidth
                   id="lastName"

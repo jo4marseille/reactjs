@@ -19,11 +19,13 @@ export function AuthProvider({ children }) {
 
   function signup(email, password) {
     const auth = getAuth(fire);
+    console.log('auth', auth)
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
         setCurrentUser(user);
-        console.log("utilisateur connecté");
+        console.log('auth22222', auth)
+        console.log('ici', userCredential);
         navigate("/");
         // ...
       })

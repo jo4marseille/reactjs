@@ -21,7 +21,7 @@ const SponsorItem = ({sponsor}) => {
 
     <Fragment>
 
-        <div className='d-flex justify-content-between'>
+        <div className='d-flex justify-content-between' >
             {
               attributes.isActive
                 ? <div className='text-success mx-3'>Offre valable</div>
@@ -66,7 +66,7 @@ const SponsorItem = ({sponsor}) => {
 
   return (
 
-      <div >
+      <div style={{zIndex: "1"}} >
       {
         isEmpty(sponsor[0]?.attributes)
         ?

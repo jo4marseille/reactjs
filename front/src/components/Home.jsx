@@ -10,15 +10,16 @@ const Home = () => {
   const handleSubmit = () => navigate('/sponsor');
 
   return <div>
-    <img className="nageur" src={Nageur} alt="Nageur Olympique" />
-    <Navigation />
+          <Navigation />
+          <img className="nageur" src={Nageur} alt="Nageur Olympique" />
 
-      <div className="m-5 text-end">
-        <SearchInput />
-        <button onClick={() => handleSubmit()}>Match</button>
-      </div>
 
-  </div>;
+          <div className="m-5 text-end">
+            <SearchInput />
+            <button onClick={() => handleSubmit()}>Match</button>
+          </div>
+
+        </div>
 };
 
 export default Home;

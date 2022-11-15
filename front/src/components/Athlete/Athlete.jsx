@@ -57,8 +57,8 @@ const Athlete = () => {
 
 
     return (
-    <div >
-        Sponsor
+    <div>
+
         <Navigation />
 
         <div className="d-flex mt-5">

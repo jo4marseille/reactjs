@@ -119,14 +119,15 @@ const Sponsor = () => {
         {
           load
           ? <Spinner />
-          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" >
+          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor"  >
               {
                 data.map(({id, attributes}) => {
                   return (
                       <div key={id}
                         className="card rounded"
-                        style={{width: '18rem'}}
+                        style={{width: '18rem', zIndex: "1"}}
                         onClick={() => handleClick(id)}
+
                       >
                       <img src={attributes.picture} alt={attributes.name} className="card-img-top" />
                       <div className="card-body">

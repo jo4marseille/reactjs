@@ -17,7 +17,7 @@ function Cards(props) {
           <Card.Text>
             {props.description}
           </Card.Text>
-          <Link to={props.lien}> <Button variant="primary">En savoir plus</Button></Link>
+          <a href={props.lien}> <Button variant="primary">En savoir plus</Button></a>
         </Card.Body>
         
       </Card>

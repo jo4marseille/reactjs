@@ -1,5 +1,6 @@
 import { useState } from "react"
 import AddTranslator from "../components/addTranslator";
+import Navbar from "../components/Navbar";
 
 export default function Form()
 {
@@ -35,6 +36,7 @@ export default function Form()
     
     return (
         <div class="container">
+            <Navbar/>
             {
                 step == "form" &&
 

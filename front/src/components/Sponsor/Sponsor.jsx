@@ -43,7 +43,7 @@ const Sponsor = () => {
 
     useEffect(() => {
       const handleScroll = () => {
-        console.log(window.scrollY)
+
         if (window.scrollY === 921 && page < 100 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
@@ -56,7 +56,6 @@ const Sponsor = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, [page]);
-
 
 
     return (

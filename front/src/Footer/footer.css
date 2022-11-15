@@ -9,6 +9,7 @@
     align-items: center;
     position: fixed;
     bottom: 0;
+    width: 58.4%;
     /*top: 100vh;*/
 
 
@@ -23,7 +24,7 @@
 }
 
 .footer img {
-    height: 70px;
+    height: 4rem;
     object-fit: contain;
 }
 

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 .body {
   font-family: "Poppins", "sans-serif";
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/background-jo.png");
+  background-image: url("../src/pages/background-jo.png");
   background-color: #f3f3f3;
 }
 
@@ -95,11 +95,11 @@ span {
 }
 
 .card-foot {
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/foot.png");
+  background-image: url("../src/pages/foot.png");
 }
 
 .card-voile {
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/voilecrop.png");
+  background-image: url("../src/pages/voilecrop.png");
 }
 
 .card-foot > p,
@@ -259,7 +259,7 @@ a:-webkit-any-link:hover {
 }
 
 .url1 {
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/background-jo.png");
+  background-image: url("../src/pages/background-jo.png");
 }
 
 /*# sourceMappingURL=App.css.map */

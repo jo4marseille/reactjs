@@ -7,12 +7,12 @@ $fontBold: 700;
 
 .body {
   font-family: $font;
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/background-jo.png");
+  background-image: url("../src/pages/background-jo.png");
   background-color: #f3f3f3;
 }
 
 .logo {
-  background-image: url(../src/img/fond2.png);
+  background-image: url("../src/pages/fond.png");
 }
 
 .fond,
@@ -102,11 +102,11 @@ span {
 }
 
 .card-foot {
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/foot.png");
+  background-image: url("../src/pages/foot.png");
 }
 
 .card-voile {
-  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/voilecrop.png");
+  background-image: url("../src/pages/voilecrop.png");
 }
 
 .card-foot > p,

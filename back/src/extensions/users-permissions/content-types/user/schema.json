@@ -63,11 +63,11 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "vote": {
+    "votes": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::vote.vote",
-      "inversedBy": "users_permissions_users"
+      "mappedBy": "users_permissions_user"
     }
   }
 }

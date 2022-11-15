@@ -31,7 +31,7 @@ function Header() {
           <button className="header__item">
             <img src="./calendrier.png" alt="Calendrier" />
           </button>
-          <Link to={"/profil"} className="header__item">
+          <Link to={"/account"} className="header__item">
             <img src="./profil.png" alt="Profil" />
           </Link>
         </ul>

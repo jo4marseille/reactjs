@@ -4,7 +4,8 @@
   "info": {
     "singularName": "vote",
     "pluralName": "votes",
-    "displayName": "vote"
+    "displayName": "vote",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,11 +18,11 @@
       "target": "api::athelte.athelte",
       "inversedBy": "votes"
     },
-    "users_permissions_users": {
+    "users_permissions_user": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "mappedBy": "vote"
+      "inversedBy": "votes"
     }
   }
 }

@@ -9,7 +9,7 @@ function Navbar() {
   const [navState, SetNavState] = useState(true);
 
   function logoutHandler() {
-    localStorage.removeItem("userToken");
+    localStorage.removeItem("userToken", "userId");
   }
 
   const navToggle = (event) => {

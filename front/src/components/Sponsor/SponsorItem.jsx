@@ -44,11 +44,11 @@ const SponsorItem = ({sponsor}) => {
             <p className='text-start'>{about}</p>
 
             <h4>Sports that we support</h4>
-            <ul className='list-group'>
+            <ul className='list-group '>
               {
                 sports.map((sport, index) => {
                   return (
-                    <li key={index} className='list-group-item'>{sport}</li>
+                    <li key={index} className='list-group-item bg-secondary text-white'>{sport}</li>
                   )
                 })
               }
@@ -75,7 +75,7 @@ const SponsorItem = ({sponsor}) => {
 
   return (
 
-      <div>
+      <div >
       {
         isEmpty(sponsor[0])
         ?

@@ -5,3 +5,27 @@
 .logoCodeDrawer{
     width: 74%;
 }
+
+
+
+ .header{
+    background-image: url('../public/img/cartouche.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+    position: absolute;
+    z-index: 30;
+    width: 100vw;
+    height: 52vh;
+    background-position: top;
+
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .header{
+        display: none;
+    }
+    
+}
+/*
+.navBar {
+    color: black;
+} */

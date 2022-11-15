@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navigation from "../Navigation";
 import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";
+import Spinner from "./Spinner";
 
 const Sponsor = () => {
 
@@ -15,21 +16,65 @@ const Sponsor = () => {
 
     const [selected, setSelected] = useState([initialState])
 
+    const [data, setData] = useState([])
+
+    const [page, setPage] = useState(0)
+
+    const [load, setLoad] = useState(true)
+
+    useEffect(() => {
+
+      if(load) {
+        const timer = setTimeout(() => {
+
+          setData(sponsors.slice(page, page + 10))
+          setLoad(false)
+
+        }, 1000);
+        return () => clearTimeout(timer);
+      }
+
+    }, [page, load])
+
     const handleClick = (id) => {
 
-      setSelected(sponsors.filter(element => element._id === id))
+      setSelected(data.filter(element => element._id === id))
     }
 
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY === 110 && page < 100 ) {
+          setPage(prevState => prevState + 10)
+          setLoad(true)
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [page]);
+
+
+    console.log(page)
+
     return (
-    <div >
+    <div  >
         Sponsor
         <Navigation />
 
         <div className="d-flex mt-5">
 
-          <div className="d-flex flex-column align-items-center gap-3 column-sponsor">
+        {
+          load
+
+          ? <Spinner />
+
+
+          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor">
               {
-                sponsors.map(({_id, company, email, picture}) => {
+                data.map(({_id, company, email, picture}) => {
                   return (
 
                       <div key={_id}
@@ -49,7 +94,7 @@ const Sponsor = () => {
 
               }
           </div>
-
+        }
         <div className="column-sponsor border border-primary rounded">
 
             <SponsorItem sponsor={selected} />

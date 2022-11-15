@@ -3,8 +3,64 @@ import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import WidgetBlue from '../components/widgetEvents/WidgetBlue';
 import WidgetRed from '../components/widgetEvents/WidgetRed';
+import { getObjets, getModifies } from "../utils/element";
+import { useState } from 'react';
 
 const Home = () => {
+    const [date, setDate] = useState('');
+    const [category, setCategory] = useState('');
+    const [components, setComponents] = useState([]);
+
+    const objetByDate = getModifies().filter((modifieHash) => {
+        return modifieHash.datesOuverture !== undefined &&
+            modifieHash.datesOuverture.flat().includes('2022-12-20');
+      });
+  
+      const objetByCategories = objetByDate.filter((modifieHash) => {
+        return modifieHash.informationsFeteEtManifestation !== undefined &&
+            modifieHash.informationsFeteEtManifestation.categories !== undefined &&
+            modifieHash.informationsFeteEtManifestation.categories[0].id == 2107;
+      });
+  
+      const objetsByManifestationTypeNature = getModifies().filter((modifieHash) => {
+        return modifieHash.informationsFeteEtManifestation !== undefined &&
+            modifieHash.informationsFeteEtManifestation.typesManifestation !== undefined &&
+            modifieHash.informationsFeteEtManifestation.typesManifestation[0].id == 1966 && 
+            modifieHash.datesOuverture.flat().includes('2022-12-20');
+      });
+
+      const objetsByManifestationTypeTradition = getModifies().filter((modifieHash) => {
+        return modifieHash.informationsFeteEtManifestation !== undefined &&
+            modifieHash.informationsFeteEtManifestation.typesManifestation !== undefined &&
+            modifieHash.informationsFeteEtManifestation.typesManifestation[0].id == 1973;
+      });
+
+      const objetsByManifestationTypeCulture = getModifies().filter((modifieHash) => {
+        return modifieHash.informationsFeteEtManifestation !== undefined &&
+            modifieHash.informationsFeteEtManifestation.typesManifestation !== undefined &&
+            modifieHash.informationsFeteEtManifestation.typesManifestation[0].id == 1958;
+      });
+
+      function loadWidgets(){
+        var i = 0
+        setComponents([])
+        const objetsByManifestationType = getModifies().filter((modifieHash) => {
+            return modifieHash.informationsFeteEtManifestation !== undefined &&
+                modifieHash.informationsFeteEtManifestation.typesManifestation !== undefined &&
+                modifieHash.informationsFeteEtManifestation.typesManifestation[0].id == 1966 && 
+                modifieHash.datesOuverture.flat().includes('2022-12-20');
+          });
+
+          objetsByManifestationType.map(element => {
+            if(i%2 == 0) {
+                setComponents(oldArray => [...oldArray, <WidgetBlue element={element}/>])
+            } else {
+                setComponents(oldArray => [...oldArray, <WidgetRed date={date} element={element}/>])
+            }
+            ++i
+          });
+      }
+
     return (
         <>
             <div className={"home"}>
@@ -21,8 +77,9 @@ const Home = () => {
                 <div className={"home-sub-11"}></div>
                 <div className={"home-sub-12"}></div>
             </div>
-            <WidgetRed/>
-            <WidgetBlue/>
+            {console.log(objetsByManifestationTypeNature)}
+            <button onClick={() => {loadWidgets()}}>test</button>
+            {components}
         </>
     );
 };

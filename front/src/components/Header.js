@@ -4,7 +4,7 @@ import Logo_jo4marseille from "../assets/images/logo_jo4marseille.png";
 
 function Header() {
   return (
-    <div className='navbar'>
+    <div className='my-navbar'>
       <div className='navbar-container'>
         <a href="https://dev.jo4marseille.fr/" target="_blank" class="column">
           <img src={Logo_jo4marseille} alt="logo" className='logo'/>

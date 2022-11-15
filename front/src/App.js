@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import MapRtm from './components/MapRtm';
 import Tri from './components/Tri';
+import Card from './components/Card';
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
     <Route exact path="/header" component={Header}></Route>
     <Route exact path="/MapRtm" component={MapRtm}></Route>
     <Route exact path="/tri" component={Tri}></Route>
+    <Route exact path="/card" component={Card}></Route>
+
 
 
 

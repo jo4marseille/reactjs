@@ -3,6 +3,16 @@
 *****************/
 
 .map-container {
+    position: relative;
     height: calc(100vh - 80px);
     width: 70%;
+}
+
+.search {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }

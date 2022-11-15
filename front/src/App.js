@@ -40,6 +40,7 @@ function App() {
           <Route path="/" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/homepage" element={<Homepage />} />
+          {/* <Route path="/notification" element={<Homepage />} /> */}
         </Routes>
       </AuthProvider>
     </>

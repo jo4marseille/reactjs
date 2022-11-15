@@ -3,6 +3,7 @@ import AthleteModal from './AthleteModal'
 
 const AthleteItem = ({athlete}) => {
 
+  console.log(athlete)
 
   const displayData = (
 
@@ -10,26 +11,27 @@ const AthleteItem = ({athlete}) => {
 
         <div className='d-flex justify-content-between'>
 
-                <div className='text-success mx-3'>Athlete en recherche de sponsor</div>
+            <div className='text-success mx-3'>Athlete en recherche de sponsor</div>
         </div>
 
 
-        <h2>{athlete[0]?.fields.nom}</h2>
+        <h2>{athlete[0]?.attributes.Name}</h2>
 
         <div className='mx-3' >
-            <h4>{athlete[0]?.fields.sport}</h4>
-            <div className="mt-3">
-              {
-                true &&  <AthleteModal name={athlete[0]?.fields.nom} />
-              }
-            </div>
+             <h4>{athlete[0]?.attributes.sports}</h4>
 
+              <div className='text-end m-3'>
+                  <p>{athlete[0]?.attributes.email}</p>
+              </div>
 
-            <div className='d-flex justify-content-between mt-3'>
+              <div className="mt-3">
+                {
+                  true &&  <AthleteModal name={athlete[0]?.attributes.Name} />
+                }
+              </div>
 
-            </div>
-            <div>
-            </div>
+             <div>
+          </div>
         </div>
     </Fragment>
 

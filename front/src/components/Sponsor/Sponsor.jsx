@@ -1,11 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Navigation from "../Navigation";
-// import sponsors from '../../database/sponsors.json'
 import SponsorItem from "./SponsorItem";
-import { GetSponsors, GetAt } from "../../request/sponsors.request";
+import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
 import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
 import coeur from "../../img/Logo/flamme-en-contour.png"
+import {  PostAthletes, PuitAthletes } from "../../request/athletes.request";
+
 const Sponsor = () => {
 
     const initialState =  {
@@ -102,7 +103,7 @@ const Sponsor = () => {
     <div >
         <div className="page_title">Sponsor</div>
         <Navigation />
-        <button onClick={() => handleMatching()} type="button" class="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
+        <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
 
         <div className="d-flex mt-5">
 

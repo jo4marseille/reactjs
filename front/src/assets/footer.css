@@ -30,7 +30,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-basis: 33%;
+  /* flex-basis: 33%; */
   padding: 10px;
 }
 

@@ -23,7 +23,7 @@
           "age": "26",
           "country": "Jamaïque",
           "position": "2",
-          "photo": "../images/athletes/2.png",
+          "photo": "../images/athletes/2.jpeg",
           "flag": "../images/flags/jamaique.svg",
           "description": "Quatrième des Jeux du Commonwealth de 2018, il remporte la médaille d'argent lors des championnats d'Amérique du Nord, d'Amérique centrale et des Caraïbes 2018."
         },
@@ -34,7 +34,7 @@
           "age": "26",
           "country": "Chine",
           "position": "3",
-          "photo": "../images/athletes/3.png",
+          "photo": "../images/athletes/3.jpg",
           "flag": "../images/flags/chine.svg",
           "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
 

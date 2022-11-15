@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import Navigation from './Navigation';
 import Nageur from "../img/assets/photo-header.gif"
+import { PostSponsors } from '../request/sponsors.request';
+import { useNavigate } from 'react-router-dom'
 
 const SposorOffer = () => {
     const [dataForm, setDataForm] = useState({
@@ -11,14 +13,27 @@ const SposorOffer = () => {
         phone: '',
         address: '',
         about: '',
+        sports: '',
     });
-    
+
+    const navigate = useNavigate()
+
     function handleSubmit() {
         console.log(dataForm);
+        PostSponsors({data:{
+            name: dataForm.companyName,
+            isActive: true,
+            about: dataForm.about,
+            email: dataForm.email,
+            phone: dataForm.phone,
+            sports: dataForm.sports,
+            picture: dataForm.image,
+            adress: dataForm.address,
+        }})
+        navigate('/sponsor')
     }
-    
-    
-    // console.log(dataForm);
+
+
     return (
         <div>
             <img className="nageur" src={Nageur} alt="" />

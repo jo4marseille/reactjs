@@ -14,8 +14,8 @@ const Home = () => {
     <Navigation />
 
       <div className="m-5 text-end">
-        
         <SearchInput />
+        <button onClick={() => handleSubmit()}>Match</button>
       </div>
 
   </div>;

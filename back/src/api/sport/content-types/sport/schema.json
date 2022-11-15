@@ -24,6 +24,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "evenements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::evenement.evenement",
+      "mappedBy": "sport"
     }
   }
 }

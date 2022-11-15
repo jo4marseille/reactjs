@@ -3,51 +3,95 @@ import {DataGrid} from '@mui/x-data-grid';
 import {Popover, Tooltip} from "@mui/material";
 import Typography from "@mui/material/Typography";
 
-import ImageTest from "../../assets/images/jo.jpeg"
+import ImageTest from "../../assets/images/athletes/14.png"
 
 
 function item() {
     return (
         <div style={{
-            textAlign: "center"
+
+
+
         }}>
             <div style={{
-                width: 300,
-                // height: 200
+                display: "flex",
+                flexDirection: "row",
+                flexWrap: "noWrap"
             }}>
-                <img src={ImageTest} style={{
-                    width: "50%"
-                }}/>
+                <div style={{
+                    width: "50%",
+                }}>
+                    <div style={{
+                        backgroundImage: `url(${ImageTest})`,
+                        backgroundSize: "contain",
+                        backgroundRepeat: "no-repeat",
+                        width: "90%",
+                        height: 200,
+                    }}/>
+                </div>
+
+
+                <div style={{
+                    width: "50%",
+                    display: "flex",
+                    flexDirection: "column",
+                }}>
+                    <h5 style={{
+                        fontSize: 18,
+                        marginBottom: 0,
+                        marginTop: 5,
+                        textAlign: "right",
+                    }}>drap
+                        <br/>
+                        FRANCE
+                    </h5>
+
+
+                    <div style={{
+                        marginTop: 0,
+
+                        // marginLeft: 10,
+                    }}>
+                        <h4 style={{
+                            fontSize: 26,
+                            padding: 0,
+                            marginBottom: 0,
+                            marginTop: 10,
+                        }}>
+                            NOM
+                        </h4>
+
+                        <h5 style={{
+                            fontSize: 22,
+                            padding: 0,
+                            marginBottom: 0,
+                            marginTop: 5,
+                        }}>
+                            Prénom
+                        </h5>
+
+                        <h5 style={{
+                            fontSize: 22,
+                            padding: 0,
+                            marginBottom: 0,
+                            marginTop: 15,
+                        }}>
+                            31 ans
+                        </h5>
+
+                    </div>
+                </div>
+
+
             </div>
-
-
-            <h4 style={{
-                fontSize: 22,
+            <p style={{
+                width: "95%",
+                marginLeft: "auto",
+                marginRight: "auto",
+                marginTop: 0,
                 padding: 0,
-                marginBottom: 0,
-                marginTop: 15,
+                fontSize: 14
             }}>
-                NOM Prénom
-            </h4>
-
-            <h5 style={{
-                fontSize: 18,
-                padding: 0,
-                marginBottom: 0,
-                marginTop: 15,
-            }}>
-                31 ans
-            </h5>
-
-            <h5 style={{
-                fontSize: 18,
-                marginBottom: 0,
-                marginTop: 15
-
-            }}><span>drap</span>FRANCE</h5>
-
-
-            <p>
                 Descriptif Descriptif Descriptif Descriptif Descriptif Descriptif Descriptif Descriptif Descriptif
                 Descriptif Descriptif Descriptif
             </p>
@@ -66,7 +110,7 @@ const columns = [
         sortable: false,
         renderCell: (params) => (
             <Tooltip title={item()} style={{
-                // width: 400,
+                width: 600,
                 height: 200
             }}>
                 <span style={{

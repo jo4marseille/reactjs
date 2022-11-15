@@ -8,6 +8,7 @@ function NavBar() {
     <>
       {[false].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand}>
+
           <Container fluid>
         
           <Navbar.Brand href="/">
@@ -33,6 +34,7 @@ function NavBar() {
             <Nav.Link className='hebergement' href="hebergements"><img src="\img\logos\logoHotel.png" alt='logo hotel'  />Où Dormir </Nav.Link>
             <Nav.Link className='restaurant' href="restauration"> <img src="\img\logos\logoResto.png" alt='logo restaurant' />Où Manger</Nav.Link>
             <Nav.Link className='sport' href="sport"><img  src="\img\logos\logoSalle.png" alt='logo sport' />Centre Sportifs </Nav.Link>
+
           </Nav>
           <img
               alt="Logo du site"

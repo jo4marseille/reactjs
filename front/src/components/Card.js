@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card from 'react-bootstrap/Card';
 
-function BgColorExample() {
+function finalCard() {
   return (
         <div className='my-containt'>
         
@@ -55,4 +55,4 @@ function BgColorExample() {
       );
 }
 
-export default BgColorExample;
+export default finalCard;

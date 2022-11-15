@@ -60,8 +60,9 @@ const Sponsor = () => {
     console.log(page)
 
     return (
-    <div  >
-        Sponsor
+
+    <div >
+        <div className="page_title">Sponsor</div>
         <Navigation />
 
         <div className="d-flex mt-5">

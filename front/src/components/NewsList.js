@@ -17,6 +17,7 @@ const NewsList = () => {
   }, []);
   return (
     <div>
+      <h2 className="choose-title">Actualités</h2>
       <div className="container container-news">
         {articles.slice(0, 5).map((article, index) => {
           return (

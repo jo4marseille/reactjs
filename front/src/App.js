@@ -2,6 +2,7 @@ import "./App.css";
 import Map from "./components/Map";
 import NewsList from "./components/NewsList";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -12,9 +13,9 @@ const App = () => {
       </Routes>
     </BrowserRouter> */}
       <Home />
-      <Map />
+      {/* <Map /> */}
       <NewsList />
-      <p>Test</p>
+      <Footer />
     </>
   );
 };

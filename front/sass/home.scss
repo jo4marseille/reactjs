@@ -5,9 +5,10 @@ $fontLight: 300;
 $fontRegular: 500;
 $fontBold: 700;
 
-.all {
-  overflow: hidden;
+.body {
   font-family: $font;
+  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/background-jo.png");
+  background-color: #f3f3f3;
 }
 
 .logo {
@@ -24,12 +25,10 @@ $fontBold: 700;
 }
 
 .voile {
-  // position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0.6;
   border-radius: 54px;
-  object-fit: cover;
 }
 
 .foot {
@@ -82,13 +81,23 @@ $fontBold: 700;
   background-color: #ed354f;
   height: 200px;
   width: 200px;
-  color: blue;
+  color: white;
   text-align: center;
   border-radius: 54px;
+  background-size: contain;
+}
+
+.card-foot {
+  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/foot.png");
+}
+
+.card-voile {
+  background-image: url("/home/meerina/Pre MSC/Hackaton/mymarseille/front/src/pages/voilecrop.png");
 }
 
 .card-foot > p,
 .card-voile > p {
+  // position: absolute;
   z-index: 1000;
   margin-top: 60px;
 }

@@ -1,7 +1,4 @@
-import Card from "react-bootstrap/Card";
 import fond from "./fond.jpg";
-import voile from "./voile.png";
-import foot from "./foot.jpg";
 import "../App.css";
 
 function Home() {
@@ -29,7 +26,7 @@ function Home() {
           <h2 className="choose-title">Quel événement allez-vous voir ?</h2>
           <div className="cards">
             <div className="card-voile">
-              <img src={voile} alt="" className="voile" />
+              {/* <img src={voile} alt="" className="voile" /> */}
               <p>
                 ÉPREUVES <br />
                 OLYMPIQUES
@@ -38,7 +35,7 @@ function Home() {
               </p>
             </div>
             <div className="card-foot">
-              <img src={foot} alt="" className="foot" />
+              {/* <img src={foot} alt="" className="foot" /> */}
               <p>
                 ÉPREUVES <br />
                 OLYMPIQUES

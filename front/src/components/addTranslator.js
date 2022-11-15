@@ -1,10 +1,7 @@
-import axios from "axios";
-import { useState } from "react";
+
 
 export default function AddTranslator(props)
 {
-    const [error, setError] = useState("");
-    
     function register()
     {
         //localStorage.setItem("translators", JSON.stringify(props));
@@ -57,6 +54,7 @@ export default function AddTranslator(props)
             //console.log(translators);
         }
 
+
         /*axios.post("http://127.0.0.1:8000/api/translator/save", {
             name: props.Name,
             category: props.Category,
@@ -72,6 +70,7 @@ export default function AddTranslator(props)
                 setError("already_exists");
             }
         });*/
+
     }
 
     register();
@@ -79,17 +78,7 @@ export default function AddTranslator(props)
     return (
         
         <>
-            {
-                error == "" &&
-
-                <>Thanks you for your registration {props.Name} !</>
-            }
-
-            {
-                error == "already_exists" &&
-
-                <>This translator already exists :(</>
-            }
+            Thanks you for your registration {props.Name} !
         </>
     )
 }

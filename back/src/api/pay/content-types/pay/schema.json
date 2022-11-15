@@ -25,6 +25,12 @@
         "videos",
         "audios"
       ]
+    },
+    "athletes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athlete.athlete",
+      "mappedBy": "pay"
     }
   }
 }

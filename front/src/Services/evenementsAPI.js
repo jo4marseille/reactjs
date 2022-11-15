@@ -8,6 +8,11 @@ function findEvent(id){
     return axios.get(`${URL_EVENEMENTS}/${id}?populate[pays][populate]=drapeau&populate=image`)
 }
 
+function findEventPlayers(id_event, id_pays){
+    return axios.get(`${URL_EVENEMENTS}/${id_event}?populate[pays][filters][id][$eq]=${id_pays}&populate=athletes`)
+}
+
 export default {
-    findEvent
+    findEvent,
+    findEventPlayers
 } 

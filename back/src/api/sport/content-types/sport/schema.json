@@ -30,6 +30,12 @@
       "relation": "oneToMany",
       "target": "api::evenement.evenement",
       "mappedBy": "sport"
+    },
+    "athletes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athlete.athlete",
+      "mappedBy": "sport"
     }
   }
 }

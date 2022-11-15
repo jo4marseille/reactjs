@@ -46,11 +46,11 @@ export default function SportEvents() {
                                             <p>
                                                 {
                                                     item.attributes.pays.data.map((item, index) => {
-
+                                                        
                                                         if (index === 0){
                                                             return (
                                                                 <>
-                                                                    <img src={`http://localhost:1337${item.attributes.drapeau.data[0].attributes.url}`}/>
+                                                                    <img src={`http://localhost:1337${item.attributes.drapeau.data.attributes.url}`}/>
                                                                     {" " + item.attributes.nom + " / "} 
                                                                 </>
                                                             )
@@ -58,7 +58,7 @@ export default function SportEvents() {
                                                             return (
                                                                 <>
                                                                     {item.attributes.nom + " "}
-                                                                    <img src={`http://localhost:1337${item.attributes.drapeau.data[0].attributes.url}`}/>
+                                                                    <img src={`http://localhost:1337${item.attributes.drapeau.data.attributes.url}`}/>
                                                                 </>
                                                             )
                                                         }

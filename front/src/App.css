@@ -36,3 +36,66 @@
     transform: rotate(360deg);
   }
 }
+
+  .footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #707070;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer a {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer img {
+    height: 70px;
+    object-fit: contain;
+  }
+
+  .smaller {
+    height: 40px !important;
+  }
+
+  .navbar-brand {
+    padding-left:10px;
+  }
+
+  .baseline {
+    font-size: 80px;
+    margin-left: 05px;
+    font-weight: bold;
+    color:#FF5757;
+  }
+  .baseline-img {
+    justify-content: center;
+    height: 400px;
+    margin-left: 05px;
+  }
+
+  .hearder {
+    height: 80px;
+  }
+  .register {
+    height: 50px;
+    background-color: #FF5757;
+    border-radius:25px;
+    width:250px;
+    text-align: center;
+    justify-content: center;
+    margin-left:300px;
+    margin-top:50px;
+    color : #ededed;
+    font-weight: bold;
+  }
+
+  .contbl {
+    display:flex;
+  }
+

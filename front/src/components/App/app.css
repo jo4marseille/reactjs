@@ -9,7 +9,6 @@
 .nav {
     width: 100vw;
     height: 80px;
-    background-color: red;
 }
 
 .main {
@@ -23,5 +22,22 @@
     width: 30%;
     overflow: hidden;
     overflow-y: scroll;
+}
+
+@media (max-width: 520px) {
+    .navi, header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
 }
 

@@ -70,7 +70,7 @@
     grid-area: home-sub-5;
     background-color: var(--bleu-nuit);
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: end;
     font-weight: bold;
     font-size: 4em;
@@ -78,8 +78,6 @@
 .home-sub-5 > span{
     background-color: var(--bleu-nuit);
     color: var(--blanc);
-    display: flex;
-    height: 50%;
     width: 50%;
     text-align: end;
 }
@@ -99,12 +97,6 @@
 }
 .home-sub-5-first-input > input{
     transform: translateX(10px);
-}
-.home-sub-5-second-input > input{
-    transform: translateX(-10px);
-}
-.home-sub-5-second-input {
-    justify-content: flex-end;
 }
 input[type=date]{
     border: none;
@@ -144,6 +136,18 @@ input[type=date]{
 .home-sub-11{
     grid-area: home-sub-11;
     background-color: var(--bleu-nuit)
+}
+.home-sub-11 > div{
+    background-color: transparent;
+}
+.home-sub-11 > div > span{
+    background-color: transparent;
+    color: var(--blanc);
+    font-size: 2em;
+    font-weight: bold;
+}
+.home-sub-11 > div > select{
+    width: 50%;
 }
 .home-sub-12{
     grid-area: home-sub-12;

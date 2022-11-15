@@ -5,8 +5,16 @@ import SponsorItem from "./SponsorItem";
 
 const Sponsor = () => {
 
+    const initialState =  {
+      about: "",
+      company: "",
+      sports: [],
+      phone: "",
+      isActive: ""
+    }
 
-    const [selected, setSelected] = useState(null)
+
+    const [selected, setSelected] = useState([initialState])
 
     const handleClick = (id) => {
 
@@ -18,10 +26,9 @@ const Sponsor = () => {
         Sponsor
         <Navigation />
 
+        <div className="d-flex mt-5">
 
-        <div className="d-flex">
-
-          <div className="d-flex justify-content-around flex-wrap gap-5 container mt-5 column-sponsor">
+          <div className="d-flex flex-column align-items-center gap-3 column-sponsor">
               {
                 sponsors.map(({_id, company, email, picture}) => {
                   return (
@@ -44,7 +51,7 @@ const Sponsor = () => {
               }
           </div>
 
-        <div className="sponsor-item column-sponsor bg-success m-5">
+        <div className="column-sponsor border border-primary rounded">
 
             <SponsorItem sponsor={selected} />
 

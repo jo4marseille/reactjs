@@ -22,8 +22,10 @@ export default class VerticalContainer extends React.PureComponent {
                         <div class="div_ctn_cards">
                             <ActivityCard/>
                             <ActivityCard/>
-                            <ActivityCard/>
-                            <ActivityCard/>
+
+                            {/*<ActivityCard/>*/}
+                            {/*<ActivityCard/>*/}
+                            {/*<ActivityCard/>*/}
                         </div>
                     }
                 />

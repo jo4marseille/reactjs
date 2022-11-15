@@ -3,8 +3,7 @@ import SponsorModal from './SponsorModal'
 
 const SponsorItem = ({sponsor}) => {
 
-
-  const {about, company, sports, email, phone, address, isActive, created_date} = sponsor?.[0]
+  const {attributes} = sponsor?.[0]
 
   const isEmpty = (obj) => Object.values(obj).every(x => x.length < 1)
 
@@ -24,49 +23,41 @@ const SponsorItem = ({sponsor}) => {
 
         <div className='d-flex justify-content-between'>
             {
-              isActive
+              attributes.isActive
                 ? <div className='text-success mx-3'>Offre valable</div>
                 : <div className='text-danger mx-3'>L'Offre est cloturée</div>
             }
 
             <div className='mx-3'>
               {
-                dateFormated(created_date)
+                dateFormated(attributes.createdAt)
               }
             </div>
         </div>
 
 
-        <h2>{company}</h2>
+        <h2>{attributes.name}</h2>
 
         <div className='mx-3' >
-            <h4>About us</h4>
-            <p className='text-start'>{about}</p>
+
 
             <h4>Sports that we support</h4>
-            <ul className='list-group '>
-              {
-                sports.map((sport, index) => {
-                  return (
-                    <li key={index} className='list-group-item bg-secondary text-white'>{sport}</li>
-                  )
-                })
-              }
-            </ul>
+
+            <h6>{attributes?.sports}</h6>
 
             <div className="mt-3">
               {
-                isActive &&  <SponsorModal company={company} />
+                attributes?.isActive &&  <SponsorModal name={attributes?.name} />
               }
             </div>
 
 
             <div className='d-flex justify-content-between mt-3'>
-              <p>{email}</p>
-              <p>{phone}</p>
+              <p>{attributes?.email}</p>
+              <p>{attributes?.phone}</p>
             </div>
             <div>
-              <p>{address}</p>
+              <p>{attributes?.adress}</p>
             </div>
         </div>
     </Fragment>
@@ -77,7 +68,7 @@ const SponsorItem = ({sponsor}) => {
 
       <div >
       {
-        isEmpty(sponsor[0])
+        isEmpty(sponsor[0]?.attributes)
         ?
         null
         :

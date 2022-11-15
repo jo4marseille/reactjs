@@ -20,8 +20,6 @@ const Sponsor = () => {
       }
       }
 
-    const dataContainer = useRef()
-
     const [selected, setSelected] = useState([initialState])
 
     const [data, setData] = useState([])
@@ -54,20 +52,21 @@ const Sponsor = () => {
     useEffect(() => {
       const handleScroll = () => {
 
-        if (dataContainer.current.scrollTop === 2128 && page < 100 && data.length === 10 ) {
+        console.log(window.scrollY)
+        if (window.scrollY === 969 && page < 100 && data.length === 10 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
       };
 
-      const current = dataContainer?.current
+      window.addEventListener('scroll',handleScroll)
 
-      dataContainer?.current?.addEventListener('scroll',handleScroll)
       return () => {
 
-        current?.removeEventListener('scroll',handleScroll)
+        window.removeEventListener('scroll',handleScroll)
       };
-    }, [page]);
+    }, [page, data.length]);
+
     const handleMatching = () => {
       //matching element athlete
       // matching les sponsor qui corresponde aux donées en dure.
@@ -95,7 +94,7 @@ const Sponsor = () => {
           ? <Spinner />
 
 
-          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" ref={dataContainer}>
+          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" >
               {
                 data.map(({id, attributes}) => {
                   return (

@@ -14,11 +14,12 @@ function Cards(props) {
         <Card.Img className="card-img-top" src={props.image} />
         <Card.Body>
           <Card.Title>{props.name}</Card.Title>
-          <Card.Text style={{ minHeight: '30%' }}>
-            {props.description}
+
+          <Card.Text >
+            < div className="description">
+            {props.description}</div>
           </Card.Text>
-          
-            <a href={props.lien}> <Button variant="primary" style={{margin:'10px'}}>En savoir plus</Button></a>
+          <a href={props.lien} className="linkGo"> <Button variant="primary">En savoir plus</Button></a>
         </Card.Body>
 
       </Card>

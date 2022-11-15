@@ -3,7 +3,10 @@ import Card from "../Card";
 import data from "../../data.json";
  
 function AllCardSports() {
+    
     return(<div className="componentBg">
+                <img src="\img\logos\logoSalle.png" alt='logo Salle' id="logo"/>
+
     {data.centres.map((e) => {
 
         return(

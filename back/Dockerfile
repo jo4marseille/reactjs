@@ -7,7 +7,6 @@ ENV API_TOKEN_SALT tobemodified
 ENV ADMIN_JWT_SECRET tobemodified
 ENV JWT_SECRET tobemodified
 ENV NODE_ENV=production
-ENV HOST=c-14-api.jo4marseille.fr
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -19,10 +18,11 @@ WORKDIR /usr/src/app
 COPY ./package*.json /usr/src/app/
 # COPY . ./
 RUN yarn
-RUN yarn build
 
 # Copying source files
 COPY . /usr/src/app/
+
+RUN yarn build
 
 # Building app
 EXPOSE 1337

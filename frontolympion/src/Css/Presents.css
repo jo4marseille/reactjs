@@ -1,0 +1,28 @@
+.size_card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.size_image {
+  height: 40vh;
+  object-fit: cover;
+}
+.background-sliders {
+  background-image: url("./Images/Logo_sponsors/marseille.jpeg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_font_title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.card_font_body {
+  font-weight: 200;
+  font-size: 15px;
+  margin-bottom: 30px;
+}

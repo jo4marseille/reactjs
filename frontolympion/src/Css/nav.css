@@ -1,0 +1,26 @@
+.logo {
+    width:400px;
+}
+
+.container-logo {
+    margin-left:20px !important;
+    margin-right:20px !important;
+
+}
+
+.menu {
+    color:#ff5757;
+    font-size:28px;
+    font-weight:800px;
+    font-family:'poppins';
+    text-align:left;
+    text-decoration:none;
+    margin-left:10px;
+    text-decoration:none;
+
+
+}
+
+.menu :hover {
+    color:#ff5757;
+}

@@ -91,6 +91,9 @@ jobs:
                       - args:
                           - npm
                           - start
+                        env:
+                          - name: NODE_ENV
+                            value: production
                         image: ghcr.io/jo4marseille/$IMAGE_NAME:latest
                         name: $IMAGE_NAME
                         ports:

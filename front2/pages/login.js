@@ -60,13 +60,14 @@ const mainTheme = createTheme({
 
 	return (
 
-		<ThemeProvider theme={mainTheme}>
+		<ThemeProvider theme={mainTheme} >
 			<Typography className={styles.title} variant="h4" color="text.secondary" >
 				Connexion
 			</Typography> 
 		<Container
 		//  maxWidth="sm"
-			style={{ display: "flex", gap: "44px",justifyContent:'center', alignItems: "center" , height:"67vh"}}
+		
+			style={{ display: "flex", gap: "44px",justifyContent:'center', pt:80,alignItems: "center" , height:"67vh"}}
 			>
 		<img src='/img/indexIllustration22.svg' className={styles.img}/>
 

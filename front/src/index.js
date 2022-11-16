@@ -16,8 +16,6 @@ root.render(
     <MyHeader/>
     <MyCard/>
     <MyFooter/>
-    <CarteMath/>
-    <Legende/>
-
+  
   </React.StrictMode>
 );

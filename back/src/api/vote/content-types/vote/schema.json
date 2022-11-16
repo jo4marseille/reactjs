@@ -4,8 +4,12 @@
   "info": {
     "singularName": "vote",
     "pluralName": "votes",
+<<<<<<< HEAD
     "displayName": "vote",
     "description": ""
+=======
+    "displayName": "Votes"
+>>>>>>> MachinMax
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +19,17 @@
     "athlete": {
       "type": "relation",
       "relation": "manyToOne",
+<<<<<<< HEAD
       "target": "api::athelte.athelte",
+=======
+      "target": "api::athlete.athlete",
+      "inversedBy": "votes"
+    },
+    "evenement": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::evenement.evenement",
+>>>>>>> MachinMax
       "inversedBy": "votes"
     },
     "users_permissions_user": {

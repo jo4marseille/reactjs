@@ -43,7 +43,7 @@ a {
 
 .navbar ul {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 20%;
 }
 
@@ -53,4 +53,10 @@ a {
   font-weight: bold;
   text-align: left;
   margin-bottom: 5px;
+}
+
+.navbar button {
+  border : 0;
+  background-color: transparent;
+  cursor: pointer;
 }

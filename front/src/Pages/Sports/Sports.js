@@ -33,7 +33,11 @@ export default function Sports() {
     return (
         <main className='sportsSection'>
             <article>
+<<<<<<< HEAD
                 <h3>Tous nos sports</h3>
+=======
+                <h3>DISCIPLINES</h3>
+>>>>>>> MachinMax
                 <ul className='sportsContainer'>
                     {
                         sports.map((item) => {
@@ -41,8 +45,17 @@ export default function Sports() {
                             return (
                                 <a href={`sport/${item.id}`}>
                                     <li key={item.attributes.nom}>
+<<<<<<< HEAD
                                         <p>{item.attributes.nom}</p>
                                         <img src={`http://localhost:1337${item.attributes.SportIcon.data.attributes.url}`} />       
+=======
+                                        <div>
+                                            <img src={`https://c-14-api.jo4marseille.fr${item.attributes.SportIcon.data.attributes.url}`} />    
+                                        </div>
+                                        <p>{item.attributes.nom}</p>
+                                        
+                                           
+>>>>>>> MachinMax
                                     </li>
                                 </a>
                                 

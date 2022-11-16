@@ -1,0 +1,70 @@
+.participent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5vh;
+}
+
+.participent h1 {
+    text-transform: uppercase;
+}
+
+.participent ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 16px;
+    margin: 0px 16px 16px 16px;
+}
+
+.participent ul li {
+    margin-top: 4px;
+    font-family: "Poppins", sans-serif;
+    justify-content: left;
+    list-style: none;
+    border: 1px solid #1e1e1e;
+    border-radius: 0% 0% 16px 16px;
+}
+
+.participent ul li:hover {
+    background-color: #8080801f;
+}
+
+.participent ul li div:nth-child(1) {
+    width: 100%;
+    height: 180px;   
+}
+
+.participent ul li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.participent ul li p:first-of-type {
+    text-transform: uppercase;
+    display: block;
+}
+
+.participent ul li p:last-of-type {
+    font-style: italic;
+    display: block;
+}
+
+.participent ul li button {
+    padding: 0.5vh;
+    background-color: white;
+    color: #1daf13;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3vh;
+    border: solid #1daf13;
+}
+
+.participent ul li button:hover {
+    background-color: #4dff00;
+    color: white;
+    border-radius: 0;
+    transition: 0.5s;
+}

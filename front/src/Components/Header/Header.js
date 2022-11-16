@@ -8,6 +8,7 @@ function Header() {
   const navRef = useRef();
   const [active, setActive] = useState("header__menu");
   const [navState, SetNavState] = useState(true);
+  const idUser = window.localStorage.getItem("userId");
 
   const navToggle = (event) => {
     if (navState == true) {
@@ -27,11 +28,14 @@ function Header() {
         <button onClick={navToggle} className="header__brand" ref={buttonRef}>
           <img src="./JO.png" alt="Menu Burger" />
         </button>
+        <button className="logoCenter">
+          <img src="./ressource/logoCenter.png"/>
+        </button>
         <ul className={active}>
           <button className="header__item">
             <img src="./calendrier.png" alt="Calendrier" />
           </button>
-          <Link to={"/account"} className="header__item">
+          <Link to={`/account/${idUser}`} className="header__item">
             <img src="./profil.png" alt="Profil" />
           </Link>
         </ul>

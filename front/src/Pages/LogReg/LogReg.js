@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import LogRegAPI from "../../Services/LogRegAPI";
-import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import "./LogReg.css";
 
 export default function LogReg() {
@@ -13,6 +14,7 @@ export default function LogReg() {
   const onglets = document.querySelectorAll("onglets");
   const emailLogRef = useRef();
   const passwordLogRef = useRef();
+  const usernameRegRef = useRef();
   const emailRegRef = useRef();
   const passwordRegRef = useRef();
 
@@ -40,15 +42,13 @@ export default function LogReg() {
     try {
       await LogRegAPI.login(Email, Password).then((response) => {
         const data = window.localStorage.setItem(
-          "userToken",
-          response.data.jwt
+          "userId",
+          response.data.user.id
         );
-        window.localStorage.setItem('userId', response.data.user.id);
-
         console.log(response);
         alert("Login Successful");
         LogNav("/");
-        setProfil(response.data.user);
+        setProfil(response.data.user.id);
       });
     } catch (e) {
       console.log(e);
@@ -60,6 +60,7 @@ export default function LogReg() {
 
     const Email = emailRegRef.current.value;
     const Password = passwordRegRef.current.value;
+    const Username = passwordRegRef.current.value;
 
     //Controle input Email + Mdp
     if (Email.trim().length === 0 || Password.trim().length === 0) {
@@ -77,15 +78,15 @@ export default function LogReg() {
     //Register Formulaire
 
     try {
-      await LogRegAPI.register(Email, Password).then((response) => {
+      await LogRegAPI.register(Username, Email, Password).then((response) => {
         const data = window.localStorage.setItem(
-          "userToken",
-          response.data.jwt
+          "userId",
+          response.data.user.id
         );
         console.log("Registered");
         alert("Register Successful");
         LogNav("/");
-        setProfil(response.data.user);
+        setProfil(response.data.user.id);
       });
     } catch (e) {
       if (e.response.status == 400) {
@@ -128,34 +129,43 @@ export default function LogReg() {
         className="contenu activeContenu"
         onSubmit={submitLog}
       >
-        <form onSubmit={submitLog}>
-          <input type="email" placeholder="email" ref={emailLogRef} required />
+        <form class='form' onSubmit={submitLog}>
+          <label class="gauche" for="email">Username</label>
+          <input class="gauche" type="email" placeholder="email" ref={emailLogRef} required />
 
+          <label class="droite" for="password">Password</label>
           <input
             type="password"
             placeholder="password"
             ref={passwordLogRef}
             required
+            class="droite"
           />
           <button type="submit">
-            <p>Login</p>
+          <FontAwesomeIcon icon={faCircleCheck} />
           </button>
         </form>
         {isLogged && <p>Login Successful</p>}
       </div>
 
       <div id="regContent" className="contenu">
-        <form onSubmit={submitReg}>
-          <input type="email" placeholder="email" ref={emailRegRef} required />
+        <form class='form' onSubmit={submitReg}>
+          <label class="gauche" for="username">Username</label>
+          <input class="gauche" type="text" placeholder="username" ref={usernameRegRef} required />
 
+          <label class="droite" for="email">Email</label>
+          <input class="droite"type="email" placeholder="email" ref={emailRegRef} required />
+
+          <label class="gauche" for="password">Password</label>
           <input
             type="password"
             placeholder="password"
             ref={passwordRegRef}
             required
+            class="gauche"
           />
           <button type="submit">
-            <p>Register</p>
+          <FontAwesomeIcon icon={faCircleCheck} />
           </button>
         </form>
         {isRegister && <p>Register Successful</p>}

@@ -16,13 +16,13 @@
       "type": "string"
     },
     "prenom": {
-      "type": "string"
+      "type": "string",
     },
-    "pay": {
+    "votes": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::pay.pay",
-      "inversedBy": "athletes"
+      "relation": "oneToMany",
+      "target": "api::vote.vote",
+      "mappedBy": "athlete"
     },
     "sport": {
       "type": "relation",
@@ -30,9 +30,15 @@
       "target": "api::sport.sport",
       "inversedBy": "athletes"
     },
-    "evenement": {
+    "pay": {
       "type": "relation",
       "relation": "manyToOne",
+      "target": "api::pay.pay",
+      "inversedBy": "athletes"
+    },
+    "evenements": {
+      "type": "relation",
+      "relation": "manyToMany",
       "target": "api::evenement.evenement",
       "inversedBy": "athletes"
     },
@@ -46,12 +52,6 @@
         "videos",
         "audios"
       ]
-    },
-    "votes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::vote.vote",
-      "mappedBy": "athlete"
     }
   }
 }

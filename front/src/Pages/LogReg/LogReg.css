@@ -20,17 +20,14 @@ body{
     transform: translate(-50%, -50%);
     width: 660px;
     height: 300px;
-    background: #f1f1f1;
     border-radius: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0,5);
 }
 
 .container-onglets{
-    background: #f1f1f1;
     width: 100%;
     height: 30%;
     display: flex;
-    border-bottom: 1px solid #333;
+    color: black;
 }
 
 .onglets{
@@ -42,6 +39,7 @@ body{
     font-weight: 700;
     cursor: pointer;
     border: 0px;
+    background-color: white;
 }
 
 .onglets button{
@@ -55,16 +53,41 @@ body{
     display:none;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 5vh;
+}
+
+.gauche {
+    margin-right: auto;
+}
+
+.droite {
+    margin-left: auto;
+}
+
+.form button {
+    background: none;
+    font-size: xxx-large;
+    color: rgb(0, 62, 128);
+    border: none;
+    margin: 2rem 0 0;
+    cursor: pointer;
+}
+
 .contenu input{
-    margin: 20px;
-    display:block;
+    border-radius: 3vh;
+    border: solid;
+    padding: 1vh;
+    width: 70%;
 }
 
 /* Animation */
 
 .onglets.active{
-    background: midnightblue;
-    color: #f1f1f1;
+    color: rgb(215, 215, 61);
     transition: all 0.2s ease;
 }
 

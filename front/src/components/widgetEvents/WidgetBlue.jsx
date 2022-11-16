@@ -1,13 +1,19 @@
 import React from 'react';
 
-const widgetBlue = () => {
+const widgetBlue = (props) => {
+    const {element} = props
     return (
         <div>
-            <h1 className={"eventtitle"}>Test</h1>
-            <div className={"mt-3 eventwidget1"}>
-                <div className={"widget-part1"}></div>
-                <div className={"widget-part2"}></div>
-            </div>
+            <h1 className={"eventtitle"}>{element.nom.libelleFr}</h1>
+            <a >
+                <div className={"mt-3 eventwidget2"}>
+                    <div className={"widget-part1"}><img className='img-fluid' src={element.illustrations[0].traductionFichiers[0].url}></img></div>
+                    <div className={"widget-part2"}><p>Adresse : {element.localisation.adresse.adresse1}, {element.localisation.adresse.codePostal}</p>
+                    <p>{element.localisation.adresse.nomDuLieu}</p>
+                    <p>{element.descriptionTarif.tarifsEnClair.libelleFr}</p>
+                    </div>
+                </div>
+            </a>
         </div>
     );
 };

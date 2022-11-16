@@ -1,0 +1,45 @@
+.clubs {
+    display: block;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.clubs h1 {
+    padding: 1rem 2rem;
+}
+
+.infoClub h2, .infoClub p{
+    padding: 1rem 1rem;
+}
+
+.infoClub {
+    display: flex;
+    margin-bottom: 1%;
+    justify-content: space-between;
+}
+
+.infoClub img {
+    width: 15%;
+}
+
+.impair .name p, .impair .name h2 {
+    color: #fff;
+    background-color: #00004D;
+}
+
+.impair .name {
+    width: 50%;
+    display: block;
+    background-color: #00004D;
+}
+
+.pair .name p, .pair .name h2 {
+    color: #fff;
+    background-color: #FF5757;
+}
+
+.pair .name {
+    width: 50%;
+    display: block;
+    background-color: #FF5757;
+}

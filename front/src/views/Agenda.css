@@ -1,5 +1,14 @@
 .div_ctn_agenda {
     width: 80%;
     margin-left: 10%;
-    padding-top: 80px;
+    /*padding-top: 80px;*/
 }
+
+/*.item_hover:hover {*/
+/*    background-color: #F3F3F3;*/
+/*    transition: all 0.3s;*/
+/*}*/
+
+/*.item_hover {*/
+/*    transition: all 0.3s;*/
+/*}*/

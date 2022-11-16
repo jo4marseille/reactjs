@@ -28,7 +28,7 @@ const ContainerDiag2 = () => {
                 backgroundColor: "white",
                 height: 300,
                 width: "100%",
-                color: "black"
+                color: "#00004D"
             }}>
                 <div
                     id={"triangle"}

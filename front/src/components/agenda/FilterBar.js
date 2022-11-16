@@ -64,7 +64,7 @@ function FilterBar(props) {
     return (
         <div>
             <FormControl sx={{m: 2, width: "70vw", maxWidth: "50vw"}}>
-                <InputLabel id="demo-multiple-chip-label"></InputLabel>
+                <InputLabel id="demo-multiple-chip-label">Filtres</InputLabel>
                 <Select
                     labelId="demo-multiple-chip-label"
                     id="demo-multiple-chip"

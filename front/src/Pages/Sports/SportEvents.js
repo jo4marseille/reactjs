@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import SportsAPI from '../../Services/SportsAPI';
 import moment from 'moment'
 import "./SportEvents.css"
+import {BsArrowRightCircle} from 'react-icons/bs'
 
 export default function SportEvents() {
 
@@ -42,7 +43,7 @@ export default function SportEvents() {
                         sportName ? 
                             <>
                             <div>
-                                <img  src={`https://c-14-api.jo4marseille.fr${sportName.SportIcon.data.attributes.url}`}/>
+                                <img  src={`http://localhost:1337${sportName.SportIcon.data.attributes.url}`}/>
                             </div>
                             <h3> {sportName.nom}</h3>
                             </>
@@ -73,7 +74,7 @@ export default function SportEvents() {
                                                         if (index === 0){
                                                             return (
                                                                 <>
-                                                                    <img src={`https://c-14-api.jo4marseille.fr${item.attributes.drapeau.data.attributes.url}`}/>
+                                                                    <img src={`http://localhost:1337${item.attributes.drapeau.data.attributes.url}`}/>
                                                                     {" " + item.attributes.nom + " / "} 
                                                                 </>
                                                             )
@@ -81,7 +82,7 @@ export default function SportEvents() {
                                                             return (
                                                                 <>
                                                                     {item.attributes.nom + " "}
-                                                                    <img src={`https://c-14-api.jo4marseille.fr${item.attributes.drapeau.data.attributes.url}`}/>
+                                                                    <img src={`http://localhost:1337${item.attributes.drapeau.data.attributes.url}`}/>
                                                                 </>
                                                             )
                                                         }

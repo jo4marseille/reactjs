@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import Map, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import TransportBackup from '../data/transport.json'
-import InputChoice from './InputChoice'
+import TransportBackup from '../data/transport.json';
+import InputChoice from './InputChoice';
+import Legende from './Legende';
 // import MyMarker from './Mymarker.js';
 
 function MyMap() {
@@ -98,10 +99,13 @@ function MyMap() {
     <div>
       {viewport.latitude && viewport.longitude &&  (
         <div>
-          
-          <p> Vous êtes à {distance} Km de votre point d'intérêt </p>
-          <p>Cela représente {calculCo2Metro(calculCo2(distance))} Kg CO2 en métro contre {calculCo2Voiture(calculCo2(distance))} Kg CO2 en voiture</p>
-          <p>Et 0 Kg CO2 à pied ou en vélo!</p>
+          <div style={{fontFamily: "'Poppins', sans-serif"}}>
+            <p> Vous êtes à {distance} Km de votre point d'intérêt </p>
+            <p>Cela représente <strong style={{color: '#00A651'}}>{calculCo2Metro(calculCo2(distance))} Kg CO2</strong> en métro contre <strong style={{color: '#ED354F'}}>{calculCo2Voiture(calculCo2(distance))} Kg CO2</strong> en voiture</p>
+            <p>Et <strong style={{color: '#00A651'}}>0 Kg CO2</strong> à pied ou en vélo!</p>
+          </div>
+        <div style={{display: 'flex'}}>
+          <Legende/>
 
           <Map
             mapboxAccessToken="pk.eyJ1IjoidGhvbWFzMzMiLCJhIjoiY2pzYWFpcXNwMDAxbzN5cGZneGxia3U3ZCJ9.sigYT2nlLnC1siycJ3im-Q"
@@ -119,6 +123,7 @@ function MyMap() {
                     latitude={transptramway.latitude}
                     color='#FF5757'
                 />
+
                 )
             }) }
             {/* Coordonnées des stations de métro */}
@@ -140,7 +145,7 @@ function MyMap() {
             <Marker
             //  onClick={(e) => {console.log("click") }
             // }
-             onClick={(e) => {GetDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, viewport.latitude, viewport.longitude); setDistance(distance); console.log("click") }
+            onClick={(e) => {GetDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, viewport.latitude, viewport.longitude); setDistance(distance); console.log("click") }
             }
               longitude={viewport.longitude}
               latitude={viewport.latitude}
@@ -149,7 +154,7 @@ function MyMap() {
 
             {/* Coordonnées du stade vélodrome */}
             <Marker
-             onClick={(e) => {GetDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, 43.27004, 5.39610); setDistance(distance); console.log("clickvélodrome")  }
+            onClick={(e) => {GetDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, 43.27004, 5.39610); setDistance(distance); console.log("clickvélodrome")  }
             }
               longitude={5.39610}
               latitude={43.27004}
@@ -165,6 +170,8 @@ function MyMap() {
               color='#0282C8'
             />
           </Map>
+        </div>
+          
           <InputChoice></InputChoice>
          
         </div>

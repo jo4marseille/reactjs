@@ -46,7 +46,7 @@ class InputChoice extends React.Component {
     render() {
         return (
             <div id="App">
-                <div className="select-container">
+                <div className="select-container" style={{marginTop: '25px', marginBottom: '20px', fontFamily: "'Poppins', sans-serif"}}>
                     <form onSubmit={this.handleSubmit}>
 
                         <select value={this.state.type} onChange={this.handleChange} >
@@ -56,7 +56,8 @@ class InputChoice extends React.Component {
                         </select>
                         <button type="submit" >Comptabilisez vos CO2</button>
                     </form>
-                    <p >Vous avez utilisé un mode de transport {this.state.type}</p>
+                    
+                    <p style={{marginTop: '10px'}} >Vous avez utilisé un mode de transport {this.state.type}</p>
 
                 </div>
             </div>

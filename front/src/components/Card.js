@@ -8,7 +8,7 @@ import MapBio from './Bio';
 function FinalCard() {
   return (
         <div className='my-containt'>
-          <Card style={{backgroundColor:  '#fff', marginBottom: '80px', height: '700px', border: "solid #0282C8 12px" , borderRadius: "100px 0px", boxShadow: "0 3px 10px #000000a6", overflow: 'hidden'}}
+          <Card style={{backgroundColor:  '#fff', marginBottom: '80px', height: '800px', border: "solid #0282C8 12px" , borderRadius: "100px 0px", boxShadow: "0 3px 10px #000000a6", overflow: 'hidden'}}
             className="text-center">
            
             <Card.Header style={{backgroundImage: 'url("https://i.ibb.co/H71FK9S/conso.png")',
@@ -32,7 +32,7 @@ function FinalCard() {
             </Card.Body>
           </Card>
           
-          <Card style={{backgroundColor:  '#fff', marginBottom: '80px', height: '700px', border: "solid #00A651 12px" , borderRadius: "100px 0px", boxShadow: "0 3px 10px #000000a6", overflow: 'hidden'}}
+          <Card style={{backgroundColor:  '#fff', marginBottom: '80px', maxHeight: '900px', border: "solid #00A651 12px" , borderRadius: "100px 0px", boxShadow: "0 3px 10px #000000a6", overflow: 'hidden'}}
             className="text-center">
            
             <Card.Header style={{backgroundImage: 'url("https://i.postimg.cc/nL96n3zm/transport.png")',

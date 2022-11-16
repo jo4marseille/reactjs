@@ -1,0 +1,19 @@
+.legende-container {
+  font-family: 'Poppins', sans-serif;
+  max-height: 400px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.legende-row {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.marker {
+ height: 40px;
+}

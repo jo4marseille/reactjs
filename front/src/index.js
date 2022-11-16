@@ -9,7 +9,7 @@ import MyHeader from './components/Header';
 import MyFooter from './components/Footer';
 import MyCard from './components/Card';
 import CarteMath from './components/MapRtm';
-
+import Legende from './components/Legende';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -17,5 +17,7 @@ root.render(
     <MyCard/>
     <MyFooter/>
     <CarteMath/>
+    <Legende/>
+
   </React.StrictMode>
 );

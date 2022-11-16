@@ -33,11 +33,11 @@
       "target": "api::pay.pay",
       "inversedBy": "athletes"
     },
-    "evenement": {
+    "evenements": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::evenement.evenement",
-      "inversedBy": "athletes"
+      "mappedBy": "athletes"
     }
   }
 }

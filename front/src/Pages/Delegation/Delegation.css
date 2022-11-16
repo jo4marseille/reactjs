@@ -1,0 +1,33 @@
+.delegation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5vh;
+}
+
+.delegation ul {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    margin: auto;
+    list-style: none;
+    margin-top: -2vh;
+    gap: 1em
+}
+
+.delegation ul li {
+    border: solid;
+    border-radius: 1vh 1vh 3vh 3vh;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh
+}
+
+.delegation ul li:hover {
+    background-color: #8080801f;
+}
+
+.delegation ul li p {
+    text-transform: uppercase;
+    display: block;
+}

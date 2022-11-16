@@ -1,0 +1,80 @@
+.account {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5vh;
+}
+
+.account form {
+    display: flex;
+    flex-direction: column;
+    margin: -3vh auto auto;
+    gap: 1vh;
+    border-radius: 2vh;
+    padding: 5vh;
+    background-color: #8080801f;
+    width: 50%;
+}
+
+.account form input {
+    border-radius: 3vh;
+    border: solid;
+    padding: 1vh;
+    width: 70%;
+}
+
+.account form .gauche {
+    margin-right: auto;
+}
+
+.account form .droite {
+    margin-left: auto;
+}
+
+.account ul {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    margin: -2vh auto auto;
+    gap: 2em;
+    list-style: none;
+}
+
+.account ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    border-radius: 1vh 1vh 3vh 3vh;
+    padding: 3vh;
+    border: solid;
+}
+
+.account ul li:hover {
+    background-color: #8080801f;
+}
+
+.account ul li p:first-of-type {
+    text-transform: uppercase;
+    display: block;
+}
+
+.account ul li p:last-of-type {
+    font-style: italic;
+    display: block;
+}
+
+.account ul li button {
+    padding: 0.5vh;
+    background-color: white;
+    color: #ea4040;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3vh;
+    border: solid #ea4040;
+}
+
+.account ul li button:hover {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 0;
+    transition: 0.5s;
+}

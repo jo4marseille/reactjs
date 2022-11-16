@@ -1,0 +1,58 @@
+.participent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5vh;
+}
+
+.participent h1 {
+    text-transform: uppercase;
+}
+
+.participent ul {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    list-style: none;
+    gap: 1em;
+    margin: -2vh auto auto auto;
+}
+
+.participent ul li {
+    border: solid;
+    border-radius: 1vh 1vh 3vh 3vh;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.participent ul li:hover {
+    background-color: #8080801f;
+}
+
+.participent ul li p:first-of-type {
+    text-transform: uppercase;
+    display: block;
+}
+
+.participent ul li p:last-of-type {
+    font-style: italic;
+    display: block;
+}
+
+.participent ul li button {
+    padding: 0.5vh;
+    background-color: white;
+    color: #1daf13;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3vh;
+    border: solid #1daf13;
+}
+
+.participent ul li button:hover {
+    background-color: #4dff00;
+    color: white;
+    border-radius: 0;
+    transition: 0.5s;
+}

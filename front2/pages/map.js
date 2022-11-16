@@ -20,7 +20,7 @@ import { minHeight } from '@mui/system';
 
 export default function map() {
   return (
-    <Container sx={{height: "70vh"}}>
+    <Container className={styles.container4}>
       <Typography className={styles.title} variant="h4" color="text.secondary" >
         Carte
       </Typography>
@@ -31,14 +31,14 @@ export default function map() {
         <div className={styles.legend1}>
           Point de collecte
         </div>
-      <TextField id="outlined-basic" label="Code Postal" variant="standard" />
+      <TextField id="outlined-basic" value="13000" sx={{color: "#00A651"}} label="Code Postal" variant="standard" />
 
         <div className={styles.legend2}>
           Boutique
         </div>
       </Container>
       <Container className={styles.legend}>
-        <img src='/img/map2.png' className={styles.image} />
+        <img src='/img/map3.png' className={styles.image} />
       </Container>
     </Container>
 

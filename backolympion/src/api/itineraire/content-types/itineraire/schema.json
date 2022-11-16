@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "itineraires",
+  "info": {
+    "singularName": "itineraire",
+    "pluralName": "itineraires",
+    "displayName": "Itinéraire"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "createddate": {
+      "type": "date"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "itineraire"
+    },
+    "Startpont": {
+      "type": "string"
+    },
+    "Endpont": {
+      "type": "string"
+    },
+    "Transport": {
+      "type": "string"
+    },
+    "Coins": {
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metriques",
+  "info": {
+    "singularName": "metrique",
+    "pluralName": "metriques",
+    "displayName": "Metrique "
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "montant": {
+      "type": "float"
+    }
+  }
+}

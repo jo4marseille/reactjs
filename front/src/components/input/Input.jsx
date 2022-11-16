@@ -12,7 +12,7 @@ function Input() {
       <form onSubmit={handleSubmit} >
         <input className="homeInput font " type="text" placeholder="" />
         <img
-          alt=""
+          alt="loupe"
           type="submit"
           src={loupe}
           className="loupe"

@@ -12,11 +12,14 @@ a {
 }
 
 .header {
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 80px;
   background: #f1f1f1;
+  position: fixed;
+  width: 100%;
 }
 
 .header__brand, .header__item, .logoCenter{

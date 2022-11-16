@@ -6,3 +6,4 @@ export const URL_VOTE = "http://localhost:1337/api/votes?populate=athlete&popula
 export const URL_UPDATE = "http://localhost:1337/api/users/"
 export const URL_DELETE = "http://localhost:1337/api/votes/"
 export const URL_PAYS = "http://localhost:1337/api/pays?populate=*"
+export const URL_ATHLETE = "http://localhost:1337/athletes"

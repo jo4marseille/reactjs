@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   const buttonRef = useRef();
   const navRef = useRef();
+  const navNav = useNavigate();
   const [active, setActive] = useState("header__menu");
   const [navState, SetNavState] = useState(true);
   const [isLogged, setIsLogged] = useState(true);
@@ -12,6 +14,8 @@ function Navbar() {
   function logoutHandler() {
     localStorage.removeItem("userToken", "userId");
   }
+
+  let userId;
 
   const navToggle = (event) => {
     if (navState == true) {
@@ -25,6 +29,11 @@ function Navbar() {
     }
   };
 
+  const profils = () => {
+    userId = window.localStorage.getItem("userId");
+    navNav("/account/"+userId);
+  }
+
   useEffect(() => {
     if (window.localStorage.getItem("userToken")){
       setIsLogged(true);
@@ -34,24 +43,18 @@ function Navbar() {
   return (
       <nav className="navbar" ref={navRef}>
         <ul>
-          <Link to={`/main`}>
+          <Link to={`/sports`}>
             <li>Discipline</li>
           </Link>
-          <Link to={"/sports"}>
+          <Link to={"/delegation"}>
             <li>Délégations</li>
           </Link>
-          <Link to={"/sports"}>
-            <li>Athlètes</li>
-          </Link>
-          <Link to={"/sports"}>
-            <li>Evenements</li>
-          </Link>
-          <Link to={"/sports"}>
-            <li>Vote</li>
-          </Link>
-          {isLogged ? <Link to={"/"} onClick={logoutHandler}>
+          <button onClick={profils}>
+            <li>Profil</li>
+          </button>
+          <Link to={"/"} onClick={logoutHandler}>
             <li>Déconnexion</li>
-          </Link> : <p></p>}
+          </Link>
         </ul>
       </nav>
   );

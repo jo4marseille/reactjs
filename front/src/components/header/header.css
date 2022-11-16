@@ -1,0 +1,9 @@
+img {
+    height: 15vh;
+}
+
+.navbar-nav.mr-auto.mt-2.mt-lg-0.ms-auto.px-4.h4.fw-bold li a {
+    font-weight: 1000;
+    color: #00004D
+}
+

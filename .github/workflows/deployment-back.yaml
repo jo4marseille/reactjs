@@ -89,7 +89,7 @@ jobs:
                       - name: dockerconfigjson-github-com
                     containers:
                       - args:
-                          - npm
+                          - yarn
                           - start
                         env:
                           - name: NODE_ENV

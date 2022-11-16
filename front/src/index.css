@@ -184,6 +184,8 @@ select > option{
   grid-template-areas: "widget-part1 widget-part2";
   grid-template-columns: repeat(4, 1fr);
   border: 1px #000000;
+  margin-top: 1000px;
+
 }
 
 .eventwidget2 {
@@ -193,6 +195,7 @@ select > option{
   grid-template-areas: "widget-part3 widget-part1";
   grid-template-columns: repeat(4, 1fr);
   border: 1px #000000;
+  margin-top: 1000px;
 }
 
 .widget-part1 {

@@ -43,7 +43,6 @@ export default function Events() {
     }
 
     const findVotedPlayer = () => {
-        console.log('cc')
         try {
             const data = VoteAPI.findExistVote(id, id_user).then(response => {
                 setVotedPlayer(response.data.data[0].attributes.athlete.data.id)
@@ -125,11 +124,12 @@ export default function Events() {
                     <>
                     <article>
                         <div className='headerImageEvents'>
-                            <img src={`http://localhost:1337${event.attributes.image.data.attributes.url}`} />
+                            <img src={`http://localhost:1337${event.attributes.image.data.attributes.url ? event.attributes.image.data.attributes.url : ""}`} />
                         </div>
                         <div>
                             <h4>
                             {
+                                event.attributes.pays.data.length === 2 ? 
                                 event.attributes.pays.data.map((item, index) => {
                                     
                                     if (index === 0){
@@ -151,6 +151,8 @@ export default function Events() {
                                     }
                                     
                                 })
+                                :
+                                event.attributes.nom
                             }                       
                             </h4>
                             <p>{event.attributes.localisation}</p>

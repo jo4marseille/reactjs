@@ -69,6 +69,7 @@ export default function SportEvents() {
                                         <div>
                                             <p>
                                                 {
+                                                    item.attributes.pays.data.length === 2 ?
                                                     item.attributes.pays.data.map((item, index) => {
                                                         
                                                         if (index === 0){
@@ -88,6 +89,8 @@ export default function SportEvents() {
                                                         }
                                                         
                                                     })
+                                                    :
+                                                    <b>{item.attributes.nom}</b>
                                                 }
                                             </p>
                                             

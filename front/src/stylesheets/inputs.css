@@ -47,6 +47,10 @@
     opacity: 1;
 }
 
+.loupe:hover {
+  opacity: 0.8;
+}
+
 .loupeMinus {
     position: absolute;
     top: 470px;
@@ -96,7 +100,7 @@
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     top: 500px;
-    width: 1459px;
+    width: 640px;
     height: 40px;
     background-color: #ff5757;
     font-family: 'Poppins', sans-serif;

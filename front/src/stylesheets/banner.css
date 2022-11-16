@@ -11,3 +11,13 @@
   font-size: 32px;
   font-weight: bold;
 }
+
+.banner .h1:hover {
+  color: lightgrey;
+}
+
+.banner2 {
+  background-size: unset;
+  background-position: 25%;
+  padding: 240px 0;
+}

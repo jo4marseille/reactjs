@@ -35,10 +35,16 @@ const SposorOffer = () => {
 
 
     return (
-        <div>
-            <img className="nageur" src={Nageur} alt="" />
+        <div >
+
             <Header />
-            <div className="card">
+
+            <div className='d-flex justify-content-between '>
+
+
+
+            <div style={{marginTop: '120px', maxWidth: '50%', position: "absolute", opacity: '0.9'}} className="bg-white" >
+
                 <div>
                     <label htmlFor="Picture">Logo</label>
                     <input className="formInputs" type="text" onChange={(e) => setDataForm({...dataForm, image: e.target.value})}/>
@@ -69,6 +75,12 @@ const SposorOffer = () => {
                     <input className="formInputs" type="text" onChange={(e) => setDataForm({...dataForm, about: e.target.value})}/>
                 </div>
                 <button className="btn btn-primary" type='submit' onClick={() => handleSubmit()}>Publier l'annonce</button>
+            </div>
+            </div>
+
+            <div style={{backgroundImage: `url(${Nageur})`, marginTop: "120px"}} className="banner2">
+                {/* <img className="" src={Nageur} alt="" style={{marginTop: '120px', height: '50%'}}  /> */}
+
             </div>
         </div>
     )

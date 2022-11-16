@@ -19,7 +19,7 @@ const SposorOffer = () => {
     const navigate = useNavigate()
 
     function handleSubmit() {
-        console.log(dataForm);
+        // console.log(dataForm);
         PostSponsors({data:{
             name: dataForm.companyName,
             isActive: true,

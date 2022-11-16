@@ -2,6 +2,7 @@
 @import url(./stylesheets/header.css);
 @import url(./stylesheets/inputs.css);
 @import url(./stylesheets/banner.css);
+@import url(./stylesheets/footer.css);
 
 .App {
   text-align: center;

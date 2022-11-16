@@ -54,11 +54,11 @@ console.log(lon, lat, zoom)
 
   return (
 
-    <div> <h1>Restaurants BIO :</h1>
+    <div> <h1 style={{fontFamily: "'Poppins', sans-serif"}}>Restaurants BIO :</h1>
 
     <div className='row'>
 
-    <div className='col-4 border'> <div className='listbox'>
+    <div className='col-6 border'> <div className='listbox'>
 {fin.map((data) => {
 return (<div> <div className="card" >
 <div className="card-body">
@@ -69,7 +69,7 @@ return (<div> <div className="card" >
 </div></div>)
 })}</div>
 </div>
-    <div className='col-8' id='staticMap'><MapBio lon={lng} lat ={lat} zoom ={zoom}/></div>
+    <div className='col-6' id='staticMap'><MapBio lon={lng} lat ={lat} zoom ={zoom}/></div>
 
     </div>
 

@@ -50,6 +50,7 @@ const ContainerOpen = () => {
                             width: "50vw",
                             minWidth: 320,
                             fontSize: "2em",
+                            fontWeight: "bold"
                         }}>
                             Tous vos programmes et directs en live
                         </div>

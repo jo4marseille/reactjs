@@ -16,14 +16,24 @@
       "type": "string"
     },
     "SportIcon": {
+<<<<<<< HEAD
+=======
+      "type": "media",
+      "multiple": false,
+      "required": false,
+>>>>>>> MachinMax
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
+<<<<<<< HEAD
       ],
       "type": "media",
       "multiple": false
+=======
+      ]
+>>>>>>> MachinMax
     },
     "evenements": {
       "type": "relation",
@@ -31,6 +41,7 @@
       "target": "api::evenement.evenement",
       "mappedBy": "sport"
     },
+<<<<<<< HEAD
     "description": {
       "type": "string"
     },
@@ -38,6 +49,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::athelte.athelte",
+=======
+    "athletes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athlete.athlete",
+>>>>>>> MachinMax
       "mappedBy": "sport"
     }
   }

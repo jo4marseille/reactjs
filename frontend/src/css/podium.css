@@ -1,0 +1,69 @@
+#podiumCard {
+
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#podium {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 300px;
+    height: 100px;
+    margin: 33px auto 12px auto;
+}
+
+#podium div {
+    border: 3px solid #dc5d5d;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.titlepodium {
+    color: #c03e3e;
+}
+
+#silver {
+    border-radius: 20px 0px 0px 0px;
+    height: 60%;
+    right: -3px;
+}
+
+#gold {
+    border-radius: 20px 20px 0px 0px;
+    height: 100%;
+}
+
+#copper {
+    border-radius: 0px 20px 0px 0px;
+    height: 50%;
+    left: -3px
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.en {
+    margin-top: 20px
+}
+
+.podium li {
+    display: inline;
+    margin: auto;
+    padding: 5px;
+}
+
+.podium {
+
+    padding: 2px;
+    margin-left: 38%;
+    
+}

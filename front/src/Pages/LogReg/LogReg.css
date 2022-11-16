@@ -10,7 +10,6 @@ html {
 }
 
 body{
-    background: #f1f1f1;
     height: 100vh;
 }
 
@@ -73,6 +72,6 @@ body{
     display:contents;
 }
 
-p {
+.contenu p {
     display: contents;
 }

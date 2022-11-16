@@ -1,8 +1,6 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios'
-import { URL_VOTE } from "../../Config/Config"
-import { URL_UPDATE } from "../../Config/Config"
-import { URL_DELETE } from "../../Config/Config"
+import { URL_USER, URL_VOTE } from "../../Config/Config"
 
 export default function Account() {
     const [votes, setVotes] = useState([]);
@@ -16,7 +14,7 @@ export default function Account() {
     }
     
     const updateUser = async () => {
-        const res = await axios.put(URL_UPDATE + idUser, input)
+        const res = await axios.put(URL_USER + idUser, input)
         if (res) {
             alert("User updated");
         } else {
@@ -25,7 +23,7 @@ export default function Account() {
     }
 
     const deleteVote = async (id) => {
-        const res = await axios.delete(URL_DELETE + id);
+        const res = await axios.delete(URL_VOTE + id);
         if (res) {
             alert("Vote deleted");
             refreshData();

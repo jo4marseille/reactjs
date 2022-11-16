@@ -18,7 +18,7 @@ function findSports(){
  * return response axios : array
  */
  function findOneSport(id){
-    return axios.get(`${URL_SPORTS}/${id}?populate[evenements][populate][pays][populate]=drapeau&populate[evenements][populate]=image`)
+    return axios.get(`${URL_SPORTS}/${id}?populate[evenements][populate][pays][populate]=drapeau&populate[evenements][populate]=image&populate=SportIcon`)
 }
 
 /* Export des fonctions */

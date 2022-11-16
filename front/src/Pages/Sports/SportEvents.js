@@ -4,6 +4,8 @@ import SportsAPI from '../../Services/SportsAPI';
 import moment from 'moment'
 import "./SportEvents.css"
 
+import {BsArrowRightCircle} from 'react-icons/bs'
+
 export default function SportEvents() {
 
     const { pathname } = useLocation();
@@ -20,7 +22,8 @@ export default function SportEvents() {
         try {
             const data = await SportsAPI.findOneSport(id).then(response => {
                 setEvenements(response.data.data.attributes.evenements.data)
-                setSportName(response.data.data.attributes.nom)
+                setSportName(response.data.data.attributes)
+                console.log(response.data.data.attributes)
             })
         } catch (error) {
             console.log(error)
@@ -31,10 +34,27 @@ export default function SportEvents() {
         refreshData()
     }, [])
 
+
+    console.log(sportName)
     return (
         <main className='sportEventsContainer'>
             <article>
-                <h3>Tous les évenements {sportName} à venir </h3>
+                <section>
+                    {
+                        sportName ? 
+                            <>
+                            <div>
+                                <img  src={`http://localhost:1337${sportName.SportIcon.data.attributes.url}`}/>
+                            </div>
+                            <h3> {sportName.nom}</h3>
+                            </>
+                        :
+
+                        <></>
+                    }
+                    
+                </section>
+                
                 <ul>
                     {
                         evenements.map((item, index) => {
@@ -42,6 +62,10 @@ export default function SportEvents() {
                             return (
                                 <a href={`/event/${item.id}`}>
                                     <li key={index}>
+                                        <div>
+                                            <p>{moment(item.attributes.date_debut).utcOffset(60).format('MMM Do YYYY')}</p>
+                                            <p>{moment(item.attributes.date_debut).utcOffset(60).format('HH:mm')}h</p>
+                                        </div>
                                         <div>
                                             <p>
                                                 {
@@ -66,16 +90,16 @@ export default function SportEvents() {
                                                     })
                                                 }
                                             </p>
+                                            
+                                        </div>
+                                        <div>
                                             <p>{item.attributes.localisation}</p>
                                         </div>
                                         <div>
-                                            <p>{moment(item.attributes.date_debut).utcOffset(60).format('MMM Do YYYY')}</p>
-                                            <p>{moment(item.attributes.date_debut).utcOffset(60).format('HH:mm')}h</p>
+                                            <BsArrowRightCircle/>
                                         </div>
-                                    
-                                        <div>
-                                            <img src={`http://localhost:1337${item.attributes.image.data.attributes.url}`} />
-                                        </div>
+                                        
+                                        
                                         
                                     </li>
                                 </a>

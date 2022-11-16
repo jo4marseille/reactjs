@@ -40,6 +40,7 @@ const Home = () => {
       });
 
       function loadWidgets(){
+        console.log(category);
         if(date != null && category != null){
             var i = 0
             setComponents([])
@@ -73,7 +74,9 @@ const Home = () => {
                 </div>
                 <div className={"home-sub-6"}>
                     <div className={"home-sub-5-first-input"}>
-                        <input name={"date_start"} type="date"/>
+                        <input name={"date_start"} type="date" onChange={(e) => {
+                            setDate(e.target.value)
+                        }}/>
                     </div>
                 </div>
                 <div className={"home-sub-7"}></div>
@@ -85,7 +88,15 @@ const Home = () => {
                 <div className={"home-sub-11"}>
                     <div>
                         <span>CATEGORIE:</span>
-                        <select>
+                        <select onChange={(e) => {
+                            if(e.target.value == "CULTURE") {
+                                setCategory("1958")
+                            } else if(e.target.value == "NATURE") {
+                                setCategory("1966")
+                            } else if(e.target.value == "TRADITION") {
+                                setCategory("1973")
+                            }
+                        }}>
                             <option value="NATURE">NATURE</option>
                             <option value="CULTURE">CULTURE</option>
                             <option value="TRADITION">TRADITION</option>

@@ -19,7 +19,6 @@ function App() {
   useEffect(() => {
     if (notification?.title) {
       Notification(notification);
-      console.log("Je lance la notification");
     }
   }, [notification]);
 
@@ -31,6 +30,32 @@ function App() {
         title: payload?.notification?.title,
         body: payload?.notification?.body,
       });
+
+      if (localStorage.getItem("notification") === null) {
+        const getNotif = localStorage.setItem(
+          "notification",
+          JSON.stringify([
+            {
+              title: payload?.notification?.title,
+              body: payload?.notification?.body,
+            },
+          ])
+        );
+        console.log("getNotif", getNotif);
+      } else {
+        const getNotif = localStorage.getItem("notification");
+        console.log("getNotif", JSON.parse(getNotif));
+        const concat = JSON.parse(getNotif).concat([
+          {
+            title: payload?.notification?.title,
+            body: payload?.notification?.body,
+          },
+        ]);
+        const setNotif = localStorage.setItem(
+          "notification",
+          JSON.stringify(concat)
+        );
+      }
     })
     .catch((err) => console.log("failed: ", err));
   return (
@@ -41,8 +66,9 @@ function App() {
           <Route path="/" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/homepage" element={<Homepage />} />
+          {/* <Route path="/notification" element={<Homepage />} /> */}
         </Routes>
-        <Footer/>
+        <Footer />
       </AuthProvider>
     </>
   );

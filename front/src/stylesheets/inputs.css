@@ -1,0 +1,111 @@
+.card {
+    top: 100px;
+}
+
+.homeInput {
+    position: absolute;
+    left: 38px;
+    border-style: solid;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    top: 540px;
+    width: 1160px;
+    height: 63px;
+    background-color: #ff5757;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.SearchedInput {
+    position: absolute;
+    left: 38px;
+    border-style: solid;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    top: 540px;
+    width: 720px;
+    height: 64px;
+    background-color: #ff5757;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.loupe {
+    position: absolute;
+    top: 548px;
+    left: 1080px;
+    width: 40px;
+    height: 40px;
+
+    /* UI Properties */
+    opacity: 1;
+}
+
+.loupe:hover {
+  opacity: 0.8;
+}
+
+.loupeMinus {
+    position: absolute;
+    top: 470px;
+    left: 860px;
+    width: 40px;
+    height: 40px;
+
+    /* UI Properties */
+    opacity: 1;
+}
+
+.firstTitle {
+    position: fixed;
+    top: 90px;
+    right: 52px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 5px 0 rgba(0, 0, 77, 0.6);
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.secondTitle {
+    position: fixed;
+    top: 160px;
+    right: 52px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 5px 0 rgba(0, 0, 77, 0.6);
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.projectTitle {
+    position: absolute;
+    top: 90px;
+    left: 38px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 8px 0 rgba(0, 0, 77, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 150px;
+}
+
+.formInputs {
+    border-style: solid;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    top: 500px;
+    width: 640px;
+    height: 40px;
+    background-color: #ff5757;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}

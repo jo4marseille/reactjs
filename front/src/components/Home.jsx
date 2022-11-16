@@ -1,21 +1,16 @@
 import React from "react";
 import Navigation from "./Navigation";
-import { useNavigate } from "react-router-dom";
+import Banner from "./Banner";
+import Header from "./Header";
+
 const Home = () => {
 
-  const navigate = useNavigate();
-
-  const handleSubmit = () => navigate('/sponsor');
-
   return <div>
-    Home
-    <Navigation />
 
-      <div className="m-5 text-end">
-        <button onClick={() => handleSubmit()}>Match</button>
-      </div>
+            <Header />
+            <Banner isAthlete={false} />
 
-  </div>;
+        </div>
 };
 
 export default Home;

@@ -4,3 +4,8 @@
   display: flex;
   justify-content: flex-start;
 }
+
+.positionOffers {
+  position: relative;
+  top: 500px;
+}

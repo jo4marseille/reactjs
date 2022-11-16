@@ -1,10 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
-import Navigation from "../Navigation";
-// import sponsors from '../../database/sponsors.json'
+import React, { useState, useEffect } from "react";
 import SponsorItem from "./SponsorItem";
-import { GetSponsors, GetAt } from "../../request/sponsors.request";
+import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
-import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
+import { PuitAthletes } from "../../request/athletes.request";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Banner from "../Banner";
+import Header from "../Header";
+
 
 const Sponsor = () => {
 
@@ -50,10 +53,14 @@ const Sponsor = () => {
       setSelected(data.filter(element => element.id === id))
     }
 
+    const notify = (msg) => toast(`Waouh vous avez ${msg} !`, {
+      icon: "😍"
+    });
+
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 969 && page < 100 && data.length === 10 ) {
+        if (window.scrollY === 862 && page < 100 && data.length === 10 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
@@ -68,83 +75,81 @@ const Sponsor = () => {
     }, [page, data.length]);
 
     const handleMatching = () => {
-      //matching element athlete
+      // matching element athlete
       // matching les sponsor qui corresponde aux donées en dure.
       const sport = "football"
-      const adress = "marseille"
+
       GetSponsors().then(res => {
-        //console.log(res.data.data);
-        console.log(res.data.data.filter(v => v.attributes?.sports == sport));
-        setData(res.data.data.filter(v => v.attributes?.sports == sport))
+
+        setData(res.data.data.filter(v => v.attributes?.sports === sport))
       })
     }
 
     const handleLike = (id) => {
+
       GetSponsors().then(res => {
+
         if(res.data.data[id-1].attributes?.likes?.find(v => v.id === 1)){
-          alert("Vous matchez !!!!")
+          notify('un Match')
           PuitAthletes({data :{
             likes: [{"id": 1}]
           }}, 1)
         }else{
-          alert("Sponsor liké")
-          PostAthletes({data :{
+          notify('liké')
+          PuitAthletes({data :{
             likes: [{"id": 1}]
-          }})
+          }}, 1)
         }
       })
     }
 
     return (
 
-    <div >
-        <div className="page_title">Sponsor</div>
-        <Navigation />
-        <button onClick={() => handleMatching()} type="button" class="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
+      <div>
+        <Header />
+        <Banner isAthlete={false} />
+        <ToastContainer />
 
-        <div className="d-flex mt-5">
+        <div className="d-flex">
+        <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
 
         {
           load
-
           ? <Spinner />
-
-
-          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" >
+          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor"  >
               {
                 data.map(({id, attributes}) => {
                   return (
-
                       <div key={id}
-                      className="card rounded"
-                      style={{width: '18rem'}}
-                      onClick={() => handleClick(id)}
+                        className="card rounded"
+                        style={{width: '18rem'}}
+                        onClick={() => handleClick(id)}
+
                       >
-                        <img src={attributes.picture} alt={attributes.name} className="card-img-top" />
-                          <div className="card-body">
-                            <h3 className="card-title">{attributes.name}</h3>
-                            <p className="card-text">{attributes.email}</p>
-                            <button onClick={() => handleLike(id)}>Like sponsor</button>
-                          </div>
+                      <img src={attributes.picture} alt={attributes.name} className="card-img-top" />
+                      <div className="card-body">
+                        <h3 className="card-title">
+                          {attributes.name}
+                        </h3>
+                        <p className="card-text">
+                          {attributes.email}
+                        </p>
+                        <button className="btn-ghost" onClick={() => handleLike(id)}>
+                          Like sponsor
+                        </button>
                       </div>
-
-                  )
-                })
-
-              }
+                  </div>
+                )
+              })
+            }
           </div>
         }
-        <div className="column-sponsor border border-primary rounded">
-
+          <div className="column-sponsor rounded" style={{backgroundColor: '#ff5757'}}>
             <SponsorItem sponsor={selected} />
-
-        </div>
-
-        </div>
-
-
-
-    </div>)
+          </div>
+      </div>
+    </div>
+    )
 }
 
 export default Sponsor;

@@ -3,33 +3,36 @@ import AthleteModal from './AthleteModal'
 
 const AthleteItem = ({athlete}) => {
 
+  const isEmpty = (obj) => Object.values(obj).every(x => x.length < 1)
 
   const displayData = (
 
     <Fragment>
 
-        <div className='d-flex justify-content-between'>
+        <div className='d-flex justify-content-between' style={{zIndex: "1"}}>
 
-                <div className='text-success mx-3'>Athlete en recherche de sponsor</div>
+            <div className='text-white m-3'>Athlete en recherche de sponsor</div>
+
+            <div className='m-3'>
+                  <p>{athlete[0]?.attributes.email}</p>
+              </div>
         </div>
 
 
-        <h2>{athlete[0]?.fields.nom}</h2>
+        <h2>{athlete[0]?.attributes.Name}</h2>
 
         <div className='mx-3' >
-            <h4>{athlete[0]?.fields.sport}</h4>
-            <div className="mt-3">
-              {
-                true &&  <AthleteModal name={athlete[0]?.fields.nom} />
-              }
-            </div>
+             <h4>{athlete[0]?.attributes.sports}</h4>
 
 
-            <div className='d-flex justify-content-between mt-3'>
+              <div className="mt-3">
+                {
+                  true &&  <AthleteModal name={athlete[0]?.attributes.Name} />
+                }
+              </div>
 
-            </div>
-            <div>
-            </div>
+             <div>
+          </div>
         </div>
     </Fragment>
 
@@ -38,8 +41,9 @@ const AthleteItem = ({athlete}) => {
   return (
 
       <div >
-      {
-        displayData
+      { isEmpty(athlete)
+        ? null
+        :displayData
       }
 
     </div>

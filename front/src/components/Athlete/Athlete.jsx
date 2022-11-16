@@ -1,8 +1,9 @@
-import React, {useState, useEffect, useRef } from "react";
-import Navigation from "../Navigation";
-import athlete from "../../database/athlete.json"
+import React, {useState, useEffect} from "react";
+import Header from "../Header";
+import Banner from './../Banner'
 import AthleteItem from "./AthleteItem";
 import Spinner from "../Spinner";
+import { GetAthletes } from "../../request/athletes.request";
 
 
 const Athlete = () => {
@@ -15,14 +16,16 @@ const Athlete = () => {
 
     const [load, setLoad] = useState(true)
 
-    const dataContainer2 = useRef()
 
     useEffect(() => {
 
       if(load) {
         const timer = setTimeout(() => {
+          GetAthletes().then(res => {
+            setData(res?.data?.data.slice(page, page + 10))
 
-          setData(athlete.slice(page, page + 10))
+          })
+
           setLoad(false)
 
         }, 1000);
@@ -33,13 +36,13 @@ const Athlete = () => {
 
     const handleClick = (id) => {
 
-      setSelected(data.filter(element => element.recordid === id))
+      setSelected(data.filter(element => element.id === id))
     }
 
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 570  && page < 100 && data.length === 10  ) {
+        if (window.scrollY === 862  && page < 100 && data.length === 10) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
@@ -54,12 +57,14 @@ const Athlete = () => {
     }, [page, data.length]);
 
 
-    return (
-    <div >
-        Sponsor
-        <Navigation />
 
-        <div className="d-flex mt-5">
+    return (
+    <div>
+
+        <Header />
+        <Banner isNotAthlete={true} />
+
+        <div className="d-flex">
 
         {
           load
@@ -69,18 +74,18 @@ const Athlete = () => {
 
           : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" >
               {
-                data.map((v) => {
+                data.map(({id, attributes}) => {
                   return (
 
-                      <div key={v.recordid}
+                      <div key={id}
                       className="card rounded"
                       style={{width: '18rem'}}
-                      onClick={() => handleClick(v.recordid)}
+                      onClick={() => handleClick(id)}
                       >
                         <img src={"https://www.radiofrance.fr/s3/cruiser-production/2022/11/b4a8652e-ce65-4dbf-b9f2-70f9c2c07ba9/560x315_capture-d-ecran-2022-11-14-111004.jpg"} alt="" className="card-img-top" />
                           <div className="card-body">
-                            <h3 className="card-title">{v.fields.prenom} {v.fields.nom}</h3>
-                            <p className="card-text">{v.fields.sport}</p>
+                            <h3 className="card-title">{attributes.Name}</h3>
+                            <p className="card-text">{attributes.sports}</p>
                           </div>
                       </div>
 
@@ -91,7 +96,7 @@ const Athlete = () => {
           </div>
         }
 
-        <div className="column-sponsor border border-primary rounded">
+        <div className="column-sponsor rounded" style={{backgroundColor: '#ff5757'}}>
 
             <AthleteItem athlete={selected} />
 

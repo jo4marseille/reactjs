@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sponsor from "./components/Sponsor/Sponsor";
 import Athlete from "./components/Athlete/Athlete";
 import SposorOffer from "./components/SposorOffer";
+import Footer from "./components/Footer";
 const Router = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Router = () => {
           <Route path="/athlete" element={<Athlete />} />
           <Route path="/PostSponsoring" element={<SposorOffer />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

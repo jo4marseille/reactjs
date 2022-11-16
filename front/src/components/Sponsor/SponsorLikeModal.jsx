@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import olympic from '../../img/icon/olympic.png'
 
 
-const AthleteModal = ({name}) => {
+const SponsorLikeModal = ({name}) => {
 
     const [show, setShow] = useState(false);
 
@@ -13,11 +12,11 @@ const AthleteModal = ({name}) => {
       <>
 
         <button type="button"
-          className="btn-ghost"
+          className="btn btn-success"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           onClick={() => handleShow()}>
-          Envoyer votre demande
+          Envoyer 
         </button>
 
 
@@ -27,9 +26,7 @@ const AthleteModal = ({name}) => {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">
-                <img src={olympic} alt="icon" style={{width: '80px'}} />
-                Confirmation</h5>
+                <h5 className="modal-title" id="exampleModalLabel">Confirmation</h5>
                 <button
                     type="button"
                     className="btn-close"
@@ -42,7 +39,7 @@ const AthleteModal = ({name}) => {
                 Votre demande a bien etait envoyée à {name}
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn-ghost" data-bs-dismiss="modal">Close</button>
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -51,4 +48,4 @@ const AthleteModal = ({name}) => {
   )
 }
 
-export default AthleteModal
+export default SponsorLikeModal

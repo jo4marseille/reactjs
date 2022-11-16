@@ -38,7 +38,7 @@ export default function shops() {
           <CardMedia
             component="img"
             height="240"
-            image={"http://localhost:1337" + shop.attributes.image.data.attributes.url}
+            image={"https://clean-and-collect-api.jo4marseille.fr" + shop.attributes.image.data.attributes.url}
             alt="green iguana"
           />
           <CardContent>

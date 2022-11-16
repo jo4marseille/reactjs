@@ -1,4 +1,4 @@
-name: Push Frontend
+name: Push Backend
 
 on:   
   push:
@@ -9,7 +9,7 @@ on:
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: olympion
+  IMAGE_NAME: olympion-api
   # IMAGE_NAME: testworkflow-front
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build image
-        run: docker build frontolympion/ --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
+        run: docker build backolympion/ --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
 
       - name: Log in to registry
         # This is where you will update the PAT to PAT_TOKEN
@@ -89,12 +89,24 @@ jobs:
                       - name: dockerconfigjson-github-com
                     containers:
                       - args:
+                          - yarn
+                          - start
+                        env:
+                          - name: NODE_ENV
+                            value: production
                         image: ghcr.io/jo4marseille/$IMAGE_NAME:latest
                         name: $IMAGE_NAME
                         ports:
-                          - containerPort: 80
+                          - containerPort: 1337
+                        volumeMounts:
+                          - name: $IMAGE_NAME-claim0
+                            mountPath: /src
                         resources: {}
                     restartPolicy: Always
+                    volumes:
+                    - name: $IMAGE_NAME-claim0
+                      persistentVolumeClaim:
+                        claimName: $IMAGE_NAME-claim0
               status: {}
           ---
               apiVersion: v1
@@ -109,9 +121,9 @@ jobs:
                 name: $IMAGE_NAME
               spec:
                 ports:
-                  - name: "80"
-                    port: 80
-                    targetPort: 80
+                  - name: "1337"
+                    port: 1337
+                    targetPort: 1337
                 selector:
                   io.kompose.service: $IMAGE_NAME
               status:
@@ -136,13 +148,29 @@ jobs:
                             service:
                               name: $IMAGE_NAME
                               port:
-                                number: 80
+                                number: 1337
                           path: /
                           pathType: Prefix
                 tls:
                   - hosts:
                       - $IMAGE_NAME.jo4marseille.fr
                     secretName: $IMAGE_NAME-tls
+          ---
+              apiVersion: v1
+              kind: PersistentVolumeClaim
+              metadata:
+                creationTimestamp: null
+                labels:
+                  io.kompose.service: $IMAGE_NAME-claim0
+                name: $IMAGE_NAME-claim0
+              spec:
+                accessModes:
+                  - ReadWriteOnce
+                resources:
+                  requests:
+                    storage: 1Gi
+              status: {}
+
           EOF
       - shell: bash
         run: |

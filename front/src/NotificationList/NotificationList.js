@@ -5,6 +5,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
+import "./NotificationList.css";
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -28,7 +29,7 @@ export default function NotificationList() {
   if (listNotification) {
     return (
       <>
-        {listNotification.map((item, index) => {
+        {listNotification.reverse().map((item, index) => {
           return (
             <Box sx={{ flexGrow: 1, overflow: "hidden", px: 3 }}>
               <StyledPaper
@@ -40,10 +41,12 @@ export default function NotificationList() {
               >
                 <Grid container wrap="nowrap" spacing={2}>
                   <Grid item>
-                    <Avatar src="https://www.leparisien.fr/resizer/-juH-R4kBQ0_Bzhy2J2h6WeAlnY=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/lpguideshopping/BDA27JCVDVHE5OMQ3MGXW76SNU.jpg" />
+                    <Avatar src={item.image} />
                   </Grid>
                   <Grid item xs zeroMinWidth>
-                    <Typography noWrap>{item.title}</Typography>
+                    <Typography noWrap>
+                      <b>{item.title}</b>
+                    </Typography>
                     <Typography noWrap>{item.body}</Typography>
                   </Grid>
                 </Grid>

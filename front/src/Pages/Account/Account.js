@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import UsersAPI from "../../Services/UsersAPI";
 import './Account.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default function Account() {
     const [votes, setVotes] = useState([]);
@@ -56,7 +57,7 @@ export default function Account() {
                     <input class="droite" type="text" id="email" name="email" value={input.email} onChange={(e) => setInput( ((prevInput)=>({ ...prevInput, email: e.target.value })))}/>
                     <label class="gauche" for="password">Password</label>
                     <input class="gauche" type="password" id="password" name="password" placeholder="password" onChange={(e) => setInput( ((prevInput)=>({ ...prevInput, password: e.target.value })))}/>
-                    <button style={{padding: '0.5vh', backgroundColor: '#ffe37a'}} onClick={() => updateUser()}>Update</button>
+                    <button onClick={() => updateUser()}><FontAwesomeIcon icon={faCircleCheck} /></button>
                 </form>
             <h3>My votes</h3>
             <ul>
@@ -64,7 +65,7 @@ export default function Account() {
                     <li key={vote.id}>
                         <img src={vote.athlete.image} alt={vote.athlete.name} />
                         <p>{vote.athlete.name}</p>
-                        <p>Discipline: {vote.athlete.sport.nom}</p>
+                        <p>DJiscipline: {vote.athlete.sport.nom}</p>
                         <button onClick={() => deleteVote(vote.id)}>Delete</button>
                     </li>
                 ))}

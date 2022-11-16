@@ -12,7 +12,6 @@
     gap: 1vh;
     border-radius: 2vh;
     padding: 5vh;
-    background-color: #8080801f;
     width: 50%;
 }
 
@@ -29,6 +28,15 @@
 
 .account form .droite {
     margin-left: auto;
+}
+
+.account form button {
+    background: none;
+    font-size: xxx-large;
+    color: green;
+    border: none;
+    margin: 2rem 0 0;
+    cursor: pointer;
 }
 
 .account ul {

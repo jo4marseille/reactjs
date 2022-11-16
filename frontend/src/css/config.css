@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .main {
@@ -14,36 +15,64 @@
 .widgetStory {
     /*max-width: 650px;*/
     /*min-width: 280px;*/
+    border: 3px solid black;
     width: 35%;
     height: 400px;
-    background-color: #356cbd;
     border-radius: 15px;
     margin: 20px;
+    box-shadow: rgba(100,100,101,0.4) 0px 7px 29px 0;
+
+    overflow-y: scroll;
 
 
+
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /* -webkit-box-shadow: inset 3px 3px 6px rgb(0 0 0); */
+
+    background-color: #ffffffa3;
 }
 
 .widgetAthlete {
     /*max-width: 650px;*/
     /*min-width: 280px;*/
     width: 35%;
-    height: 800px;
-    background-color: #0f980f;
+    height: 705px;
     border-radius: 15px;
     margin: 20px;
     position: relative;
-    top: -190px;
+    top: -255px;
     overflow-y: scroll;
+    overflow-x: hidden;
+    border: 3px solid black;
+    box-shadow: rgba(100,100,101,0.4) 0px 7px 29px 0;
 
+
+
+}
+
+.corp {
+    display: flex;
+    flex-wrap: wrap;
 }
 .widgetPodium {
     /*max-width: 650px;*/
     /*min-width: 280px;*/
     width: 35%;
-    height: 600px;
-    background-color: #e3c926;
+    height: 672px;
+    border: 3px solid black;
     border-radius: 15px;
     margin: 20px;
+    box-shadow: rgba(100,100,101,0.4) 0px 7px 29px 0;
+
 
 
 }
@@ -52,48 +81,93 @@
     /*min-width: 280px;*/
     width: 35%;
     border-radius: 15px;
-    background-color: #da4545;
+    /* background-color: #da4545; */
     margin: 20px;
-    height: 612px;
+    height: 454px;
+    border: 3px solid black;
+    box-shadow: rgba(100,100,101,0.4) 0px 7px 29px 0;
+
 
 }
 
 .widgetAthlete h3, .widgetPodium h3, .widgetQuizz h3, .widgetStory h3 {
 
     font-size: 30px;
-    color: white;
     margin-top: 15px;
 
 }
 
-.widgetAthlete::-webkit-scrollbar {
-    width: 12px;
-    background-color: white;
+.anecdotetitle {
+    color: #5656e1;
 }
 
-.widgetAthlete::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0);
+.imagmedaille {
+    width: 30px;
+}
+
+.third p {
+    margin: 15px;
+}
+.first {
+    display: flex;
+    margin: auto;
+    align-items: center;
+
 
 }
 
-.widgetAthlete::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0);
+.second {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.third {
+    display: flex;
+    margin: auto;
+
 }
 
 .nationality {
     display: flex;
-    margin: auto;
     justify-content: center;
 }
 
+.medaille {
+    font-size: 25px;
+}
+
+.imgpays {
+
+
+}
 
 .card {
-    color: white;
-    background-color: white;
-    width: 80%;
-    margin: 20px;
+    width: 40%;
+    margin: 20px auto;
+    box-shadow: rgba(100,100,101,0.4) 0px 7px 29px 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px;
 }
+
+
+
+.cardsearch {
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px;
+    box-shadow: rgba(100,100,101,0.4) 0px 7px 29px 0;
+
+}
+
+
 
 .imgpays {
     width: 40px;

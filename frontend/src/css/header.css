@@ -16,6 +16,7 @@ header {
 .listnav {
     display: flex;
     list-style-type: none;
+    flex-direction: row;
 
 }
 

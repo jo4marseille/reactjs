@@ -1,0 +1,60 @@
+.quiz ul{
+    list-style-type: none ;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+}
+
+.quiz li{
+    text-align: left;
+    margin: 0 22%;
+    width: 100%;
+}
+
+.response {
+    margin: 20px auto;
+}
+
+.question {
+    margin: 15px auto;
+    width: 90%;
+
+}
+
+.quiz h3 {
+    color: #b4b444
+}
+
+.titlequiz {
+    color: #b4b444;
+}
+
+.athletetitle {
+    color: #A18B5A;
+}
+
+.quiz p{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 263px;
+    margin: 30px auto 15px auto;
+    padding: 7px;
+    border: 3px solid #b4b444
+}
+
+.quiz img{
+    height: 80px;
+    margin: 0 15px;
+
+}
+
+.quiz button{
+    background-color: white;
+    border: 3px solid #b4b444;
+    outline: none;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 5px;
+}

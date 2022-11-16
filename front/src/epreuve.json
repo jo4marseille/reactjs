@@ -1,0 +1,54 @@
+{
+    "football": [
+        {
+            "title": "Épreuves olympiques de football",
+            "description": "Les équipes se composent essentiellement de joueurs de moins de 23 ans (seuls 3 joueurs plus âgés sont autorisés).",
+            "genre": "male",
+            "teams": 16,
+            "atlhete": 288,
+            "date": [
+                1721847600,
+                1722092400,
+                1722358800,
+                1730563200,
+                1722873600
+            ]
+        },
+        {
+            "genre": "female",
+            "teams": 11,
+            "atlhete": 199,
+            "date": [
+                1721926800,
+                1722193200,
+                1722445200,
+                1722704400,
+                1722970800
+            ]
+        }
+    ],
+    "voile": [
+        {
+            "title": "Épreuves olympiques de voile",
+            "description": "La particularité des épreuves olympiques est que les compétiteurs s'affrontent sur des embaractions identiques.",
+            "date": [
+                1722182400,
+                1722531600,
+                1722618000,
+                1722708000,
+                1722794400,
+                1722967200,
+                1723143600
+            ],
+            "type": [
+                "la planche à voile à foil",
+                "le dériveur double",
+                "le dériveur solitaire",
+                "le kiteboard",
+                "le catamaran à foil double ",
+                "le dériveur double"
+            ],
+            "atlhete": 330
+        }
+    ]
+}

@@ -22,7 +22,7 @@ export const Home = () => {
           </div>
           <div className="col-2">
             <button type="button" class="btn btn-outline-danger">
-              Danger
+              Cas d'urgence
             </button>
           </div>
         </div>

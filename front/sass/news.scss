@@ -1,0 +1,26 @@
+.container-news {
+  background-color: white;
+  border-radius: 37px;
+  padding: 20px;
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+.news-description,
+.news-title {
+  color: #00004d;
+}
+
+.news-description {
+  margin-top: -15px;
+  margin-bottom: 45px;
+}
+
+a:-webkit-any-link {
+  color: #00004d;
+  text-decoration: none;
+}
+
+a:-webkit-any-link:hover {
+  color: #ed354f;
+}

@@ -94,8 +94,6 @@ jobs:
                         env:
                           - name: NODE_ENV
                             value: production
-                          - name: HOST
-                            value: c-14-api.jo4marseille.fr
                         image: ghcr.io/jo4marseille/$IMAGE_NAME:latest
                         name: $IMAGE_NAME
                         ports:

@@ -7,6 +7,7 @@ ENV API_TOKEN_SALT tobemodified
 ENV ADMIN_JWT_SECRET tobemodified
 ENV JWT_SECRET tobemodified
 ENV NODE_ENV=production
+ENV HOST=c-14-api.jo4marseille.fr
 
 # Create app directory
 RUN mkdir -p /usr/src/app

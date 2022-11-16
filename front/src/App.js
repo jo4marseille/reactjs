@@ -3,7 +3,7 @@ import Main from "./Route";
 import "./App.css";
 import { AuthProvider } from "./contexts/AuthContext";
 import { useEffect, useState } from "react";
-import { onMessageListener, RequestForToken } from "./utils/Firebase";
+import {database, onMessageListener, RequestForToken} from "./utils/Firebase";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Notification } from "./utils/Notification";
@@ -12,6 +12,7 @@ import Signin from "./Signin/Signin";
 import { Route, Routes } from "react-router";
 import Homepage from "./Homepage/Homepage";
 import Footer from "./Footer/footer";
+import {onValue, ref, update} from "firebase/database";
 
 function App() {
   const [notification, setNotification] = useState({ title: "", body: "" });
@@ -24,6 +25,23 @@ function App() {
   }, [notification]);
 
   RequestForToken();
+
+  onValue(ref(database), (snapshot) => {
+    const data = snapshot.val()
+    console.log(Date.now())
+    console.log(data["count_notify"])
+    update(ref(database), {
+      count_notify: data.count_notify += 1
+    })
+    setInterval(() => {
+      for (let i = 0; i < data.length; i++) {
+        const date = Date.now()
+        if (data[i].start_to === (date)) {
+          console.log("data ", data[i])
+        }
+      }
+    }, 60000)
+  })
 
   onMessageListener()
     .then((payload) => {

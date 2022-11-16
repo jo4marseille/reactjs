@@ -7,6 +7,7 @@ ENV APP_KEYS "toBeModified1,toBeModified2"
 ENV API_TOKEN_SALT tobemodified
 ENV ADMIN_JWT_SECRET tobemodified
 ENV JWT_SECRET tobemodified
+ENV NODE_ENV=production
 
 
 # Create app directory
@@ -19,10 +20,11 @@ WORKDIR /usr/src/app
 COPY ./package*.json /usr/src/app/
 # COPY . ./
 RUN yarn
-RUN yarn build
 
 # Copying source files
 COPY . /usr/src/app/
+
+RUN yarn build
 
 # Building app
 EXPOSE 1337

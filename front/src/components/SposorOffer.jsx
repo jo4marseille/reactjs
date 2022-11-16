@@ -74,12 +74,12 @@ const SposorOffer = () => {
                     <label htmlFor="about">Description de l'offre sponsoring</label>
                     <input className="formInputs" type="text" onChange={(e) => setDataForm({...dataForm, about: e.target.value})}/>
                 </div>
-                <button className="btn btn-primary" type='submit' onClick={() => handleSubmit()}>Publier l'annonce</button>
+                <button className="btn-ghost" type='submit' onClick={() => handleSubmit()}>Publier l'annonce</button>
             </div>
             </div>
 
             <div style={{backgroundImage: `url(${Nageur})`, marginTop: "120px"}} className="banner2">
-                {/* <img className="" src={Nageur} alt="" style={{marginTop: '120px', height: '50%'}}  /> */}
+
 
             </div>
         </div>

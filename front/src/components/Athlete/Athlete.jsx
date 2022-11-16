@@ -42,7 +42,7 @@ const Athlete = () => {
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 640  && page < 100 && data.length === 10) {
+        if (window.scrollY === 862  && page < 100 && data.length === 10) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }

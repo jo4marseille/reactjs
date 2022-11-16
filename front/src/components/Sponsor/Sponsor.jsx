@@ -63,7 +63,7 @@ const Sponsor = () => {
     useEffect(() => {
       const handleScroll = () => {
 
-        if (window.scrollY === 640 && page < 100 && data.length === 10 ) {
+        if (window.scrollY === 862 && page < 100 && data.length === 10 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
@@ -137,7 +137,7 @@ const Sponsor = () => {
                         <p className="card-text">
                           {attributes.email}
                         </p>
-                        <button onClick={() => handleLike(id)}>
+                        <button className="btn-ghost" onClick={() => handleLike(id)}>
                           Like sponsor
                         </button>
                       </div>

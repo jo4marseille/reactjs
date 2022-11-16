@@ -59,12 +59,11 @@ const Footer = () => {
                    class="column">
                     <img src={PictureProvenceTourisme}
                          alt="d13"
-
                     />
                 </a>
                 <a
                     href="https://code4marseille.fr/" target="_blank" class="column">
-                    <img class="" src={PictureCode4Marseille} alt="d13"/>
+                    <img src={PictureCode4Marseille} alt="d13"/>
                 </a>
                 <a
                     href="https://aws.amazon.com/fr/?nc2=h_lg" target="_blank" class="column">

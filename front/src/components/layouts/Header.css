@@ -2,10 +2,13 @@
 @media (max-width: 767px) {
     .Box__header {
         background-color: #00004d;
-        color: wheat;
+        color: white;
+        font-weight: bold;
+        margin-top: 80px;
+
     }
 
     .Title__header {
-        display: none;
+        display: none ;
     }
 }

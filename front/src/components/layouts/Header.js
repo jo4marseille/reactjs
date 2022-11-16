@@ -17,9 +17,12 @@ import AdbIcon from '@mui/icons-material/Adb';
 import {useNavigate, useNavigation} from "react-router-dom";
 import './Header.css'
 import Logo from "../../assets/images/JocontourPT2.png"
+import HomeIcon from '@mui/icons-material/Home';
+
+import SearchIcon from '@mui/icons-material/Search';
 
 
-const drawerWidth = 260;
+const drawerWidth = "100vw";
 const navItems = ['Accueil', 'Agenda', 'Contact'];
 
 function Header(props) {
@@ -41,12 +44,39 @@ function Header(props) {
                 {navItems.map((item) => (
                     <ListItem key={item}>
                         <ListItemButton sx={{textAlign: 'center'}}>
-                            <ListItemText primary={item} onClick={((e) => {
+                            <ListItemText primary={<h3 style={{
+                                padding: 0,
+                                margin: 0,
+                            }}>{item}</h3>} onClick={((e) => {
                                 navigate(`/${item.toLowerCase()}`)
                             })}/>
                         </ListItemButton>
                     </ListItem>
                 ))}
+
+                <ListItemButton sx={{textAlign: 'center'}}>
+                    <div style={{
+                        top: 1085,
+                        left: 222,
+                        width: "70%",
+                        marginLeft: "15%",
+                        height: 20,
+                        background: "white",
+                        // background: #FFFFFF 0% 0% no-repeat padding-box;
+                        border: "1px solid #707070",
+                        borderRadius: 44,
+                        opacity: 1
+                    }}/>
+                    <div style={{
+                        width: "15%",
+                        marginTop: 7
+                    }}>
+                        <SearchIcon/>
+                    </div>
+
+
+                </ListItemButton>
+
             </List>
         </Box>
     );
@@ -121,7 +151,12 @@ function Header(props) {
                     }}
                     sx={{
                         display: {xs: 'block', sm: 'none'},
-                        '& .MuiDrawer-paper': {boxSizing: 'border-box', width: drawerWidth, height: 'auto'},
+                        '& .MuiDrawer-paper': {
+                            width: drawerWidth,
+                            height: 400,
+                            backgroundColor: "rgba(255, 255, 255, 0)",
+                            boxShadow: "none"
+                        },
                     }}
                 >
                     {drawer}

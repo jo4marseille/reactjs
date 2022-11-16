@@ -7,6 +7,7 @@ import "./VerticalContainer.css"
 import moment from "moment";
 import ActivityCard from "./ActivityCard";
 import data from "../../assets/datas/activities_demo.json"
+
 export default class VerticalContainer extends React.PureComponent {
 
     calcule() {

@@ -62,8 +62,10 @@ function FilterBar(props) {
     let sportData = require('../../assets/datas/sportCategories.json');
 
     return (
-        <div>
-            <FormControl sx={{m: 2, width: "70vw", maxWidth: "50vw"}}>
+        <div style={{
+            textAlign: "right"
+        }}>
+            <FormControl sx={{m: 2, width: 350, maxWidth: "50vw"}}>
                 <InputLabel id="demo-multiple-chip-label">Filtres</InputLabel>
                 <Select
                     labelId="demo-multiple-chip-label"

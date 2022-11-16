@@ -16,6 +16,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 import "./Agenda.css"
 import Header from "../components/layouts/Header";
+import Footer from "../components/layouts/Footer";
 
 function Agenda() {
 
@@ -91,17 +92,17 @@ function Agenda() {
 
             <ChevronRightIcon style={{
                 position: "absolute",
-                top: 112,
+                top: 118,
                 right: -12,
-                fontSize: 60,
+                fontSize: 50,
                 color: "#707070"
             }}/>
 
             <ChevronLeftIcon style={{
                 position: "absolute",
-                top: 112,
+                top: 118,
                 left: -12,
-                fontSize: 60,
+                fontSize: 50,
                 color: "#707070"
             }}/>
             <div className="div_ctn_agenda">
@@ -113,6 +114,8 @@ function Agenda() {
                 <VerticalContainer/>
 
             </div>
+
+            <Footer/>
         </div>
     )
 }

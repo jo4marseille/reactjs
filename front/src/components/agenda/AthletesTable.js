@@ -10,8 +10,6 @@ import picture from "../../assets/images/athletes/1.png"
 export default function AthletesTable(props) {
 
     function item() {
-
-
         return (
             <div style={{}}>
                 <div style={{
@@ -28,6 +26,7 @@ export default function AthletesTable(props) {
                             backgroundRepeat: "no-repeat",
                             width: "90%",
                             height: 200,
+                            marginTop: 10
                         }}/>
                     </div>
 
@@ -53,11 +52,11 @@ export default function AthletesTable(props) {
                             // marginLeft: 10,
                         }}>
                             <h4 style={{
-                                fontSize: 26,
+                                fontSize: 24,
                                 padding: 0,
                                 marginBottom: 0,
-                                marginTop: 10,
-                            }}> Tom
+                                marginTop: 12,
+                            }}> CAMPAGNE
                             </h4>
 
                             <h5 style={{
@@ -66,14 +65,14 @@ export default function AthletesTable(props) {
                                 marginBottom: 0,
                                 marginTop: 5,
                             }}>
-                                Campagne
+                                Tom
                             </h5>
 
                             <h5 style={{
-                                fontSize: 22,
+                                fontSize: 20,
                                 padding: 0,
                                 marginBottom: 0,
-                                marginTop: 15,
+                                marginTop: 10,
                             }}>
                                 22 ans
                             </h5>
@@ -87,11 +86,12 @@ export default function AthletesTable(props) {
                     width: "95%",
                     marginLeft: "auto",
                     marginRight: "auto",
-                    marginTop: -40,
+                    marginTop: -55,
                     padding: 0,
                     fontSize: 14
                 }}>
-                    Né le 14 novembre 2000 à Saint-Jean,Tom est un athlète français, spécialiste du saut à longueur. Il est licencié au Stade bordelais athlétisme.
+                    Né le 14 novembre 2000 à Saint-Jean,Tom est un athlète français, spécialiste du saut à longueur. Il
+                    est licencié au Stade bordelais athlétisme.
 
                 </p>
 
@@ -106,23 +106,23 @@ export default function AthletesTable(props) {
             field: 'flag', headerName: 'Country',
             renderCell: (params) => (
                 <span>
-            <div style={{width: 50}}>
-                <img style={{width: "100%"}} src={require(`../../assets/images/flags/${params.row.flag}`)}
+            <div style={{width: 50, height: 38}}>
+                <img style={{width: "100%", height: "100%"}} src={require(`../../assets/images/flags/${params.row.flag}`)}
                      alt={"flag"}/>
             </div>
         </span>
             )
         },
 
-    {
-        field: 'lastName',
-        headerName: 'Nom',
-        sortable: false,
-        renderCell: (params) => (
-            <Tooltip title={item()} style={{
-                width: 600,
-                height: 200
-            }}>
+        {
+            field: 'lastName',
+            headerName: 'Nom',
+            sortable: false,
+            renderCell: (params) => (
+                <Tooltip title={item()} style={{
+                    width: 600,
+                    height: 200
+                }}>
                 <span style={{
                     whiteSpace: "nowrap",
                     overflow: "hidden",
@@ -150,12 +150,13 @@ export default function AthletesTable(props) {
                 }}>
                     {params.row.firstName}
                 </span>
-            </Tooltip>
-        ),
-    },
+                </Tooltip>
+            ),
+        },
+        {field: 'age', headerName: 'Age'},
 
 
-    // position drapeau name
+        // position drapeau name
 
     ];
     const [anchorEl, setAnchorEl] = React.useState(null);

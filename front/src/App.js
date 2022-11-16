@@ -8,7 +8,7 @@ import Loader from "./views/Loader";
 function App() {
     return (
         <div>
-            {/*<Loader/>*/}
+            <Loader/>
 
 
             <Rooter/>

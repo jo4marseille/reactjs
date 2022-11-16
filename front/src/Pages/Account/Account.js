@@ -65,7 +65,7 @@ export default function Account(){
                     <li key={vote.id}>
                         {console.log(vote)}
                         <div>
-                            <img src={`http://localhost:1337${vote.athlete.photoAthlete.url}`} alt={vote.athlete.nom}/>
+                            <img src={`https://c-14-api.jo4marseille.fr${vote.athlete.photoAthlete.url}`} alt={vote.athlete.nom}/>
                         </div>
                        
                         <p>{vote.athlete.prenom + " " + vote.athlete.nom}</p>

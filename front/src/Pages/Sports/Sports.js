@@ -42,7 +42,7 @@ export default function Sports() {
                                 <a href={`sport/${item.id}`}>
                                     <li key={item.attributes.nom}>
                                         <div>
-                                            <img src={`http://localhost:1337${item.attributes.SportIcon.data.attributes.url}`} />    
+                                            <img src={`https://c-14-api.jo4marseille.fr${item.attributes.SportIcon.data.attributes.url}`} />    
                                         </div>
                                         <p>{item.attributes.nom}</p>
                                         

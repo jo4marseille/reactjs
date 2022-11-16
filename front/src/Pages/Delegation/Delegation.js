@@ -11,7 +11,7 @@ export default function Delegation() {
         try {
             const data = DelegationsAPI.findPays().then(response => {
                 setPays(response.data.data);
-                console.log(response.data.data);
+                console.log(response.data.data[0]);
             })
         } catch (error) {
             console.log(error)
@@ -30,11 +30,11 @@ export default function Delegation() {
         <main class="delegation">
             <h1>Délégation</h1>
             <ul>
-                {pays.map((pays) => (
-                    <li onClick={() => handleDelegation(pays.id)} key={pays.id}>
-                        {console.log(pays)}
-                        <img src={`http://localhost:1337${pays.attributes.drapeau.data.attributes.url}`} alt={pays.attributes.nom} />
-                        <p>{pays.attributes.nom}</p>
+                {pays.map((pay) => (
+                    <li onClick={() => handleDelegation(pay.id)} key={pay.id}>
+                        {console.log(pay)}
+                        <img src={`https://c-14-api.jo4marseille.fr${pay.attributes.drapeau.data[0].attributes.url}`} alt={pay.attributes.nom} />
+                        <p>{pay.attributes.nom}</p>
                     </li>
                 ))}
             </ul>

@@ -33,13 +33,13 @@ export default function Participent() {
     return (
         <main className='participent'>
          
-            <h1>{delegationNom} <img src={`http://localhost:1337${delegationDrapeau.data !== undefined ? delegationDrapeau.data.attributes.url : ""}`}/></h1>
+            <h1>{delegationNom} <img src={`https://c-14-api.jo4marseille.fr${delegationDrapeau.data !== undefined ? delegationDrapeau.data.attributes.url : ""}`}/></h1>
             
             <ul>
                 {athletes.map((athlete) => (
                     <li key={athlete.id}>
                         <div>
-                            <img src={`http://localhost:1337${ athlete.attributes.photoAthlete.data.attributes.url}`} alt={athlete.attributes.nom} />
+                            <img src={`https://c-14-api.jo4marseille.fr${ athlete.attributes.photoAthlete.data.attributes.url}`} alt={athlete.attributes.nom} />
                         </div>
                         <b>{athlete.attributes.prenom + " " + athlete.attributes.nom}</b>
                         <p>{athlete.attributes.sport.data.attributes.nom}</p>

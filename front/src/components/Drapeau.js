@@ -15,44 +15,44 @@ export default function Drapeau() {
     const pays = [
         {
             nom: "Australia",
-            langue: "Anglais",
+            langue: "English",
             image: <img className=" icon"
                 src="flag/AU.svg" />,
 
         },
         {
             nom: "United Kingdom",
-            langue: "Anglais",
+            langue: "English",
             image: <img className=" icon"
                 src="flag/GB.svg" />,
         },
         {
             nom: "Brazils",
-            langue: "Portugais",
+            langue: "Portuguese",
             image: <img className=" icon"
                 src="flag/BR.svg" />,
         },
         {
             nom: "中国",
-            langue: "Chinois",
+            langue: "Chinese",
             image: <img className=" icon"
                 src="flag/CN.svg" />,
         },
         {
             nom: "الجزائر",
-            langue: "Arabe",
+            langue: "Arab",
             image: <img className=" icon"
                 src="flag/DZ.svg" />,
         },
         {
             nom: "مصر",
-            langue: "Arabe",
+            langue: "Arab",
             image: <img className=" icon"
                 src="flag/EG.svg" />,
         },
         {
             nom: "España",
-            langue: "Espagnol",
+            langue: "Spanish",
             image: <img className=" icon"
                 src="flag/ES.svg" />,
         },
@@ -64,42 +64,42 @@ export default function Drapeau() {
         },
         {
             nom: "المملكة المغربية",
-            langue: "Arabe",
+            langue: "Arab",
             image: <img className=" icon"
                 src="flag/MA.svg" />,
         },
         {
             nom: "Portugal",
-            langue: "Portugais",
+            langue: "Portuguese",
             image: <img className=" icon"
                 src="flag/PT.svg" />,
         },
         {
             nom: "United States",
-            langue: "Anglais",
+            langue: "English",
             image: <img className=" icon"
                 src="flag/US.svg" />,
         }, {
             nom: "Россия",
-            langue: "Russe",
+            langue: "Russian",
             image: <img className=" icon"
                 src="flag/RU.svg" />,
         },
         {
             nom: "México",
-            langue: "Espagnol",
+            langue: "Spanish",
             image: <img className=" icon"
                 src="flag/MX.svg" />,
         },
         {
             nom: "في تونس",
-            langue: "Arabe",
+            langue: "Arab",
             image: <img className=" icon"
                 src="flag/TN.svg" />,
         },
         {
             nom: "Nigeria",
-            langue: "Anglais",
+            langue: "English",
             image: <img className=" icon"
                 src="flag/NG.svg" />,
         },

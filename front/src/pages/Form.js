@@ -9,14 +9,17 @@ export default function Form()
     const [tel, setTel] = useState("");
     const [siret, setSiret] = useState("");
     const [school, setSchool] = useState("");
-    const [language, setLanguage] = useState("Catalan");
+    const [language, setLanguage] = useState("Arab");
     const [category, setCategory] = useState("vol");
     const [step, setStep] = useState("form");
 
     const languages = [
+        "Arab",
         "Catalan",
+        "Chinese",
         "Danish",
         "Dutch",
+        "English",
         "Faroese",
         "Finnish",
         "Flemish",
@@ -27,9 +30,9 @@ export default function Form()
         "Italian",
         "Norwegian",
         "Portuguese",
+        "Russian",
         "Spanish",
-        "Swedish",
-        "UK English / British English"
+        "Swedish"
     ]
 
     //console.log(category);
@@ -51,7 +54,7 @@ export default function Form()
 
                         <div class="form-group">
                             <label for="exampleInputEmail1" class="form-label mt-4">Your email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name" onChange={(e) => setEmail(e.target.value)} />
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} />
                         </div>
 
                         <div class="form-group">

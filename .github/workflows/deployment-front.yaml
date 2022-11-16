@@ -3,14 +3,14 @@ name: Push Frontend
 on:   
   push:
     branches:
-    - main
+    - le-bon-point
     - master
 
     # Publish `v1.2.3` tags as releases.
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: ${{ github.event.repository.name }}
+  IMAGE_NAME: le-bon-point
   # IMAGE_NAME: testworkflow-front
 
 jobs:
@@ -90,6 +90,11 @@ jobs:
                       - name: dockerconfigjson-github-com
                     containers:
                       - args:
+                        env:
+                          - name: REACT_APP_GOOGLE_MAPS_API_KEY
+                            value: AIzaSyA4jk4mrbMECheJxfMfHucCNP6XEqqMmPc
+                          - name: REACT_APP_PLACES_API_KEY
+                            value: AIzaSyBdgYhfxuCm3Roez3dL_J2HuiWT1oKCOyw
                         image: ghcr.io/jo4marseille/$IMAGE_NAME:latest
                         name: $IMAGE_NAME
                         ports:

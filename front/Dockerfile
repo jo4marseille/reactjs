@@ -6,6 +6,9 @@ WORKDIR /usr/src/app
 # ENV REACT_APP_BASE_URL=$api_url
 # ENV REACT_APP_API_URL=$api_url/api
 
+ENV REACT_APP_GOOGLE_MAPS_API_KEY=AIzaSyA4jk4mrbMECheJxfMfHucCNP6XEqqMmPc
+ENV REACT_APP_PLACES_API_KEY=AIzaSyBdgYhfxuCm3Roez3dL_J2HuiWT1oKCOyw
+
 COPY package*.json ./
 RUN npm install
 COPY . .

@@ -9,7 +9,7 @@ on:
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: titan-project
+  IMAGE_NAME: jo4live
   # IMAGE_NAME: testworkflow-front
 
 jobs:

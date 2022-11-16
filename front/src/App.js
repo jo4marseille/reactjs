@@ -1,4 +1,3 @@
-//import Signin from './Signin/Signin';
 import Main from "./Route";
 import "./App.css";
 import { AuthProvider } from "./contexts/AuthContext";
@@ -39,6 +38,12 @@ function App() {
         if (data[i].start_to === (date)) {
           console.log("data ", data[i])
         }
+        if (data[i].start_to === (date)) {
+          console.log("data ", data[i])
+        }
+        if (data[i].start_to === (date)) {
+          console.log("data ", data[i])
+        }
       }
     }, 60000)
   })
@@ -51,6 +56,37 @@ function App() {
       });
     })
     .catch((err) => console.log("failed: ", err));
+
+  setNotification({
+    title: payload?.notification?.title,
+    body: payload?.notification?.body,
+  });
+
+  if (localStorage.getItem("notification") === null) {
+    const getNotif = localStorage.setItem(
+        "notification",
+        JSON.stringify([
+          {
+            title: payload?.notification?.title,
+            body: payload?.notification?.body,
+          },
+        ])
+    );
+    console.log("getNotif", getNotif);
+  } else {
+    const getNotif = localStorage.getItem("notification");
+    console.log("getNotif", JSON.parse(getNotif));
+    const concat = JSON.parse(getNotif).concat([
+      {
+        title: payload?.notification?.title,
+        body: payload?.notification?.body,
+      },
+    ]);
+    const setNotif = localStorage.setItem(
+        "notification",
+        JSON.stringify(concat)
+    );
+  }.catch((err) => console.log("failed: ", err));
   return (
     <>
       <AuthProvider>

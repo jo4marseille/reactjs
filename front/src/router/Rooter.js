@@ -11,8 +11,11 @@ const Rooter = () => {
                 <Routes>
 
                     <Route exact path="/" element={<Home/>}/>
+                    <Route path="/accueil" element={<Home/>}/>
                     <Route path="/agenda" element={<Agenda/>}/>
                     <Route path="/loader" element={<Loader />}/>
+                    <Route path="/contact"element={<Home/>}/>
+                    <Route path="/Infos pratiques" element={<Home/>}/>
                 </Routes>
             </BrowserRouter>
         </div>

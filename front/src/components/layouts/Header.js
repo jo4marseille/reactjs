@@ -16,10 +16,11 @@ import Button from '@mui/material/Button';
 import AdbIcon from '@mui/icons-material/Adb';
 import {useNavigate, useNavigation} from "react-router-dom";
 import './Header.css'
+import Logo from "../../assets/images/JocontourPT2.png"
 
 
 const drawerWidth = 260;
-const navItems = ['Accueil', 'Agenda', 'Contact', 'Infos pratiques'];
+const navItems = ['Accueil', 'Agenda', 'Contact'];
 
 function Header(props) {
     const {window} = props;
@@ -38,10 +39,10 @@ function Header(props) {
             <Divider/>
             <List className={"List__block"}>
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
+                    <ListItem key={item}>
                         <ListItemButton sx={{textAlign: 'center'}}>
                             <ListItemText primary={item} onClick={((e) => {
-                                navigate(`/${item}`)
+                                navigate(`/${item.toLowerCase()}`)
                             })}/>
                         </ListItemButton>
                     </ListItem>
@@ -55,7 +56,8 @@ function Header(props) {
     return (
         <Box sx={{display: 'flex'}}>
             <AppBar component="nav" style={{
-                backgroundColor: "#00004D"
+                backgroundColor: "#00004D",
+                height: 80
             }}>
                 <Toolbar>
                     <IconButton
@@ -63,22 +65,25 @@ function Header(props) {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{mr: 2, display: {sm: 'none'}}}
+                        sx={{mr: 2, mt: 1, display: {sm: 'none'}}}
                     >
                         <MenuIcon/>
                     </IconButton>
 
-                    <AdbIcon
-                        sx={{display: {xs: 'none', md: 'flex'}, mr: 1}}
-                    />
+                    {/*<AdbIcon*/}
+                    {/*    sx={{display: {xs: 'none', md: 'flex'}, mr: 1}}*/}
+                    {/*/>*/}
                     <Typography
                         variant="h6"
                         noWrap
                         component="a"
                         href="/"
                         sx={{
-                            mr: 2,
-                            display: {xs: 'none', md: 'flex'},
+                            mr: {xs: 5, md: 3},
+                            ml: {xs: 9.5, md: 0},
+                            mt: 0.8,
+                            display: {xs: 'absolute', md: 'flex'},
+                            marginLeft: 9,
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
@@ -86,14 +91,19 @@ function Header(props) {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        <div style={{
+                            width: 130,
+                            marginTop: 10,
+                        }}>
+                            <img src={Logo} style={{width: "100%"}}/>
+                        </div>
                     </Typography>
 
                     <Box sx={{display: {xs: 'none', sm: 'block'}}}>
                         {navItems.map((item) => (
                             <Button key={item} onClick={((e) => {
-                                navigate(`/${item}`)
-                            })} sx={{color: '#fff'}}>
+                                navigate(`/${item.toLowerCase()}`)
+                            })} sx={{color: '#fff', marginTop: 1.3, fontSize: 14, mr: 0.9, fontWeight: 'bold'}}>
                                 {item}
                             </Button>
                         ))}

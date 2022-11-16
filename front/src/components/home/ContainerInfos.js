@@ -57,7 +57,7 @@ const ContainerInfos = () => {
 
         <div>
             <Parallax bgImage={PictureJo} strength={500}>
-                <div style={{ height: "60vh" }}>
+                <div style={{ height: "40vh" }}>
                     {/*<div style={insideStyles}>HTML inside the parallax</div>*/}
                 </div>
             </Parallax>

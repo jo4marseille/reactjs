@@ -13,15 +13,15 @@ const AthleteItem = ({athlete}) => {
 
             <div className='text-white m-3'>Athlete en recherche de sponsor</div>
 
-            <div className='m-3'>
+            <div className='m-3 text-white'>
                   <p>{athlete[0]?.attributes.email}</p>
               </div>
         </div>
 
 
-        <h2>{athlete[0]?.attributes.Name}</h2>
+        <h2 className='text-white'>{athlete[0]?.attributes.Name}</h2>
 
-        <div className='mx-3' >
+        <div className='mx-3 text-white' >
              <h4>{athlete[0]?.attributes.sports}</h4>
 
 

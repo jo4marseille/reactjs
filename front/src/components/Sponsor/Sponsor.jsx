@@ -121,7 +121,7 @@ const Sponsor = () => {
                 data.map(({id, attributes}) => {
                   return (
                       <div key={id}
-                        className="card rounded"
+                        className="card card-new"
                         style={{width: '18rem'}}
                         onClick={() => handleClick(id)}
 
@@ -134,7 +134,7 @@ const Sponsor = () => {
                         <p className="card-text">
                           {attributes.email}
                         </p>
-                        <button className="btn-ghost" onClick={() => handleLike(id)}>
+                        <button className="btn-ghost2" onClick={() => handleLike(id)}>
                           Like sponsor
                         </button>
                       </div>

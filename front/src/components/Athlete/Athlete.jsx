@@ -78,7 +78,7 @@ const Athlete = () => {
                   return (
 
                       <div key={id}
-                      className="card rounded"
+                      className="card card-new"
                       style={{width: '18rem'}}
                       onClick={() => handleClick(id)}
                       >

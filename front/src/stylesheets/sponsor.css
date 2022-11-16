@@ -1,0 +1,11 @@
+.page_title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 250px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.positionOffers {
+  position: relative;
+  top: 500px;
+}

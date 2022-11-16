@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+<<<<<<< HEAD
+.package.json
+
+=======
+>>>>>>> MachinMax
 # testing
 /coverage
 

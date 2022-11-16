@@ -20,7 +20,8 @@ export default function SportEvents() {
         try {
             const data = await SportsAPI.findOneSport(id).then(response => {
                 setEvenements(response.data.data.attributes.evenements.data)
-                setSportName(response.data.data.attributes.nom)
+                setSportName(response.data.data.attributes)
+                console.log(response.data.data.attributes)
             })
         } catch (error) {
             console.log(error)
@@ -31,10 +32,27 @@ export default function SportEvents() {
         refreshData()
     }, [])
 
+
+    console.log(sportName)
     return (
         <main className='sportEventsContainer'>
             <article>
-                <h3>Tous les évenements {sportName} à venir </h3>
+                <section>
+                    {
+                        sportName ? 
+                            <>
+                            <div>
+                                <img  src={`https://c-14-api.jo4marseille.fr${sportName.SportIcon.data.attributes.url}`}/>
+                            </div>
+                            <h3> {sportName.nom}</h3>
+                            </>
+                        :
+
+                        <></>
+                    }
+                    
+                </section>
+                
                 <ul>
                     {
                         evenements.map((item, index) => {
@@ -43,14 +61,19 @@ export default function SportEvents() {
                                 <a href={`/event/${item.id}`}>
                                     <li key={index}>
                                         <div>
+                                            <p>{moment(item.attributes.date_debut).utcOffset(60).format('MMM Do YYYY')}</p>
+                                            <p>{moment(item.attributes.date_debut).utcOffset(60).format('HH:mm')}h</p>
+                                        </div>
+                                        <div>
                                             <p>
                                                 {
+                                                    item.attributes.pays.data.length === 2 ?
                                                     item.attributes.pays.data.map((item, index) => {
-
+                                                        
                                                         if (index === 0){
                                                             return (
                                                                 <>
-                                                                    <img src={`http://localhost:1337${item.attributes.drapeau.data[0].attributes.url}`}/>
+                                                                    <img src={`https://c-14-api.jo4marseille.fr${item.attributes.drapeau.data.attributes.url}`}/>
                                                                     {" " + item.attributes.nom + " / "} 
                                                                 </>
                                                             )
@@ -58,24 +81,26 @@ export default function SportEvents() {
                                                             return (
                                                                 <>
                                                                     {item.attributes.nom + " "}
-                                                                    <img src={`http://localhost:1337${item.attributes.drapeau.data[0].attributes.url}`}/>
+                                                                    <img src={`https://c-14-api.jo4marseille.fr${item.attributes.drapeau.data.attributes.url}`}/>
                                                                 </>
                                                             )
                                                         }
                                                         
                                                     })
+                                                    :
+                                                    <b>{item.attributes.nom}</b>
                                                 }
                                             </p>
+                                            
+                                        </div>
+                                        <div>
                                             <p>{item.attributes.localisation}</p>
                                         </div>
                                         <div>
-                                            <p>{moment(item.attributes.date_debut).utcOffset(60).format('MMM Do YYYY')}</p>
-                                            <p>{moment(item.attributes.date_debut).utcOffset(60).format('HH:mm')}h</p>
+                                            <BsArrowRightCircle/>
                                         </div>
-                                    
-                                        <div>
-                                            <img src={`http://localhost:1337${item.attributes.image.data.attributes.url}`} />
-                                        </div>
+                                        
+                                        
                                         
                                     </li>
                                 </a>

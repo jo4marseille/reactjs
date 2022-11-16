@@ -1,0 +1,41 @@
+.delegation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5vh;
+}
+
+.delegation ul {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    margin: auto;
+    list-style: none;
+    margin-top: -2vh;
+    gap: 1em
+}
+
+.delegation ul li {
+    border: solid;
+    border-radius: 6vh 6vh 6vh 6vh;
+    padding: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2vh;
+    margin-top: 10vh;
+}
+
+.delegation ul li:hover {
+    background-color: #8080801f;
+}
+
+.delegation ul li p {
+    text-transform: uppercase;
+    display: block;
+    font-size: 18px;
+}
+
+.delegation ul li img {
+    height: 30px;
+    width: 30px;
+}

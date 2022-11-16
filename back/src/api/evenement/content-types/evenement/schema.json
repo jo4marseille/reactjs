@@ -49,10 +49,23 @@
       "relation": "oneToMany",
       "target": "api::pay.pay"
     },
+<<<<<<< HEAD
     "atheltes": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::athelte.athelte",
+=======
+    "athletes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athlete.athlete",
+      "mappedBy": "evenement"
+    },
+    "votes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vote.vote",
+>>>>>>> MachinMax
       "mappedBy": "evenement"
     }
   }

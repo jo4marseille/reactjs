@@ -17,7 +17,11 @@
     },
     "drapeau": {
       "type": "media",
+<<<<<<< HEAD
       "multiple": true,
+=======
+      "multiple": false,
+>>>>>>> MachinMax
       "required": false,
       "allowedTypes": [
         "images",
@@ -26,10 +30,17 @@
         "audios"
       ]
     },
+<<<<<<< HEAD
     "atheltes": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::athelte.athelte",
+=======
+    "athletes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athlete.athlete",
+>>>>>>> MachinMax
       "mappedBy": "pay"
     }
   }

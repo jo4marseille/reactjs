@@ -10,6 +10,10 @@ import SportEvents from './Pages/Sports/SportEvents';
 import Events from './Pages/Events/Events';
 import Account from './Pages/Account/Account';
 import Delegation from './Pages/Delegation/Delegation';
+<<<<<<< HEAD
+=======
+import Participent from "./Pages/Delegation/Participent";
+>>>>>>> MachinMax
 
 /* Import React Router */
 import { Routes, Route} from "react-router-dom";
@@ -24,8 +28,14 @@ function App() {
         <Route path='/sports' element={<Sports />} title="Home" />
         <Route path='/sport/:id' element={<SportEvents />} title="Home" />
         <Route path='/event/:id' element={<Events />} title="Home" />
+<<<<<<< HEAD
         <Route path='/account' element={<Account />} title="Account" />
         <Route path='/delegation' element={<Delegation />} title="Delegation" />
+=======
+        <Route path='/account/:id' element={<Account />} title="Account" />
+        <Route path='/delegation' element={<Delegation />} title="Delegation" />
+        <Route path='/delegation/:id' element={<Participent />} title="Delegation" />
+>>>>>>> MachinMax
       </Routes>
     </div>
   );

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * athelte controller
+ * athlete controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::athelte.athelte');
+module.exports = createCoreController('api::athlete.athlete');

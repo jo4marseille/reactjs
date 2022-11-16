@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "atheltes",
+  "collectionName": "athletes",
   "info": {
-    "singularName": "athelte",
-    "pluralName": "atheltes",
-    "displayName": "athlete",
+    "singularName": "athlete",
+    "pluralName": "athletes",
+    "displayName": "Athletes",
     "description": ""
   },
   "options": {
@@ -15,29 +15,29 @@
     "name": {
       "type": "string"
     },
-    "sport": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::sport.sport",
-      "inversedBy": "atheltes"
-    },
-    "pay": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::pay.pay",
-      "inversedBy": "atheltes"
-    },
-    "evenement": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::evenement.evenement",
-      "inversedBy": "atheltes"
-    },
     "votes": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::vote.vote",
       "mappedBy": "athlete"
+    },
+    "sport": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sport.sport",
+      "inversedBy": "athletes"
+    },
+    "pay": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::pay.pay",
+      "inversedBy": "athletes"
+    },
+    "evenement": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::evenement.evenement",
+      "inversedBy": "athletes"
     }
   }
 }

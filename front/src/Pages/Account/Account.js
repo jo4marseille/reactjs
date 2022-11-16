@@ -1,23 +1,29 @@
 import {useEffect, useState} from 'react';
-import axios from 'axios'
-import { URL_VOTE } from "../../Config/Config"
-import { URL_UPDATE } from "../../Config/Config"
-import { URL_DELETE } from "../../Config/Config"
+import { useLocation } from 'react-router-dom';
+import UsersAPI from "../../Services/UsersAPI";
 
 export default function Account() {
     const [votes, setVotes] = useState([]);
     const [input, setInput] = useState({});
-    const idUser =  window.localStorage.getItem("userId");
-    console.log(idUser);
+    const { pathname } = useLocation();
+    const locationPath = pathname.split('/')
+    const id = locationPath[2]
 
     const refreshData = async () => {
-        const res = await axios.get(URL_VOTE);
-        setVotes(res.data.data);
+        try {
+            const data = UsersAPI.findUsers(id).then(response => {
+                setInput(response.data.data);
+                setVotes(response.data.data.votes.data);
+                console.log(response.data.data.votes.data);
+            })
+        } catch (error) {
+            console.log(error)
+        }
     }
     
     const updateUser = async () => {
-        const res = await axios.put(URL_UPDATE + idUser, input)
-        if (res) {
+        const data = await UsersAPI.updateUser(id, input)
+        if (data) {
             alert("User updated");
         } else {
             alert("Error");
@@ -25,8 +31,8 @@ export default function Account() {
     }
 
     const deleteVote = async (id) => {
-        const res = await axios.delete(URL_DELETE + id);
-        if (res) {
+        const data = await UsersAPI.deleteVote(id);
+        if (data) {
             alert("Vote deleted");
             refreshData();
         } else {
@@ -44,9 +50,9 @@ export default function Account() {
             <h3>Information</h3>
                 <form style={{display: 'flex', flexDirection: 'column', margin: 'auto', marginTop: '-3vh', gap: '1vh', backgroundColor: '#8080801f', borderRadius: '2vh', padding: '5vh'}}>
                     <label for="username">Username</label>
-                    <input style={{width: '100%', height: '3vh', borderRadius: '1vh', border: 'none', padding: '1vh'}} type="text" id="username" name="username" placeholder='username' onChange={(e) => setInput( ((prevInput)=>({ ...prevInput, username: e.target.value })))}/>
+                    <input style={{width: '100%', height: '3vh', borderRadius: '1vh', border: 'none', padding: '1vh'}} type="text" id="username" name="username" value={input.username} onChange={(e) => setInput( ((prevInput)=>({ ...prevInput, username: e.target.value })))}/>
                     <label for="email">Email</label>
-                    <input style={{width: '100%', height: '3vh', borderRadius: '1vh', border: 'none', padding: '1vh'}} type="text" id="email" name="email" placeholder='email' onChange={(e) => setInput( ((prevInput)=>({ ...prevInput, email: e.target.value })))}/>
+                    <input style={{width: '100%', height: '3vh', borderRadius: '1vh', border: 'none', padding: '1vh'}} type="text" id="email" name="email" value={input.email} onChange={(e) => setInput( ((prevInput)=>({ ...prevInput, email: e.target.value })))}/>
                     <label for="password">Password</label>
                     <input style={{width: '100%', height: '3vh', borderRadius: '1vh', border: 'none', padding: '1vh'}} type="password" id="password" name="password" placeholder="password" onChange={(e) => setInput( ((prevInput)=>({ ...prevInput, password: e.target.value })))}/>
                     <button style={{padding: '0.5vh', backgroundColor: '#ffe37a'}} onClick={() => updateUser()}>Update</button>

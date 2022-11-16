@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * athelte router
+ * athlete router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::athelte.athelte');
+module.exports = createCoreRouter('api::athlete.athlete');

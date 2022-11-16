@@ -16,14 +16,15 @@
       "type": "string"
     },
     "SportIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "evenements": {
       "type": "relation",
@@ -34,10 +35,10 @@
     "description": {
       "type": "string"
     },
-    "atheltes": {
+    "athletes": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::athelte.athelte",
+      "target": "api::athlete.athlete",
       "mappedBy": "sport"
     }
   }

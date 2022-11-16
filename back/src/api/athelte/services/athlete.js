@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * athelte service
+ * athlete service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::athelte.athelte');
+module.exports = createCoreService('api::athlete.athlete');

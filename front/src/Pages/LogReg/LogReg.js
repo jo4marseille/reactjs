@@ -40,15 +40,13 @@ export default function LogReg() {
     try {
       await LogRegAPI.login(Email, Password).then((response) => {
         const data = window.localStorage.setItem(
-          "userToken",
-          response.data.jwt
+          "userId",
+          response.data.user.id
         );
-        window.localStorage.setItem('userId', response.data.user.id);
-
         console.log(response);
         alert("Login Successful");
         LogNav("/");
-        setProfil(response.data.user);
+        setProfil(response.data.user.id);
       });
     } catch (e) {
       console.log(e);
@@ -79,13 +77,13 @@ export default function LogReg() {
     try {
       await LogRegAPI.register(Email, Password).then((response) => {
         const data = window.localStorage.setItem(
-          "userToken",
-          response.data.jwt
+          "userId",
+          response.data.user.id
         );
         console.log("Registered");
         alert("Register Successful");
         LogNav("/");
-        setProfil(response.data.user);
+        setProfil(response.data.user.id);
       });
     } catch (e) {
       if (e.response.status == 400) {

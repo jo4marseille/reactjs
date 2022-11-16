@@ -4,7 +4,7 @@
   "info": {
     "singularName": "vote",
     "pluralName": "votes",
-    "displayName": "vote",
+    "displayName": "Votes",
     "description": ""
   },
   "options": {
@@ -15,7 +15,7 @@
     "athlete": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::athelte.athelte",
+      "target": "api::athlete.athlete",
       "inversedBy": "votes"
     },
     "users_permissions_user": {

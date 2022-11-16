@@ -49,10 +49,10 @@
       "relation": "oneToMany",
       "target": "api::pay.pay"
     },
-    "atheltes": {
+    "athletes": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::athelte.athelte",
+      "target": "api::athlete.athlete",
       "mappedBy": "evenement"
     }
   }

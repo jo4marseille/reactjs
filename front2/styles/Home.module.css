@@ -1,7 +1,7 @@
 
 .firstContainer {
   padding: 21px 2rem;
-  margin-top: 5%;
+  margin-top: 12%;
   min-height: 55vh;
   padding-bottom: 10%;
 }
@@ -150,7 +150,7 @@ gap: 10px;
 }
 
 .btnBoxRecycle, .btnBoxRecycle:hover {
-  background: #05a551;;
+  background: #05a551;
 }
 /* 
 .button::after {

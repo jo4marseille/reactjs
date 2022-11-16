@@ -19,6 +19,7 @@ export default function Home() {
           root: {
             background: '#00A651 ',
             '&:hover': {
+            background: '#00A651 ',
             transform: 'scale(1.1)',
             transition: 'all 0.3s ease-in-out',
 
@@ -68,7 +69,7 @@ export default function Home() {
    Après m'être inscrit, je consulte la map afin de
    localiser le point de collect le plus proche
               </p>
-              <Button className={styles.btnBox}>
+              <Button className={styles.btnBox}  href="/map">
                 Voir la carte
               </Button>
             </Box>
@@ -87,7 +88,7 @@ export default function Home() {
               Je m'identifie et me connecte au conteneur<br/>
    Grâce à mon smartphone le conteneur intelligent me reconnait
               </p>
-              <Button className={styles.btnBox}>
+              <Button className={styles.btnBox} href="/login">
                 Connexion
               </Button>
             </Box>
@@ -107,7 +108,7 @@ export default function Home() {
    Je fais attention à jeter mes déchets dans les bons compartiments
 
               </p>
-              <Button className={styles.btnBoxRecycle}>
+              <Button className={styles.btnBoxRecycle}  href="/recycle">
                 Voir la carte
               </Button>
             </Box>

@@ -1,0 +1,16 @@
+.img{
+    width: 50%;
+    position: relative;
+
+}
+.title{
+  position: absolute;
+    margin-left: 9%;
+    margin-top: 9%;
+    color: #00A651;
+    font-weight:700;
+    top: 0;
+    left: 0;
+
+}
+

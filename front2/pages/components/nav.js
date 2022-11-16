@@ -53,7 +53,7 @@ function DrawerAppBar(props) {
     <ThemeProvider theme={lightTheme}>
       
       <Typography variant="h6" sx={{ my: 2 }}>
-        <img src='/img/logonoir.png' alt='' className={styles.logoCodeDrawer} />
+        <img src='/img/logo.svg' alt='' className={styles.logoCodeDrawer} />
       </Typography>
       <Divider />
       <List>
@@ -192,21 +192,27 @@ function DrawerAppBar(props) {
   
   return (
     <ThemeProvider theme={mainTheme}>
+        <Box component="nav" sx={{minHeight:80 }} >
+
       <Button href='/' sx={{ mr: 2, display: { sm: 'none' , xs: 'flex'} }}>
-        {/* <Typography
+        <Typography
           variant="h6"
           component="div"
           sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-        > */}
-                <img src='/img/logonoir.png' alt='' className={styles.logoCodeDrawer} />
+        >
+                <img src='/img/logoGreen.svg' alt='' className={styles.logoCodeDrawer} />
 
-        {/* </Typography> */}
+        </Typography>
 
       </Button>
-      <Box sx={{minHeight:80 ,display: { xs: 'none', sm:'flex' } }}>
+      </Box>
+      <Box sx={{minHeight:80 ,display: { xs: 'none', sm:'flex' },  }}>
       <Box sx={{ display: 'flex' }} className={styles.navBar}>
         <AppBar component="nav" >
-          <Toolbar>
+          <Toolbar sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}>
             {/* <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -220,7 +226,7 @@ function DrawerAppBar(props) {
                 component="div"
                 sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
               > */}
-                      <img src='/img/logoblanc.png' alt='' className={styles.logoCodeDrawer} />
+                      <img src='/img/logo.svg' alt='' className={styles.logoCodeDrawer} />
 
               {/* </Typography> */}
 
@@ -233,7 +239,7 @@ function DrawerAppBar(props) {
                 component="div"
                 sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
               >
-                      <img src='/img/logoblanc.png' alt='' className={styles.logoCode} />
+                      <img src='/img/logo.svg' alt='' className={styles.logoCode} />
 
               </Typography>
 

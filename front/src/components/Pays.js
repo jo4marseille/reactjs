@@ -11,7 +11,7 @@ export default function Pays(props) {
 
         <div style={{ display: affichage ? "contents" : "none", textAlign: "center" }}>
             <div className="card cardPays" style={{ width: "90%", textAlign: "center" }}>
-                {props.item.image}
+            <a href="/list_translators">{props.item.image}</a>
                 < p className='haha'> Pays : {props.item.nom}</p >
                 <p>Langue : {props.item.langue}</p>
             </div >

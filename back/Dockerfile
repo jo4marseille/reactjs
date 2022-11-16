@@ -7,7 +7,7 @@ ENV APP_KEYS "toBeModified1,toBeModified2"
 ENV API_TOKEN_SALT tobemodified
 ENV ADMIN_JWT_SECRET tobemodified
 ENV JWT_SECRET tobemodified
-
+ENV NODE_ENV production
 
 # Create app directory
 RUN mkdir -p /usr/src/app

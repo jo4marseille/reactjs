@@ -43,7 +43,7 @@ const SponsorItem = ({sponsor}) => {
 
             <h4>Sports that we support</h4>
 
-            <h6>{attributes?.sports}</h6>
+            <h2 className='text-white'>{attributes?.sports}</h2>
 
             <div className="mt-3">
               {

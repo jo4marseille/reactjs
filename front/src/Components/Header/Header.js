@@ -8,10 +8,7 @@ function Header() {
   const navRef = useRef();
   const [active, setActive] = useState("header__menu");
   const [navState, SetNavState] = useState(true);
-<<<<<<< HEAD
-=======
   const idUser = window.localStorage.getItem("userId");
->>>>>>> MachinMax
 
   const navToggle = (event) => {
     if (navState == true) {
@@ -29,19 +26,6 @@ function Header() {
     <>
       <div className="header">
         <button onClick={navToggle} className="header__brand" ref={buttonRef}>
-<<<<<<< HEAD
-          <img src="./JO.png" alt="Menu Burger" />
-        </button>
-        <button className="logoCenter">
-          <img src="./ressource/logoCenter.png"/>
-        </button>
-        <ul className={active}>
-          <button className="header__item">
-            <img src="./calendrier.png" alt="Calendrier" />
-          </button>
-          <Link to={"/account"} className="header__item">
-            <img src="./profil.png" alt="Profil" />
-=======
           <img src="/JO.png" alt="Menu Burger" />
         </button>
         <button className="logoCenter">
@@ -53,7 +37,6 @@ function Header() {
           </button>
           <Link to={`/account/${idUser}`} className="header__item">
             <img src="/profil.png" alt="Profil" />
->>>>>>> MachinMax
           </Link>
         </ul>
       </div>

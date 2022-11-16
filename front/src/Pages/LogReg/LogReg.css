@@ -10,10 +10,6 @@ html {
 }
 
 body{
-<<<<<<< HEAD
-    background: #f1f1f1;
-=======
->>>>>>> MachinMax
     height: 100vh;
 }
 
@@ -24,19 +20,6 @@ body{
     transform: translate(-50%, -50%);
     width: 660px;
     height: 300px;
-<<<<<<< HEAD
-    background: #f1f1f1;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0,5);
-}
-
-.container-onglets{
-    background: #f1f1f1;
-    width: 100%;
-    height: 30%;
-    display: flex;
-    border-bottom: 1px solid #333;
-=======
     border-radius: 2px;
 }
 
@@ -45,7 +28,6 @@ body{
     height: 30%;
     display: flex;
     color: black;
->>>>>>> MachinMax
 }
 
 .onglets{
@@ -57,10 +39,7 @@ body{
     font-weight: 700;
     cursor: pointer;
     border: 0px;
-<<<<<<< HEAD
-=======
     background-color: white;
->>>>>>> MachinMax
 }
 
 .onglets button{
@@ -74,11 +53,6 @@ body{
     display:none;
 }
 
-<<<<<<< HEAD
-.contenu input{
-    margin: 20px;
-    display:block;
-=======
 .form {
     display: flex;
     flex-direction: column;
@@ -108,18 +82,12 @@ body{
     border: solid;
     padding: 1vh;
     width: 70%;
->>>>>>> MachinMax
 }
 
 /* Animation */
 
 .onglets.active{
-<<<<<<< HEAD
-    background: midnightblue;
-    color: #f1f1f1;
-=======
     color: rgb(215, 215, 61);
->>>>>>> MachinMax
     transition: all 0.2s ease;
 }
 
@@ -127,10 +95,6 @@ body{
     display:contents;
 }
 
-<<<<<<< HEAD
-p {
-=======
 .contenu p {
->>>>>>> MachinMax
     display: contents;
 }

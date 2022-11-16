@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import './Events.css'
-
-export default function Events() {
-  return (
-    <section className='sectionEvents'>
-
-    </section>
-  )
-=======
 import moment from 'moment';
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
@@ -135,7 +124,7 @@ export default function Events() {
                     <>
                     <article>
                         <div className='headerImageEvents'>
-                            <img src={`https://c-14-api.jo4marseille.fr${event.attributes.image.data.attributes.url ? event.attributes.image.data.attributes.url : ""}`} />
+                            <img src={`http://localhost:1337${event.attributes.image.data.attributes.url ? event.attributes.image.data.attributes.url : ""}`} />
                         </div>
                         <div>
                             <h4>
@@ -146,7 +135,7 @@ export default function Events() {
                                     if (index === 0){
                                         return (
                                             <>
-                                                <img key={index} src={`https://c-14-api.jo4marseille.fr${item.attributes.drapeau.data.attributes.url}`}/>
+                                                <img key={index} src={`http://localhost:1337${item.attributes.drapeau.data.attributes.url}`}/>
                                                 {"  " + item.attributes.nom + " / "} 
                                             </>
                                         )
@@ -156,7 +145,7 @@ export default function Events() {
                                         return (
                                             <>
                                                 {item.attributes.nom + "  "}
-                                                <img key={index} src={`https://c-14-api.jo4marseille.fr${item.attributes.drapeau.data.attributes.url}`}/>
+                                                <img key={index} src={`http://localhost:1337${item.attributes.drapeau.data.attributes.url}`}/>
                                             </>
                                         )
                                     }
@@ -182,7 +171,7 @@ export default function Events() {
                                                 style={{background: item.id === currentselect.id ? "#fb8500" : ""}}
                                             >
                                                 <p>{item.attributes.nom}</p>
-                                                <img key={index} src={`https://c-14-api.jo4marseille.fr${item.attributes.drapeau.data.attributes.url}`}/>
+                                                <img key={index} src={`http://localhost:1337${item.attributes.drapeau.data.attributes.url}`}/>
                                             </li>
                                         )
                                     })
@@ -203,7 +192,7 @@ export default function Events() {
                                                 return (
                                                     <li key={index} onClick={() => getSelectPlayer(item)}>
                                                         <div>
-                                                            <img src={`https://c-14-api.jo4marseille.fr${item.attributes.photoAthlete.data.attributes.url}`}/>
+                                                            <img src={`http://localhost:1337${item.attributes.photoAthlete.data.attributes.url}`}/>
                                                         </div>
                                                         <div>
                                                             <p>{item.attributes.prenom + " " + item.attributes.nom}</p>
@@ -240,5 +229,4 @@ export default function Events() {
             }
         </section>
     )
->>>>>>> MachinMax
 }

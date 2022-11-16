@@ -1,10 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import LogRegAPI from "../../Services/LogRegAPI";
-<<<<<<< HEAD
-import axios from "axios";
-=======
->>>>>>> MachinMax
 import "./LogReg.css";
 
 export default function LogReg() {
@@ -16,10 +12,7 @@ export default function LogReg() {
   const onglets = document.querySelectorAll("onglets");
   const emailLogRef = useRef();
   const passwordLogRef = useRef();
-<<<<<<< HEAD
-=======
   const usernameRegRef = useRef();
->>>>>>> MachinMax
   const emailRegRef = useRef();
   const passwordRegRef = useRef();
 
@@ -47,17 +40,6 @@ export default function LogReg() {
     try {
       await LogRegAPI.login(Email, Password).then((response) => {
         const data = window.localStorage.setItem(
-<<<<<<< HEAD
-          "userToken",
-          response.data.jwt
-        );
-        window.localStorage.setItem('userId', response.data.user.id);
-
-        console.log(response);
-        alert("Login Successful");
-        LogNav("/");
-        setProfil(response.data.user);
-=======
           "userId",
           response.data.user.id
         );
@@ -65,7 +47,6 @@ export default function LogReg() {
         alert("Login Successful");
         LogNav("/");
         setProfil(response.data.user.id);
->>>>>>> MachinMax
       });
     } catch (e) {
       console.log(e);
@@ -77,10 +58,7 @@ export default function LogReg() {
 
     const Email = emailRegRef.current.value;
     const Password = passwordRegRef.current.value;
-<<<<<<< HEAD
-=======
     const Username = passwordRegRef.current.value;
->>>>>>> MachinMax
 
     //Controle input Email + Mdp
     if (Email.trim().length === 0 || Password.trim().length === 0) {
@@ -98,26 +76,15 @@ export default function LogReg() {
     //Register Formulaire
 
     try {
-<<<<<<< HEAD
-      await LogRegAPI.register(Email, Password).then((response) => {
-        const data = window.localStorage.setItem(
-          "userToken",
-          response.data.jwt
-=======
       await LogRegAPI.register(Username, Email, Password).then((response) => {
         const data = window.localStorage.setItem(
           "userId",
           response.data.user.id
->>>>>>> MachinMax
         );
         console.log("Registered");
         alert("Register Successful");
         LogNav("/");
-<<<<<<< HEAD
-        setProfil(response.data.user);
-=======
         setProfil(response.data.user.id);
->>>>>>> MachinMax
       });
     } catch (e) {
       if (e.response.status == 400) {
@@ -160,43 +127,26 @@ export default function LogReg() {
         className="contenu activeContenu"
         onSubmit={submitLog}
       >
-<<<<<<< HEAD
-        <form onSubmit={submitLog}>
-          <input type="email" placeholder="email" ref={emailLogRef} required />
-
-=======
         <form class='form' onSubmit={submitLog}>
           <label class="gauche" for="email">Username</label>
           <input class="gauche" type="email" placeholder="email" ref={emailLogRef} required />
 
           <label class="droite" for="password">Password</label>
->>>>>>> MachinMax
           <input
             type="password"
             placeholder="password"
             ref={passwordLogRef}
             required
-<<<<<<< HEAD
-          />
-          <button type="submit">
-            <p>Login</p>
-=======
             class="droite"
           />
           <button type="submit">
           Login
->>>>>>> MachinMax
           </button>
         </form>
         {isLogged && <p>Login Successful</p>}
       </div>
 
       <div id="regContent" className="contenu">
-<<<<<<< HEAD
-        <form onSubmit={submitReg}>
-          <input type="email" placeholder="email" ref={emailRegRef} required />
-
-=======
         <form class='form' onSubmit={submitReg}>
           <label class="gauche" for="username">Username</label>
           <input class="gauche" type="text" placeholder="username" ref={usernameRegRef} required />
@@ -205,22 +155,15 @@ export default function LogReg() {
           <input class="droite"type="email" placeholder="email" ref={emailRegRef} required />
 
           <label class="gauche" for="password">Password</label>
->>>>>>> MachinMax
           <input
             type="password"
             placeholder="password"
             ref={passwordRegRef}
             required
-<<<<<<< HEAD
-          />
-          <button type="submit">
-            <p>Register</p>
-=======
             class="gauche"
           />
           <button type="submit">
           Register
->>>>>>> MachinMax
           </button>
         </form>
         {isRegister && <p>Register Successful</p>}

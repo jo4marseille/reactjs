@@ -2481,17 +2481,7 @@
     "json-schema-traverse" "^0.4.1"
     "uri-js" "^4.2.2"
 
-"ajv@^8.0.0":
-  "integrity" "sha512-E4bfmKAhGiSTvMfL1Myyycaub+cUEU2/IvpylXkUu7CHBkBj1f/ikdzbD7YQ6FKUbixDxeYvB/xY4fvyroDlQg=="
-  "resolved" "https://registry.npmjs.org/ajv/-/ajv-8.11.2.tgz"
-  "version" "8.11.2"
-  dependencies:
-    "fast-deep-equal" "^3.1.1"
-    "json-schema-traverse" "^1.0.0"
-    "require-from-string" "^2.0.2"
-    "uri-js" "^4.2.2"
-
-"ajv@^8.8.0", "ajv@^8.8.2":
+"ajv@^8.0.0", "ajv@^8.8.0", "ajv@^8.8.2":
   "integrity" "sha512-E4bfmKAhGiSTvMfL1Myyycaub+cUEU2/IvpylXkUu7CHBkBj1f/ikdzbD7YQ6FKUbixDxeYvB/xY4fvyroDlQg=="
   "resolved" "https://registry.npmjs.org/ajv/-/ajv-8.11.2.tgz"
   "version" "8.11.2"
@@ -4330,14 +4320,6 @@
   "resolved" "https://registry.npmjs.org/es6-object-assign/-/es6-object-assign-1.1.0.tgz"
   "version" "1.1.0"
 
-<<<<<<< HEAD
-"esbuild-linux-64@0.15.13":
-  "integrity" "sha512-rXmnArVNio6yANSqDQlIO4WiP+Cv7+9EuAHNnag7rByAqFVuRusLbGi2697A5dFPNXoO//IiogVwi3AdcfPC6A=="
-  "resolved" "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.15.13.tgz"
-  "version" "0.15.13"
-
-=======
->>>>>>> MachinMax
 "esbuild-loader@^2.20.0":
   "integrity" "sha512-dr+j8O4w5RvqZ7I4PPB4EIyVTd679EBQnMm+JBB7av+vu05Zpje2IpK5N3ld1VWa+WxrInIbNFAg093+E1aRsA=="
   "resolved" "https://registry.npmjs.org/esbuild-loader/-/esbuild-loader-2.20.0.tgz"
@@ -4350,41 +4332,38 @@
     "tapable" "^2.2.0"
     "webpack-sources" "^2.2.0"
 
-<<<<<<< HEAD
-=======
-"esbuild-windows-64@0.15.13":
-  "integrity" "sha512-Et6htEfGycjDrtqb2ng6nT+baesZPYQIW+HUEHK4D1ncggNrDNk3yoboYQ5KtiVrw/JaDMNttz8rrPubV/fvPQ=="
-  "resolved" "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.15.13.tgz"
-  "version" "0.15.13"
+"esbuild-windows-64@0.15.14":
+  "integrity" "sha512-CszIGQVk/P8FOS5UgAH4hKc9zOaFo69fe+k1rqgBHx3CSK3Opyk5lwYriIamaWOVjBt7IwEP6NALz+tkVWdFog=="
+  "resolved" "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.15.14.tgz"
+  "version" "0.15.14"
 
->>>>>>> MachinMax
 "esbuild@^0.15.6":
-  "integrity" "sha512-Cu3SC84oyzzhrK/YyN4iEVy2jZu5t2fz66HEOShHURcjSkOSAVL8C/gfUT+lDJxkVHpg8GZ10DD0rMHRPqMFaQ=="
-  "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.15.13.tgz"
-  "version" "0.15.13"
+  "integrity" "sha512-pJN8j42fvWLFWwSMG4luuupl2Me7mxciUOsMegKvwCmhEbJ2covUdFnihxm0FMIBV+cbwbtMoHgMCCI+pj1btQ=="
+  "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.15.14.tgz"
+  "version" "0.15.14"
   optionalDependencies:
-    "@esbuild/android-arm" "0.15.13"
-    "@esbuild/linux-loong64" "0.15.13"
-    "esbuild-android-64" "0.15.13"
-    "esbuild-android-arm64" "0.15.13"
-    "esbuild-darwin-64" "0.15.13"
-    "esbuild-darwin-arm64" "0.15.13"
-    "esbuild-freebsd-64" "0.15.13"
-    "esbuild-freebsd-arm64" "0.15.13"
-    "esbuild-linux-32" "0.15.13"
-    "esbuild-linux-64" "0.15.13"
-    "esbuild-linux-arm" "0.15.13"
-    "esbuild-linux-arm64" "0.15.13"
-    "esbuild-linux-mips64le" "0.15.13"
-    "esbuild-linux-ppc64le" "0.15.13"
-    "esbuild-linux-riscv64" "0.15.13"
-    "esbuild-linux-s390x" "0.15.13"
-    "esbuild-netbsd-64" "0.15.13"
-    "esbuild-openbsd-64" "0.15.13"
-    "esbuild-sunos-64" "0.15.13"
-    "esbuild-windows-32" "0.15.13"
-    "esbuild-windows-64" "0.15.13"
-    "esbuild-windows-arm64" "0.15.13"
+    "@esbuild/android-arm" "0.15.14"
+    "@esbuild/linux-loong64" "0.15.14"
+    "esbuild-android-64" "0.15.14"
+    "esbuild-android-arm64" "0.15.14"
+    "esbuild-darwin-64" "0.15.14"
+    "esbuild-darwin-arm64" "0.15.14"
+    "esbuild-freebsd-64" "0.15.14"
+    "esbuild-freebsd-arm64" "0.15.14"
+    "esbuild-linux-32" "0.15.14"
+    "esbuild-linux-64" "0.15.14"
+    "esbuild-linux-arm" "0.15.14"
+    "esbuild-linux-arm64" "0.15.14"
+    "esbuild-linux-mips64le" "0.15.14"
+    "esbuild-linux-ppc64le" "0.15.14"
+    "esbuild-linux-riscv64" "0.15.14"
+    "esbuild-linux-s390x" "0.15.14"
+    "esbuild-netbsd-64" "0.15.14"
+    "esbuild-openbsd-64" "0.15.14"
+    "esbuild-sunos-64" "0.15.14"
+    "esbuild-windows-32" "0.15.14"
+    "esbuild-windows-64" "0.15.14"
+    "esbuild-windows-arm64" "0.15.14"
 
 "escalade@^3.1.1":
   "integrity" "sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw=="
@@ -8275,16 +8254,16 @@
     "safe-regex" "^1.1.0"
 
 "regexpu-core@^5.1.0":
-  "integrity" "sha512-HrnlNtpvqP1Xkb28tMhBUO2EbyUHdQlsnlAhzWcwHy8WJR53UWr7/MAvqrsQKMbV4qdpv03oTMG8iIhfsPFktQ=="
-  "resolved" "https://registry.npmjs.org/regexpu-core/-/regexpu-core-5.2.1.tgz"
-  "version" "5.2.1"
+  "integrity" "sha512-T0+1Zp2wjF/juXMrMxHxidqGYn8U4R+zleSJhX9tQ1PUsS8a9UtYfbsF9LdiVgNX3kiX8RNaKM42nfSgvFJjmw=="
+  "resolved" "https://registry.npmjs.org/regexpu-core/-/regexpu-core-5.2.2.tgz"
+  "version" "5.2.2"
   dependencies:
     "regenerate" "^1.4.2"
     "regenerate-unicode-properties" "^10.1.0"
     "regjsgen" "^0.7.1"
     "regjsparser" "^0.9.1"
     "unicode-match-property-ecmascript" "^2.0.0"
-    "unicode-match-property-value-ecmascript" "^2.0.0"
+    "unicode-match-property-value-ecmascript" "^2.1.0"
 
 "registry-auth-token@^4.0.0":
   "integrity" "sha512-PC5ZysNb42zpFME6D/XlIgtNGdTl8bBOCw90xQLVMpzuuubJKYDWFAEuUNc+Cn8Z8724tg2SDhDRrkVEsqfDMg=="
@@ -9608,10 +9587,10 @@
     "unicode-canonical-property-names-ecmascript" "^2.0.0"
     "unicode-property-aliases-ecmascript" "^2.0.0"
 
-"unicode-match-property-value-ecmascript@^2.0.0":
-  "integrity" "sha512-7Yhkc0Ye+t4PNYzOGKedDhXbYIBe1XEQYQxOPyhcXNMJ0WCABqqj6ckydd6pWRZTHV4GuCPKdBAUiMc60tsKVw=="
-  "resolved" "https://registry.npmjs.org/unicode-match-property-value-ecmascript/-/unicode-match-property-value-ecmascript-2.0.0.tgz"
-  "version" "2.0.0"
+"unicode-match-property-value-ecmascript@^2.1.0":
+  "integrity" "sha512-qxkjQt6qjg/mYscYMC0XKRn3Rh0wFPlfxB0xkt9CfyTvpX1Ra0+rAmdX2QyAobptSEvuy4RtpPRui6XkV+8wjA=="
+  "resolved" "https://registry.npmjs.org/unicode-match-property-value-ecmascript/-/unicode-match-property-value-ecmascript-2.1.0.tgz"
+  "version" "2.1.0"
 
 "unicode-property-aliases-ecmascript@^2.0.0":
   "integrity" "sha512-6t3foTQI9qne+OZoVQB/8x8rk2k1eVy1gRXhV3oFQ5T6R1dqQ1xtin3XqSlx3+ATBkliTaR/hHyJBm+LVPNM8w=="

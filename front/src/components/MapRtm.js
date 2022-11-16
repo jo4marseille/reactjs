@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import React, {useState, useEffect} from 'react'
 import Map, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import TransportBackup from '../data/transport.json'
+import InputChoice from './InputChoice'
 // import MyMarker from './Mymarker.js';
 
 function MyMap() {
@@ -21,8 +22,9 @@ function MyMap() {
       Math.sin(dLon/2) * Math.sin(dLon/2)
       ; 
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-    var d=(R * c + 10); // Distance in km
-    distance=(R * c + 10).toFixed(2);
+    
+    // Distance in km
+    distance=(R * c).toFixed(2);
     
     
   }
@@ -47,6 +49,8 @@ function MyMap() {
   function deg2rad(deg) {
     return deg * (Math.PI/180)
   }
+
+
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((pos) => {
@@ -96,7 +100,7 @@ function MyMap() {
         <div>
           
           <p> Vous êtes à {distance} Km de votre point d'intérêt </p>
-          <p>Cela représente {calculCo2Metro(distance)} Kg CO2 en métro contre {calculCo2Voiture(distance)}Kg CO2 en voiture</p>
+          <p>Cela représente {calculCo2Metro(calculCo2(distance))} Kg CO2 en métro contre {calculCo2Voiture(calculCo2(distance))} Kg CO2 en voiture</p>
           <p>Et 0 Kg CO2 à pied ou en vélo!</p>
 
           <Map
@@ -161,6 +165,8 @@ function MyMap() {
               color='#0282C8'
             />
           </Map>
+          <InputChoice></InputChoice>
+         
         </div>
       )}
     </div>

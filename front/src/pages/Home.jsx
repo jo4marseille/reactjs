@@ -87,7 +87,6 @@ const Home = () => {
                 <div className={"home-sub-10"}></div>
                 <div className={"home-sub-11"}>
                     <div>
-                        <span>CATEGORIE:</span>
                         <select onChange={(e) => {
                             if(e.target.value == "CULTURE") {
                                 setCategory("1958")
@@ -97,6 +96,7 @@ const Home = () => {
                                 setCategory("1973")
                             }
                         }}>
+                            <option value="">CATEGORIE</option>
                             <option value="NATURE">NATURE</option>
                             <option value="CULTURE">CULTURE</option>
                             <option value="TRADITION">TRADITION</option>
@@ -106,6 +106,7 @@ const Home = () => {
                 <div className={"home-sub-12"}>
                     <div>
                         <select>
+                            <option value="">SPORT</option>
                             <option value="VOILE">VOILE</option>
                             <option value="FOOTBALL">FOOTBALL</option>
                         </select>
@@ -113,7 +114,7 @@ const Home = () => {
                 </div>
             </div>
             {console.log(objetsByManifestationTypeNature)}
-            <button onClick={() => {loadWidgets()}}>test</button>
+            <button className={"search-button btn btn-primary m-3"} onClick={() => {loadWidgets()}}>Rechercher</button>
             {components}
         </>
     );

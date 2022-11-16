@@ -241,7 +241,10 @@ select > option{
     color:var(--blanc);
 
 }
-
+.search-button{
+    background-color: var(--bleu-nuit);
+    border-color: var(--bleu-nuit);
+}
 a {
     text-decoration: none;
 }

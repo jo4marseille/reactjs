@@ -254,9 +254,9 @@ function DrawerAppBar(props) {
                 <Button sx={{ color: '#fff', textTransform:'capitalize', borderRadius:"24px", padding:"5px 20px" }}  href="/shops">
                 Partenaires
                 </Button>
-                <Button sx={{ color: '#fff' , textTransform:'capitalize', borderRadius:"24px", padding:"5px 20px"}}  href="/contact">
+                {/* <Button sx={{ color: '#fff' , textTransform:'capitalize', borderRadius:"24px", padding:"5px 20px"}}  href="/contact">
                 Contact
-                </Button>
+                </Button> */}
                 {/* <Search>
 
                   <StyledInputBase

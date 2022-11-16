@@ -27,7 +27,7 @@ const AthleteModal = ({name}) => {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">
+                <h5 className="modal-title text-dark" id="exampleModalLabel">
                 <img src={olympic} alt="icon" style={{width: '80px'}} />
                 Confirmation</h5>
                 <button
@@ -38,7 +38,7 @@ const AthleteModal = ({name}) => {
                     onClick={handleClose}
                 ></button>
               </div>
-              <div className="modal-body">
+              <div className="modal-body text-dark">
                 Votre demande a bien etait envoyée à {name}
               </div>
               <div className="modal-footer">

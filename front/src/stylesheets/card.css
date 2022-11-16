@@ -1,0 +1,7 @@
+.card-new {
+    border-top-left-radius: 45px !important;
+    border-bottom-right-radius: 45px !important;
+    border: 6px solid #ff5757 !important;
+    background: transparent !important;
+    padding: 20px !important;
+}

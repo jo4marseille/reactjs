@@ -111,7 +111,7 @@ const Sponsor = () => {
         <ToastContainer />
 
         <div className="d-flex">
-        <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
+        <button onClick={() => handleMatching()} type="button"  className=" btn-lg btn btn-primary" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">M<br></br>A<br></br>T<br></br>C<br></br>H</button>
 
         {
           load
@@ -121,7 +121,7 @@ const Sponsor = () => {
                 data.map(({id, attributes}) => {
                   return (
                       <div key={id}
-                        className="card rounded"
+                        className="card card-new"
                         style={{width: '18rem'}}
                         onClick={() => handleClick(id)}
 
@@ -134,7 +134,7 @@ const Sponsor = () => {
                         <p className="card-text">
                           {attributes.email}
                         </p>
-                        <button className="btn-ghost" onClick={() => handleLike(id)}>
+                        <button className="btn-ghost2" onClick={() => handleLike(id)}>
                           Like sponsor
                         </button>
                       </div>

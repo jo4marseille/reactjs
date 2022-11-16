@@ -21,7 +21,7 @@ function updateUserVote(id_vote, id_athlete){
 }
 
 function findExistVote(id_event, id_user){
-    return axios.get(`${URL_VOTE}?populate=athlete&filters[evenement][id][$eq]=${id_event}&filters[users_permissions_user][id][$eq]=${id_user}`)
+    return axios.get(`${URL_VOTE}?populate=athlete&filters[evenements][id][$eq]=${id_event}&filters[users_permissions_user][id][$eq]=${id_user}`)
 }
 
 export default {

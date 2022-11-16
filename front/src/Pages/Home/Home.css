@@ -1,7 +1,10 @@
+.homeSection {
+    padding-top: 104px;
+}
+
 .homeSection img{
     width: 100%;
 }
-
 
 .image {
     position: relative;

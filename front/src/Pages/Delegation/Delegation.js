@@ -32,7 +32,8 @@ export default function Delegation() {
             <ul>
                 {pays.map((pays) => (
                     <li onClick={() => handleDelegation(pays.id)} key={pays.id}>
-                        <img src={pays.attributes.drapeau} alt={pays.attributes.nom} />
+                        {console.log(pays)}
+                        <img src={`http://localhost:1337${pays.attributes.drapeau.data.attributes.url}`} alt={pays.attributes.nom} />
                         <p>{pays.attributes.nom}</p>
                     </li>
                 ))}

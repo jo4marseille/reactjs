@@ -4,7 +4,8 @@ import DelegationsAPI from "../../Services/DelegationsAPI";
 import './Participent.css';
 
 export default function Participent() {
-    const [delegation, setDelegation] = useState([])
+    const [delegationNom, setDelegationNom] = useState([])
+    const [delegationDrapeau,  setDelegationDrapeau] = useState([])
     const [athletes, setAthletes] = useState([]);
     const [sports, setSports] = useState([]);
     const { pathname } = useLocation();
@@ -14,10 +15,9 @@ export default function Participent() {
     const refreshData = async () => {
         try {
             const data = DelegationsAPI.findAthletesPays(id).then(response => {
-                setDelegation(response.data.data.attributes.nom);
+                setDelegationNom(response.data.data.attributes.nom);
+                setDelegationDrapeau(response.data.data.attributes.drapeau);
                 setAthletes(response.data.data.attributes.athletes.data);
-                setSports(response.data.data.attributes.athletes.data.attributes.sport.data.attributes.nom);
-                console.log(response.data.data.attributes.athletes.data.attributes.sport.data.attributes.nom);
             })
         } catch (error) {
             console.log(error) 
@@ -28,18 +28,21 @@ export default function Participent() {
         refreshData();
     }, []);
 
+    console.log(delegationDrapeau.data)
+    // 
     return (
-        <main class='participent'>
-            <h1>{delegation}</h1>
+        <main className='participent'>
+         
+            <h1>{delegationNom} <img src={`http://localhost:1337${delegationDrapeau.data !== undefined ? delegationDrapeau.data.attributes.url : ""}`}/></h1>
+            
             <ul>
                 {athletes.map((athlete) => (
                     <li key={athlete.id}>
                         <div>
-                            <img src='' alt={athlete.attributes.name} />
+                            <img src={`http://localhost:1337${ athlete.attributes.photoAthlete.data.attributes.url}`} alt={athlete.attributes.nom} />
                         </div>
-                        <p>{athlete.attributes.name}</p>
-                        <p>Discipline: {sports}</p>
-                        <button>Voter</button>
+                        <b>{athlete.attributes.prenom + " " + athlete.attributes.nom}</b>
+                        <p>{athlete.attributes.sport.data.attributes.nom}</p>
                     </li>
                 ))}
             </ul>

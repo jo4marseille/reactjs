@@ -19,6 +19,8 @@
     border-radius: 6vh 6vh 6vh 6vh;
     padding: 3vh;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     gap: 2vh;
     margin-top: 10vh;
 }
@@ -30,4 +32,10 @@
 .delegation ul li p {
     text-transform: uppercase;
     display: block;
+    font-size: 18px;
+}
+
+.delegation ul li img {
+    height: 30px;
+    width: 30px;
 }

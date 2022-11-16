@@ -18,7 +18,7 @@ function findPays(){
  * return response axios : array
  */
  function findAthletesPays(id){
-    return axios.get(`${URL_PAYS}/${id}?populate[athletes][populate]=*`)
+    return axios.get(`${URL_PAYS}/${id}?populate[athletes][populate]=*&populate=drapeau`)
 }
 
 /* Export des fonctions */

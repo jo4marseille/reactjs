@@ -15,8 +15,9 @@ a {
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 80px;
+  padding: 0 48px;
   background: #f1f1f1;
   position: fixed;
   width: 100%;

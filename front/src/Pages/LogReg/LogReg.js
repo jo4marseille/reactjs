@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import LogRegAPI from "../../Services/LogRegAPI";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import "./LogReg.css";
 
 export default function LogReg() {
@@ -142,7 +140,7 @@ export default function LogReg() {
             class="droite"
           />
           <button type="submit">
-          <FontAwesomeIcon icon={faCircleCheck} />
+          Login
           </button>
         </form>
         {isLogged && <p>Login Successful</p>}
@@ -165,7 +163,7 @@ export default function LogReg() {
             class="gauche"
           />
           <button type="submit">
-          <FontAwesomeIcon icon={faCircleCheck} />
+          Register
           </button>
         </form>
         {isRegister && <p>Register Successful</p>}

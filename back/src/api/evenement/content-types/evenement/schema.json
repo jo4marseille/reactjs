@@ -51,16 +51,15 @@
     },
     "athletes": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::athlete.athlete",
-      "inversedBy": "evenements"
+      "mappedBy": "evenement"
     },
     "votes": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::vote.vote",
       "mappedBy": "evenement"
-      
     }
   }
 }

@@ -9,7 +9,7 @@ on:
     # tags:
     #   - front-*
 env:
-  IMAGE_NAME: c-14
+  IMAGE_NAME: motivote
   # IMAGE_NAME: testworkflow-front
 
 jobs:

@@ -1,0 +1,26 @@
+
+{
+  "channels":[
+
+    {
+      "channel_name":"France 2",
+      "link":"https://www.france.tv/france-2/direct.html",
+      "logo": "../images/chaines-tele/france2logo.png"
+    },
+    {
+      "channel_name":"France 3",
+      "link":"https://www.france.tv/france-3/direct.html",
+      "logo": "../images/chaines-tele/france3logo.png"
+    },
+    {
+      "channel_name":"France 4",
+      "link":"https://www.france.tv/france-4/direct.html",
+      "logo": "../images/chaines-tele/france4logo.png"
+    },
+    {
+      "channel_name":"L'equipe 21",
+      "link":"https://live.lequipe.fr/lachainelequipe/",
+      "logo": "../images/chaines-tele/L'Équipe_21.svg"
+    }
+  ]
+}

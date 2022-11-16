@@ -6,7 +6,7 @@ import PictureCbruRugby from "../../assets/images/cbru_logo_clean.png"
 
 const ContainerDiag = () => {
     return (
-        <div class="ctn_diag">
+        <div className="ctn_diag">
             <div className="div_triangle_left"/>
             <div className="div_triangle_right"/>
 

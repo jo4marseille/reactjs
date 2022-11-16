@@ -1,8 +1,8 @@
 {
   "selectedSports": [
     {
-      "categoryId": 3,
       "name": "Saut en longueur",
+      "image": "/assets/images/sports/longJump.jpg",
       "location": "Stade olympique, Paris",
       "athletes": [
         {
@@ -12,7 +12,9 @@
           "age": "22",
           "country": "France",
           "position": "1",
-          "photo": ""
+          "photo": "/assets/images/athletes/1.png",
+          "flag": "france.png",
+          "description": "Né le 14 novembre 2000 à Saint-Jean, est un athlète français, spécialiste du saut à longueur. Il est licencié au Stade bordelais athlétisme."
         },
         {
           "id": 2,
@@ -21,7 +23,9 @@
           "age": "26",
           "country": "Jamaïque",
           "position": "2",
-          "photo": ""
+          "photo": "/assets/images/athletes/2.jpeg",
+          "flag": "jamaique.png",
+          "description": "Quatrième des Jeux du Commonwealth de 2018, il remporte la médaille d'argent lors des championnats d'Amérique du Nord, d'Amérique centrale et des Caraïbes 2018."
         },
         {
           "id": 3,
@@ -30,7 +34,10 @@
           "age": "26",
           "country": "Chine",
           "position": "3",
-          "photo": ""
+          "photo": "/assets/images/athletes/3.jpg",
+          "flag": "chine.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 4,
@@ -39,7 +46,11 @@
           "age": "33",
           "country": "USA",
           "position": "4",
-          "photo": ""
+          "photo": "/assets/images/athletes/4.png",
+          "flag": "usa.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
+
         },
         {
           "id": 5,
@@ -48,7 +59,11 @@
           "age": "24",
           "country": "Grèce",
           "position": "5",
-          "photo": ""
+          "photo": "/assets/images/athletes/5.png",
+          "flag": "grece.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
+
         },
         {
           "id": 6,
@@ -57,7 +72,10 @@
           "age": "24",
           "country": "Cubain",
           "position": "6",
-          "photo": ""
+          "photo": "/assets/images/athletes/6.png",
+          "flag": "cuba.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 7,
@@ -66,37 +84,52 @@
           "age": "31",
           "country": "Suisse",
           "position": "7",
-          "photo": ""
+          "photo": "/assets/images/athletes/7.png",
+          "flag": "suisse.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 8,
           "firstName": "Aleksandr",
           "lastName": "Menkov",
           "age": "22",
-          "country": "Russe",
+          "country": "Russie",
           "position": "8",
-          "photo": ""
+          "photo": "/assets/images/athletes/8.png",
+          "flag": "russie.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         }
       ],
-      "localTime": "09:00 - 09:30",
+      "localTime": "09:00",
       "round": "Qualification - Group A",
-      "streaming": 1,
+      "channel": {
+        "channel_name":"France 2",
+        "link":"https://www.france.tv/france-2/direct.html",
+        "logo": "france2logo.png"
+      },
       "sex": "Hommes"
     },
     {
-      "categoryId": 3,
       "name": "Saut en longueur",
+      "image": "/assets/images/sports/longJump.jpg",
       "location": "Stade olympique, Paris",
       "athletes": [
       ],
-      "localTime": "09:30 - 10:00",
+      "localTime": "09:30",
       "round": "Qualification - Group B",
-      "streaming": 1,
+      "channel": {
+        "channel_name":"France 3",
+        "link":"https://www.france.tv/france-3/direct.html",
+        "logo": "france3logo.png"
+      },
       "sex": "Hommes"
     },
     {
-      "categoryId": 3,
+
       "name": "Sprint 100 mètres",
+      "image": "/assets/images/sports/sprintWomen.webp",
       "location": "Stade olympique, Paris",
       "athletes": [
         {
@@ -106,7 +139,10 @@
           "age": "22",
           "country": "Jamaïque",
           "position": "1",
-          "photo": ""
+          "photo": "/assets/images/athletes/9.png",
+          "flag": "jamaique.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 10,
@@ -115,7 +151,10 @@
           "age": "26",
           "country": "Britanique",
           "position": "2",
-          "photo": ""
+          "photo": "/assets/images/athletes/10.png",
+          "flag": "r-uni.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 11,
@@ -124,16 +163,23 @@
           "age": "30",
           "country": "Suisse",
           "position": "3",
-          "photo": ""
+          "photo": "/assets/images/athletes/11.png",
+          "flag": "suisse.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
+
         },
         {
           "id": 12,
           "firstName": "Liang",
           "lastName": "Xiaojing",
           "age": "30",
-          "country": "Chinoise",
+          "country": "Chine",
           "position": "4",
-          "photo": ""
+          "photo": "/assets/images/athletes/12.png",
+          "flag": "chine.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 13,
@@ -142,7 +188,10 @@
           "age": "30",
           "country": "Allemagne",
           "position": "5",
-          "photo": ""
+          "photo": "/assets/images/athletes/13.png",
+          "flag": "allemagne.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 14,
@@ -151,7 +200,10 @@
           "age": "25",
           "country": "USA",
           "position": "6",
-          "photo": ""
+          "photo": "/assets/images/athletes/14.png",
+          "flag": "usa.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 15,
@@ -160,38 +212,52 @@
           "age": "25",
           "country": "USA",
           "position": "7",
-          "photo": ""
+          "photo": "/assets/images/athletes/15.png",
+          "flag": "usa.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 16,
           "firstName": "Marie-Josée",
           "lastName": "Ta Lou",
           "age": "25",
-          "country": "Russe",
+          "country": "Russie",
           "position": "8",
-          "photo": ""
+          "photo": "/assets/images/athletes/16.png",
+          "flag": "russie.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         }
       ],
-      "localTime": "10:00 - 10:30",
+      "localTime": "10:00",
       "round": "Qualifications",
-      "streaming": 2,
+      "channel": {
+        "channel_name":"France 4",
+        "link":"https://www.france.tv/france-4/direct.html",
+        "logo": "france4logo.jpg"
+      },
       "sex": "Femmes"
     },
     {
-      "categoryId": 3,
       "name": "Saut en longueur",
+      "image": "/assets/images/sports/longJump.jpg",
       "location": "Stade olympique, Paris",
       "athletes": [
       ],
-      "localTime": "10:00 - 10:30",
+      "localTime": "10:00",
       "round": "Qualification - Group C",
-      "streaming": 3,
+      "channel": {
+        "channel_name":"France 2",
+        "link":"https://www.france.tv/france-2/direct.html",
+        "logo": "france2logo.png"
+      },
       "sex": "Femmes"
 
     },
     {
-      "categoryId": 6,
       "name": "Boxe",
+      "image": "/assets/images/sports/boxe.webp",
       "location": "Stade Roland-Garros, Paris",
       "athletes": [
         {
@@ -201,7 +267,10 @@
           "age": "25",
           "country": "Irlande",
           "position": "1",
-          "photo": ""
+          "photo": "/assets/images/athletes/17.png",
+          "flag": "irlande.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 18,
@@ -210,7 +279,10 @@
           "age": "29",
           "country": "Royaume-Uni",
           "position": "2",
-          "photo": ""
+          "photo": "/assets/images/athletes/18.png",
+          "flag": "r-uni.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 19,
@@ -219,7 +291,10 @@
           "age": "24",
           "country": "Ukraine",
           "position": "3",
-          "photo": ""
+          "photo": "/assets/images/athletes/19.png",
+          "flag": "ukraine.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 20,
@@ -228,7 +303,10 @@
           "age": "29",
           "country": "Russie",
           "position": "4",
-          "photo": ""
+          "photo": "/assets/images/athletes/20.png",
+          "flag": "russie.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 21,
@@ -237,7 +315,10 @@
           "age": "24",
           "country": "Brésil",
           "position": "5",
-          "photo": ""
+          "photo": "/assets/images/athletes/21.png",
+          "flag": "bresil.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 22,
@@ -246,7 +327,10 @@
           "age": "24",
           "country": "Russie",
           "position": "6",
-          "photo": ""
+          "photo": "/assets/images/athletes/22.png",
+          "flag": "russie.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 23,
@@ -255,7 +339,10 @@
           "age": "25",
           "country": "USA",
           "position": "7",
-          "photo": ""
+          "photo": "/assets/images/athletes/23.png",
+          "flag": "usa.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         },
         {
           "id": 24,
@@ -264,23 +351,34 @@
           "age": "25",
           "country": "Khazakstan",
           "position": "8",
-          "photo": ""
+          "photo": "/assets/images/athletes/24.png",
+          "flag": "khazakstan.png",
+          "description": "Son record est de 8,04 m (- 0,2 m/s) réalisé à Kunshan le 22 septembre 2012. Il devient champion d'Asie du saut en longueur à Pune en 2013. Il porte son record à 8,10 m à Pékin le 24 avril 2014. "
+
         }
       ],
-      "localTime": "09:00 - 11:00",
+      "localTime": "10:30",
       "round": "Qualification",
-      "streaming": 5,
+      "channel": {
+        "channel_name":"France 2",
+        "link":"https://www.france.tv/france-2/direct.html",
+        "logo": "france2logo.png"
+      },
       "sex": "Hommes"
     },
     {
-      "categoryId": 6,
       "name": "Boxe",
+      "image": "/assets/images/sports/boxe.webp",
       "location": "Stade Roland-Garros, Paris",
       "athletes": [
       ],
-      "localTime": "11:00 - 13:00",
+      "localTime": "11:00",
       "round": "Qualification",
-      "streaming": 4,
+      "channel": {
+        "channel_name":"France 2",
+        "link":"https://www.france.tv/france-2/direct.html",
+        "logo": "france2logo.png"
+      },
       "sex": "Femmes"
     }
   ]

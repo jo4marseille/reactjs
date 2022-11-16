@@ -6,11 +6,13 @@ import Steps, {Step} from "rc-steps";
 import "./VerticalContainer.css"
 import moment from "moment";
 import ActivityCard from "./ActivityCard";
+import data from "../../assets/datas/activities_demo.json"
 
 export default class VerticalContainer extends React.PureComponent {
 
     calcule() {
         return moment().hour() - 9;
+
     }
 
     render() {
@@ -19,20 +21,30 @@ export default class VerticalContainer extends React.PureComponent {
                 <Step
                     title="09h00"
                     description={
-                        <div class="div_ctn_cards">
-                            <ActivityCard/>
-                            <ActivityCard/>
-                            <ActivityCard/>
-                            <ActivityCard/>
+                        <div className="div_ctn_cards">
+                            <ActivityCard data={data.selectedSports[0]}/>
+                            <ActivityCard data={data.selectedSports[1]}/>
                         </div>
                     }
                 />
                 <Step
                     title="10h00"
+                    description={
+                        <div className="div_ctn_cards">
+                            <ActivityCard data={data.selectedSports[2]}/>
+                            <ActivityCard data={data.selectedSports[3]}/>
+                            <ActivityCard data={data.selectedSports[4]}/>
+                        </div>
+                    }
                     // description="This is the first step on the process of whatever action you're doing."
                 />
                 <Step
                     title="11h00"
+                    description={
+                        <div className="div_ctn_cards">
+                            <ActivityCard data={data.selectedSports[5]}/>
+                        </div>
+                    }
                     // description="This is the first step on the process of whatever action you're doing."
                 />
                 <Step

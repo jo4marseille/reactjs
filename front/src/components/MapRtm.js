@@ -8,10 +8,8 @@ function MyMap() {
   const [viewport, setViewport] = useState({});
   const [stationsmetro, setStationsMetro] = useState([]);
   const [stationstramway, setStationsTramway] = useState([]);
-  var [distance, setDistance] = useState(0);
   
-  function GetDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
-    
+  function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
     var R = 6371; // Radius of the earth in km
     var dLat = deg2rad(lat2-lat1);  // deg2rad below
     var dLon = deg2rad(lon2-lon1); 
@@ -21,29 +19,10 @@ function MyMap() {
       Math.sin(dLon/2) * Math.sin(dLon/2)
       ; 
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-    var d=(R * c + 10); // Distance in km
-    distance=(R * c + 10).toFixed(2);
-    
-    
+    var d = R * c + 10; // Distance in km
+    return d.toFixed(2);
   }
-
   
-  function calculCo2(a){
-    var autototalCO2G =  a * 120;
-    var bustotalCO2G = a* 30;
-    var totalCO2reduit = autototalCO2G - bustotalCO2G;
-    var total = totalCO2reduit/1000
-    return total.toFixed(2);
-
-  }
-  function calculCo2Metro(km){
-    return (km*0.027).toFixed(2)
-
-  }
-  function calculCo2Voiture(km){
-    return (km*0.22).toFixed(2)
-
-  }
   function deg2rad(deg) {
     return deg * (Math.PI/180)
   }
@@ -65,11 +44,11 @@ function MyMap() {
    
     fetch('https://data.ampmetropole.fr/api/records/1.0/search/?dataset=ls-stations-de-metro-et-de-tramway-marseille&lang=fr&facet=arret&facet=mode_de_transport&timezone=Europe%2FParis', requestOptions)
     .then((response) => {
-    //  let result = response.json();
-      // if(response.status!==200){
-        let result = TransportBackup;
+     let result = response.json();
+      if(response.status!==200){
+         result = TransportBackup;
          
-      // }
+      }
       let transports=[];
       
       result.records.map((item) => {
@@ -92,13 +71,12 @@ function MyMap() {
   return (
     
     <div>
-      {viewport.latitude && viewport.longitude &&  (
+      {viewport.latitude && viewport.longitude && (
         <div>
+          <h1>Your Location:</h1>
+          <p>{getDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, 43.2700457363978, 5.396101876703966)} Km du Velodrome </p>
           
-          <p> Vous êtes à {distance} Km de votre point d'intérêt </p>
-          <p>Cela représente {calculCo2Metro(distance)} Kg CO2 en métro contre {calculCo2Voiture(distance)}Kg CO2 en voiture</p>
-          <p>Et 0 Kg CO2 à pied ou en vélo!</p>
-
+          
           <Map
             mapboxAccessToken="pk.eyJ1IjoidGhvbWFzMzMiLCJhIjoiY2pzYWFpcXNwMDAxbzN5cGZneGxia3U3ZCJ9.sigYT2nlLnC1siycJ3im-Q"
             initialViewState={viewport}
@@ -109,12 +87,13 @@ function MyMap() {
             {stationstramway.map(transptramway => {
                 return (
                 <Marker
-                onClick={(e) => {GetDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, transptramway.latitude, transptramway.longitude); setDistance(distance); console.log("click")}
+                onClick={(e) => {let lati=transptramway.latitude; let longi=transptramway.longitude; }
             }
                     longitude={transptramway.longitude}
                     latitude={transptramway.latitude}
                     color='#FF5757'
                 />
+              
                 )
             }) }
             {/* Coordonnées des stations de métro */}
@@ -122,7 +101,7 @@ function MyMap() {
                 return (
                     
                     <Marker
-                    onClick={(e) => {GetDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, transpmetro.latitude, transpmetro.longitude); setDistance(distance); console.log("click") }
+                    onClick={(e) => {let lati=transpmetro.latitude; let longi=transpmetro.longitude; console.log(lati, longi) }
                 }
                     longitude={transpmetro.longitude}
                     latitude={transpmetro.latitude}
@@ -134,9 +113,7 @@ function MyMap() {
               
               {/* Coordonnées de Géoloc */}
             <Marker
-            //  onClick={(e) => {console.log("click") }
-            // }
-             onClick={(e) => {GetDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, viewport.latitude, viewport.longitude); setDistance(distance); console.log("click") }
+             onClick={(e) => {let lati=viewport.latitude; let longi=viewport.longitude; console.log(lati, longi) }
             }
               longitude={viewport.longitude}
               latitude={viewport.latitude}
@@ -145,7 +122,7 @@ function MyMap() {
 
             {/* Coordonnées du stade vélodrome */}
             <Marker
-             onClick={(e) => {GetDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, 43.27004, 5.39610); setDistance(distance); console.log("clickvélodrome")  }
+             onClick={(e) => {let lati=43.27004; let longi=5.39610; console.log(lati, longi) }
             }
               longitude={5.39610}
               latitude={43.27004}
@@ -154,7 +131,7 @@ function MyMap() {
 
             {/* Coordonnées du stade nautique*/}
             <Marker
-              onClick={(e) => {GetDistanceFromLatLonInKm(viewport.latitude, viewport.longitude, 43.26687, 5.37162); setDistance(distance); console.log("clickmarina")}
+              onClick={(e) => {let lati=43.26687; let longi=5.37162; console.log(lati, longi) }
             }
               longitude={5.37162}
               latitude={43.26687}

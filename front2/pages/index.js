@@ -19,6 +19,7 @@ export default function Home() {
           root: {
             background: '#00A651 ',
             '&:hover': {
+            background: '#00A651 ',
             transform: 'scale(1.1)',
             transition: 'all 0.3s ease-in-out',
 

@@ -192,21 +192,27 @@ function DrawerAppBar(props) {
   
   return (
     <ThemeProvider theme={mainTheme}>
+        <Box component="nav" sx={{minHeight:80 }} >
+
       <Button href='/' sx={{ mr: 2, display: { sm: 'none' , xs: 'flex'} }}>
-        {/* <Typography
+        <Typography
           variant="h6"
           component="div"
           sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-        > */}
-                <img src='/img/logo.svg' alt='' className={styles.logoCodeDrawer} />
+        >
+                <img src='/img/logoGreen.svg' alt='' className={styles.logoCodeDrawer} />
 
-        {/* </Typography> */}
+        </Typography>
 
       </Button>
-      <Box sx={{minHeight:80 ,display: { xs: 'none', sm:'flex' } }}>
+      </Box>
+      <Box sx={{minHeight:80 ,display: { xs: 'none', sm:'flex' },  }}>
       <Box sx={{ display: 'flex' }} className={styles.navBar}>
         <AppBar component="nav" >
-          <Toolbar>
+          <Toolbar sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}>
             {/* <IconButton
               color="inherit"
               aria-label="open drawer"

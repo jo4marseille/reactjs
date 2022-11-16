@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navigation from "../Navigation";
 import SponsorItem from "./SponsorItem";
-import SearchInput from "../input/InputMinus";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
 import { PuitAthletes } from "../../request/athletes.request";
@@ -9,7 +7,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Banner from "../Banner";
 import Header from "../Header";
-
 
 
 const Sponsor = () => {

@@ -28,9 +28,12 @@ function Header() {
         <button onClick={navToggle} className="header__brand" ref={buttonRef}>
           <img src="/JO.png" alt="Menu Burger" />
         </button>
-        <button className="logoCenter">
-          <img src="/ressource/logoCenter.png"/>
-        </button>
+        <a href="/">
+          <button className="logoCenter">
+            <img src="/ressource/logoCenter.png"/>
+          </button>
+        </a>
+        
         <ul className={active}>
           <button className="header__item">
             <img src="/calendrier.png" alt="Calendrier" />

@@ -20,7 +20,7 @@ export default function Participent() {
                 console.log(response.data.data.attributes.athletes.data.attributes.sport.data.attributes.nom);
             })
         } catch (error) {
-            console.log(error)
+            console.log(error) 
         }
     }
 

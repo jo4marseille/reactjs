@@ -2,12 +2,11 @@ FROM --platform=linux/x86-64 node:16
 
 ENV PORT 1337
 
-ENV HOST 0.0.0.0
 ENV APP_KEYS "toBeModified1,toBeModified2"
 ENV API_TOKEN_SALT tobemodified
 ENV ADMIN_JWT_SECRET tobemodified
 ENV JWT_SECRET tobemodified
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 # Create app directory
 RUN mkdir -p /usr/src/app

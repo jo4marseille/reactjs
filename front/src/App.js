@@ -7,12 +7,11 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-<<<<<<< Updated upstream
+
 import Service from "./pages/services";
 import Agenda from "./components/Agenda";
-=======
+
 // import Service from "./pages/services";
->>>>>>> Stashed changes
 
 const App = () => {
   return (

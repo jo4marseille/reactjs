@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/form_translator" element={<Form />} />
-        <Route exact path="/list_translators" element={<Translators />} />
+        <Route exact path="/list_translators/:language" element={<Translators />} />
         <Route exact path="/list_flags" element={<Flags />} />
       </Routes>
     </BrowserRouter>

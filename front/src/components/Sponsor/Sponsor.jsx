@@ -89,7 +89,7 @@ const Sponsor = () => {
 
       GetSponsors().then(res => {
 
-        if(res.data.data[id-1].attributes?.likes?.find(v => v.id === 1)){
+        if(res.data.data[id-1]?.attributes?.likes?.find(v => v.id === 1)){
           notify('un Match')
           PuitAthletes({data :{
             likes: [{"id": 1}]

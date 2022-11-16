@@ -1,10 +1,10 @@
 function Home() {
 
     return(
-        <main className=" homeBg d-flex flex-column align-items-center">
-                <h1 className="mt-5 mb-2">Marseille terre d'accueil</h1>
-                <br></br>
-                <h2 className="mt-2">Les jeux olympiques</h2>
+        <main className=" homeBg d-flex flex-column align-items-center justify-content-between">
+            <div className="pres d-flex justify-content-center">
+                <p className="mt-3">Bienvenue aux délégations internationales sportives</p>
+            </div>
         </main>
     )
 

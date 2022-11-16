@@ -1,22 +1,22 @@
 import React from "react";
 import Card from "../Card";
-// import Card from 'react-bootstrap/Card';
 import data from "../../data.json";
-import Button from 'react-bootstrap/Button';
 
 function AllCardRestaurations() {
 
-    return(<div className="componentBg">
-        {data.restaurants.map((e) => {
+    return(<div className="componentBg"> 
+        <div className="d-flex mt-2">
+        <img src="\img\logos\logoResto.png" alt='logo logo Restauration'/>
 
+        </div>  
+
+        {data.restaurants.map((e) => {
             return(
-                <Card name={e.name} description={e.description}/>
+                <Card name={e.name} description={e.description} lien= {e.lien} image={e.image}/>
             )
         }
         )}
-            
-        
-            </div>);
+        </div>
+)}
     
-}
-export default AllCardRestaurations
+export default AllCardRestaurations;

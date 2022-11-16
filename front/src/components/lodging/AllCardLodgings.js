@@ -1,75 +1,23 @@
 import React from "react";
+import Cards from "../Card";
+import data from "../../data.json";
+
 function AllCardLodgings() {
     return(<div className="componentBg">
+        <div className="d-flex mt-2">
+            <img src="\img\logos\logoHotel.png" alt='logo Restaurant'/>
 
-
-        <div className="box">
-            <div className="container">
-                 <div className="row">
-                         
-                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div className="box-part text-center">
-                                
-                                <i className="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
-                                
-                                <div className="title">
-                                    <h4>Hébergement </h4>
-                                </div>
-                                
-                                <div className="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>	 
-                        
-                         <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div className="box-part text-center">
-                                
-                                <i className="fa fa-google-plus fa-3x" aria-hidden="true"></i>
-                            
-                                <div className="title">
-                                    <h4>Hébergement2</h4>
-                                </div>
-                                
-                                <div className="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>	 
-                        
-                         <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-                            <div className="box-part text-center">
-                                
-                                <i className="fa fa-github fa-3x" aria-hidden="true"></i>
-                                
-                                <div className="title">
-                                    <h4>Hébergement3</h4>
-                                </div>
-                                
-                                <div className="text">
-                                    <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-                                </div>
-                                
-                                <a href="#">Learn More</a>
-                                
-                             </div>
-                        </div>
-                
-                </div>		
-            </div>
         </div>
-        
-        
-            </div>);
+
+    {data.hotels.map((e) => {
+
+        return(
+            
+            <Cards name={e.name} description={e.description} lien= {e.lien} image={e.image}/>
+        )
+    }
+    )}
+        </div>);
     
 }
 export default AllCardLodgings

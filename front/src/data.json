@@ -2,69 +2,97 @@
     "transports": [
       {
             "name": "Trains",
-            "image": "../front/public/gare aixr.jpg",
-            "description": "Exemple: Prendre le train",
+            "image": "img/images/gare-sc286x180.png",
+            "description": "Pour vos week-ends, vos vacances ou vos déplacements pro, partez avec TGV INOUI et INTERCITÉS. Profitez de tarifs avantageux et de réductions liées aux cartes Avantage pour des voyages tout confort, rapides et éco-responsables entre les principales villes de France.",
             "lien": "https://www.ter.sncf.com/sud-provence-alpes-cote-d-azur/se-deplacer/gares/marseille-st-charles-87751008"
       },
       {
             "name": "Transports en communs",
-            "image": "../front/public/rtm.jpg",
+            "image": "img/images/rtm286x180.png",
             "description": "La Métropole Aix-Marseille Provence regroupant 92 communes est la plus vaste de France : elle représente 4 fois la superficie du Grand Paris, 6 fois celle du Grand Lyon.",
             "lien": "https://www.rtm.fr/"
       },
       {
             "name": "Avions",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "image": "img/images/avion286x180.png",
+            "description": "L’aéroport Marseille-Provence, situé dans la commune de Marignane et à distance égale de Marseille et d'Aix-en-Provence, est un aéroport français. En 2021, l'aéroport a vu passer 4,66 millions de passagers. Il sera votre allié pour tous vos voyages en provenance de destinations mondiales.",
+            "lien": "https://www.marseille.aeroport.fr/"
       },
       {
-            "name": "Compagnie de transport de car privé",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "name": "Cars de France",
+            "image": "img/images/cardefrance286x180.png",
+            "description": "Louez un bus en 30 secondes chrono ! Cars de France est une compagnie de location d'autocar avec chauffeur, pour tous types de déplacement en autocar, avec des véhicules adaptés à chaque situation",
+            "lien": "https://www.cars-de-france.com/"
       }
     ],
 
     "restaurants": [
         {
-            "name": "Restaurant: Le petit port ",
-            "image": "",
+            "name": "Restaurant Le petit port ",
+            "image": "img/images/le-petit-port286x180.png",
             "description": "Restaurant pour vos repas en bord de mer pouvant également recevoir des groupes de plus de 100 personnes à Marseille",
             "lien": "https://www.restaurantlepetitport.fr/"
         },
         {
-            "name": "Restaurant: V&V Marseille ",
-            "image": "",
+            "name": "Restaurant V&V Marseille ",
+            "image": "img/images/v-and-v286x180.png",
             "description": "Restaurant vegan pour vous restaurer seul ou en groupe ",
             "lien": "https://www.v-et-v-restaurant-marseille.com/"
         },
         {
-            "name": "Restaurant: Steak Lounge ",
-            "image": "",
+            "name": "Restaurant Steak Lounge ",
+            "image": "img/images/steak-lounge286x180.png",
             "description": "Restaurant halal pour vos repas et dîners seul ou à plusieurs. Un bar proposant du cocktail sans alcool, soft… est disponible à l’entrée du restaurant. Une terrasse est mise à votre disposition afin que vous puissiez manger tranquillement, tout en profitant du beau temps.",
-            "lien": "https://www.steak-lounge.fr/"
+            "lien": "https://www.thefork.fr/restaurant/steak-lounge-r520895"
         }
       ],
 
       "hotels": [
         {
-            "name": "Pullman",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "name": "Pullman Marseille 4*",
+            "image": "img/images/pullman286x180.png",
+            "description": "Au cœur d'un grand parc calme avec piscine, l'hôtel Pullman est situé à 1 min des terminaux principaux de l'aéroport Marseille Provence et à 10 min de la gare TGV Aix-en-Provence. Les chambres spacieuses avec air-conditionné invitent à la détente. Les salles de réunion équipées, modulables accueillent jusqu'à 250 hôtes.",
+            "lien": "http://www.mia-marseille.com/"
         },
         {
-            "name": "Ibis",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "name": "Groupe Accor (Mercure - Ibis)",
+            "image": "img/images/accor286x180.png",
+            "description": "Réservez dès à présent une chambre à prix bas dans un des hôtels ibis Marseille ! Les hôtels ibis, ibis budget et ibis Styles vous proposent des chambres confortables et économiques.",
+            "lien": "https://ibis.accor.com/fr/city/hotels-marseille-v2493.shtml"
         },
         {
-            "name": "Mercure",
-            "image": "22",
-            "description": "Information Technology",
-            "lien": "123"
+            "name": "New hotel of Marseille 4*",
+            "image": "img/images/newhotel286x180.png",
+            "description": "Le New Hotel Of Marseille et son restaurant le Qasti Bistrot sont idéalement situés, dans le prolongement du Vieux Port, face au Palais des Congrès du Pharo, à l’entrée de la somptueuse baie phocéenne.",
+            "lien": "http://www.new-hotel.com/fr/decouvrir-newhotel"
+        }
+      ],
+
+      "centres": [
+        {
+            "name": "ASPTT Marseille",
+            "image": "img/images/asppt286x180.png",
+            "description": "Voile - Port de la Pointe Rouge – 13008 Marseille - 06.71.27.30.02",
+            "lien": "https://marseille.asptt.com/"
+        },
+        {
+            "name": "Yachting Club de la Pointe Rouge (YCPR)",
+            "image": "img/images/ycpr286x180.png",
+            "description": "Voile - Port de la Pointe Rouge – 13008 Marseille - 06 34 15 78 72",
+            "lien": "http://www.ycpr.net/"
+        },
+        {
+            "name": "Union Nautique Marseillaise",
+            "image": "img/images/UNM286x180.png",
+            "description": "Voile - 34 Boulevard Charles Livon – 13007 Marseille - 06 68 72 35 96",
+            "lien": "https://www.unm1882.fr/"
+        },
+        {
+            "name": "Stade de Marseille",
+            "image": "img/images/stadeve286x180l.png",
+            "description": "Foot - 3 Bd Michelet, 13008 Marseille - 04.13.64.64.64",
+            "lien": "https://www.orangevelodrome.com/"
         }
       ]
+      
   }

@@ -1,22 +1,26 @@
 import React from "react";
-import Card from "../Card";
-// import Card from 'react-bootstrap/Card';
 import data from "../../data.json";
-import Button from 'react-bootstrap/Button';
+import Card from "../Card";
 
 function AllCardTransports() {
 
     return(<div className="componentBg">
-        {data.tra.map((e) => {
+        <div className="d-flex mt-2">
+        <img src="\img\logos\logoTransport.png" alt='logo Transport' />
 
+        </div>
+        {data.transports.map((e) => {
+
+       
             return(
-                <Card name={e.name} description={e.description}/>
+                
+                <Card name={e.name} description={e.description} lien= {e.lien} image={e.image}/>
             )
         }
         )}
             
-        
-            </div>);
+        </div>
     
-}
+)}
+
 export default AllCardTransports

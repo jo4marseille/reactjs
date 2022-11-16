@@ -1,6 +1,8 @@
 @import url(./stylesheets/sponsor.css);
 @import url(./stylesheets/header.css);
 @import url(./stylesheets/inputs.css);
+@import url(./stylesheets/banner.css);
+@import url(./stylesheets/footer.css);
 
 .App {
   text-align: center;
@@ -60,4 +62,20 @@
   @media (max-width: 600px) {
     max-width: 100%;
     width: 100%;
+  }
+
+  .btn-ghost {
+    color: black;
+    border: 1px solid #4A4A4A;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: lighter;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    background: transparent;
+  }
+
+  .btn-ghost:hover {
+    opacity: 1;
+    background: white;
   }

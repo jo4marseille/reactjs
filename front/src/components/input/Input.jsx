@@ -9,9 +9,10 @@ function Input() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input className="homeInput font" type="text" placeholder="" />
+      <form onSubmit={handleSubmit} >
+        <input className="homeInput font " type="text" placeholder="" />
         <img
+          alt=""
           type="submit"
           src={loupe}
           className="loupe"

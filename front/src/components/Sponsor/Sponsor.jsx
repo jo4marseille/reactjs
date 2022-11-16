@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Navigation from "../Navigation";
 import SponsorItem from "./SponsorItem";
-import SearchInput from "../input/InputMinus";
-import Nageur from "../../img/assets/photo-header.gif";
 import { GetSponsors } from "../../request/sponsors.request";
 import Spinner from "../Spinner";
-import { GetAthletes, PostAthletes, PuitAthletes } from "../../request/athletes.request";
-import coeur from "../../img/Logo/flamme-en-contour.png";
+import { PuitAthletes } from "../../request/athletes.request";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import Banner from "../Banner";
+import Header from "../Header";
 
 
 const Sponsor = () => {
@@ -62,8 +59,8 @@ const Sponsor = () => {
 
     useEffect(() => {
       const handleScroll = () => {
-        console.log(window.scrollY)
-        if (window.scrollY === 548 && page < 100 && data.length === 10 ) {
+
+        if (window.scrollY === 862 && page < 100 && data.length === 10 ) {
           setPage(prevState => prevState + 10)
           setLoad(true)
         }
@@ -78,14 +75,13 @@ const Sponsor = () => {
     }, [page, data.length]);
 
     const handleMatching = () => {
-      //matching element athlete
+      // matching element athlete
       // matching les sponsor qui corresponde aux donées en dure.
       const sport = "football"
-      const adress = "marseille"
+
       GetSponsors().then(res => {
-        //console.log(res.data.data);
-        console.log(res.data.data.filter(v => v.attributes?.sports == sport));
-        setData(res.data.data.filter(v => v.attributes?.sports == sport))
+
+        setData(res.data.data.filter(v => v.attributes?.sports === sport))
       })
     }
 
@@ -110,16 +106,17 @@ const Sponsor = () => {
     return (
 
       <div>
-        <img className="nageurScoped" src={Nageur} alt="Nageur Olympique" />
+        <Header />
+        <Banner isAthlete={false} />
         <ToastContainer />
-        <SearchInput />
-        <div className="d-flex mt-5 positionOffers">
+
+        <div className="d-flex">
         <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
 
         {
           load
           ? <Spinner />
-          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor" >
+          : <div className="d-flex flex-column align-items-center gap-3 column-sponsor"  >
               {
                 data.map(({id, attributes}) => {
                   return (
@@ -127,6 +124,7 @@ const Sponsor = () => {
                         className="card rounded"
                         style={{width: '18rem'}}
                         onClick={() => handleClick(id)}
+
                       >
                       <img src={attributes.picture} alt={attributes.name} className="card-img-top" />
                       <div className="card-body">
@@ -136,7 +134,7 @@ const Sponsor = () => {
                         <p className="card-text">
                           {attributes.email}
                         </p>
-                        <button onClick={() => handleLike(id)}>
+                        <button className="btn-ghost" onClick={() => handleLike(id)}>
                           Like sponsor
                         </button>
                       </div>
@@ -146,12 +144,9 @@ const Sponsor = () => {
             }
           </div>
         }
-          <div className="column-sponsor border border-primary rounded">
+          <div className="column-sponsor rounded" style={{backgroundColor: '#ff5757'}}>
             <SponsorItem sponsor={selected} />
-
           </div>
-
-        <Navigation />
       </div>
     </div>
     )

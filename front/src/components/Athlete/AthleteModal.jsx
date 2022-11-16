@@ -13,7 +13,7 @@ const AthleteModal = ({name}) => {
       <>
 
         <button type="button"
-          className="btn btn-success"
+          className="btn-ghost"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           onClick={() => handleShow()}>
@@ -42,7 +42,7 @@ const AthleteModal = ({name}) => {
                 Votre demande a bien etait envoyée à {name}
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" className="btn-ghost" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>

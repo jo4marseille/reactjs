@@ -1,5 +1,5 @@
 .card {
-    top: 500px;
+    top: 100px;
 }
 
 .homeInput {
@@ -8,7 +8,7 @@
     border-style: solid;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    top: 500px;
+    top: 540px;
     width: 1160px;
     height: 63px;
     background-color: #ff5757;
@@ -25,9 +25,9 @@
     border-style: solid;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    top: 460px;
-    width: 940px;
-    height: 63px;
+    top: 540px;
+    width: 720px;
+    height: 64px;
     background-color: #ff5757;
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
@@ -38,13 +38,17 @@
 
 .loupe {
     position: absolute;
-    top: 508px;
+    top: 548px;
     left: 1080px;
     width: 40px;
     height: 40px;
 
     /* UI Properties */
     opacity: 1;
+}
+
+.loupe:hover {
+  opacity: 0.8;
 }
 
 .loupeMinus {
@@ -96,7 +100,7 @@
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     top: 500px;
-    width: 1459px;
+    width: 640px;
     height: 40px;
     background-color: #ff5757;
     font-family: 'Poppins', sans-serif;

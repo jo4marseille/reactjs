@@ -21,14 +21,14 @@ const SponsorItem = ({sponsor}) => {
 
     <Fragment>
 
-        <div className='d-flex justify-content-between'>
+        <div className='d-flex justify-content-between' style={{fontFamily: 'Poppins, sans-serif'}} >
             {
               attributes.isActive
-                ? <div className='text-success mx-3'>Offre valable</div>
-                : <div className='text-danger mx-3'>L'Offre est cloturée</div>
+                ? <div className='text-white m-3'><strong>Offre valable</strong></div>
+                : <div className='text-dark m-3'>L'Offre est cloturée</div>
             }
 
-            <div className='mx-3'>
+            <div className='m-3'>
               {
                 dateFormated(attributes.createdAt)
               }
@@ -38,12 +38,12 @@ const SponsorItem = ({sponsor}) => {
 
         <h2>{attributes.name}</h2>
 
-        <div className='mx-3' >
+        <div className='m-3' >
 
 
             <h4>Sports that we support</h4>
 
-            <h6>{attributes?.sports}</h6>
+            <h2 className='text-white'>{attributes?.sports}</h2>
 
             <div className="mt-3">
               {
@@ -66,7 +66,7 @@ const SponsorItem = ({sponsor}) => {
 
   return (
 
-      <div >
+      <div style={{zIndex: "1"}} >
       {
         isEmpty(sponsor[0]?.attributes)
         ?

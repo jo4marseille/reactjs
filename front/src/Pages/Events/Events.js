@@ -2,7 +2,7 @@ import moment from 'moment';
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
 
-import evenementsAPI from '../../Services/EvenementsAPI'
+import evenementsAPI from '../../Services/evenementsAPI'
 import PaysAPI from '../../Services/PaysAPI';
 import VoteAPI from '../../Services/VoteAPI';
 import './Events.css'

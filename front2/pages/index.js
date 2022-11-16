@@ -40,7 +40,7 @@ export default function Home() {
     <div className={styles.firstContainer}>
       <Container>
           <h1>Clean & Collect</h1>
-          <h2>Fêter, recycler, c'est gagné !</h2>
+          <h2>Fêtez, recyclez, gagnez !</h2>
           <p>
           Pendant les JO comme durant toute l'année la ville de Marseille et Clean & Collect 
             met en place des dispositifs innovant et respectueux de l'environnement. Une nouvelle 

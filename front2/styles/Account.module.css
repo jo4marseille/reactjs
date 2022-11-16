@@ -1,0 +1,237 @@
+/* .image{
+    width: 30%!important;
+} */
+
+
+.title{
+    margin-left: 9%;
+    margin-top: 9%;
+    color: #00A651;
+    font-weight:700;
+}
+
+.carousel{
+    width: 20%;
+}
+
+.description{
+    margin-left: 9%;
+    margin-top: 9%;
+    color: #00A651;
+    font-weight:700;
+}
+
+
+.box1, .box2, .box3
+{
+  background:#fff;
+  width: 266px;
+  height: 300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  /* box-shadow:0 30px 60px rgba(0,0,0,.4); */
+  transition: transform .2s;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+/* .box:hover
+{
+ transform:scale(1.2);
+} */
+.box1 .percent, .box2 .percent, .box3 .percent
+{
+  width:150px;
+  height:150px;
+  position:relative;
+  font-size:48px;
+}
+.box1 .percent svg , .box2 .percent svg, .box3 .percent svg
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box1 .percent svg circle, .box2 .percent svg circle, .box3 .percent svg circle
+{
+  width:150px;
+  height:150px;
+  fill:none;
+  stroke-width:10;
+  stroke:#000;
+  transform:translate(5px,5px);
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+}
+.box1 .percent svg circle:nth-child(1), .box2 .percent svg circle:nth-child(1), .box3 .percent svg circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+/* .plastic{stroke: rgb(247, 193, 15);
+    stroke-dashoffset:calc(440 - (440 * 90) / 100);
+}
+#css{stroke: #248edf;
+    stroke-dashoffset:calc(440 - (440 * 85) / 100);
+}
+#js{stroke: #f0f335;
+    stroke-dashoffset:calc(440 - (440 * 75) / 100);
+}
+#php{stroke: rgb(100, 107, 206);
+    stroke-dashoffset:calc(440 - (440 * 45) / 100);
+}
+#sql{stroke: pink;
+  stroke-dashoffset:calc(440 - (440 * 90) / 100);
+}
+#njs{stroke: rgb(2, 1, 1) ;
+    stroke-dashoffset:calc(440 - (440 * 90) / 100);
+} */
+
+
+.box1 .percent svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 90) / 100);
+  stroke: #248edf;
+}
+.box2 .percent svg circle {
+    stroke: #239429;
+    stroke-dashoffset:calc(440 - (440 * 60) / 100);  
+}
+.box3 .percent svg circle {
+    stroke: rgb(247, 193, 15);
+    stroke-dashoffset:calc(440 - (440 * 50) / 100);  
+}
+.box1 .percent .logo, .box2 .percent .logo, .box3 .percent .logo
+{
+  top:0;
+  left: 59px;
+  width: 23%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  color:#111;
+}
+.box1 .percent
+{
+  font-size:48px;
+}
+.box .percent
+{
+  font-size:24px;
+}
+.text
+{
+    position: absolute;
+    color:#999;
+    font-weight:700;
+  /* padding: 10px 0 0;
+
+  letter-spacing:1px;  */
+}
+
+.container2 {
+    position: relative;
+}
+.text2
+{
+    position: absolute;
+    color: rgb(247, 193, 15);
+    font-weight:700;
+    /* font-size: 1.5em; */
+    top: 90px;
+    /* padding: 10px 0 0; */
+  /* padding: 10px 0 0;
+
+  letter-spacing:1px;  */
+}
+
+.text3
+{
+    position: absolute;
+    /* color: rgb(247, 193, 15); */
+    font-weight:500;
+    top: 130px;
+    width: 30%;
+  /* padding: 10px 0 0;
+
+  letter-spacing:1px;  */
+}
+.box1 .percent .logo {
+    left: 15px;
+    width: 76%;
+
+}
+.box1 .percent .logo .image{
+    width: 90%;
+}
+
+.slider{
+    width: 308px;
+    height: 300px;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(3, 267px);
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #00A651;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    text-align: center;
+}
+
+.dots .dot:first-child{
+    background-color: #248edf;
+}
+.dots .dot:last-child{
+    background-color:  rgb(247, 193, 15);
+}
+
+.text4{
+    text-align: center;
+    margin-left: 9%;
+    margin-top: 9%;
+    color: #00A651;
+    font-weight:700;
+    font-size: 1.4em;
+    padding-bottom: 4%;
+}
+
+.btnBox {
+    color: white;
+    text-decoration: none;
+    border-radius: 113px;
+    padding: 10px;
+    margin-left: 40px;
+    font-weight: 500;
+    /* 
+   
+    margin-top: 20px; */
+  background: rgb(247, 193, 15);
+
+}
+
+.btnBox:hover {
+
+  background: rgb(247, 193, 15);
+  transform: scale(1.1);
+  transition: 0.5s;
+
+
+}

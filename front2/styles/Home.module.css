@@ -1,9 +1,190 @@
 
-.container {
+.firstContainer {
   padding: 21px 2rem;
-  margin-top: 10%;
+  margin-top: 12%;
   min-height: 55vh;
+  padding-bottom: 10%;
 }
+
+.firstContainer h1 {
+  color: #00A651;
+  font-size: 4.5rem;
+  padding-bottom:0 ;
+  margin: 0
+
+}
+
+.firstContainer h2 {
+  color: #FCBF31;
+  font-size: 2.5rem;
+  padding-bottom:10px ;
+  margin: 0;
+}
+.firstContainer p{
+  width: 70%;
+  text-justify: justify;
+}
+.firstContainer img {
+  width: 107%;
+}
+.firstContainer{
+  display: flex;
+  align-items: self-start;
+}
+.button {
+  margin: 2em 0;
+}
+
+.secondContainer h1{
+  color: #00A651;
+  font-size: 2.5rem;
+  padding-bottom:5%;
+  margin: 0;
+  text-align: center;
+
+}
+
+.headCard{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.headCard > span {
+  background: #0082c8;
+  color: white;
+  padding: 23px 33px;
+  border-radius: 100%;
+  font-size: 1.2em;
+}
+.headCard> h2{
+  color: #0082c8;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.allContainBoxReverse p, .allContainBox p{
+  margin-left: 100px;
+}
+.allContainBoxReverse .headCard > span {
+  background: #FCBF31;
+  color: white;
+  padding: 23px 33px;
+  border-radius: 100%;
+  font-size: 1.2em;
+}
+.allContainBoxReverse .headCard> h2{
+  color: #FCBF31;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.allContainBoxReverse .headCardAvantages > span {
+  background: #ff5756;
+  color: white;
+  padding: 23px 33px;
+  border-radius: 100%;
+  font-size: 1.2em;
+}
+.allContainBoxReverse .headCardAvantages> h2{
+  color: #ff5756;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.allContainBoxReverse .headCardAvantages, .allContainBox .headCardRecycle{
+display: flex;
+gap: 10px;
+}
+.allContainBox .headCardRecycle > span {
+  background: #05a551;
+  color: white;
+  padding: 23px 33px;
+  border-radius: 100%;
+  font-size: 1.2em;
+}
+.allContainBox .headCardRecycle> h2{
+  color: #05a551;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+ 
+
+.secondContainer p {
+  width: 70%;
+  text-justify: justify;
+  font-weight: 300;
+  /* margin: 0 auto; */
+}
+.allContainBox, .allContainBoxReverse{
+  display: flex;
+  padding-bottom: 10%;
+  width: 100%;
+  /* background-image: url('/img/cercleJO.png');
+  backdrop-filter: blur(10px); */
+}
+.allContainBoxReverse{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 25%;
+}
+
+.allContainBox img, .allContainBoxReverse img{
+  width: 38%;
+}
+
+.allContainBox .btnBox,.btnBoxRecycle, .allContainBoxReverse .btnBox, .btnBoxAvantages{
+  background: #0082c8;
+  color: white;
+  border-radius: 113px;
+  padding: 10px 45px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.allContainBoxReverse .btnBox, .btnBoxAvantages{
+  background: #FCBF31;
+}
+
+.btnBoxAvantages, .btnBoxAvantages:hover {
+  background: #ff5756;;
+}
+
+.btnBoxRecycle, .btnBoxRecycle:hover {
+  background: #05a551;
+}
+/* 
+.button::after {
+  display: inline-block;
+  padding-left: 8px;
+  content: "➞";
+  transition: transform 0.3s ease-out;
+}
+.button:hover {
+  color: #0c5449;
+  background-color: #f6f3ed;
+  width: 200px;
+}
+.button:hover::after {
+  transform: translateX(30px);
+} */
+/* .button:hover{
+  animation: slide 0.2s ease-in-out forwards;
+
+}
+.button:hover.button::after{
+  content: "➔" ;
+}
+
+@keyframes slide {
+  0% {
+    width: 100px;
+
+  }
+  100% {
+    width: 210px;
+
+  }
+} */
 /* 
 .main {
   min-height: 100vh;

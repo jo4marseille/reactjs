@@ -98,3 +98,10 @@
     background: white;
     color: black;
   }
+
+.btn-primary  {
+
+  border: 1px solid #ff5757 !important;
+  background: #ff5757 !important;
+  font-family: 'Poppins', sans-serif;
+}

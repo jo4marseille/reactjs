@@ -74,7 +74,7 @@ const SposorOffer = () => {
                     <label htmlFor="about">Description de l'offre sponsoring</label>
                     <input className="formInputs" type="text" onChange={(e) => setDataForm({...dataForm, about: e.target.value})}/>
                 </div>
-                <button className="btn-ghost" type='submit' onClick={() => handleSubmit()}>Publier l'annonce</button>
+                <button className="btn-ghost2" type='submit' onClick={() => handleSubmit()}>Publier l'annonce</button>
             </div>
             </div>
 

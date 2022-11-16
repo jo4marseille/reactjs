@@ -91,3 +91,9 @@ a {
     top: -160px;
     left: 0;
 }
+
+@media (max-width: 768px)  {
+  .navbar-brand {
+    height: 30px;
+  }
+}

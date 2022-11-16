@@ -14,9 +14,9 @@ const Header = () =>{
         <>
 
             <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-white font" style={{ height: '80px'}}>
-                <div className="container-fluid bg-white">
+                <div className="container bg-white">
                 <img className=" navbar-brand" src={logo} alt="" onClick={() => navigate("/")}/>
-                  <button className="navbar-toggler border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <button className="navbar-toggler border border-white text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <img className="burger" src={burgerVecto} alt="burger"/>
                   </button>
                 </div>

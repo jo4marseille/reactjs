@@ -111,7 +111,7 @@ const Sponsor = () => {
         <ToastContainer />
 
         <div className="d-flex">
-        <button onClick={() => handleMatching()} type="button" className="btn btn-primary btn-lg" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">Match</button>
+        <button onClick={() => handleMatching()} type="button"  className=" btn-lg btn btn-primary" id="load2" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Processing Order">M<br></br>A<br></br>T<br></br>C<br></br>H</button>
 
         {
           load

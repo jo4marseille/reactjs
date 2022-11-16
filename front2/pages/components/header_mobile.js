@@ -39,7 +39,7 @@ export default function BottomNav() {
 
   return (
     <BottomNavigation sx={{ width: 500 }} value={value} onChange={handleChange} className={styles.bottomNav}>
-      <BottomNavigationAction
+      {/* <BottomNavigationAction
         href="/"
         // label="home"
         value="home"
@@ -61,7 +61,7 @@ export default function BottomNav() {
         href="/account"
        label="Profil" 
        value="account" 
-       icon={<AccountCircleRoundedIcon />} />
+       icon={<AccountCircleRoundedIcon />} /> */}
     </BottomNavigation>
   );
 }

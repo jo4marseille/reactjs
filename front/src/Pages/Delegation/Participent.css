@@ -11,23 +11,35 @@
 
 .participent ul {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    list-style: none;
-    gap: 1em;
-    margin: -2vh auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 16px;
+    margin: 0px 16px 16px 16px;
 }
 
 .participent ul li {
-    border: solid;
-    border-radius: 1vh 1vh 3vh 3vh;
-    padding: 3vh;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
+    margin-top: 4px;
+    font-family: "Poppins", sans-serif;
+    justify-content: left;
+    list-style: none;
+    border: 1px solid #1e1e1e;
+    border-radius: 0% 0% 16px 16px;
 }
 
 .participent ul li:hover {
     background-color: #8080801f;
+}
+
+.participent ul li div:nth-child(1) {
+    width: 100%;
+    height: 180px;   
+}
+
+.participent ul li div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
 }
 
 .participent ul li p:first-of-type {

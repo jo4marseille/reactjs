@@ -16,11 +16,11 @@
 
 .delegation ul li {
     border: solid;
-    border-radius: 1vh 1vh 3vh 3vh;
+    border-radius: 6vh 6vh 6vh 6vh;
     padding: 3vh;
     display: flex;
-    flex-direction: column;
-    gap: 2vh
+    gap: 2vh;
+    margin-top: 10vh;
 }
 
 .delegation ul li:hover {

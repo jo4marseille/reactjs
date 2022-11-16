@@ -34,7 +34,9 @@ export default function Participent() {
             <ul>
                 {athletes.map((athlete) => (
                     <li key={athlete.id}>
-                        <img src='{athlete.attributes.image.data.attributes.url}' alt={athlete.attributes.name} />
+                        <div>
+                            <img src='' alt={athlete.attributes.name} />
+                        </div>
                         <p>{athlete.attributes.name}</p>
                         <p>Discipline: {sports}</p>
                         <button>Voter</button>

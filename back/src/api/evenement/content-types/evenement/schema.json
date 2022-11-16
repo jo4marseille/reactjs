@@ -48,6 +48,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::pay.pay"
+    },
+    "atheltes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athelte.athelte",
+      "mappedBy": "evenement"
     }
   }
 }

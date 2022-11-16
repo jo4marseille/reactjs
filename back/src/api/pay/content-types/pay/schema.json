@@ -25,6 +25,12 @@
         "videos",
         "audios"
       ]
+    },
+    "atheltes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athelte.athelte",
+      "mappedBy": "pay"
     }
   }
 }

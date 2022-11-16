@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
         <main className='homeSection'>
-            <h1>HomePage</h1>
+            <img src="./ressource/marina.jpg" />
         </main>
 
     )

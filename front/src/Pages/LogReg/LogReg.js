@@ -43,7 +43,9 @@ export default function LogReg() {
           "userToken",
           response.data.jwt
         );
-        console.log("Logged");
+        window.localStorage.setItem('userId', response.data.user.id);
+
+        console.log(response);
         alert("Login Successful");
         LogNav("/");
         setProfil(response.data.user);

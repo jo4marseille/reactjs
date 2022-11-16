@@ -30,6 +30,15 @@
       "relation": "oneToMany",
       "target": "api::evenement.evenement",
       "mappedBy": "sport"
+    },
+    "description": {
+      "type": "string"
+    },
+    "atheltes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athelte.athelte",
+      "mappedBy": "sport"
     }
   }
 }

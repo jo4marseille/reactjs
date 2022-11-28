@@ -1,0 +1,100 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.container {
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 660px;
+    height: 300px;
+    border-radius: 2px;
+}
+
+.container-onglets{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    color: black;
+}
+
+.onglets{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0px;
+    background-color: white;
+}
+
+.onglets button{
+    border: 0px;
+}
+
+.contenu {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    display:none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 5vh;
+}
+
+.gauche {
+    margin-right: auto;
+}
+
+.droite {
+    margin-left: auto;
+}
+
+.form button {
+    background: none;
+    font-size: xxx-large;
+    color: rgb(0, 62, 128);
+    border: none;
+    margin: 2rem 0 0;
+    cursor: pointer;
+}
+
+.contenu input{
+    border-radius: 3vh;
+    border: solid;
+    padding: 1vh;
+    width: 70%;
+}
+
+/* Animation */
+
+.onglets.active{
+    color: rgb(215, 215, 61);
+    transition: all 0.2s ease;
+}
+
+.activeContenu{
+    display:contents;
+}
+
+.contenu p {
+    display: contents;
+}

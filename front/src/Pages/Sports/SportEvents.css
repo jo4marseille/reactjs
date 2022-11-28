@@ -1,0 +1,115 @@
+.sportEventsContainer {
+    margin: 32px 16px 0px 16px;
+}
+
+.sportEventsContainer h3 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+.sportEventsContainer ul {
+    display: grid;
+    grid-template-columns: repeat(1, 70vw);    
+    justify-content: center;
+    margin-top: 32px;
+    gap: 32px;
+}
+
+.sportEventsContainer ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.sportEventsContainer ul li {
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid black;
+    padding: 16px 8px;
+    border-radius: 45px;
+    font-size: 15.5px;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.sportEventsContainer ul li div {
+    text-align: center;
+}
+
+.sportEventsContainer ul li div:nth-child(1) {
+    text-align: center;
+}
+
+.sportEventsContainer ul li div:nth-child(1) p:nth-child(1) {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.sportEventsContainer ul li div:nth-child(1) p:nth-child(2) {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.sportEventsContainer ul li div:nth-child(2) {
+    max-width: 250px;
+}
+
+.sportEventsContainer ul li div:nth-child(2) p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sportEventsContainer ul li div:nth-child(2) p b{
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFB300;
+}
+
+.sportEventsContainer ul li div:nth-child(2) p img{
+    height: 15px;
+}
+
+
+
+.sportEventsContainer ul li div:nth-child(3) p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    max-width: 220px;
+    font-weight: 500;
+}
+
+.sportEventsContainer ul li div:nth-child(4) svg{
+    height: 40px;
+    width: 40px;
+    font-weight: 500;
+}
+
+
+.sportEventsContainer article section div {
+    max-width: 150px;
+    height: 80px;
+}
+
+.sportEventsContainer article section div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sportEventsContainer article section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sportEventsContainer article section h3 {
+    font-size: 40px;
+}
+
+
+
